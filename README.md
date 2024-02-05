@@ -1,7 +1,13 @@
 # edk2_klee
+
+## Preprocessing
+This updates headerfiles of edk2 source to prepare it for running klee on it. 
 ```
 python3 process_headers.py <path_to_edk2>
+```
+The eek2 source (edk2-master) in this repo has already been updated using the script
 
+```
 python3 generate_stubs.py
 
 clang-13 -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone klee_driver.c
