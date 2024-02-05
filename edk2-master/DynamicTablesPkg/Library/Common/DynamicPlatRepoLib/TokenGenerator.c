@@ -10,7 +10,7 @@
     - Obj or OBJ - Object
 **/
 
-#include <Protocol/ConfigurationManagerProtocol.h>
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/ConfigurationManagerProtocol.h"
 
 /** Generate a token.
 

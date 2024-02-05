@@ -15,7 +15,7 @@
 #ifndef _MM_IO_TRAP_DISPATCH_H_
 #define _MM_IO_TRAP_DISPATCH_H_
 
-#include <Pi/PiMmCis.h>
+#include "edk2-master/MdePkg/Include/Pi/PiMmCis.h"
 
 #define EFI_MM_IO_TRAP_DISPATCH_PROTOCOL_GUID \
   { \

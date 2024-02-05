@@ -7,10 +7,10 @@
 
 **/
 
-#include <PiMm.h>
-#include <Protocol/MmBase.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmBase.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_MM_SYSTEM_TABLE  *gMmst = NULL;
 

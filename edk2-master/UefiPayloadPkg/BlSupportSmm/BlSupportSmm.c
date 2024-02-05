@@ -11,7 +11,7 @@
 
 **/
 
-#include <BlSupportSmm.h>
+#include "edk2-master/UefiPayloadPkg/BlSupportSmm/BlSupportSmm.h"
 
 PLD_S3_COMMUNICATION            mPldS3Hob;
 EFI_SMRAM_HOB_DESCRIPTOR_BLOCK  *mSmramHob         = NULL;

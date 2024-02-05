@@ -8,19 +8,19 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PciLib.h>
-#include <Library/PrePiLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Library/PlatformInitLib.h>
-#include <OvmfPlatforms.h>
-#include <Pi/PrePiHob.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiHob.h"
 #include "PeilessStartupInternal.h"
 
 /**

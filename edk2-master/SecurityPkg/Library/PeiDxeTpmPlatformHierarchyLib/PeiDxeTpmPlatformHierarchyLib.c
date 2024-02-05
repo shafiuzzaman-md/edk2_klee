@@ -13,14 +13,14 @@
     https://trustedcomputinggroup.org/resource/tcg-tpm-v2-0-provisioning-guidance/
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/RngLib.h>
-#include <Library/Tpm2CommandLib.h>
-#include <Library/Tpm2DeviceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/RngLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
 
 //
 // The authorization value may be no larger than the digest produced by the hash

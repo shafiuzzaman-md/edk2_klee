@@ -9,7 +9,7 @@
 #ifndef ARM_CACHE_H_
 #define ARM_CACHE_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 // The ARM Architecture Reference Manual for ARMv8-A defines up
 // to 7 levels of cache, L1 through L7.

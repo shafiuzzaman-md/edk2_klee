@@ -40,12 +40,12 @@
 
 #include "XenStore.h"
 
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #include <IndustryStandard/Xen/hvm/params.h>
 
 #include "EventChannel.h"
-#include <Library/XenHypercallLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/XenHypercallLib.h"
 
 //
 // Private Data Structures

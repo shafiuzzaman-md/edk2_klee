@@ -6,12 +6,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Tree/AmlTree.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
 
-#include <AmlCoreInterface.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTreeTraversal.h>
-#include <Utils/AmlUtility.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTreeTraversal.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Utils/AmlUtility.h"
 
 /** Get the parent node of the input Node.
 

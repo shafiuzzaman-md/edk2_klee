@@ -14,9 +14,9 @@
     - Dom   - Domain
 **/
 
-#include <Library/PrintLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiView.h"
 

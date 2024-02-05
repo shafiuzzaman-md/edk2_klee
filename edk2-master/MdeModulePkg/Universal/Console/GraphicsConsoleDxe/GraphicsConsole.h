@@ -9,25 +9,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _GRAPHICS_CONSOLE_H_
 #define _GRAPHICS_CONSOLE_H_
 
-#include <Uefi.h>
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/UgaDraw.h>
-#include <Protocol/DevicePath.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HiiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/UgaDraw.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <Guid/MdeModuleHii.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
 
-#include <Protocol/HiiFont.h>
-#include <Protocol/HiiDatabase.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiFont.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
 
 extern EFI_COMPONENT_NAME_PROTOCOL   gGraphicsConsoleComponentName;
 extern EFI_COMPONENT_NAME2_PROTOCOL  gGraphicsConsoleComponentName2;

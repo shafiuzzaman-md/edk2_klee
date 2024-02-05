@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include "MmSaveState.h"
 #include <Register/Intel/SmramSaveStateMap.h>
 #include <Register/Intel/Cpuid.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 #define INTEL_MM_SAVE_STATE_REGISTER_SMMREVID_INDEX   1
 #define INTEL_MM_SAVE_STATE_REGISTER_IOMISC_INDEX     2

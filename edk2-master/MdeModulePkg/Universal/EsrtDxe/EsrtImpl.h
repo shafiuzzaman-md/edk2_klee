@@ -9,23 +9,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DXE_ESRT_IMPL_H_
 #define _DXE_ESRT_IMPL_H_
 
-#include <Guid/EventGroup.h>
-#include <Guid/SystemResourceTable.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
 
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/CapsuleLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
 
-#include <Protocol/FirmwareManagement.h>
-#include <Protocol/EsrtManagement.h>
-#include <Protocol/VariableLock.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EsrtManagement.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariableLock.h"
 
 //
 // Name of  Variable for Non-FMP ESRT Repository

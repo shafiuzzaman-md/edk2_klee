@@ -12,11 +12,11 @@
 #ifndef _VIRTIO_BLK_DXE_H_
 #define _VIRTIO_BLK_DXE_H_
 
-#include <Protocol/BlockIo.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/DriverBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
 
-#include <IndustryStandard/Virtio.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 #define VBLK_SIG  SIGNATURE_32 ('V', 'B', 'L', 'K')
 

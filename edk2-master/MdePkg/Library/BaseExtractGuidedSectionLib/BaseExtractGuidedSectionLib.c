@@ -6,12 +6,12 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
 
 #define EXTRACT_HANDLER_INFO_SIGNATURE  SIGNATURE_32 ('E', 'G', 'S', 'I')
 

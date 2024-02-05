@@ -7,20 +7,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/TcgService.h>
-#include <Protocol/Tcg2Protocol.h>
+#include "edk2-master/MdePkg/Include/Protocol/TcgService.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/TpmMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 
-#include <Guid/Acpi.h>
-#include <IndustryStandard/Acpi.h>
-#include <Protocol/CcMeasurement.h>
+#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Protocol/CcMeasurement.h"
 
 /**
   Tpm12 measure and log data, and extend the measurement result into a specific PCR.

@@ -12,7 +12,7 @@
 #ifndef __ORDERED_COLLECTION_LIB__
 #define __ORDERED_COLLECTION_LIB__
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 //
 // Opaque structure for a collection.

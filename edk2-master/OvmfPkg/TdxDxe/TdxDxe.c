@@ -14,24 +14,24 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiLib.h>
-#include <Library/HobLib.h>
-#include <Protocol/Cpu.h>
-#include <Protocol/MpInitLibDepProtocols.h>
-#include <Protocol/MemoryAccept.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <ConfidentialComputingGuestAttr.h>
-#include <IndustryStandard/Tdx.h>
-#include <Library/PlatformInitLib.h>
-#include <Library/TdxLib.h>
-#include <TdxAcpiTable.h>
-#include <Library/MemEncryptTdxLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/MpInitLibDepProtocols.h"
+#include "edk2-master/MdePkg/Include/Protocol/MemoryAccept.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/OvmfPkg/TdxDxe/TdxAcpiTable.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptTdxLib.h"
 
 #define ALIGNED_2MB_MASK  0x1fffff
 EFI_HANDLE  mTdxDxeHandle = NULL;

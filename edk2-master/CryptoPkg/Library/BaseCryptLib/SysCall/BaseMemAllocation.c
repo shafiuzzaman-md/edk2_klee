@@ -7,8 +7,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <CrtLibSupport.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/CryptoPkg/Library/Include/CrtLibSupport.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 //
 // Extra header to record the memory buffer size from malloc routine.

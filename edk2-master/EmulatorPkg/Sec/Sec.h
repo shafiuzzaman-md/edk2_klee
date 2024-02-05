@@ -11,14 +11,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SEC_H___
 #define __SEC_H___
 
-#include <PiPei.h>
-#include <Library/EmuMagicPageLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/EmulatorPkg/Include/Library/EmuMagicPageLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
-#include <Ppi/TemporaryRamSupport.h>
+#include "edk2-master/MdePkg/Include/Ppi/TemporaryRamSupport.h"
 
 //
 // I think this should be defined in a MdePkg include file?

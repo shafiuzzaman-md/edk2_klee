@@ -21,9 +21,9 @@
    functions. They provide a "safe" way to interact with the AmlLib.
 */
 
-#include <AmlDefines.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDefines.h"
 #include <Include/Library/AmlLib/AmlLib.h>
-#include <ResourceData/AmlResourceData.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
 
 /**
   @defgroup CoreApis Core APIs

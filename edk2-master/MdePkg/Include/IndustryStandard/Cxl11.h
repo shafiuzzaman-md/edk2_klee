@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _CXL11_H_
 #define _CXL11_H_
 
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 //
 // DVSEC Vendor ID
 // Compute Express Link Specification Revision: 1.1 - Chapter 7.1.1 - Table 58

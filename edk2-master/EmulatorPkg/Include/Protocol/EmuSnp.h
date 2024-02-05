@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EMU_SNP_H__
 #define __EMU_SNP_H__
 
-#include <Protocol/SimpleNetwork.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
 
 #define EMU_SNP_PROTOCOL_GUID \
  { 0xFD5FBE54, 0x8C35, 0xB345, { 0x8A, 0x0F, 0x7A, 0xC8, 0xA5, 0xFD, 0x05, 0x21 } }

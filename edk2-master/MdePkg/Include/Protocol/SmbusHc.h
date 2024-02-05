@@ -13,7 +13,7 @@
 #ifndef __SMBUS_HC_H__
 #define __SMBUS_HC_H__
 
-#include <IndustryStandard/SmBus.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
 
 #define EFI_SMBUS_HC_PROTOCOL_GUID \
   {0xe49d33ed, 0x513d, 0x4634, { 0xb6, 0x98, 0x6f, 0x55, 0xaa, 0x75, 0x1c, 0x1b} }

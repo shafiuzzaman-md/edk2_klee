@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "PlatformBootManager.h"
 #include "PlatformConsole.h"
-#include <Protocol/FirmwareVolume2.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
 
 /**
   Signal EndOfDxe event and install SMM Ready to lock protocol.

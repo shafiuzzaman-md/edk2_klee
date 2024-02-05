@@ -32,15 +32,15 @@
 #ifndef __EFI_FILE_LIB_H__
 #define __EFI_FILE_LIB_H__
 
-#include <PiDxe.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/FirmwareVolumeBlock.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/LoadFile.h>
-#include <Protocol/LoadFile.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Guid/FileInfo.h>
-#include <Guid/FileSystemInfo.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
 
 #define MAX_PATHNAME  0x200
 

@@ -7,13 +7,13 @@
 
 **/
 
-#include <PrmModule.h>
+#include "edk2-master/PrmPkg/Include/PrmModule.h"
 
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 // TEMP
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #define PARAM_BUFFER_TEST_SIGNATURE  SIGNATURE_32('T','E','S','T')
 

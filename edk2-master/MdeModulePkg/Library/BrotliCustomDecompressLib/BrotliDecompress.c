@@ -5,7 +5,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <BrotliDecompressLibInternal.h>
+#include "edk2-master/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecompressLibInternal.h"
 
 /**
   Allocation routine used by BROTLI decompression.

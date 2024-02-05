@@ -10,16 +10,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 //// The package level header files this module uses
 ////
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseRiscVSbiLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 #include <Include/Library/PrePiLib.h>
-#include <libfdt.h>
-#include <Guid/FdtHob.h>
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/FdtHob.h"
 
 /**
   Build memory map I/O range resource HOB using the

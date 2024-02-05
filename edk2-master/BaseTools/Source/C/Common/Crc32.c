@@ -6,7 +6,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #include "Crc32.h"
 
 UINT32  mCrcTable[256] = {

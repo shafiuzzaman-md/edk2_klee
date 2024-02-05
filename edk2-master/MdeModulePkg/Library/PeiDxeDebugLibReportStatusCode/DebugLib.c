@@ -9,17 +9,17 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Guid/StatusCodeDataTypeId.h>
-#include <Guid/StatusCodeDataTypeDebug.h>
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StatusCodeDataTypeDebug.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DebugPrintErrorLevelLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugPrintErrorLevelLib.h"
 
 //
 // VA_LIST can not initialize to NULL for all compiler, so we use this to

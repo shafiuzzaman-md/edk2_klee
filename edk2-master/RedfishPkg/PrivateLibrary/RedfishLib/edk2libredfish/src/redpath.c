@@ -14,7 +14,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <redpath.h>
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redpath.h"
 
 static char *
 getVersion (

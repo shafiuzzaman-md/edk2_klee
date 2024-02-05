@@ -7,9 +7,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Guid/SystemResourceTable.h>
-#include <Library/FmpDependencyCheckLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDependencyCheckLib.h"
 
 /**
   Check dependency for firmware update.

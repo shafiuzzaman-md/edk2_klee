@@ -3,13 +3,13 @@
 
 #include "Precomp.h"
 
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 
 /* #define SHOW_STAT */
 /* #define SHOW_STAT2 */
 
 #if defined(SHOW_STAT) || defined(SHOW_STAT2)
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #endif
 
 #include "LzmaEnc.h"

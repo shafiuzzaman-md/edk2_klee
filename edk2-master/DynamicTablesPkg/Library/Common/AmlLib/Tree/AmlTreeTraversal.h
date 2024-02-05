@@ -9,7 +9,7 @@
 #ifndef AML_TREE_TRAVERSAL_H_
 #define AML_TREE_TRAVERSAL_H_
 
-#include <AmlNodeDefines.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
 
 /** Get the next sibling node among the children of the input Node.
 

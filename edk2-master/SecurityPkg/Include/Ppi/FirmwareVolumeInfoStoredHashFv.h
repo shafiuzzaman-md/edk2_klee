@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PEI_FIRMWARE_VOLUME_INFO_STORED_HASH_FV_H__
 #define __PEI_FIRMWARE_VOLUME_INFO_STORED_HASH_FV_H__
 
-#include <Ppi/FirmwareVolumeInfoPrehashedFV.h>
+#include "edk2-master/SecurityPkg/Include/Ppi/FirmwareVolumeInfoPrehashedFV.h"
 
 // {7F5E4E31-81B1-47E5-9E21-1E4B5BC2F61D}
 #define EDKII_PEI_FIRMWARE_VOLUME_INFO_STORED_HASH_FV_PPI_GUID \

@@ -9,24 +9,24 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _MNP_DRIVER_H_
 #define _MNP_DRIVER_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/ManagedNetwork.h>
-#include <Protocol/SimpleNetwork.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/VlanConfig.h>
+#include "edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/VlanConfig.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/NetLib.h>
-#include <Library/DpcLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/DpcLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #include "ComponentName.h"
 

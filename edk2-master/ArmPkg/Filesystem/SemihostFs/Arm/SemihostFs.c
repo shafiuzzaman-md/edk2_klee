@@ -8,22 +8,22 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/FileInfo.h>
-#include <Guid/FileSystemInfo.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SemihostLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/ArmPkg/Include/Library/SemihostLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
 #include "SemihostFs.h"
 

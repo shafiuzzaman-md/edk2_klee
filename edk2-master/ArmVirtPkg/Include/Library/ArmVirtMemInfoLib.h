@@ -10,8 +10,8 @@
 #ifndef _ARM_VIRT_MEMINFO_LIB_H_
 #define _ARM_VIRT_MEMINFO_LIB_H_
 
-#include <Base.h>
-#include <Library/ArmLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
 
 /**
   Return the Virtual Memory Map of your platform

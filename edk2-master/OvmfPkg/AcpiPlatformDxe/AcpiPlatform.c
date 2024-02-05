@@ -7,10 +7,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <OvmfPlatforms.h> // CLOUDHV_DEVICE_ID
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
-#include <Library/AcpiPlatformLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
 
 #include "AcpiPlatform.h"
 

@@ -4,7 +4,7 @@
 #include "Precomp.h"
 
 #ifndef EFIAPI
-  #include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 #endif
 
 /* #include "CpuArch.h" */

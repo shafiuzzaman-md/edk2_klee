@@ -9,20 +9,20 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/RedfishHostInterfaceLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishHostInterfaceLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
-#include <Pcd/RestExServiceDevicePath.h>
-#include <Guid/GlobalVariable.h>
+#include "edk2-master/RedfishPkg/Include/Pcd/RestExServiceDevicePath.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
 
 #define VERBOSE_COLUME_SIZE  (16)
 

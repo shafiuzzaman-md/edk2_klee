@@ -6,9 +6,9 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/UefiApplicationEntryPoint.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 /**
   as the real entry point for the application.

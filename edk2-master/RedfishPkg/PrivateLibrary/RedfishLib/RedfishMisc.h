@@ -11,16 +11,16 @@
 #ifndef DXE_REDFISH_MISC_LIB_H_
 #define DXE_REDFISH_MISC_LIB_H_
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/JsonLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/RedfishLib.h>
-#include <Library/UefiLib.h>
-#include <Protocol/EdkIIRedfishCredential.h>
-#include <redfish.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/JsonLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishCredential.h"
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfish.h"
 
 #define ARRAY_SIZE(Array)  (sizeof (Array) / sizeof ((Array)[0]))
 

@@ -9,11 +9,11 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/RealTimeClockLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/RealTimeClockLib.h"
 
 /**
   Returns the current time and date information, and the time-keeping capabilities

@@ -5,17 +5,17 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Http.h>
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HttpIoLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpIoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   Notify the callback function when an event is triggered.

@@ -9,7 +9,7 @@
 #ifndef _VARIABLE_CHECK_H_
 #define _VARIABLE_CHECK_H_
 
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 typedef struct _EDKII_VAR_CHECK_PROTOCOL EDKII_VAR_CHECK_PROTOCOL;
 

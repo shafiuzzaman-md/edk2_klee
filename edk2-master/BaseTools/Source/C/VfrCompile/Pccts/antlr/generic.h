@@ -283,4 +283,4 @@ typedef Graph Attrib;
 
 #include "proto.h"
 #include "pcctscfg.h"   /* MR14 */
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"

@@ -9,7 +9,7 @@
 #ifndef __FSP_WRAPPER_API_TEST_LIB_H__
 #define __FSP_WRAPPER_API_TEST_LIB_H__
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 /**
   Test the output of FSP API - FspMemoryInit.

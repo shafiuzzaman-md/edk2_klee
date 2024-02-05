@@ -7,14 +7,14 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
-#include <PiDxe.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Guid/DebugPrintErrorLevel.h>
-#include <Library/DebugPrintErrorLevelLib.h>
-#include <UniversalPayload/UniversalPayload.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/DebugPrintErrorLevel.h"
+#include "edk2-master/MdePkg/Include/Library/DebugPrintErrorLevelLib.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
 
 STATIC UINT32   gDebugPrintErrorLevel;
 STATIC BOOLEAN  gDebugPrintErrorLevelInitialized = FALSE;

@@ -17,10 +17,10 @@
 #ifndef __MEM_LIB_INTERNALS__
 #define __MEM_LIB_INTERNALS__
 
-#include <Base.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Copy Length bytes from Source to Destination.

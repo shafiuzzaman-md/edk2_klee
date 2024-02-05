@@ -18,8 +18,8 @@
 #ifndef LIBREDFISH_REDFISH_H_
 #define LIBREDFISH_REDFISH_H_
 
-#include <redfishService.h>
-#include <redfishPayload.h>
-#include <redpath.h>
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishService.h"
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishPayload.h"
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redpath.h"
 
 #endif

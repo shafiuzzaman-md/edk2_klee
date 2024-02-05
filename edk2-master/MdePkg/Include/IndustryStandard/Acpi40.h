@@ -8,7 +8,7 @@
 #ifndef _ACPI_4_0_H_
 #define _ACPI_4_0_H_
 
-#include <IndustryStandard/Acpi30.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi30.h"
 
 ///
 /// _PSD Revision for ACPI 4.0

@@ -7,10 +7,10 @@
 
 **/
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/MemEncryptSevLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
 
 #include "QemuFlash.h"
 

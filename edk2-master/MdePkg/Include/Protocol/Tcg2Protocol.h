@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG2_PROTOCOL_H__
 #define __TCG2_PROTOCOL_H__
 
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <IndustryStandard/Tpm20.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 
 #define EFI_TCG2_PROTOCOL_GUID \
   {0x607f766c, 0x7455, 0x42be, { 0x93, 0x0b, 0xe4, 0xd7, 0x6d, 0xb2, 0x72, 0x0f }}

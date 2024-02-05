@@ -10,8 +10,8 @@
     - Obj or OBJ - Object
 **/
 
-#include <Library/DebugLib.h>
-#include <Protocol/ConfigurationManagerProtocol.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/ConfigurationManagerProtocol.h"
 #include "CmObjectTokenFixer.h"
 
 /** Token fixer not implemented.

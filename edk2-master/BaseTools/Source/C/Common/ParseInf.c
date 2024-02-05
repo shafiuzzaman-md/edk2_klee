@@ -6,10 +6,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <assert.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #include "EfiUtilityMsgs.h"
 #include "ParseInf.h"
 #include "CommonLib.h"

@@ -7,7 +7,7 @@
 **/
 
 #include "ComponentName.h"
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 //
 // Driver name table

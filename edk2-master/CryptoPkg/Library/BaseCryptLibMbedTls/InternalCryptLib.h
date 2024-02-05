@@ -9,17 +9,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef INTERNAL_CRYPT_LIB_H_
 #define INTERNAL_CRYPT_LIB_H_
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseCryptLib.h>
-#include <stdio.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 
 //
 // We should alwasy add mbedtls/config.h here
 // to ensure the config override takes effect.
 //
-#include <mbedtls/mbedtls_config.h>
+#include "edk2-master/CryptoPkg/Library/MbedTlsLib/Include/mbedtls/mbedtls_config.h"
 
 #endif

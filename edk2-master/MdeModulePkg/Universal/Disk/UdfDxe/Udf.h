@@ -10,31 +10,31 @@
 #ifndef _UDF_H_
 #define _UDF_H_
 
-#include <Uefi.h>
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Protocol/BlockIo.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/DiskIo.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include <Guid/FileInfo.h>
-#include <Guid/FileSystemInfo.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
-#include <IndustryStandard/ElTorito.h>
-#include <IndustryStandard/Udf.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/ElTorito.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Udf.h"
 
 //
 // C5BD4D42-1A76-4996-8956-73CDA326CD0A

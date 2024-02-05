@@ -9,7 +9,7 @@
 #ifndef ARM_SCMI_INFO_LIB_H_
 #define ARM_SCMI_INFO_LIB_H_
 
-#include <ConfigurationManagerObject.h>
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
 
 /** Populate a AML_CPC_INFO object based on SCMI information.
 

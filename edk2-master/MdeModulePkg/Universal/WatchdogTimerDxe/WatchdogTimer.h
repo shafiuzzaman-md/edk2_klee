@@ -9,13 +9,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _WATCHDOG_TIMER_H_
 #define _WATCHDOG_TIMER_H_
 
-#include <Uefi.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Protocol/WatchdogTimer.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/WatchdogTimer.h"
 
 /**
   Registers a handler that is to be invoked when the watchdog timer fires.

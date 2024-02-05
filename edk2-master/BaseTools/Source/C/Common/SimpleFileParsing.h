@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SIMPLE_FILE_PARSING_H_
 #define _SIMPLE_FILE_PARSING_H_
 
-#include <Common/UefiBaseTypes.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
 
 STATUS
 SFPInit (

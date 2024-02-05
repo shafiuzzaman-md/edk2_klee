@@ -6,10 +6,10 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/DebugLib.h>
-#include <LockBoxLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Library/LockBoxLib/LockBoxLib.h"
 
 /**
   Allocates a buffer of type EfiACPIMemoryNVS.

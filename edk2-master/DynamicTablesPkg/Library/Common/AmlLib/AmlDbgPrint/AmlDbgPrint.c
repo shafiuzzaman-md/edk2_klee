@@ -7,13 +7,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <AmlNodeDefines.h>
-#include <AmlDbgPrint/AmlDbgPrint.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDbgPrint/AmlDbgPrint.h"
 
-#include <AmlCoreInterface.h>
-#include <String/AmlString.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTreeTraversal.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTreeTraversal.h"
 
 #if !defined (MDEPKG_NDEBUG)
 

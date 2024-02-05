@@ -9,15 +9,15 @@
 #ifndef _RECOVERY_MODULE_LOAD_PEI_H_
 #define _RECOVERY_MODULE_LOAD_PEI_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/EdkiiSystemCapsuleLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/SignedCapsulePkg/Include/Library/EdkiiSystemCapsuleLib.h"
 
 //
 // Update data

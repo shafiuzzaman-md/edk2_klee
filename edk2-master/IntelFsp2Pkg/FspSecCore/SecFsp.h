@@ -8,15 +8,15 @@
 #ifndef _SEC_FSP_H_
 #define _SEC_FSP_H_
 
-#include <PiPei.h>
-#include <FspEas.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/FspCommonLib.h>
-#include <Library/FspSecPlatformLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspSecPlatformLib.h"
 
 #define FSP_MCUD_SIGNATURE  SIGNATURE_32 ('M', 'C', 'U', 'D')
 #define FSP_PER0_SIGNATURE  SIGNATURE_32 ('P', 'E', 'R', '0')

@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <LegacyRegion2.h>
+#include "edk2-master/MdeModulePkg/Universal/LegacyRegion2Dxe/LegacyRegion2.h"
 
 EFI_HANDLE  mLegacyRegion2Handle = NULL;
 

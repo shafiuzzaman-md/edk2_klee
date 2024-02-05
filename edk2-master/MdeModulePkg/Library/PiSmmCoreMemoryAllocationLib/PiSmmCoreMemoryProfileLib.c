@@ -6,12 +6,12 @@
 
 **/
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Guid/MemoryProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryProfile.h"
 
 #include "PiSmmCoreMemoryProfileServices.h"
 

@@ -9,19 +9,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/Hash.h>
-#include <Protocol/SecurityPolicy.h>
-#include <Library/ExtractGuidedSectionLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Guid/WinCertificate.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/PerformanceLib.h>
-#include <Guid/SecurityPkgTokenSpace.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/Hash.h"
+#include "edk2-master/MdePkg/Include/Protocol/SecurityPolicy.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Guid/WinCertificate.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/SecurityPkg/Include/Guid/SecurityPkgTokenSpace.h"
 
 ///
 /// RSA 2048 SHA 256 Guided Section header

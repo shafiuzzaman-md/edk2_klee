@@ -15,7 +15,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
 #include "MmTcg2PhysicalPresenceLibCommon.h"
 

@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #include <mbedtls/ecp.h>
 #include <mbedtls/ecdh.h>

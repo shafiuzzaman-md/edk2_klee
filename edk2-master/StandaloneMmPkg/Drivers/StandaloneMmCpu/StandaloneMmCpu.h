@@ -10,10 +10,10 @@
 #ifndef _ARM_TF_CPU_DRIVER_H_
 #define _ARM_TF_CPU_DRIVER_H_
 
-#include <Protocol/MmCommunication2.h>
-#include <Protocol/MmConfiguration.h>
-#include <Protocol/MmCpu.h>
-#include <Guid/MpInformation.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmConfiguration.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCpu.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MpInformation.h"
 
 //
 // CPU driver initialization specific declarations

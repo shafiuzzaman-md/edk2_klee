@@ -9,10 +9,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMM_FEATURES_LIB_H__
 #define __SMM_FEATURES_LIB_H__
 
-#include <Protocol/MpService.h>
-#include <Protocol/SmmCpu.h>
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCpu.h"
 #include <Register/Intel/SmramSaveStateMap.h>
-#include <CpuHotPlugData.h>
+#include "edk2-master/UefiCpuPkg/Include/CpuHotPlugData.h"
 
 ///
 /// Enumeration of SMM registers that are accessed using the library functions

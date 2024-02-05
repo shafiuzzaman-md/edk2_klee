@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __DISPLAY_PROTOCOL_H__
 #define __DISPLAY_PROTOCOL_H__
 
-#include <Protocol/FormBrowser2.h>
+#include "edk2-master/MdePkg/Include/Protocol/FormBrowser2.h"
 
 #define EDKII_FORM_DISPLAY_ENGINE_PROTOCOL_GUID  \
   { 0x9bbe29e9, 0xfda1, 0x41ec, { 0xad, 0x52, 0x45, 0x22, 0x13, 0x74, 0x2d, 0x2e } }

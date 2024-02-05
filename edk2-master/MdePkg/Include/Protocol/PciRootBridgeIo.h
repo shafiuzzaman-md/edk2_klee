@@ -13,7 +13,7 @@
 #ifndef __PCI_ROOT_BRIDGE_IO_H__
 #define __PCI_ROOT_BRIDGE_IO_H__
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 #define EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL_GUID \
   { \

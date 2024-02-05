@@ -8,10 +8,10 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/FirmwareManagement.h>
-#include <Guid/FmpCapsule.h>
-#include <Library/CapsuleLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdePkg/Include/Guid/FmpCapsule.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
 
 /**
   Record capsule status variable and to local cache.

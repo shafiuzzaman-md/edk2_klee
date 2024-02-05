@@ -6,19 +6,19 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/FmpCapsule.h>
-#include <Guid/SystemResourceTable.h>
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Guid/FmpCapsule.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 extern EFI_SYSTEM_RESOURCE_TABLE  *mEsrtTable;
 EFI_EVENT                         mDxeRuntimeCapsuleLibVirtualAddressChangeEvent = NULL;

@@ -9,20 +9,20 @@
 
 #ifndef _INTERNAL_S3_SAVE_STATE_H_
 #define _INTERNAL_S3_SAVE_STATE_H_
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/S3SaveState.h>
+#include "edk2-master/MdePkg/Include/Protocol/S3SaveState.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/S3BootScriptLib.h>
-#include <Library/SmbusLib.h>
-#include <Library/PcdLib.h>
-#include <IndustryStandard/SmBus.h>
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
 /**
   Callback function executed when the EndOfDxe event group is signaled.

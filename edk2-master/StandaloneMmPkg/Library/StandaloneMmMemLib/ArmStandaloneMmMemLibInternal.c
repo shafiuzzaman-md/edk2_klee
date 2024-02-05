@@ -12,9 +12,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 //
 // Maximum support address used to check input buffer
 //

@@ -9,12 +9,12 @@
 #ifndef MOCK_DT_PLATFORM_DTB_LOADER_LIB_H_
 #define MOCK_DT_PLATFORM_DTB_LOADER_LIB_H_
 
-#include <Library/GoogleTestLib.h>
-#include <Library/FunctionMockLib.h>
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
 extern "C" {
-  #include <Pi/PiMultiPhase.h>
-  #include <Uefi.h>
-  #include <Library/DtPlatformDtbLoaderLib.h>
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/DtPlatformDtbLoaderLib.h"
 }
 
 struct MockDtPlatformDtbLoaderLib {

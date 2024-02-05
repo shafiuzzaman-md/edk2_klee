@@ -11,7 +11,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PLAT_OVER_MNGR_H_
 #define _PLAT_OVER_MNGR_H_
 
-#include <Guid/PlatDriOverrideHii.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/PlatDriOverrideHii.h"
 
 //
 // The max number of the supported driver list.

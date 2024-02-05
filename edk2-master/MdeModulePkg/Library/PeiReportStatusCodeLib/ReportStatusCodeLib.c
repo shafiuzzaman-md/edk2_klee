@@ -6,16 +6,16 @@
 
 **/
 
-#include <Guid/StatusCodeDataTypeId.h>
-#include <Guid/StatusCodeDataTypeDebug.h>
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StatusCodeDataTypeDebug.h"
 
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/OemHookStatusCodeLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/OemHookStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /**
   Internal worker function that reports a status code through the PEI Status Code Service or

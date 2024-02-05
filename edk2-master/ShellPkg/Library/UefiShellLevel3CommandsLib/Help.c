@@ -11,10 +11,10 @@
 
 #include "UefiShellLevel3CommandsLib.h"
 
-#include <Library/ShellLib.h>
-#include <Library/HandleParsingLib.h>
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/ShellPkg/Include/Library/HandleParsingLib.h"
 
-#include <Protocol/ShellDynamicCommand.h>
+#include "edk2-master/MdePkg/Include/Protocol/ShellDynamicCommand.h"
 
 /**
    function to insert string items into a list in the correct alphabetical place

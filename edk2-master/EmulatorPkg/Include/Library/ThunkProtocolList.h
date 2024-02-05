@@ -7,8 +7,8 @@
 
 **/
 
-#include <Uefi.h>
-#include <Protocol/EmuIoThunk.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
 
 EFI_STATUS
 EFIAPI

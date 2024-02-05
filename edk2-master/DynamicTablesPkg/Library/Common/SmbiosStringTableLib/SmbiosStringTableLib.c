@@ -9,11 +9,11 @@
   - DSP0134 - SMBIOS Specification Version 3.6.0, 2022-06-17
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SmbiosStringTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/SmbiosStringTableLib.h"
 
 /** Add a string to the string table.
 

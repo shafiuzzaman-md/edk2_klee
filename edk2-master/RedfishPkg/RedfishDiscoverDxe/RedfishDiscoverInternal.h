@@ -12,29 +12,29 @@
 #ifndef EFI_REDFISH_DISCOVER_INTERNAL_H_
 #define EFI_REDFISH_DISCOVER_INTERNAL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/RedfishDiscover.h>
-#include <Protocol/Smbios.h>
-#include <Protocol/Tcp4.h>
-#include <Protocol/Tcp6.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/RedfishDiscover.h"
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp6.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
-#include <Library/PrintLib.h>
-#include <Library/RedfishDebugLib.h>
-#include <Library/RestExLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishDebugLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RestExLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
-#include <IndustryStandard/RedfishHostInterface.h>
+#include "edk2-master/RedfishPkg/Include/IndustryStandard/RedfishHostInterface.h"
 
 #define REDFISH_DISCOVER_VERSION                    0x00010000
 #define EFI_REDFISH_DISCOVER_NETWORK_INTERFACE_TPL  TPL_NOTIFY

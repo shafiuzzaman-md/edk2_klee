@@ -6,13 +6,13 @@
 
 **/
 
-#include <Uefi.h>
-#include <Pi/PiMultiPhase.h>
-#include <Library/ArmLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 // Number of Virtual Memory Map Descriptors
 #define MAX_VIRTUAL_MEMORY_MAP_DESCRIPTORS  5

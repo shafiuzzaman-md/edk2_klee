@@ -8,17 +8,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef PLATFORM_CONSOLE_H_
 #define PLATFORM_CONSOLE_H_
 
-#include <PiDxe.h>
-#include <IndustryStandard/Pci.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Protocol/PciIo.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
 #define IS_PCI_ISA_PDECODE(_p)  IS_CLASS3 (_p, PCI_CLASS_BRIDGE, PCI_CLASS_BRIDGE_ISA_PDECODE, 0)
 

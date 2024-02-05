@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/DebugAgentLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
 
 /**
   Initialize debug agent.

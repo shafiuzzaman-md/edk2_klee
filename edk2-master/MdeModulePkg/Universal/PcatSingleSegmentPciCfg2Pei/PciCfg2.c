@@ -8,14 +8,14 @@
 
 **/
 
-#include <PiPei.h>
-#include <Ppi/PciCfg2.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PciLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/PciCfg2.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 
 /**
    Convert EFI_PEI_PCI_CFG_PPI_PCI_ADDRESS to PCI_LIB_ADDRESS.

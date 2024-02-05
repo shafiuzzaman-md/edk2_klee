@@ -17,8 +17,8 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/XenHypercallLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenHypercallLib.h"
 
 #include "XenBusDxe.h"
 

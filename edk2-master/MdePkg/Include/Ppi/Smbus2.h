@@ -14,7 +14,7 @@
 #ifndef __PEI_SMBUS2_PPI_H__
 #define __PEI_SMBUS2_PPI_H__
 
-#include <IndustryStandard/SmBus.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
 
 #define EFI_PEI_SMBUS2_PPI_GUID \
   { 0x9ca93627, 0xb65b, 0x4324, { 0xa2, 0x2, 0xc0, 0xb4, 0x61, 0x76, 0x45, 0x43 } }

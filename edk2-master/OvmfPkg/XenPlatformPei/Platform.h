@@ -11,8 +11,8 @@
 #ifndef _PLATFORM_PEI_H_INCLUDED_
 #define _PLATFORM_PEI_H_INCLUDED_
 
-#include <IndustryStandard/E820.h>
-#include <Library/PlatformInitLib.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/E820.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
 
 VOID
 AddIoMemoryBaseSizeHob (

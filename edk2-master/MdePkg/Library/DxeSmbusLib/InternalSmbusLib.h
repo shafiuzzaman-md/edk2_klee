@@ -10,16 +10,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __INTERNAL_SMBUS_LIB_H_
 #define __INTERNAL_SMBUS_LIB_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/SmbusHc.h>
+#include "edk2-master/MdePkg/Include/Protocol/SmbusHc.h"
 
-#include <Library/SmbusLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
-#include <IndustryStandard/SmBus.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
 
 //
 // Declaration for internal functions

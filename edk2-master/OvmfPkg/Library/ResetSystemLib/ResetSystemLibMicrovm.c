@@ -6,15 +6,15 @@
 
 **/
 
-#include <Base.h>                   // BIT1
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/BaseLib.h>        // CpuDeadLoop()
-#include <Library/DebugLib.h>       // ASSERT()
-#include <Library/IoLib.h>          // IoWrite8()
-#include <Library/ResetSystemLib.h> // ResetCold()
-#include <Library/TimerLib.h>       // MicroSecondDelay()
-#include <Library/UefiRuntimeLib.h> // EfiGoneVirtual()
-#include <OvmfPlatforms.h>          // PIIX4_PMBA_VALUE
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 static UINTN
 MicrovmGedBase (

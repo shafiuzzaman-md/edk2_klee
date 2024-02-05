@@ -8,9 +8,9 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <FspEas.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 /**
   FSP API functions.

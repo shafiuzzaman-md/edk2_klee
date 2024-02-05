@@ -70,10 +70,10 @@
 #ifndef REDFISH_LIB_H_
 #define REDFISH_LIB_H_
 
-#include <Library/JsonLib.h>
+#include "edk2-master/RedfishPkg/Include/Library/JsonLib.h"
 
-#include <Protocol/Http.h>
-#include <Protocol/EdkIIRedfishConfigHandler.h>
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishConfigHandler.h"
 
 #define ODATA_TYPE_NAME_MAX_SIZE  128
 #define ODATA_TYPE_MAX_SIZE       128

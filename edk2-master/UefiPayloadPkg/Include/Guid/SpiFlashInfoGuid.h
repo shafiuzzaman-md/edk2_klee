@@ -9,7 +9,7 @@
 #ifndef SPI_FLASH_INFO_GUID_H_
 #define SPI_FLASH_INFO_GUID_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 //
 // SPI Flash infor hob GUID
 //

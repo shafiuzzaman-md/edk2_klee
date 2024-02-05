@@ -5,10 +5,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 VOID
 EFIAPI

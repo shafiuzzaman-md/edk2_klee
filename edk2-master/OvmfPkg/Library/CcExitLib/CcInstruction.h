@@ -10,11 +10,11 @@
 #ifndef CC_INSTRUCTION_H_
 #define CC_INSTRUCTION_H_
 
-#include <Base.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 #include <Register/Amd/Ghcb.h>
-#include <IndustryStandard/InstructionParsing.h>
-#include <Protocol/DebugSupport.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/InstructionParsing.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
 //
 // Instruction execution mode definition

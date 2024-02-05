@@ -7,9 +7,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/DebugLib.h>                    // ASSERT_EFI_ERROR()
-#include <Library/UefiBootServicesTableLib.h>    // gBS
-#include <Protocol/AcpiTable.h>                  // EFI_ACPI_TABLE_PROTOCOL
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
 
 #include "AcpiPlatform.h"
 

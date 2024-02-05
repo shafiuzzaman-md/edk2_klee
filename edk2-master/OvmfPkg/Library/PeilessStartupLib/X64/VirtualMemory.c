@@ -5,20 +5,20 @@ Copyright (c) 2006 - 2020, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiSpec.h>
-#include <Pi/PiBootMode.h>
-#include <Pi/PiHob.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Guid/MemoryTypeInformation.h>
-#include <Guid/MemoryAllocationHob.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Pi/PiBootMode.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAllocationHob.h"
 #include <Register/Intel/Cpuid.h>
-#include <Library/PlatformInitLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
 #include "PageTables.h"
 
 UINTN  mLevelShift[5] = {

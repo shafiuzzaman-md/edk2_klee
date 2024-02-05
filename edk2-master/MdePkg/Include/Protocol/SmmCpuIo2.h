@@ -11,7 +11,7 @@
 #ifndef _SMM_CPU_IO2_H_
 #define _SMM_CPU_IO2_H_
 
-#include <Protocol/MmCpuIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCpuIo.h"
 
 #define EFI_SMM_CPU_IO2_PROTOCOL_GUID  EFI_MM_CPU_IO_PROTOCOL_GUID
 

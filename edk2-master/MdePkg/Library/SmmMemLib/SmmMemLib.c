@@ -11,21 +11,21 @@
 
 **/
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/HobLib.h>
-#include <Protocol/SmmAccess2.h>
-#include <Protocol/SmmReadyToLock.h>
-#include <Protocol/SmmEndOfDxe.h>
-#include <Guid/MemoryAttributesTable.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmEndOfDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAttributesTable.h"
 
 //
 // attributes for reserved memory before it is promoted to system memory

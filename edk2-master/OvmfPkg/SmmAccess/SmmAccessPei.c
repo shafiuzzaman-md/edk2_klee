@@ -17,18 +17,18 @@
 
 **/
 
-#include <Guid/AcpiS3Context.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Ppi/SmmAccess.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/AcpiS3Context.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SmmAccess.h"
 
-#include <OvmfPlatforms.h>
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 #include "SmramInternal.h"
 

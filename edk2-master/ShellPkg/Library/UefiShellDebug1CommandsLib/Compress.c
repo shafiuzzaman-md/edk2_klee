@@ -11,11 +11,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ShellLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
 
 #include "Compress.h"
 

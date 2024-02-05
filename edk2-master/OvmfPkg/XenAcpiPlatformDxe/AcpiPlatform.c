@@ -7,9 +7,9 @@
 
 **/
 
-#include <Library/AcpiPlatformLib.h> // InstallAcpiTablesFromMemory()
-#include <Library/DebugLib.h>        // DEBUG()
-#include <Library/XenPlatformLib.h>  // XenDetected()
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenPlatformLib.h"
 
 #include "AcpiPlatform.h"
 

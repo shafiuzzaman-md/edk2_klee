@@ -6,15 +6,15 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Parser/AmlMethodParser.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlMethodParser.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlDbgPrint/AmlDbgPrint.h>
-#include <NameSpace/AmlNameSpace.h>
-#include <Parser/AmlParser.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
-#include <String/AmlString.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDbgPrint/AmlDbgPrint.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/NameSpace/AmlNameSpace.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlParser.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
 
 /** Delete a namespace reference node and its pathname.
 

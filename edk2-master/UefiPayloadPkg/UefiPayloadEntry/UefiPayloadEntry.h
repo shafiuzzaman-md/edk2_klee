@@ -9,33 +9,33 @@
 #ifndef __UEFI_PAYLOAD_ENTRY_H__
 #define __UEFI_PAYLOAD_ENTRY_H__
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Guid/MemoryAllocationHob.h>
-#include <Library/IoLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/BlParseLib.h>
-#include <Library/PlatformSupportLib.h>
-#include <Library/CpuLib.h>
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h>
-#include <Guid/SerialPortInfoGuid.h>
-#include <Guid/MemoryMapInfoGuid.h>
-#include <Guid/AcpiBoardInfoGuid.h>
-#include <Guid/GraphicsInfoHob.h>
-#include <UniversalPayload/SmbiosTable.h>
-#include <UniversalPayload/AcpiTable.h>
-#include <UniversalPayload/UniversalPayload.h>
-#include <UniversalPayload/ExtraData.h>
-#include <UniversalPayload/SerialPortInfo.h>
-#include <Guid/PcdDataBaseSignatureGuid.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAllocationHob.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Library/BlParseLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Library/PlatformSupportLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/SerialPortInfoGuid.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/MemoryMapInfoGuid.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/AcpiBoardInfoGuid.h"
+#include "edk2-master/MdePkg/Include/Guid/GraphicsInfoHob.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SmbiosTable.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/AcpiTable.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/ExtraData.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SerialPortInfo.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PcdDataBaseSignatureGuid.h"
 
 #define LEGACY_8259_MASK_REGISTER_MASTER  0x21
 #define LEGACY_8259_MASK_REGISTER_SLAVE   0xA1

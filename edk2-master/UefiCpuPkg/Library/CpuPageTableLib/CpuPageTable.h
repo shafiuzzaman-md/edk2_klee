@@ -9,11 +9,11 @@
 #ifndef CPU_PAGE_TABLE_H_
 #define CPU_PAGE_TABLE_H_
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/CpuPageTableLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CpuPageTableLib.h"
 
 #define IA32_PE_BASE_ADDRESS_MASK_40  0xFFFFFFFFFF000ull
 #define IA32_PE_BASE_ADDRESS_MASK_39  0xFFFFFFFFFE000ull

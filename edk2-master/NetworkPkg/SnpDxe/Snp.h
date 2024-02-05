@@ -9,27 +9,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SNP_H_
 #define _SNP_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/SimpleNetwork.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/NetworkInterfaceIdentifier.h>
-#include <Protocol/DevicePath.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/NetworkInterfaceIdentifier.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #define FOUR_GIGABYTES  (UINT64) 0x100000000ULL
 

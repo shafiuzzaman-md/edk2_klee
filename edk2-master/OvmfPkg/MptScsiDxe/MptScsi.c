@@ -9,19 +9,19 @@
 
 **/
 
-#include <IndustryStandard/FusionMptScsi.h>
-#include <IndustryStandard/Pci.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/ScsiPassThruExt.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/FusionMptScsi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 //
 // Higher versions will be used before lower, 0x10-0xffffffef is the version

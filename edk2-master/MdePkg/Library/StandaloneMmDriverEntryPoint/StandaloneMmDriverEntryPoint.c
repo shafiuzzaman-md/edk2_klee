@@ -9,13 +9,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Protocol/LoadedImage.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/StandaloneMmDriverEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/StandaloneMmDriverEntryPoint.h"
 
 /**
   Unloads an image from memory.

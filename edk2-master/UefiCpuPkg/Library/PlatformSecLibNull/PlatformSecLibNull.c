@@ -6,9 +6,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/SecPlatformInformation.h>
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
 
 /**
   A developer supplied function to perform platform specific operations.

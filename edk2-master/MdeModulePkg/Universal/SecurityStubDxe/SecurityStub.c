@@ -6,13 +6,13 @@
 
 **/
 
-#include <Uefi.h>
-#include <Protocol/Security.h>
-#include <Protocol/Security2.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/SecurityManagementLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/Security.h"
+#include "edk2-master/MdePkg/Include/Protocol/Security2.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SecurityManagementLib.h"
 #include "Defer3rdPartyImageLoad.h"
 
 //

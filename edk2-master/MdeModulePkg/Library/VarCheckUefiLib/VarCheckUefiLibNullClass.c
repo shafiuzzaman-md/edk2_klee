@@ -6,18 +6,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
-#include <Library/VarCheckLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/VarCheckLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
-#include <Guid/VariableFormat.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/HardwareErrorVariable.h>
-#include <Guid/ImageAuthentication.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdePkg/Include/Guid/HardwareErrorVariable.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
 
 typedef
 EFI_STATUS

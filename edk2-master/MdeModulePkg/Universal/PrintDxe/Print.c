@@ -6,13 +6,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Print2.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/Print2.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 /**
   Implementaion of the UnicodeValueToString service in EFI_PRINT2_PROTOCOL.

@@ -8,20 +8,20 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiApplicationEntryPoint.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
-#include <Guid/VariableFormat.h>
-#include <Guid/SmmVariableCommon.h>
-#include <Guid/PiSmmCommunicationRegionTable.h>
-#include <Protocol/MmCommunication2.h>
-#include <Protocol/SmmVariable.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SmmVariableCommon.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PiSmmCommunicationRegionTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
 
 EFI_MM_COMMUNICATION2_PROTOCOL  *mMmCommunication2 = NULL;
 

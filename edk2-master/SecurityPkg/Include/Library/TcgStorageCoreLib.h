@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCG_CORE_H_
 #define _TCG_CORE_H_
 
-#include <IndustryStandard/TcgStorageCore.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/TcgStorageCore.h"
 
 #define ERROR_CHECK(arg)                                                                  \
   {                                                                                       \

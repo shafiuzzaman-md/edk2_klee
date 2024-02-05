@@ -11,10 +11,10 @@
 #ifndef __ACPI_LIB_H__
 #define __ACPI_LIB_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Acpi10.h>
-#include <Protocol/AcpiSystemDescriptionTable.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiSystemDescriptionTable.h"
 
 //
 // Macros for the Generic Address Space

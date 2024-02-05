@@ -9,37 +9,37 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __HII_DATABASE_PRIVATE_H__
 #define __HII_DATABASE_PRIVATE_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/HiiFont.h>
-#include <Protocol/HiiImage.h>
-#include <Protocol/HiiImageEx.h>
-#include <Protocol/HiiImageDecoder.h>
-#include <Protocol/HiiString.h>
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/HiiConfigRouting.h>
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiConfigKeyword.h>
-#include <Protocol/SimpleTextOut.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiFont.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiImageEx.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiImageDecoder.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigKeyword.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
 
-#include <Guid/HiiKeyBoardLayout.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/MdeModuleHii.h>
-#include <Guid/VariableFormat.h>
-#include <Guid/PcdDataBaseSignatureGuid.h>
+#include "edk2-master/MdePkg/Include/Guid/HiiKeyBoardLayout.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PcdDataBaseSignatureGuid.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #define MAX_STRING_LENGTH      1024
 #define MAX_FONT_NAME_LEN      256

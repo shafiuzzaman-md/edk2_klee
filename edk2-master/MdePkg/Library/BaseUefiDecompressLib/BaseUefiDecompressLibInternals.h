@@ -9,11 +9,11 @@
 #ifndef __BASE_UEFI_DECOMPRESS_LIB_INTERNALS_H__
 #define __BASE_UEFI_DECOMPRESS_LIB_INTERNALS_H__
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiDecompressLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDecompressLib.h"
 //
 // Decompression algorithm begins here
 //

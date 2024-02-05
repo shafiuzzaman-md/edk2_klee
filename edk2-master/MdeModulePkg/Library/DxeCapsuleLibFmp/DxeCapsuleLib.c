@@ -15,31 +15,31 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <IndustryStandard/WindowsUxCapsule.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/WindowsUxCapsule.h"
 
-#include <Guid/FmpCapsule.h>
-#include <Guid/SystemResourceTable.h>
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Guid/FmpCapsule.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/CapsuleLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BmpSupportLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/BmpSupportLib.h"
 
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/EsrtManagement.h>
-#include <Protocol/FirmwareManagement.h>
-#include <Protocol/FirmwareManagementProgress.h>
-#include <Protocol/DevicePath.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EsrtManagement.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FirmwareManagementProgress.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 EFI_SYSTEM_RESOURCE_TABLE  *mEsrtTable = NULL;
 

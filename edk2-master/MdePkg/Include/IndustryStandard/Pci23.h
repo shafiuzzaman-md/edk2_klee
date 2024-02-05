@@ -9,7 +9,7 @@
 #ifndef _PCI23_H_
 #define _PCI23_H_
 
-#include <IndustryStandard/Pci22.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
 
 ///
 /// PCI_CLASS_MASS_STORAGE, Base Class 01h.

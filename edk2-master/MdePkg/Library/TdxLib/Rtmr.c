@@ -8,13 +8,13 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Uefi/UefiBaseType.h>
-#include <Library/TdxLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <IndustryStandard/Tpm20.h>
-#include <IndustryStandard/Tdx.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
 
 #define RTMR_COUNT            4
 #define TD_EXTEND_BUFFER_LEN  (64 + 48)

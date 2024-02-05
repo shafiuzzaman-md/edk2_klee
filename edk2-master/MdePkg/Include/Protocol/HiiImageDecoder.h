@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __HII_IMAGE_DECODER_H__
 #define __HII_IMAGE_DECODER_H__
 
-#include <Protocol/HiiImage.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
 
 #define EFI_HII_IMAGE_DECODER_PROTOCOL_GUID \
   {0x9e66f251, 0x727c, 0x418c, { 0xbf, 0xd6, 0xc2, 0xb4, 0x25, 0x28, 0x18, 0xea }}

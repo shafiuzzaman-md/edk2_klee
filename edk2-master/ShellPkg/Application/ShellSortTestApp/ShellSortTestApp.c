@@ -6,11 +6,11 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ShellCEntryLib.h>
-#include <Library/SortLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellCEntryLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
 
 /**
   Test comparator.

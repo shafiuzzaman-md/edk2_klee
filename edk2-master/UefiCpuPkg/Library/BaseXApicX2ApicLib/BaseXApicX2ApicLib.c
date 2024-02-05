@@ -16,14 +16,14 @@
 #include <Register/Intel/Msr.h>
 #include <Register/Intel/LocalApic.h>
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/IoLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CpuLib.h>
-#include <IndustryStandard/Tdx.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
 
 //
 // Library internal functions

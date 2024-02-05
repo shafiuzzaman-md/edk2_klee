@@ -6,17 +6,17 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/FirmwareVolumeInfo.h>
-#include <Ppi/FirmwareVolumeInfo2.h>
-#include <Guid/FirmwareFileSystem2.h>
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolumeInfo.h"
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolumeInfo2.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareFileSystem2.h"
 
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 /**
   This service enables a given PEIM to register an interface into the PEI Foundation.

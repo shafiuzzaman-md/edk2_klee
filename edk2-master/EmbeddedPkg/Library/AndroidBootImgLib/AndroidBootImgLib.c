@@ -7,18 +7,18 @@
 
 **/
 
-#include <libfdt.h>
-#include <Library/AndroidBootImgLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/AndroidBootImgLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/AndroidBootImg.h>
-#include <Protocol/LoadFile2.h>
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/AndroidBootImg.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile2.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
-#include <Guid/LinuxEfiInitrdMedia.h>
+#include "edk2-master/MdePkg/Include/Guid/LinuxEfiInitrdMedia.h"
 
 #define FDT_ADDITIONAL_ENTRIES_SIZE  0x400
 

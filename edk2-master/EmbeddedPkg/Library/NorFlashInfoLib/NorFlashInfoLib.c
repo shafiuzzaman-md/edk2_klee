@@ -7,14 +7,14 @@
 *
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NorFlashInfoLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/NorFlashInfoLib.h"
 
 STATIC CONST NOR_FLASH_INFO  NorFlashIds[] = {
   /* ATMEL */

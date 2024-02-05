@@ -8,11 +8,11 @@
 #ifndef MOCK_UEFI_RUNTIME_SERVICES_TABLE_LIB_H_
 #define MOCK_UEFI_RUNTIME_SERVICES_TABLE_LIB_H_
 
-#include <Library/GoogleTestLib.h>
-#include <Library/FunctionMockLib.h>
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
 extern "C" {
-  #include <Uefi.h>
-  #include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 }
 
 struct MockUefiRuntimeServicesTableLib {

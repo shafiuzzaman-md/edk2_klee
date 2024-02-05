@@ -7,8 +7,8 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Library/TdxLib.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
 
 /**
   This function accepts a pending private page, and initialize the page to

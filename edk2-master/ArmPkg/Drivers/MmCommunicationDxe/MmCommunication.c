@@ -6,19 +6,19 @@
 
 **/
 
-#include <Library/ArmLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
-#include <Protocol/MmCommunication2.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
 
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 #include "MmCommunicate.h"
 

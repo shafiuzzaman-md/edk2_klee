@@ -7,9 +7,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <CrtLibSupport.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/CryptoPkg/Library/Include/CrtLibSupport.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 //
 // -- Time Management Routines --

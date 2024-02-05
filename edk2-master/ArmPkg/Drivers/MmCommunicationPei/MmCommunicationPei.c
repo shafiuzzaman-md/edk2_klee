@@ -6,19 +6,19 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <PiPei.h>
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
-#include <Protocol/MmCommunication.h>
-#include <Ppi/MmCommunication.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication.h"
+#include "edk2-master/MdePkg/Include/Ppi/MmCommunication.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
 /**
   MmCommunicationPeim

@@ -10,11 +10,11 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/IoLib.h>
-#include <Library/EfiResetSystemLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/EfiResetSystemLib.h"
 
 /**
   Resets the entire platform.

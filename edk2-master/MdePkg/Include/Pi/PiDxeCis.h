@@ -12,8 +12,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PI_DXECIS_H__
 #define __PI_DXECIS_H__
 
-#include <Uefi/UefiMultiPhase.h>
-#include <Pi/PiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
 
 ///
 /// Global Coherencey Domain types - Memory type.

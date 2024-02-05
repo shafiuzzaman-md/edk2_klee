@@ -10,9 +10,9 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/HobLib.h>
-#include <Library/XenPlatformLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenPlatformLib.h"
 
 /**
   This function return a pointer to the XenInfo HOB.

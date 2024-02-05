@@ -23,7 +23,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCG_STORAGE_OPAL_H_
 #define _TCG_STORAGE_OPAL_H_
 
-#include <IndustryStandard/TcgStorageCore.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/TcgStorageCore.h"
 
 #define OPAL_UID_ADMIN_SP             TCG_TO_UID(0x00, 0x00, 0x02, 0x05, 0x00, 0x00, 0x00, 0x01)
 #define OPAL_UID_ADMIN_SP_C_PIN_MSID  TCG_TO_UID(0x00, 0x00, 0x00, 0x0B, 0x00, 0x00, 0x84, 0x02)

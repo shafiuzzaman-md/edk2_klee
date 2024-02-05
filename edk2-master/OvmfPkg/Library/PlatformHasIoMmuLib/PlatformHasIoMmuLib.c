@@ -11,7 +11,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 RETURN_STATUS
 EFIAPI

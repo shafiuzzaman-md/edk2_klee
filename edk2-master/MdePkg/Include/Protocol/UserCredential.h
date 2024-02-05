@@ -12,7 +12,7 @@
 #ifndef __USER_CREDENTIAL_H__
 #define __USER_CREDENTIAL_H__
 
-#include <Protocol/UserManager.h>
+#include "edk2-master/MdePkg/Include/Protocol/UserManager.h"
 
 #define EFI_USER_CREDENTIAL_PROTOCOL_GUID \
   { \

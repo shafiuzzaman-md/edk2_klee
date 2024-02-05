@@ -9,24 +9,24 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/PeimEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CpuLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/IoLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <Library/TdxHelperLib.h>
-#include <Library/CcProbeLib.h>
-#include <Library/PeilessStartupLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxHelperLib.h"
+#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PeilessStartupLib.h"
 
 #define SEC_IDT_ENTRY_COUNT  34
 

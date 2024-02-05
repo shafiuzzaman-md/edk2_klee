@@ -8,17 +8,17 @@
 
 #include "AndroidFastbootApp.h"
 
-#include <Protocol/AndroidFastbootTransport.h>
-#include <Protocol/AndroidFastbootPlatform.h>
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/SimpleTextIn.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/AndroidFastbootTransport.h"
+#include "edk2-master/EmbeddedPkg/Include/Protocol/AndroidFastbootPlatform.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
 
-#include <Library/PcdLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiApplicationEntryPoint.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 /*
  * UEFI Application using the FASTBOOT_TRANSPORT_PROTOCOL and

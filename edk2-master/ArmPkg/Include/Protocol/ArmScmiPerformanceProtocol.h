@@ -12,7 +12,7 @@
 #ifndef ARM_SCMI_PERFORMANCE_PROTOCOL_H_
 #define ARM_SCMI_PERFORMANCE_PROTOCOL_H_
 
-#include <Protocol/ArmScmi.h>
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmi.h"
 
 /// Arm Scmi performance protocol versions.
 #define PERFORMANCE_PROTOCOL_VERSION_V1  0x10000

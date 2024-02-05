@@ -15,15 +15,15 @@
 #ifndef _AMD_SEV_IOMMU_H_
 #define _AMD_SEV_IOMMU_H_
 
-#include <Protocol/IoMmu.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/MemEncryptTdxLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptTdxLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   Install IOMMU protocol to provide the DMA support for PciHostBridge.

@@ -14,11 +14,11 @@
    using the "safe" functions available in the "Include" folder. This
    makes the functions available in the "Api" folder easy to export.
 */
-#include <Api/AmlApiHelper.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Api/AmlApiHelper.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlInclude.h>
-#include <String/AmlString.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
 
 /** Compare the NameString defined by the "Name ()" ASL function,
     and stored in the NameOpNode, with the input NameString.

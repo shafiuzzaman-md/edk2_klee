@@ -7,7 +7,7 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 #define ULONG_MAX  0xFFFFFFFF            /* Maximum unsigned long value */
 

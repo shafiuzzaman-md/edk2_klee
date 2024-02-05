@@ -6,8 +6,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Protocol/EdkIIRedfishCredential.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishCredential.h"
 
 /**
   Notification of Exit Boot Service.

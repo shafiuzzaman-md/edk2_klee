@@ -11,18 +11,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _RUNTIME_H_
 #define _RUNTIME_H_
 
-#include <PiDxe.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/Runtime.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/DebugLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/PeCoffLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/Runtime.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
 //
 // Function Prototypes

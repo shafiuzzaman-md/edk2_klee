@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMM_FTW_COMMON_H__
 #define __SMM_FTW_COMMON_H__
 
-#include <Protocol/SmmFirmwareVolumeBlock.h>
-#include <Protocol/SmmFaultTolerantWrite.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmFirmwareVolumeBlock.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmFaultTolerantWrite.h"
 
 #define FTW_FUNCTION_GET_MAX_BLOCK_SIZE  1
 #define FTW_FUNCTION_ALLOCATE            2

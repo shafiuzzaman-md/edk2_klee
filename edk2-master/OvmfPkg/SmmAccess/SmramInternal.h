@@ -8,7 +8,7 @@
 
 **/
 
-#include <Pi/PiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
 
 //
 // We'll have two SMRAM ranges.

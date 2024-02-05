@@ -8,19 +8,19 @@
 
 **/
 
-#include <IndustryStandard/Acpi.h>            // EFI_ACPI_DESCRIPTION_HEADER
-#include <IndustryStandard/QemuLoader.h>      // QEMU_LOADER_FNAME_SIZE
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Library/AcpiPlatformLib.h>
-#include <Library/BaseLib.h>                  // AsciiStrCmp()
-#include <Library/BaseMemoryLib.h>            // CopyMem()
-#include <Library/DebugLib.h>                 // DEBUG()
-#include <Library/MemoryAllocationLib.h>      // AllocatePool()
-#include <Library/OrderedCollectionLib.h>     // OrderedCollectionMin()
-#include <Library/QemuFwCfgLib.h>             // QemuFwCfgFindFile()
-#include <Library/QemuFwCfgS3Lib.h>           // QemuFwCfgS3Enabled()
-#include <Library/UefiBootServicesTableLib.h> // gBS
-#include <Library/TpmMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuLoader.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 
 //
 // The user structure for the ordered collection that will track the fw_cfg

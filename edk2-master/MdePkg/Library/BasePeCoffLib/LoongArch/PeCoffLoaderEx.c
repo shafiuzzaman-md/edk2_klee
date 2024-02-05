@@ -7,7 +7,7 @@
 **/
 
 #include "BasePeCoffLibInternals.h"
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Performs an LoongArch specific relocation fixup and is a no-op on other

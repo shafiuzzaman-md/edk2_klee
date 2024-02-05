@@ -10,7 +10,7 @@
 
 #include "UefiShellLevel3CommandsLib.h"
 
-#include <Library/ShellLib.h>
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
 
 STATIC CONST SHELL_PARAM_ITEM  ParamList[] = {
   { L"-s",     TypeFlag },

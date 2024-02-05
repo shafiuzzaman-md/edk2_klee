@@ -8,20 +8,20 @@
 #ifndef _SEC_CORE_H_
 #define _SEC_CORE_H_
 
-#include <PiPei.h>
-#include <Ppi/TemporaryRamSupport.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/TemporaryRamSupport.h"
 
-#include <Library/BaseLib.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PciCf8Lib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/FspSwitchStackLib.h>
-#include <Library/FspCommonLib.h>
-#include <Library/CpuLib.h>
-#include <FspEas.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciCf8Lib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspSwitchStackLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 typedef
 VOID

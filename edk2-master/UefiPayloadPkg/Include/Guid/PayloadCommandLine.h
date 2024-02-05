@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef PAYLOAD_COMMAND_LINE_H_
 #define PAYLOAD_COMMAND_LINE_H_
 
-#include <Uefi.h>
-#include <UniversalPayload/UniversalPayload.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
 
 #pragma pack (1)
 

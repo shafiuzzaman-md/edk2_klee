@@ -11,17 +11,17 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
-#include <Guid/HttpTlsCipherList.h>
-#include <Guid/TlsAuthentication.h>
+#include "edk2-master/NetworkPkg/Include/Guid/HttpTlsCipherList.h"
+#include "edk2-master/NetworkPkg/Include/Guid/TlsAuthentication.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 /**
   Read the list of trusted CA certificates from the fw_cfg file

@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TPM2_COMMAND_LIB_H_
 #define _TPM2_COMMAND_LIB_H_
 
-#include <IndustryStandard/Tpm20.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 
 /**
   This command starts a hash or an Event sequence.

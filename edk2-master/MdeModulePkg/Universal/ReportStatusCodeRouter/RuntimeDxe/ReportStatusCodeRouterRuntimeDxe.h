@@ -9,20 +9,20 @@
 #ifndef __REPORT_STATUS_CODE_ROUTER_RUNTIME_DXE_H__
 #define __REPORT_STATUS_CODE_ROUTER_RUNTIME_DXE_H__
 
-#include <Protocol/ReportStatusCodeHandler.h>
-#include <Protocol/StatusCode.h>
+#include "edk2-master/MdePkg/Include/Protocol/ReportStatusCodeHandler.h"
+#include "edk2-master/MdePkg/Include/Protocol/StatusCode.h"
 
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
-#include <Library/BaseLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
 #include "Library/UefiLib.h"
 
 #define RSC_HANDLER_CALLBACK_ENTRY_SIGNATURE  SIGNATURE_32 ('r', 'h', 'c', 'e')

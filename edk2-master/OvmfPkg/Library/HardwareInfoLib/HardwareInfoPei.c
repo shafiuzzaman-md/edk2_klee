@@ -10,9 +10,9 @@
 
 **/
 
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Library/HardwareInfoLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/HardwareInfoLib.h"
 
 EFI_STATUS
 CreateHardwareInfoList (

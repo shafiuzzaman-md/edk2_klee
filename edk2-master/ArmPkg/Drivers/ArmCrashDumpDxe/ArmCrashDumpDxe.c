@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/DebugLib.h>
-#include <Library/DefaultExceptionHandlerLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/Cpu.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ArmPkg/Include/Library/DefaultExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
 
 STATIC EFI_CPU_ARCH_PROTOCOL  *mCpu;
 

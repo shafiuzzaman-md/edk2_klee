@@ -8,11 +8,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _UDP4_DRIVER_H_
 #define _UDP4_DRIVER_H_
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/NetLib.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/ServiceBinding.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
 /**
   Test to see if this driver supports ControllerHandle. This service

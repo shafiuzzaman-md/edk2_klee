@@ -8,14 +8,14 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/Http.h>
-#include <Protocol/RestEx.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
+#include "edk2-master/MdePkg/Include/Protocol/RestEx.h"
 
 #define REST_EX_CONFIG_DATA_LEN_UNKNOWN  0xff
 

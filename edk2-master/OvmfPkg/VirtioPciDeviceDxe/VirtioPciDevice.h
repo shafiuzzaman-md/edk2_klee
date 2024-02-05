@@ -12,12 +12,12 @@
 #ifndef _VIRTIO_PCI_DEVICE_DXE_H_
 #define _VIRTIO_PCI_DEVICE_DXE_H_
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/VirtioDevice.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
 
-#include <IndustryStandard/Virtio.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 #define VIRTIO_PCI_DEVICE_SIGNATURE  SIGNATURE_32 ('V', 'P', 'C', 'I')
 

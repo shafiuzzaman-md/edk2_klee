@@ -12,28 +12,28 @@
 //
 // The package level header files this module uses
 //
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 //
 // The Library classes this module consumes
 //
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/IoLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PlatformInitLib.h>
-#include <Library/ResourcePublicationLib.h>
-#include <Guid/MemoryTypeInformation.h>
-#include <Ppi/MasterBootMode.h>
-#include <IndustryStandard/Pci22.h>
-#include <OvmfPlatforms.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/MdePkg/Include/Library/ResourcePublicationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "edk2-master/MdePkg/Include/Ppi/MasterBootMode.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 #include "Platform.h"
 #include "Cmos.h"

@@ -7,18 +7,18 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/VlanConfig.h>
+#include "edk2-master/MdePkg/Include/Protocol/VlanConfig.h"
 
-#include <Library/UefiApplicationEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/ShellLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HiiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/NetLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 //
 // String token ID of VConfig command help message text.

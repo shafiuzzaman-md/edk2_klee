@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include "String.h"
 #include "Ui.h"
 
-#include <Protocol/BootLogo.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/BootLogo.h"
 //
 // These is  the VFR compiler generated data representing our VFR data.
 //

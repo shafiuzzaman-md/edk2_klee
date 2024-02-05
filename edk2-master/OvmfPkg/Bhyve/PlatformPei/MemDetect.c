@@ -15,23 +15,23 @@ Module Name:
 //
 // The package level header files this module uses
 //
-#include <IndustryStandard/E820.h>
-#include <IndustryStandard/Q35MchIch9.h>
-#include <PiPei.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/E820.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 //
 // The Library classes this module consumes
 //
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/ResourcePublicationLib.h>
-#include <Library/MtrrLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/ResourcePublicationLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
 
 #include "Platform.h"
 #include "Cmos.h"

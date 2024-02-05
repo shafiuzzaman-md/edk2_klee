@@ -26,8 +26,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "AuthServiceInternal.h"
 
-#include <Protocol/VariablePolicy.h>
-#include <Library/VariablePolicyLib.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyLib.h"
 
 #define SHA_DIGEST_SIZE_MAX  SHA512_DIGEST_SIZE
 

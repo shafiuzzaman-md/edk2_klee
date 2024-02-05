@@ -6,15 +6,15 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/EmuThunkLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmulatorPkg/Include/Library/EmuThunkLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/Timer.h>
+#include "edk2-master/MdePkg/Include/Protocol/Timer.h"
 
 STATIC UINT64                   gTimerPeriod   = 0;
 STATIC EFI_TIMER_ARCH_PROTOCOL  *gTimerAp      = NULL;

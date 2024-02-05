@@ -8,8 +8,8 @@
 #ifndef REDFISH_HOST_INTERFACE_IPMI_H_
 #define REDFISH_HOST_INTERFACE_IPMI_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/IpmiNetFnGroupExtension.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnGroupExtension.h"
 
 #define REDFISH_IPMI_GROUP_EXTENSION                          0x52
 #define REDFISH_IPMI_GET_BOOTSTRAP_CREDENTIALS_CMD            0x02

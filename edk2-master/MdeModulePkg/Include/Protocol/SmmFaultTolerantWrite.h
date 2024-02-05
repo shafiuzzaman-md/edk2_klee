@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMM_FAULT_TOLERANT_WRITE_H__
 #define __SMM_FAULT_TOLERANT_WRITE_H__
 
-#include <Protocol/FaultTolerantWrite.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/FaultTolerantWrite.h"
 
 #define EFI_SMM_FAULT_TOLERANT_WRITE_PROTOCOL_GUID \
   { \

@@ -12,8 +12,8 @@
 #ifndef HII_UTILITY_LIB_
 #define HII_UTILITY_LIB_
 
-#include <Protocol/DisplayProtocol.h>
-#include <Protocol/HiiConfigAccess.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/DisplayProtocol.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
 
 //
 // IFR relative definition

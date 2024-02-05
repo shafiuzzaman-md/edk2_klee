@@ -9,8 +9,8 @@
 #ifndef AML_NODE_H_
 #define AML_NODE_H_
 
-#include <AmlNodeDefines.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 /** Create an AML_ROOT_NODE.
     This node will be the root of the tree.

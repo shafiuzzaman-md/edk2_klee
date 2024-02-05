@@ -6,19 +6,19 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/PrePiLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PrePiHobListPointerLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PerformanceLib.h>
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiHobListPointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
 
-#include <Ppi/GuidedSectionExtraction.h>
-#include <Ppi/ArmMpCoreInfo.h>
-#include <Ppi/SecPerformance.h>
+#include "edk2-master/MdePkg/Include/Ppi/GuidedSectionExtraction.h"
+#include "edk2-master/ArmPkg/Include/Ppi/ArmMpCoreInfo.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SecPerformance.h"
 
 #include "PrePi.h"
 

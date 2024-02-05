@@ -9,13 +9,13 @@
     (https://developer.arm.com/documentation/den0056/)
 **/
 
-#include <Base.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/ArmScmiBaseProtocol.h>
-#include <Protocol/ArmScmiClockProtocol.h>
-#include <Protocol/ArmScmiPerformanceProtocol.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiBaseProtocol.h"
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiClockProtocol.h"
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiPerformanceProtocol.h"
 
 #include "ArmScmiBaseProtocolPrivate.h"
 #include "ArmScmiClockProtocolPrivate.h"

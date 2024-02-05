@@ -6,7 +6,7 @@
 *
 **/
 
-#include <Library/ArmGicLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
 
 #include "ArmGicDxe.h"
 

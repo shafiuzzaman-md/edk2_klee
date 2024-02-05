@@ -9,26 +9,26 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _BDS_MODULE_H_
 #define _BDS_MODULE_H_
 
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/StatusCodeDataTypeId.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
 
-#include <Protocol/Smbios.h>
-#include <Protocol/HiiConfigAccess.h>
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
 
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/HiiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiBootManagerLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
 
 #pragma pack(1)
 

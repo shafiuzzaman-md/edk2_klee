@@ -15,21 +15,21 @@ Abstract:
 #ifndef _EMU_SNP_H_
 #define _EMU_SNP_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/SimpleNetwork.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/EmuIoThunk.h>
-#include <Protocol/EmuSnp.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuSnp.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 #define NET_ETHER_HEADER_SIZE  14
 

@@ -6,13 +6,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/GuidedSectionExtraction.h>
-#include <Library/DebugLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GuidedSectionExtraction.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   The ExtractSection() function processes the input section and

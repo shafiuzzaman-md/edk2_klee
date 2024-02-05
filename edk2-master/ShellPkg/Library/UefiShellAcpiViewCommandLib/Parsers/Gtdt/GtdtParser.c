@@ -8,8 +8,8 @@
     - ACPI 6.4 Specification - January 2021
   **/
 
-#include <IndustryStandard/Acpi.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 #include "AcpiViewConfig.h"

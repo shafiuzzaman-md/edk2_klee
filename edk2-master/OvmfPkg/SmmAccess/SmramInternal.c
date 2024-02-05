@@ -8,11 +8,11 @@
 
 **/
 
-#include <Guid/AcpiS3Context.h>
-#include <IndustryStandard/Q35MchIch9.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/AcpiS3Context.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
 
 #include "SmramInternal.h"
 

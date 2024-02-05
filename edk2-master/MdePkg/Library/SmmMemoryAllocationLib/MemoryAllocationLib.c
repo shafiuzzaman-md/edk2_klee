@@ -17,14 +17,14 @@
 
 **/
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
-#include <Protocol/SmmAccess2.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_SMRAM_DESCRIPTOR  *mSmramRanges;
 UINTN                 mSmramRangeCount;

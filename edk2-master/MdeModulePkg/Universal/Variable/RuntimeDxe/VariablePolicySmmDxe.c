@@ -6,18 +6,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
-#include <Protocol/VariablePolicy.h>
-#include <Protocol/MmCommunication2.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
 
-#include <Guid/VarCheckPolicyMmi.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/VarCheckPolicyMmi.h"
 
 #include "Variable.h"
 

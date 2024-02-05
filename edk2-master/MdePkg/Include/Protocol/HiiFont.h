@@ -12,8 +12,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __HII_FONT_H__
 #define __HII_FONT_H__
 
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/HiiImage.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
 
 #define EFI_HII_FONT_PROTOCOL_GUID \
 { 0xe9ca4775, 0x8657, 0x47fc, { 0x97, 0xe7, 0x7e, 0xd6, 0x5a, 0x8, 0x43, 0x24 } }

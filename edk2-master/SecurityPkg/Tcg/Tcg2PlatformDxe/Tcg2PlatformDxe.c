@@ -6,13 +6,13 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/TpmPlatformHierarchyLib.h>
-#include <Protocol/DxeSmmReadyToLock.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TpmPlatformHierarchyLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
 
 /**
    This callback function will run at the SmmReadyToLock event.

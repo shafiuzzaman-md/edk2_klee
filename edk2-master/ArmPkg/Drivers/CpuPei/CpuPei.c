@@ -20,23 +20,23 @@ Abstract:
 //
 // The package level header files this module uses
 //
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 //
 // The protocols, PPI and GUID definitions for this module
 //
-#include <Ppi/ArmMpCoreInfo.h>
-#include <Ppi/MemoryAttribute.h>
+#include "edk2-master/ArmPkg/Include/Ppi/ArmMpCoreInfo.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/MemoryAttribute.h"
 
 //
 // The Library classes this module consumes
 //
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/ArmLib.h>
-#include <Library/ArmMmuLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
 
 /**
   Set the requested memory permission attributes on a region of memory.

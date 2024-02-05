@@ -8,8 +8,8 @@
 **/
 
 #include "UefiShellDriver1CommandsLib.h"
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiDatabase.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
 
 STATIC CONST EFI_GUID  *CfgGuidList[] = { &gEfiDriverConfigurationProtocolGuid, &gEfiDriverConfiguration2ProtocolGuid, NULL };
 

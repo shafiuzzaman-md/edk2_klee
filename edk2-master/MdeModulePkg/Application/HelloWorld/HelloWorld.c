@@ -7,10 +7,10 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiApplicationEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
 
 //
 // String token ID of help message text.

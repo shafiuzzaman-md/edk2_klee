@@ -8,8 +8,8 @@
 #ifndef FUNCTION_MOCK_LIB_H_
 #define FUNCTION_MOCK_LIB_H_
 
-#include <Library/GoogleTestLib.h>
-#include <Library/SubhookLib.h>
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/SubhookLib.h"
 #include <type_traits>
 
 //////////////////////////////////////////////////////////////////////////////

@@ -6,10 +6,10 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/IpmiProtocol.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/IpmiProtocol.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 IPMI_PROTOCOL  *mIpmiProtocol = NULL;
 

@@ -14,14 +14,14 @@
  *
  **/
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/RealTimeClockLib.h>
-#include <Library/TimerLib.h>
-#include <Library/TimeBaseLib.h>
-#include <Library/UefiRuntimeLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/RealTimeClockLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/TimeBaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
 
 STATIC CONST CHAR16  mEpochVariableName[]    = L"RtcEpochSeconds";
 STATIC CONST CHAR16  mTimeZoneVariableName[] = L"RtcTimeZone";

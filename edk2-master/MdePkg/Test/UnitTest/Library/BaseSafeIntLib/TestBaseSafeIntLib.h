@@ -10,13 +10,13 @@
 #ifndef _TEST_BASE_SAFE_INT_LIB_H_
 #define _TEST_BASE_SAFE_INT_LIB_H_
 
-#include <PiPei.h>
-#include <Uefi.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UnitTestLib.h>
-#include <Library/SafeIntLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
 
 UNIT_TEST_STATUS
 EFIAPI

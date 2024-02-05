@@ -14,12 +14,12 @@
    using the "safe" functions available in the "Include" folder. This
    makes the functions available in the "Api" folder easy to export.
 */
-#include <AmlNodeDefines.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlInclude.h>
-#include <Api/AmlApiHelper.h>
-#include <String/AmlString.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Api/AmlApiHelper.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
 
 /** Update the name of a DeviceOp object node.
 

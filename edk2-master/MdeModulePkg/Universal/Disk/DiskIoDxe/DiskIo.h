@@ -9,20 +9,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DISK_IO_H_
 #define _DISK_IO_H_
 
-#include <Uefi.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/BlockIo2.h>
-#include <Protocol/DiskIo2.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/DiskIo.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo2.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 #define DISK_IO_PRIVATE_DATA_SIGNATURE  SIGNATURE_32 ('d', 's', 'k', 'I')
 typedef struct {

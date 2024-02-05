@@ -6,12 +6,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Base.h>                             // BASE_1MB
-#include <Library/BaseLib.h>                  // CpuPause()
-#include <Library/BaseMemoryLib.h>            // CopyMem()
-#include <Library/DebugLib.h>                 // DEBUG()
-#include <Library/LocalApicLib.h>             // SendInitSipiSipi()
-#include <Library/SynchronizationLib.h>       // InterlockedCompareExchange64()
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
 #include <Register/Intel/SmramSaveStateMap.h> // SMM_DEFAULT_SMBASE
 
 #include "FirstSmiHandlerContext.h"           // FIRST_SMI_HANDLER_CONTEXT

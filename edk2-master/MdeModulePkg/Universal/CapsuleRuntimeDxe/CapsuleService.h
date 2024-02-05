@@ -14,22 +14,22 @@
 #ifndef _CAPSULE_SERVICE_H_
 #define _CAPSULE_SERVICE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Capsule.h>
-#include <Guid/CapsuleVendor.h>
-#include <Guid/FmpCapsule.h>
+#include "edk2-master/MdePkg/Include/Protocol/Capsule.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/CapsuleVendor.h"
+#include "edk2-master/MdePkg/Include/Guid/FmpCapsule.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CapsuleLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PrintLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 /**
   Create the variable to save the base address of page table and stack

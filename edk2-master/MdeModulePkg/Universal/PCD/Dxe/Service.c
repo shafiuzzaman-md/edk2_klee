@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "Service.h"
-#include <Library/DxeServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
 
 PCD_DATABASE  mPcdDatabase;
 

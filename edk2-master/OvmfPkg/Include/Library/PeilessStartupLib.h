@@ -9,12 +9,12 @@
 #ifndef PEILESS_STARTUP_LIB_H_
 #define PEILESS_STARTUP_LIB_H_
 
-#include <Library/BaseLib.h>
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiSpec.h>
-#include <Pi/PiPeiCis.h>
-#include <Library/DebugLib.h>
-#include <Protocol/DebugSupport.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Pi/PiPeiCis.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
 /**
  * This function brings up the Tdx guest from SEC phase to DXE phase.

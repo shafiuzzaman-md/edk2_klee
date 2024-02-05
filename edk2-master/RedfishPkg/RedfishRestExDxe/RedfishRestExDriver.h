@@ -16,25 +16,25 @@
 ///
 /// Libraries classes
 ///
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HttpIoLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpIoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 ///
 /// UEFI Driver Model Protocols
 ///
-#include <Protocol/DriverBinding.h>
-#include <Protocol/RestEx.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/HttpCallback.h>
-#include <Protocol/Tls.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/RestEx.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/NetworkPkg/Include/Protocol/HttpCallback.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tls.h"
 
 ///
 /// Protocol instances

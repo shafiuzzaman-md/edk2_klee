@@ -7,22 +7,22 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <IndustryStandard/IntelTdx.h>
-#include <IndustryStandard/Tpm20.h>
-#include <Library/TdxLib.h>
-#include <Library/TdxMailboxLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Pi/PrePiHob.h>
-#include <WorkArea.h>
-#include <ConfidentialComputingGuestAttr.h>
-#include <Library/TdxHelperLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/IntelTdx.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxMailboxLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiHob.h"
+#include "edk2-master/OvmfPkg/Include/WorkArea.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxHelperLib.h"
 
 #define ALIGNED_2MB_MASK  0x1fffff
 #define MEGABYTE_SHIFT    20

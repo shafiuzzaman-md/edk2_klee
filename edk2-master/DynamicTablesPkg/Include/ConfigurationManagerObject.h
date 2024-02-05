@@ -12,8 +12,8 @@
 #ifndef CONFIGURATION_MANAGER_OBJECT_H_
 #define CONFIGURATION_MANAGER_OBJECT_H_
 
-#include <ArmNameSpaceObjects.h>
-#include <StandardNameSpaceObjects.h>
+#include "edk2-master/DynamicTablesPkg/Include/ArmNameSpaceObjects.h"
+#include "edk2-master/DynamicTablesPkg/Include/StandardNameSpaceObjects.h"
 
 #pragma pack(1)
 

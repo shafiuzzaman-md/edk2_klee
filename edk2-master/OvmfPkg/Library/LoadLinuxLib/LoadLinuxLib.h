@@ -10,18 +10,18 @@
 #ifndef _LOAD_LINUX_LIB_INCLUDED_
 #define _LOAD_LINUX_LIB_INCLUDED_
 
-#include <Uefi.h>
-#include <Library/LoadLinuxLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/OvmfPkg/Include/Library/LoadLinuxLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
-#include <IndustryStandard/LinuxBzimage.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/LinuxBzimage.h"
 
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 VOID
 EFIAPI

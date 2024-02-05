@@ -7,17 +7,17 @@
 *
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/XenIoMmioLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenIoMmioLib.h"
 
-#include <Protocol/XenIo.h>
-#include <Guid/XenBusRootDevice.h>
+#include "edk2-master/OvmfPkg/Include/Protocol/XenIo.h"
+#include "edk2-master/OvmfPkg/Include/Guid/XenBusRootDevice.h"
 
 #pragma pack (1)
 typedef struct {

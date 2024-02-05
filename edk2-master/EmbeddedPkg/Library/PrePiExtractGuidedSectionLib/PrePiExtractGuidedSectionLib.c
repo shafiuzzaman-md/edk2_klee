@@ -6,12 +6,12 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrePiLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiLib.h"
 
 #define PRE_PI_EXTRACT_GUIDED_SECTION_DATA_GUID  { 0x385A982C, 0x2F49, 0x4043, { 0xA5, 0x1E, 0x49, 0x01, 0x02, 0x5C, 0x8B, 0x6B }}
 

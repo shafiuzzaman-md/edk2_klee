@@ -11,7 +11,7 @@
 #ifndef _MM_PCI_ROOT_BRIDGE_IO_H_
 #define _MM_PCI_ROOT_BRIDGE_IO_H_
 
-#include <Protocol/PciRootBridgeIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 #define EFI_MM_PCI_ROOT_BRIDGE_IO_PROTOCOL_GUID \
   { \

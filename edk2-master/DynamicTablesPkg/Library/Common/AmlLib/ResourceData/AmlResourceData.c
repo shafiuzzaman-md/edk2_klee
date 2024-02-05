@@ -11,7 +11,7 @@
   - Rdl or RDL - Resource Data Large
 **/
 
-#include <ResourceData/AmlResourceData.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
 
 /** Check whether the resource data has the input descriptor Id.
 

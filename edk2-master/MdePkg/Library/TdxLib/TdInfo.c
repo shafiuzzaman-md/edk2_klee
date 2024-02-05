@@ -7,12 +7,12 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <Uefi/UefiBaseType.h>
-#include <Library/TdxLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 UINT64   mTdSharedPageMask = 0;
 UINT32   mTdMaxVCpuNum     = 0;

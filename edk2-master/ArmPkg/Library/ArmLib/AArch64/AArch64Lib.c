@@ -8,12 +8,12 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/ArmLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Chipset/AArch64.h>
+#include "edk2-master/ArmPkg/Include/Chipset/AArch64.h"
 
 #include "AArch64Lib.h"
 #include "ArmLibPrivate.h"

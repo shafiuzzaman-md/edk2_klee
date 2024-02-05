@@ -12,37 +12,37 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DXE_CORE_PERFORMANCE_LIB_INTERNAL_H_
 #define _DXE_CORE_PERFORMANCE_LIB_INTERNAL_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/Performance.h>
-#include <Guid/PerformanceMeasurement.h>
-#include <Guid/ExtendedFirmwarePerformance.h>
-#include <Guid/ZeroGuid.h>
-#include <Guid/EventGroup.h>
-#include <Guid/FirmwarePerformance.h>
-#include <Guid/PiSmmCommunicationRegionTable.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/Performance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PerformanceMeasurement.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ExtendedFirmwarePerformance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/FirmwarePerformance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PiSmmCommunicationRegionTable.h"
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/SmmCommunication.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCommunication.h"
 
-#include <Library/PerformanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
 
 /**
   Create performance record with event description and a timestamp.

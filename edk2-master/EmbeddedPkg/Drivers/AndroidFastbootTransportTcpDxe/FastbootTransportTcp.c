@@ -7,20 +7,20 @@
 #
 #**/
 
-#include <Protocol/AndroidFastbootTransport.h>
-#include <Protocol/Dhcp4.h>
-#include <Protocol/Tcp4.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/SimpleTextOut.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/AndroidFastbootTransport.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dhcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 #define IP4_ADDR_TO_STRING(IpAddr, IpAddrString)  UnicodeSPrint (      \
                                                    IpAddrString,       \

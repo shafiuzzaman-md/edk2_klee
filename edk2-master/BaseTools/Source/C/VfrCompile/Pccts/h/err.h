@@ -36,8 +36,8 @@
 #define ERR_H
 
 #include "pcctscfg.h"
-#include <stdlib.h>
-#include <assert.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 
 /*									      */
 /*  7-Apr-97  133MR1							      */

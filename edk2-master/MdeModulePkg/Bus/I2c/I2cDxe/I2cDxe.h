@@ -12,23 +12,23 @@
 #ifndef __I2C_DXE_H__
 #define __I2C_DXE_H__
 
-#include <Uefi.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/TimerLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/I2cEnumerate.h>
-#include <Protocol/I2cHost.h>
-#include <Protocol/I2cIo.h>
-#include <Protocol/I2cMaster.h>
-#include <Protocol/I2cBusConfigurationManagement.h>
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/I2cEnumerate.h"
+#include "edk2-master/MdePkg/Include/Protocol/I2cHost.h"
+#include "edk2-master/MdePkg/Include/Protocol/I2cIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/I2cMaster.h"
+#include "edk2-master/MdePkg/Include/Protocol/I2cBusConfigurationManagement.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
 #define I2C_DEVICE_SIGNATURE   SIGNATURE_32 ('I', '2', 'C', 'D')
 #define I2C_HOST_SIGNATURE     SIGNATURE_32 ('I', '2', 'C', 'H')

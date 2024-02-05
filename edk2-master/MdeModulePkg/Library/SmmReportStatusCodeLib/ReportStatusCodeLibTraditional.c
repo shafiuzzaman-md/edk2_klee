@@ -6,9 +6,9 @@
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Library/SmmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
 
 /**
   Returns the first protocol instance that matches the given protocol.

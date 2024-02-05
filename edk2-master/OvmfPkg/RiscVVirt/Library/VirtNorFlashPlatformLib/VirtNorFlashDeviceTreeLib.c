@@ -7,12 +7,12 @@
 
  **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/VirtNorFlashPlatformLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtNorFlashPlatformLib.h"
 
-#include <Protocol/FdtClient.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/FdtClient.h"
 
 #define QEMU_NOR_BLOCK_SIZE  SIZE_256KB
 

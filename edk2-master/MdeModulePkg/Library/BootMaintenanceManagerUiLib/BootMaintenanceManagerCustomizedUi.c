@@ -6,8 +6,8 @@ Copyright (c) 2016, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Protocol/HiiConfigAccess.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
 #include "BootMaintenanceManagerCustomizedUiSupport.h"
 
 /**

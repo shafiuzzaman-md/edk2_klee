@@ -9,9 +9,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __DUMMY_LEGACY_REGION2_H__
 #define __DUMMY_LEGACY_REGION2_H__
 
-#include <Protocol/LegacyRegion2.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/LegacyRegion2.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   Modify the hardware to allow (decode) or disallow (not decode) memory reads in a region.

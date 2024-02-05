@@ -6,12 +6,12 @@
 
 **/
 
-#include <Base.h>                   // BIT1
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/BaseLib.h>        // CpuDeadLoop()
-#include <Library/IoLib.h>          // IoWrite8()
-#include <Library/ResetSystemLib.h> // ResetCold()
-#include <Library/TimerLib.h>       // MicroSecondDelay()
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
 
 /**
   Calling this function causes a system-wide reset. This sets

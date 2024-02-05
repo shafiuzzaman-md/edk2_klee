@@ -12,8 +12,8 @@
 #ifndef __FMP_DEPENDENCY_LIB__
 #define __FMP_DEPENDENCY_LIB__
 
-#include <PiDxe.h>
-#include <Protocol/FirmwareManagement.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
 
 //
 // Data struct to store FMP ImageType and version for dependency check.

@@ -8,25 +8,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef PLATFORM_BOOT_MANAGER_H_
 #define PLATFORM_BOOT_MANAGER_H_
 
-#include <PiDxe.h>
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HiiLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/BootLogoLib.h>
-#include <Protocol/SmmAccess2.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/BootLogoLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
 
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL    *DevicePath;

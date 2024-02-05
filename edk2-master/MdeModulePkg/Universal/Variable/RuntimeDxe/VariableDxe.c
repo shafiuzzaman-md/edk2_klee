@@ -12,8 +12,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "Variable.h"
 
-#include <Protocol/VariablePolicy.h>
-#include <Library/VariablePolicyLib.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyLib.h"
 
 EFI_STATUS
 EFIAPI

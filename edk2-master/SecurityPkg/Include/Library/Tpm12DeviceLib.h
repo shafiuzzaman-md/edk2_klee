@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TPM12_DEVICE_LIB_H_
 #define _TPM12_DEVICE_LIB_H_
 
-#include <IndustryStandard/Tpm12.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
 
 /**
   This service enables the sending of commands to the TPM12.

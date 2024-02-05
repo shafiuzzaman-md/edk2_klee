@@ -12,7 +12,7 @@
 #ifndef __SPI_SMM_HC_H__
 #define __SPI_SMM_HC_H__
 
-#include <Protocol/SpiHc.h>
+#include "edk2-master/MdePkg/Include/Protocol/SpiHc.h"
 
 ///
 /// Global ID for the SPI SMM Host Controller Protocol

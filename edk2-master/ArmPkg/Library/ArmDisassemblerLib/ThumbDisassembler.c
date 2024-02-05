@@ -15,10 +15,10 @@
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 extern CHAR8  *gCondition[];
 

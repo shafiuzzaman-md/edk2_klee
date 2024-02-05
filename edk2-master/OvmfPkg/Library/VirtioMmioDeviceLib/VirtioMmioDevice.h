@@ -12,15 +12,15 @@
 #ifndef _VIRTIO_MMIO_DEVICE_INTERNAL_H_
 #define _VIRTIO_MMIO_DEVICE_INTERNAL_H_
 
-#include <Protocol/VirtioDevice.h>
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
 
-#include <IndustryStandard/Virtio.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/UefiLib.h>
-#include <Library/VirtioMmioDeviceLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtioMmioDeviceLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #define VIRTIO_MMIO_DEVICE_SIGNATURE     SIGNATURE_32 ('V', 'M', 'I', 'O')
 #define VIRTIO_MMIO_DEVICE_VERSION_0_95  1

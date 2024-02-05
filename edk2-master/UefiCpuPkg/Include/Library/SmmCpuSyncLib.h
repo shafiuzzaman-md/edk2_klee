@@ -31,7 +31,7 @@
 #ifndef SMM_CPU_SYNC_LIB_H_
 #define SMM_CPU_SYNC_LIB_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 //
 // Opaque structure for SMM CPU Sync context.

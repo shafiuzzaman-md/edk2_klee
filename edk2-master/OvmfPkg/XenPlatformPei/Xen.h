@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __XEN_H__
 #define __XEN_H__
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 // Physical address of OVMF info
 #define OVMF_INFO_PHYSICAL_ADDRESS  0x00001000

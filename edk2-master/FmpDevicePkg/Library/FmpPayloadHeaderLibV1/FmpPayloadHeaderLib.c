@@ -12,8 +12,8 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/FmpPayloadHeaderLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/FmpDevicePkg/PrivateInclude/Library/FmpPayloadHeaderLib.h"
 
 ///
 /// Define FMP Payload Header structure here so it is not public

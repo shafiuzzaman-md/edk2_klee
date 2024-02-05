@@ -9,10 +9,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/Msr.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/CpuLib.h>
-#include <Library/BaseLib.h>
-#include <Guid/MigratedFvInfo.h>
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MigratedFvInfo.h"
 
 #include "CpuMpPei.h"
 #define PAGING_4K_ADDRESS_MASK_64  0x000FFFFFFFFFF000ull

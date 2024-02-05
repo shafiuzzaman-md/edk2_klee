@@ -10,7 +10,7 @@
 
 #include "CapsuleService.h"
 
-#include <Library/CacheMaintenanceLib.h>
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
 
 /**
   Writes Back a range of data cache lines covering a set of capsules in memory.

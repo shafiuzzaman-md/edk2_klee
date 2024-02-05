@@ -21,7 +21,7 @@
 #ifndef __IO_REMAPPING_TABLE_H__
 #define __IO_REMAPPING_TABLE_H__
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #define EFI_ACPI_IO_REMAPPING_TABLE_REVISION_00  0x0
 #define EFI_ACPI_IO_REMAPPING_TABLE_REVISION_04  0x4   // Deprecated

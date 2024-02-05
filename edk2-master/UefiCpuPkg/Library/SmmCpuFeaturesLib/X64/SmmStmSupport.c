@@ -6,8 +6,8 @@
 
 **/
 
-#include <PiMm.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #include "SmmStm.h"
 

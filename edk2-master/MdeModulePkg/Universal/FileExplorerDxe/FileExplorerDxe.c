@@ -6,13 +6,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/FileExplorer.h>
-#include <Library/FileExplorerLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/FileExplorer.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FileExplorerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 EFI_HANDLE  mFileExplorerThunkHandle = NULL;
 

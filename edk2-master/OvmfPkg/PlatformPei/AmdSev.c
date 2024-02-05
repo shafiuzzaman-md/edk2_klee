@@ -9,19 +9,19 @@
 //
 // The package level header files this module uses
 //
-#include <IndustryStandard/Q35MchIch9.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Pi/PrePiHob.h>
-#include <PiPei.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiHob.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 #include <Register/Amd/Msr.h>
 #include <Register/Intel/SmramSaveStateMap.h>
-#include <Library/CcExitLib.h>
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
 #include "Platform.h"
 

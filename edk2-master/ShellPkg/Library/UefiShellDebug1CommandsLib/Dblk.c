@@ -8,7 +8,7 @@
 **/
 
 #include "UefiShellDebug1CommandsLib.h"
-#include <Protocol/BlockIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
 
 /**
   Display blocks to the screen.

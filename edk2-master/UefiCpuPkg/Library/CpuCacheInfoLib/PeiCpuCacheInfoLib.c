@@ -6,13 +6,13 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/CpuCacheInfoLib.h>
-#include <InternalCpuCacheInfoLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CpuCacheInfoLib.h"
+#include "edk2-master/UefiCpuPkg/Library/CpuCacheInfoLib/InternalCpuCacheInfoLib.h"
 
 /**
   Get EDKII_PEI_MP_SERVICES2_PPI pointer.

@@ -8,7 +8,7 @@
 #ifndef CM_OBJECT_DESC_UTILITY_H_
 #define CM_OBJECT_DESC_UTILITY_H_
 
-#include <ConfigurationManagerObject.h>
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
 
 #include "FdtHwInfoParser.h"
 

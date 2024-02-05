@@ -8,8 +8,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/IoLib.h>
-#include <OvmfPlatforms.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 /**
   Internal function to read the current tick counter of ACPI.

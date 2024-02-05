@@ -8,8 +8,8 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/CapsuleLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
 
 /**
   Function indicate the current completion progress of the firmware

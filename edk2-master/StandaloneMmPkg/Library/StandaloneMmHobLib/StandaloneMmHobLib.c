@@ -9,12 +9,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
 
 //
 // Cache copy of HobList pointer.

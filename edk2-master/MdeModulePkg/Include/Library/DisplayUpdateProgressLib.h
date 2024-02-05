@@ -15,7 +15,7 @@
 #ifndef __DISPLAY_PROGRESS_LIB__
 #define __DISPLAY_PROGRESS_LIB__
 
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 /**
   Indicates the current completion progress of a firmware update.

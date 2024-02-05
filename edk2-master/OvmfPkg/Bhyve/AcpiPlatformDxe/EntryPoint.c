@@ -7,7 +7,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Guid/RootBridgesConnectedEventGroup.h>
+#include "edk2-master/OvmfPkg/Include/Guid/RootBridgesConnectedEventGroup.h"
 #include "AcpiPlatform.h"
 
 STATIC

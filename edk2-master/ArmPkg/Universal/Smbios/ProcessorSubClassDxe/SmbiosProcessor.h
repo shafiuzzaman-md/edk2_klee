@@ -10,8 +10,8 @@
 #ifndef SMBIOS_PROCESSOR_H_
 #define SMBIOS_PROCESSOR_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
 /** Returns the maximum cache level implemented by the current CPU.
 

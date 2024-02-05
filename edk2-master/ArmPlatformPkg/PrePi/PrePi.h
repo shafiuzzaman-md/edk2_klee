@@ -9,17 +9,17 @@
 #ifndef _PREPI_H_
 #define _PREPI_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/PcdLib.h>
-#include <Library/ArmLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HobLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/ArmPlatformLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
 
 extern UINT64  mSystemMemoryEnd;
 

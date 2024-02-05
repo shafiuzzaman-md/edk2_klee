@@ -7,8 +7,8 @@
 #ifndef ACPI_PLATFORM_LIB_H_
 #define ACPI_PLATFORM_LIB_H_
 
-#include <Protocol/AcpiTable.h>
-#include <Protocol/PciIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
 typedef struct {
   EFI_PCI_IO_PROTOCOL    *PciIo;

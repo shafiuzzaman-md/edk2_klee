@@ -7,7 +7,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Check if the Xen Hypercall library is able to make calls to the Xen

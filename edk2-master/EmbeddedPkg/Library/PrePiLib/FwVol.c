@@ -9,8 +9,8 @@
 
 **/
 
-#include <PrePi.h>
-#include <Library/ExtractGuidedSectionLib.h>
+#include "edk2-master/EmbeddedPkg/Library/PrePiLib/PrePi.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
 
 #define GET_OCCUPIED_SIZE(ActualSize, Alignment) \
   (ActualSize) + (((Alignment) - ((ActualSize) & ((Alignment) - 1))) & ((Alignment) - 1))

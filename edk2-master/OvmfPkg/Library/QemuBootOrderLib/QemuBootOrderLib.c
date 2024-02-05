@@ -7,19 +7,19 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/QemuFwCfgLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/QemuBootOrderLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/VirtioMmioTransport.h>
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuBootOrderLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/OvmfPkg/Include/Guid/VirtioMmioTransport.h"
 
 #include "ExtraRootBusMap.h"
 

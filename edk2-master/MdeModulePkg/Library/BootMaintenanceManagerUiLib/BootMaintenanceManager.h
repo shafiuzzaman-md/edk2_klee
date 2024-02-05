@@ -11,31 +11,31 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "FormGuid.h"
 
-#include <Guid/TtyTerm.h>
-#include <Guid/MdeModuleHii.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/HiiBootMaintenanceFormset.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/TtyTerm.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/HiiBootMaintenanceFormset.h"
 
-#include <Protocol/LoadFile.h>
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/SerialIo.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/FormBrowserEx2.h>
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FormBrowserEx2.h"
 
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HiiLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/FileExplorerLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FileExplorerLib.h"
 #include "BootMaintenanceManagerCustomizedUi.h"
 
 #pragma pack(1)

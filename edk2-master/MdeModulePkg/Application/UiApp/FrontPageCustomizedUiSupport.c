@@ -6,24 +6,24 @@ Copyright (c) 2016, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/GlobalVariable.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
 
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiString.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
 
-#include <Library/HiiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PcdLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 #include "FrontPageCustomizedUiSupport.h"
 
 //

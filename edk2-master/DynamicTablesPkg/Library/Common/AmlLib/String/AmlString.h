@@ -22,7 +22,7 @@
    functions. They provide a "safe" way to interact with the AmlLib.
 */
 
-#include <AmlInclude.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
 
 /** Check NameString/path information is valid.
 

@@ -8,12 +8,12 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/DebugLib.h>
-#include <Library/CcExitLib.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 
 #include <Register/Amd/Ghcb.h>
 #include <Register/Amd/Msr.h>

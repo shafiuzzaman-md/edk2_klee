@@ -8,22 +8,22 @@
 
 #ifndef _REGISTER_CPU_FEATURES_H_
 #define _REGISTER_CPU_FEATURES_H_
-#include <PiPei.h>
-#include <PiDxe.h>
-#include <Ppi/MpServices2.h>
-#include <Protocol/MpService.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/MpServices2.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/RegisterCpuFeaturesLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/IoLib.h>
-#include <Library/LocalApicLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/RegisterCpuFeaturesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
 
-#include <AcpiCpuData.h>
+#include "edk2-master/UefiCpuPkg/Include/AcpiCpuData.h"
 
 #define CPU_FEATURE_ENTRY_SIGNATURE  SIGNATURE_32 ('C', 'F', 'E', 'S')
 

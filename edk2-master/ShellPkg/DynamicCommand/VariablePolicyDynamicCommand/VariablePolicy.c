@@ -11,19 +11,19 @@
 
 #include "VariablePolicy.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/ShellLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
 
-#include <Protocol/HiiPackageList.h>
-#include <Protocol/VariablePolicy.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiPackageList.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
 
 #define VAR_POLICY_FLAG_STATS_STR    L"-s"
 #define VAR_POLICY_FLAG_POLICY_STR   L"-p"

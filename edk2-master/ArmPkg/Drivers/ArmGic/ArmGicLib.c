@@ -6,12 +6,12 @@
 *
 **/
 
-#include <Base.h>
-#include <Library/ArmGicLib.h>
-#include <Library/ArmLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 // In GICv3, there are 2 x 64KB frames:
 // Redistributor control frame + SGI Control & Generation frame

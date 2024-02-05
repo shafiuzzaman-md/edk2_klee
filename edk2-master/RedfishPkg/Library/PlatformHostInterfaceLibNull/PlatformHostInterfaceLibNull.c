@@ -7,10 +7,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/RedfishHostInterfaceLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishHostInterfaceLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 /**
   Get platform Redfish host interface device descriptor.

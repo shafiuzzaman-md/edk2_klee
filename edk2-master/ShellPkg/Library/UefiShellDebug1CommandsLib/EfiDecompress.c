@@ -8,7 +8,7 @@
 **/
 
 #include "UefiShellDebug1CommandsLib.h"
-#include <Protocol/Decompress.h>
+#include "edk2-master/MdePkg/Include/Protocol/Decompress.h"
 
 /**
   Function for 'decompress' command.

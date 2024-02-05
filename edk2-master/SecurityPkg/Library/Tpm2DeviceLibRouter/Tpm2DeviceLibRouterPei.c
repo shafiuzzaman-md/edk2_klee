@@ -8,12 +8,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/Tpm2DeviceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
 
 EFI_GUID  mInternalTpm2DeviceInterfaceGuid = {
   0x349cf818, 0xc0ba, 0x4c43, { 0x92, 0x9a, 0xc8, 0xa1, 0xb1, 0xb3, 0xd2, 0x55 }

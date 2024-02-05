@@ -7,13 +7,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/QemuFwCfgS3Lib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
 
 #include "SmiFeatures.h"
 

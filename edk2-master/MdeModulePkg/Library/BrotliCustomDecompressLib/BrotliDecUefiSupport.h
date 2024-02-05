@@ -11,9 +11,9 @@
 #ifndef __BROTLI_DECOMPRESS_UEFI_SUP_H__
 #define __BROTLI_DECOMPRESS_UEFI_SUP_H__
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 #define memcpy   CopyMem
 #define memmove  CopyMem
 #define memset(dest, ch, count)  SetMem(dest,(UINTN)(count),(UINT8)(ch))

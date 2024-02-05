@@ -8,19 +8,19 @@
 
 **/
 
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Guid/EventGroup.h>
-#include <Guid/MicrocodePatchHob.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <Library/MicrocodeLib.h>
-#include <Library/TpmMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/UefiCpuPkg/Include/Guid/MicrocodePatchHob.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MicrocodeLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 
 #define CPU_MICROCODE_MEASUREMENT_DESCRIPTION                "Microcode Measurement"
 #define CPU_MICROCODE_MEASUREMENT_EVENT_LOG_DESCRIPTION_LEN  sizeof (CPU_MICROCODE_MEASUREMENT_DESCRIPTION)

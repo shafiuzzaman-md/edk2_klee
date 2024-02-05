@@ -6,11 +6,11 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/DebugCommunicationLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/SourceLevelDebugPkg/Include/Library/DebugCommunicationLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Initialize the debug port.

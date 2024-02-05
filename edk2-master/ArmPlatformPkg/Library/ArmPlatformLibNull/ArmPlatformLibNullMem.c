@@ -6,8 +6,8 @@
 
 **/
 
-#include <Library/ArmPlatformLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Return the Virtual Memory Map of your platform

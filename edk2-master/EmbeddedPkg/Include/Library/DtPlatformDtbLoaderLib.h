@@ -9,7 +9,7 @@
 #ifndef __DT_PLATFORM_DTB_LOADER_LIB_H__
 #define __DT_PLATFORM_DTB_LOADER_LIB_H__
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 /**
   Return a pool allocated copy of the DTB image that is appropriate for

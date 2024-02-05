@@ -6,8 +6,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>             // RemoveEntryList()
-#include <Library/MemoryAllocationLib.h> // FreePool()
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "VirtioFsDxe.h"
 

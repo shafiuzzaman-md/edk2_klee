@@ -9,21 +9,21 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __FV_REPORT_PEI_H__
 #define __FV_REPORT_PEI_H__
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <IndustryStandard/Tpm20.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 
-#include <Ppi/FirmwareVolumeInfoStoredHashFv.h>
-#include <Ppi/FirmwareVolumeShadowPpi.h>
+#include "edk2-master/SecurityPkg/Include/Ppi/FirmwareVolumeInfoStoredHashFv.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/FirmwareVolumeShadowPpi.h"
 
-#include <Library/PeiServicesLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/ReportStatusCodeLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
 
 #define HASH_INFO_PTR(PreHashedFvPpi)  \
   (HASH_INFO *)((UINT8 *)(PreHashedFvPpi) + sizeof (EDKII_PEI_FIRMWARE_VOLUME_INFO_PREHASHED_FV_PPI))

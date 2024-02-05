@@ -9,16 +9,16 @@
 #ifndef _DXE_CORE_DEBUG_AGENT_LIB_H_
 #define _DXE_CORE_DEBUG_AGENT_LIB_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/SerialIo.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/PiPcd.h>
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/PiPcd.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "DebugAgent.h"
 

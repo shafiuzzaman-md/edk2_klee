@@ -7,19 +7,19 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <IndustryStandard/Pci.h>
-#include <Protocol/PciHostBridgeResourceAllocation.h>
-#include <Protocol/PciRootBridgeIo.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciHostBridgeLib.h>
-#include <Library/PciLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 #include "PciHostBridge.h"
 

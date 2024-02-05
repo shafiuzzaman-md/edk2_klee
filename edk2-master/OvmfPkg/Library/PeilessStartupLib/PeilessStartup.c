@@ -6,21 +6,21 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Protocol/DebugSupport.h>
-#include <Library/TdxLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <Library/PrePiLib.h>
-#include <Library/PeilessStartupLib.h>
-#include <Library/PlatformInitLib.h>
-#include <Library/TdxHelperLib.h>
-#include <ConfidentialComputingGuestAttr.h>
-#include <Guid/MemoryTypeInformation.h>
-#include <OvmfPlatforms.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PeilessStartupLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxHelperLib.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 #include "PeilessStartupInternal.h"
 
 #define GET_GPAW_INIT_STATE(INFO)  ((UINT8) ((INFO) & 0x3f))

@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "PlatformBootManager.h"
 #include "PlatformConsole.h"
-#include <Guid/SerialPortLibVendor.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SerialPortLibVendor.h"
 
 #define PCI_DEVICE_PATH_NODE(Func, Dev) \
   { \

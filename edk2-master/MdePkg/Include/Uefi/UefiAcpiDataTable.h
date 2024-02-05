@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __UEFI_ACPI_DATA_TABLE_H__
 #define __UEFI_ACPI_DATA_TABLE_H__
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #pragma pack(1)
 typedef struct {

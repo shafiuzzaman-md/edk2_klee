@@ -11,7 +11,7 @@
 #ifndef REDFISH_PLATFORM_CONFIG_LIB_H_
 #define REDFISH_PLATFORM_CONFIG_LIB_H_
 
-#include <Protocol/EdkIIRedfishPlatformConfig.h>
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishPlatformConfig.h"
 
 /**
   Get Redfish value with the given Schema and Configure Language.

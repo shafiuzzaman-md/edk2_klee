@@ -15,7 +15,7 @@
 #ifndef _PRIVILEGE_POLYMORPHIC_H_
 #define _PRIVILEGE_POLYMORPHIC_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 /**
   SecureBoot Hook for auth variable update.

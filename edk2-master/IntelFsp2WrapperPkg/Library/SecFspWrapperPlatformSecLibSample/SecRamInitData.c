@@ -6,8 +6,8 @@
 
 **/
 
-#include <Library/PcdLib.h>
-#include <FspEas.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 typedef struct {
   EFI_PHYSICAL_ADDRESS    MicrocodeRegionBase;

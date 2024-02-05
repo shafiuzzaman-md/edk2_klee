@@ -20,7 +20,7 @@ Abstract:
 **/
 
 #include "Gop.h"
-#include <Library/FrameBufferBltLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/FrameBufferBltLib.h"
 
 EFI_EVENT  mGopScreenExitBootServicesEvent;
 

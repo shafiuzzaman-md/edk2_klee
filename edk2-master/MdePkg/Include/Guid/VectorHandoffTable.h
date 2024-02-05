@@ -12,7 +12,7 @@
 #ifndef __EFI_VECTOR_HANDOFF_TABLE_H__
 #define __EFI_VECTOR_HANDOFF_TABLE_H__
 
-#include <Ppi/VectorHandoffInfo.h>
+#include "edk2-master/MdePkg/Include/Ppi/VectorHandoffInfo.h"
 
 //
 // System configuration table entry that points to the table

@@ -8,8 +8,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #include "BlockFront.h"
 

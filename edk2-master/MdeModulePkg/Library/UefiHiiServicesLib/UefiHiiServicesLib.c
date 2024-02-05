@@ -9,17 +9,17 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Protocol/HiiFont.h>
-#include <Protocol/HiiString.h>
-#include <Protocol/HiiImage.h>
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/HiiConfigRouting.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiFont.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
 
 ///
 /// Pointer to the UEFI HII Font Protocol

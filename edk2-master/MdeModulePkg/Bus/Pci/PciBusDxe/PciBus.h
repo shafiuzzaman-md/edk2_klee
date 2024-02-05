@@ -9,39 +9,39 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_PCI_BUS_H_
 #define _EFI_PCI_BUS_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/LoadedImage.h>
-#include <Protocol/PciHostBridgeResourceAllocation.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/LoadFile2.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/PciHotPlugRequest.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/PciPlatform.h>
-#include <Protocol/PciHotPlugInit.h>
-#include <Protocol/Decompress.h>
-#include <Protocol/BusSpecificDriverOverride.h>
-#include <Protocol/IncompatiblePciDeviceSupport.h>
-#include <Protocol/PciOverride.h>
-#include <Protocol/PciEnumerationComplete.h>
-#include <Protocol/IoMmu.h>
-#include <Protocol/DeviceSecurity.h>
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile2.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHotPlugRequest.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciPlatform.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHotPlugInit.h"
+#include "edk2-master/MdePkg/Include/Protocol/Decompress.h"
+#include "edk2-master/MdePkg/Include/Protocol/BusSpecificDriverOverride.h"
+#include "edk2-master/MdePkg/Include/Protocol/IncompatiblePciDeviceSupport.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciOverride.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciEnumerationComplete.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/DeviceSecurity.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/PeImage.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 typedef struct _PCI_IO_DEVICE  PCI_IO_DEVICE;
 typedef struct _PCI_BAR        PCI_BAR;

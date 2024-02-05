@@ -6,18 +6,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Pi/PiFirmwareVolume.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Pi/PiFirmwareVolume.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrintLib.h>
-#include <Library/TcgEventLogRecordLib.h>
-#include <Library/TpmMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TcgEventLogRecordLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 
-#include <IndustryStandard/UefiTcgPlatform.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
 /**
   Get the FvName from the FV header.

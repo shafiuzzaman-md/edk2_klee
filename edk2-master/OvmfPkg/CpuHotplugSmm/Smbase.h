@@ -9,8 +9,8 @@
 #ifndef SMBASE_H_
 #define SMBASE_H_
 
-#include <Uefi/UefiBaseType.h> // EFI_STATUS
-#include <Uefi/UefiSpec.h>     // EFI_BOOT_SERVICES
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 #include "ApicId.h"            // APIC_ID
 

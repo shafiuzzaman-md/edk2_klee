@@ -6,7 +6,7 @@
 *
 **/
 
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 #include "Mmc.h"
 

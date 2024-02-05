@@ -9,9 +9,9 @@
 
 #include "CpuDxe.h"
 
-#include <Guid/IdleLoopEvent.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/IdleLoopEvent.h"
 
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 BOOLEAN  mIsFlushingGCD;
 

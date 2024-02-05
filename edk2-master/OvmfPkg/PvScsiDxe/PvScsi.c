@@ -9,16 +9,16 @@
 
 **/
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/PvScsi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/PvScsi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 #include "PvScsi.h"
 

@@ -5,8 +5,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <FdtHwInfoParserInclude.h>
-#include <ConfigurationManagerObject.h>
+#include "edk2-master/DynamicTablesPkg/Library/FdtHwInfoParserLib/FdtHwInfoParserInclude.h"
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
 
 #include "CmObjectDescUtility.h"
 

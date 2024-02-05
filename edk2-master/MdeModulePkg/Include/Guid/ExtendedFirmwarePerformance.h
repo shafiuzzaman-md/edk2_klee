@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EXTENDED_FIRMWARE_PERFORMANCE_H__
 #define __EXTENDED_FIRMWARE_PERFORMANCE_H__
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 //
 // Known performance tokens

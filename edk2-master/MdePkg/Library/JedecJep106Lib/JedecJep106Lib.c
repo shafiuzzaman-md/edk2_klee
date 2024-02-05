@@ -7,8 +7,8 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 typedef struct {
   UINT8          Code;

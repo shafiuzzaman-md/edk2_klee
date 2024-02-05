@@ -11,11 +11,11 @@
 #ifndef REDFISH_HOST_INTERFACE_LIB_H_
 #define REDFISH_HOST_INTERFACE_LIB_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/RedfishHostInterface.h>
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/RedfishPkg/Include/IndustryStandard/RedfishHostInterface.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
-#include <Protocol/Smbios.h>
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
 
 /**
   Get platform Redfish host interface device descriptor.

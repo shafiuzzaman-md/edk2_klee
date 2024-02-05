@@ -8,15 +8,15 @@
 
 **/
 
-#include <IndustryStandard/Pci.h>            // EFI_PCI_COMMAND_IO_SPACE
-#include <Library/BaseLib.h>                 // DisableInterrupts()
-#include <Library/BaseMemoryLib.h>           // ZeroMem()
-#include <Library/DebugLib.h>                // ASSERT()
-#include <Library/MemoryAllocationLib.h>     // ReallocatePool()
-#include <Library/PciHostBridgeLib.h>        // PCI_ROOT_BRIDGE_APERTURE
-#include <Library/PciHostBridgeUtilityLib.h> // PciHostBridgeUtilityInitRoot...
-#include <Library/PciLib.h>                  // PciRead32()
-#include <Protocol/PciRootBridgeIo.h>        // EFI_PCI_ATTRIBUTE_ISA_IO
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciHostBridgeUtilityLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 #include "PciHostBridge.h"
 

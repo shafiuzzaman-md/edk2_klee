@@ -10,27 +10,27 @@
 #ifndef CPU_DXE_H_
 #define CPU_DXE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/ArmLib.h>
-#include <Library/ArmMmuLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/UefiLib.h>
-#include <Library/CpuLib.h>
-#include <Library/DefaultExceptionHandlerLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/ArmPkg/Include/Library/DefaultExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Guid/DebugImageInfoTable.h>
-#include <Protocol/Cpu.h>
-#include <Protocol/DebugSupport.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/MemoryAttribute.h>
+#include "edk2-master/MdePkg/Include/Guid/DebugImageInfoTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/MemoryAttribute.h"
 
 extern BOOLEAN  mIsFlushingGCD;
 

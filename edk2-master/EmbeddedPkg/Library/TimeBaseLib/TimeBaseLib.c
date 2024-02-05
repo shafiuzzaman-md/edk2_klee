@@ -8,10 +8,10 @@
 *
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiSpec.h>
-#include <Library/DebugLib.h>
-#include <Library/TimeBaseLib.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/TimeBaseLib.h"
 
 /**
   Converts Epoch seconds (elapsed since 1970 JANUARY 01, 00:00:00 UTC) to EFI_TIME.

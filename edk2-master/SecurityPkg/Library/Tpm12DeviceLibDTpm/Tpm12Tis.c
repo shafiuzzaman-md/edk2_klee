@@ -7,18 +7,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <IndustryStandard/Tpm12.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/IoLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/Tpm12CommandLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12CommandLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <IndustryStandard/TpmPtp.h>
-#include <IndustryStandard/TpmTis.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/TpmPtp.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/TpmTis.h"
 
 typedef enum {
   PtpInterfaceTis,

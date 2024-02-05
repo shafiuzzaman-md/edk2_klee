@@ -11,6 +11,6 @@
 #ifndef REDFISH_CRT_ERRNO_H_
 #define REDFISH_CRT_ERRNO_H_
 
-#include <Library/RedfishCrtLib.h>
+#include "edk2-master/RedfishPkg/Include/Library/RedfishCrtLib.h"
 
 #endif

@@ -10,7 +10,7 @@
 #ifndef __PRE_PI_LIB_H__
 #define __PRE_PI_LIB_H__
 
-#include <Guid/ExtractSection.h>
+#include "edk2-master/EmbeddedPkg/Include/Guid/ExtractSection.h"
 
 /**
   This service enables discovery of additional firmware volumes.

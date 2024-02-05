@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_DECOMPRESS_H
 #define _EFI_DECOMPRESS_H
 
-#include <Common/UefiBaseTypes.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
 
 /**
 

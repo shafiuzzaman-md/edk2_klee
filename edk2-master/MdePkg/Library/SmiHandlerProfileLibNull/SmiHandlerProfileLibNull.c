@@ -6,8 +6,8 @@
 
 **/
 
-#include <PiMm.h>
-#include <Library/SmiHandlerProfileLib.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Library/SmiHandlerProfileLib.h"
 
 /**
   This function is called by SmmChildDispatcher module to report

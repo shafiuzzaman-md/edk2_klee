@@ -9,12 +9,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _METRONOME_H_
 #define _METRONOME_H_
 
-#include <PiDxe.h>
-#include <Protocol/Metronome.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/Metronome.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 /**
   Waits for the specified number of ticks.

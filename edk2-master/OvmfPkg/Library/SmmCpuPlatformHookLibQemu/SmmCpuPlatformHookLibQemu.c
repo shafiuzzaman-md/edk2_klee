@@ -6,11 +6,11 @@ Copyright (c) 2006 - 2015, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Library/BaseLib.h>                 // AsmReadMsr64()
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 #include <Register/Intel/ArchitecturalMsr.h> // MSR_IA32_APIC_BASE_REGISTER
 
-#include <Library/SmmCpuPlatformHookLib.h>
+#include "edk2-master/UefiCpuPkg/Include/Library/SmmCpuPlatformHookLib.h"
 
 /**
   Checks if platform produces a valid SMI.

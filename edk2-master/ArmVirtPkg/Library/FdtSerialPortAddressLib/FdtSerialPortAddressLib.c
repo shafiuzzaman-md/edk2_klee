@@ -10,9 +10,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/FdtSerialPortAddressLib.h>
-#include <libfdt.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/ArmVirtPkg/Include/Library/FdtSerialPortAddressLib.h"
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
 
 /**
   Read the "reg" property of Node in DeviceTree as a UINT64 base address.

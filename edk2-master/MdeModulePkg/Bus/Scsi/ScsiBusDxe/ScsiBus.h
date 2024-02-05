@@ -9,26 +9,26 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SCSI_BUS_H_
 #define _SCSI_BUS_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/ScsiPassThru.h>
-#include <Protocol/ScsiPassThruExt.h>
-#include <Protocol/ScsiIo.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/DevicePath.h>
+#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThru.h"
+#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
+#include "edk2-master/MdePkg/Include/Protocol/ScsiIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiScsiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/ReportStatusCodeLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiScsiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
 
-#include <IndustryStandard/Scsi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Scsi.h"
 
 #define SCSI_IO_DEV_SIGNATURE  SIGNATURE_32 ('s', 'c', 'i', 'o')
 

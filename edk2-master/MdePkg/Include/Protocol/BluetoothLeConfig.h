@@ -13,8 +13,8 @@
 #ifndef __EFI_BLUETOOTH_LE_CONFIG_H__
 #define __EFI_BLUETOOTH_LE_CONFIG_H__
 
-#include <Protocol/BluetoothConfig.h>
-#include <Protocol/BluetoothAttribute.h>
+#include "edk2-master/MdePkg/Include/Protocol/BluetoothConfig.h"
+#include "edk2-master/MdePkg/Include/Protocol/BluetoothAttribute.h"
 
 #define EFI_BLUETOOTH_LE_CONFIG_PROTOCOL_GUID \
   { \

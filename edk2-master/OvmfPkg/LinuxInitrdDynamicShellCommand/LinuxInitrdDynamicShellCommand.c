@@ -7,22 +7,22 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ShellLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
 
-#include <Guid/LinuxEfiInitrdMedia.h>
+#include "edk2-master/MdePkg/Include/Guid/LinuxEfiInitrdMedia.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/HiiPackageList.h>
-#include <Protocol/LoadFile2.h>
-#include <Protocol/ShellDynamicCommand.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPackageList.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile2.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellDynamicCommand.h"
 
 #pragma pack (1)
 typedef struct {

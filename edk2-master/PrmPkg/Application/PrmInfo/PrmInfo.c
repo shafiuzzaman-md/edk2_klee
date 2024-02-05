@@ -13,22 +13,22 @@
 
 **/
 
-#include <Guid/ZeroGuid.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrmContextBufferLib.h>
-#include <Library/PrmModuleDiscoveryLib.h>
-#include <Library/PrmPeCoffLib.h>
-#include <Library/ShellLib.h>
-#include <Library/TimerLib.h>
-#include <Library/UefiApplicationEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmContextBufferLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmModuleDiscoveryLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmPeCoffLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #include "PrmInfo.h"
 

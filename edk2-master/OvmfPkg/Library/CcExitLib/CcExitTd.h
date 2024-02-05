@@ -8,8 +8,8 @@
 #ifndef CC_EXIT_TD_H_
 #define CC_EXIT_TD_H_
 
-#include <Base.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 /**
   This function enable the TD guest to request the VMM to emulate CPUID

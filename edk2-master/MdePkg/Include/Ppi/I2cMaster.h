@@ -13,7 +13,7 @@
 #ifndef __I2C_MASTER_PPI_H__
 #define __I2C_MASTER_PPI_H__
 
-#include <Pi/PiI2c.h>
+#include "edk2-master/MdePkg/Include/Pi/PiI2c.h"
 
 #define EFI_PEI_I2C_MASTER_PPI_GUID \
   { 0xb3bfab9b, 0x9f9c, 0x4e8b, { 0xad, 0x37, 0x7f, 0x8c, 0x51, 0xfc, 0x62, 0x80 }}

@@ -13,8 +13,8 @@
 #ifndef STANDARD_NAMESPACE_OBJECTS_H_
 #define STANDARD_NAMESPACE_OBJECTS_H_
 
-#include <AcpiTableGenerator.h>
-#include <SmbiosTableGenerator.h>
+#include "edk2-master/DynamicTablesPkg/Include/AcpiTableGenerator.h"
+#include "edk2-master/DynamicTablesPkg/Include/SmbiosTableGenerator.h"
 
 #pragma pack(1)
 

@@ -11,7 +11,7 @@
 #ifndef UNIVERSAL_PAYLOAD_PCI_ROOT_BRIDGES_H_
 #define UNIVERSAL_PAYLOAD_PCI_ROOT_BRIDGES_H_
 
-#include <UniversalPayload/UniversalPayload.h>
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
 
 #pragma pack(1)
 

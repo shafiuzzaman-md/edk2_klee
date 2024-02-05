@@ -6,18 +6,18 @@
 
  --*/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Guid/NvVarStoreFormatted.h>
-#include <Guid/SystemNvDataGuid.h>
-#include <Guid/VariableFormat.h>
+#include "edk2-master/EmbeddedPkg/Include/Guid/NvVarStoreFormatted.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
 
 #include "VirtNorFlash.h"
 

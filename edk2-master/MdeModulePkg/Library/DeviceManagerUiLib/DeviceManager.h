@@ -9,22 +9,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DEVICE_MANAGER_H_
 #define _DEVICE_MANAGER_H_
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/HiiPlatformSetupFormset.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
 
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/PciIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HiiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/UefiHiiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
 
 //
 // These are defined as the same with vfr file

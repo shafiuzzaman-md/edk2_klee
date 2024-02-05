@@ -6,22 +6,22 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Cpu.h>
-#include <Protocol/Timer.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/Timer.h"
 
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/IoApicLib.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/PcAtChipsetPkg/Include/Library/IoApicLib.h"
 
-#include <Register/LocalApic.h>
-#include <Register/IoApic.h>
-#include <Register/Hpet.h>
+#include "edk2-master/UefiCpuPkg/Include/Register/LocalApic.h"
+#include "edk2-master/PcAtChipsetPkg/Include/Register/IoApic.h"
+#include "edk2-master/PcAtChipsetPkg/Include/Register/Hpet.h"
 
 ///
 /// Define value for an invalid HPET Timer index.

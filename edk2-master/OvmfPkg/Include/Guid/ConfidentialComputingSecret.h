@@ -9,7 +9,7 @@
 #ifndef CONFIDENTIAL_COMPUTING_SECRET_H_
 #define CONFIDENTIAL_COMPUTING_SECRET_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #define CONFIDENTIAL_COMPUTING_SECRET_GUID              \
   { 0xadf956ad,                                         \

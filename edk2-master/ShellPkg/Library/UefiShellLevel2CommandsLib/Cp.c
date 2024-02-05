@@ -8,8 +8,8 @@
 **/
 
 #include "UefiShellLevel2CommandsLib.h"
-#include <Guid/FileSystemInfo.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
 
 /**
   Function to take a list of files to copy and a destination location and do

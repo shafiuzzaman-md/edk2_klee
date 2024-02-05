@@ -11,6 +11,6 @@
 #ifndef _VIRTIO_NET_H_
 #define _VIRTIO_NET_H_
 
-#include <IndustryStandard/Virtio10Net.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio10Net.h"
 
 #endif // _VIRTIO_NET_H_

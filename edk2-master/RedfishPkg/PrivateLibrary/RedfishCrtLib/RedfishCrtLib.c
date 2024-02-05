@@ -9,11 +9,11 @@
     SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Library/RedfishCrtLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SortLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishCrtLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 int   errno            = 0;
 char  errnum_message[] = "We don't support to map errnum to the error message on edk2 Redfish\n";

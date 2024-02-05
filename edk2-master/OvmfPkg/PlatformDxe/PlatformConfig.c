@@ -9,12 +9,12 @@
 
 **/
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Guid/OvmfPlatformConfig.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/OvmfPkg/Include/Guid/OvmfPlatformConfig.h"
 
 #include "PlatformConfig.h"
 

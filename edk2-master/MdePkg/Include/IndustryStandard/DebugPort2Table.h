@@ -11,7 +11,7 @@
 #ifndef _DEBUG_PORT_2_TABLE_H_
 #define _DEBUG_PORT_2_TABLE_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 //
 // Ensure proper structure formats

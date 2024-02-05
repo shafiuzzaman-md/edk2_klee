@@ -6,17 +6,17 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiMultiPhase.h>
-#include <Pi/PiBootMode.h>
-#include <Pi/PiHob.h>
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/PlatformInitLib.h>
-#include <OvmfPlatforms.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Pi/PiBootMode.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 //
 // Cached ACPI Timer IO Address

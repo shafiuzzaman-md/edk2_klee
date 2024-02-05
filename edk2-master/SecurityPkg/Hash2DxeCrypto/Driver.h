@@ -9,19 +9,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _HASH2_DRIVER_H_
 #define _HASH2_DRIVER_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/Hash2.h>
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/Hash2.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #define HASH2_SERVICE_DATA_SIGNATURE  SIGNATURE_32 ('H', 'S', '2', 'S')
 

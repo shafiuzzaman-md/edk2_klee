@@ -11,31 +11,31 @@
 #ifndef EDKII_REDFISH_PLATFORM_CONFIG_DXE_H_
 #define EDKII_REDFISH_PLATFORM_CONFIG_DXE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Libraries
 //
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 //
 // Protocols
 //
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/HiiString.h>
-#include <Protocol/RegularExpressionProtocol.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
+#include "edk2-master/MdePkg/Include/Protocol/RegularExpressionProtocol.h"
 
 //
 // Produced Protocol
 //
-#include <Protocol/EdkIIRedfishPlatformConfig.h>
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishPlatformConfig.h"
 
 ///
 /// Definition of EDKII_REDFISH_PLATFORM_CONFIG_NOTIFY.

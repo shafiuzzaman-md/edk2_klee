@@ -10,9 +10,9 @@
 #ifndef PRM_CONTEXT_BUFFER_H_
 #define PRM_CONTEXT_BUFFER_H_
 
-#include <PrmDataBuffer.h>
-#include <PrmMmio.h>
-#include <Uefi.h>
+#include "edk2-master/PrmPkg/Include/PrmDataBuffer.h"
+#include "edk2-master/PrmPkg/Include/PrmMmio.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #define PRM_CONTEXT_BUFFER_SIGNATURE          SIGNATURE_32('P','R','M','C')
 #define PRM_CONTEXT_BUFFER_INTERFACE_VERSION  1

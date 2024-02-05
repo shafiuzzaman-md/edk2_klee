@@ -10,13 +10,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PCI_HOST_BRIDGE_H_
 #define _PCI_HOST_BRIDGE_H_
 
-#include <PiDxe.h>
-#include <IndustryStandard/Acpi.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciHostBridgeLib.h>
-#include <Protocol/PciHostBridgeResourceAllocation.h>
-#include <Protocol/IoMmu.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
 
 #include "PciRootBridge.h"
 

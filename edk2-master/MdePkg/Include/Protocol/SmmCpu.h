@@ -14,7 +14,7 @@
 #ifndef _SMM_CPU_H_
 #define _SMM_CPU_H_
 
-#include <Protocol/MmCpu.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCpu.h"
 
 #define EFI_SMM_CPU_PROTOCOL_GUID  EFI_MM_CPU_PROTOCOL_GUID
 

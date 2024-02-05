@@ -9,10 +9,10 @@
 #ifndef _SMM_DEBUG_AGENT_LIB_H_
 #define _SMM_DEBUG_AGENT_LIB_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/UefiLib.h>
-#include <Library/SmmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
 
 #include "DebugAgent.h"
 

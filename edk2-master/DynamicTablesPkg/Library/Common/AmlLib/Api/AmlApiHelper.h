@@ -9,8 +9,8 @@
 #ifndef AML_HELPER_H_
 #define AML_HELPER_H_
 
-#include <AmlNodeDefines.h>
-#include <ResourceData/AmlResourceData.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
 
 /** Compare the NameString defined by the "Name ()" ASL function,
     and stored in the NameOpNode, with the input NameString.

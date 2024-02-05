@@ -10,22 +10,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _VIRTUAL_KEYBOARD_H_
 #define _VIRTUAL_KEYBOARD_H_
 
-#include <Guid/StatusCodeDataTypeId.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/PlatformVirtualKeyboard.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/SimpleTextInEx.h>
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/EmbeddedPkg/Include/Protocol/PlatformVirtualKeyboard.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 //
 // Driver Binding Externs

@@ -10,15 +10,15 @@
 #ifndef EFI_MP_SERVICES_UNIT_TEST_COMMOM_H_
 #define EFI_MP_SERVICES_UNIT_TEST_COMMOM_H_
 
-#include <PiPei.h>
-#include <Ppi/MpServices2.h>
-#include <Protocol/MpService.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UnitTestLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/MpServices2.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
 
 #define RUN_PROCEDURE_TIMEOUT_VALUE  100000  // microseconds
 

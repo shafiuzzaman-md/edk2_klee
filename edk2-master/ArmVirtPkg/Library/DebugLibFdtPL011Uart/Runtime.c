@@ -9,7 +9,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 #include "Ram.h"
 

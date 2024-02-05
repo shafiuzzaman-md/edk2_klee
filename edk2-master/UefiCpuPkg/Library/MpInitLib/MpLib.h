@@ -11,7 +11,7 @@
 #ifndef _MP_LIB_H_
 #define _MP_LIB_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 #include <Register/Intel/Cpuid.h>
 #include <Register/Amd/Cpuid.h>
@@ -20,25 +20,25 @@
 #include <Register/Intel/LocalApic.h>
 #include <Register/Intel/Microcode.h>
 
-#include <Library/MpInitLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/CpuLib.h>
-#include <Library/TimerLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/MicrocodeLib.h>
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/UefiCpuPkg/Include/Library/MpInitLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MicrocodeLib.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
 #include <Register/Amd/Fam17Msr.h>
 #include <Register/Amd/Ghcb.h>
 
-#include <Guid/MicrocodePatchHob.h>
+#include "edk2-master/UefiCpuPkg/Include/Guid/MicrocodePatchHob.h"
 #include "MpHandOff.h"
 
 #define WAKEUP_AP_SIGNAL  SIGNATURE_32 ('S', 'T', 'A', 'P')

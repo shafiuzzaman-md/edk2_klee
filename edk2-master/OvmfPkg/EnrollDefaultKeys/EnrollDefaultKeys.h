@@ -10,7 +10,7 @@
 #ifndef ENROLL_DEFAULT_KEYS_H_
 #define ENROLL_DEFAULT_KEYS_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 //
 // Convenience structure types for constructing "signature lists" for

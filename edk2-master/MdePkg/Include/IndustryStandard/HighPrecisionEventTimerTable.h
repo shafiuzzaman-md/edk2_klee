@@ -9,7 +9,7 @@
 #ifndef _HIGH_PRECISION_EVENT_TIMER_TABLE_H_
 #define _HIGH_PRECISION_EVENT_TIMER_TABLE_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 //
 // Ensure proper structure formats

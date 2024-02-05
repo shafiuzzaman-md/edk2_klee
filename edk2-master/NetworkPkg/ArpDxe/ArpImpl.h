@@ -9,21 +9,21 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ARP_IMPL_H_
 #define _ARP_IMPL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Arp.h>
-#include <Protocol/ManagedNetwork.h>
-#include <Protocol/ServiceBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/Arp.h"
+#include "edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/NetLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DpcLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/DpcLib.h"
 
 //
 // Ethernet protocol type definitions.

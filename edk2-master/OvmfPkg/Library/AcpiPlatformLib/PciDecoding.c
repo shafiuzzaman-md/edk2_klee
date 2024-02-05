@@ -7,10 +7,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/AcpiPlatformLib.h>
-#include <Library/DebugLib.h>                  // DEBUG()
-#include <Library/MemoryAllocationLib.h>       // AllocatePool()
-#include <Library/UefiBootServicesTableLib.h>  // gBS
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   Collect all PciIo protocol instances in the system. Save their original

@@ -6,11 +6,11 @@
 
 **/
 
-#include <Uefi.h>
-#include <Pi/PiMultiPhase.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <libfdt.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
 
 RETURN_STATUS
 EFIAPI

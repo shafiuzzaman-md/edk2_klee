@@ -7,7 +7,7 @@
 **/
 
 #include "HexEditor.h"
-#include <Protocol/BlockIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
 
 extern EFI_HANDLE                HImageHandleBackup;
 extern HEFI_EDITOR_BUFFER_IMAGE  HBufferImage;

@@ -15,7 +15,7 @@
 #ifndef __EFI_BLUETOOTH_IO_PROTOCOL_H__
 #define __EFI_BLUETOOTH_IO_PROTOCOL_H__
 
-#include <IndustryStandard/Bluetooth.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Bluetooth.h"
 
 #define EFI_BLUETOOTH_IO_SERVICE_BINDING_PROTOCOL_GUID \
   { \

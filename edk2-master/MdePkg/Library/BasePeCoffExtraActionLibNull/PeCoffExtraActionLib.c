@@ -6,9 +6,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Performs additional actions after a PE/COFF image has been loaded and relocated.

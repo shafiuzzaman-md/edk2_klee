@@ -12,7 +12,7 @@
 #ifndef __LEGACY_SPI_SMM_FLASH_PROTOCOL_H__
 #define __LEGACY_SPI_SMM_FLASH_PROTOCOL_H__
 
-#include <Protocol/LegacySpiFlash.h>
+#include "edk2-master/MdePkg/Include/Protocol/LegacySpiFlash.h"
 
 ///
 /// Global ID for the Legacy SPI SMM Flash Protocol

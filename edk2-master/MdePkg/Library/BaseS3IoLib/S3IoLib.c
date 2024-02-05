@@ -8,12 +8,12 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/S3IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/S3BootScriptLib.h>
+#include "edk2-master/MdePkg/Include/Library/S3IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
 
 /**
   Saves an I/O port value to the boot script.

@@ -15,7 +15,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #ifdef __APPLE__
 
-  #include <Library/NetLib.h>
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 #define EMU_SNP_PRIVATE_SIGNATURE  SIGNATURE_32('E', 'M', 's', 'n')
 typedef struct {

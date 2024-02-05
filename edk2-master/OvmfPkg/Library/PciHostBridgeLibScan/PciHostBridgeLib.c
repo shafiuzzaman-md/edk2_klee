@@ -7,8 +7,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Library/PciHostBridgeLib.h>                 // PCI_ROOT_BRIDGE
-#include <Library/PciHostBridgeUtilityLib.h>          // PciHostBridgeUtilit...
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciHostBridgeUtilityLib.h"
 
 #include "PciHostBridge.h"
 

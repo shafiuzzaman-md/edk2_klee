@@ -5,13 +5,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/ShellLib.h>
-#include <Library/AcpiViewCommandLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/ShellPkg/Include/Library/AcpiViewCommandLib.h"
 
-#include <Protocol/ShellParameters.h>
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
 
 //
 // String token ID of help message text.

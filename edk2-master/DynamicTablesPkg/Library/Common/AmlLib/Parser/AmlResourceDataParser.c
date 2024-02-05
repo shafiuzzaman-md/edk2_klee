@@ -11,12 +11,12 @@
   - Rdl or RDL - Resource Data Large
 **/
 
-#include <Parser/AmlResourceDataParser.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlResourceDataParser.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlDbgPrint/AmlDbgPrint.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDbgPrint/AmlDbgPrint.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
 
 /** Get the size of a resource data element using a stream.
 

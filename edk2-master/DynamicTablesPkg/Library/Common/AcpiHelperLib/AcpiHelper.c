@@ -6,11 +6,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 // Module specific include files.
-#include <Library/AcpiHelperLib.h>
+#include "edk2-master/DynamicTablesPkg/Include/Library/AcpiHelperLib.h"
 
 /** Convert a hex number to its ASCII code.
 

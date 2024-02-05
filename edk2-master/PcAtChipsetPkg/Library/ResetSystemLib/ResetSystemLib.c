@@ -6,13 +6,13 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
 
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
 
 /**
   Calling this function causes a system-wide reset. This sets

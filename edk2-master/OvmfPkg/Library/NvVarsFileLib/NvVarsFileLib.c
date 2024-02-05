@@ -7,8 +7,8 @@
 **/
 
 #include "NvVarsFileLib.h"
-#include <Library/DebugLib.h>
-#include <Library/NvVarsFileLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/NvVarsFileLib.h"
 
 EFI_HANDLE  mNvVarsFileLibFsHandle = NULL;
 

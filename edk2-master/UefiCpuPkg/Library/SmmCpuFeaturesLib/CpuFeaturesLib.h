@@ -9,13 +9,13 @@
 #ifndef CPU_FEATURES_LIB_H_
 #define CPU_FEATURES_LIB_H_
 
-#include <Guid/SmmBaseHob.h>
-#include <Library/SmmCpuFeaturesLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/UefiCpuPkg/Include/Guid/SmmBaseHob.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/SmmCpuFeaturesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 /**
   Performs library initialization.

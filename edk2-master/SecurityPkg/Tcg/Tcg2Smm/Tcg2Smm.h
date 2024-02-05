@@ -10,29 +10,29 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG2_SMM_H__
 #define __TCG2_SMM_H__
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Guid/MemoryOverwriteControl.h>
-#include <Guid/TpmInstance.h>
-#include <Guid/TpmNvsMm.h>
+#include "edk2-master/MdePkg/Include/Guid/MemoryOverwriteControl.h"
+#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
+#include "edk2-master/SecurityPkg/Include/Guid/TpmNvsMm.h"
 
-#include <Protocol/MmReadyToLock.h>
-#include <Protocol/SmmSwDispatch2.h>
-#include <Protocol/AcpiTable.h>
-#include <Protocol/SmmVariable.h>
-#include <Protocol/Tcg2Protocol.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/Tpm2CommandLib.h>
-#include <Library/Tcg2PhysicalPresenceLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/Tpm2DeviceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
 
-#include <IndustryStandard/TpmPtp.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/TpmPtp.h"
 
 //
 // The definition for TCG MOR

@@ -11,11 +11,11 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/CapsuleUpdatePolicyLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/CapsuleUpdatePolicy.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/CapsuleUpdatePolicyLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/FmpDevicePkg/PrivateInclude/Protocol/CapsuleUpdatePolicy.h"
 
 ///
 /// Pointer to the EDK II Capsule Update Policy Protocol instances that is

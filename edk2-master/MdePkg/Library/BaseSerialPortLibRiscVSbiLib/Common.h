@@ -12,9 +12,9 @@
 #ifndef SERIAL_PORT_SBI_COMMON_H_
 #define SERIAL_PORT_SBI_COMMON_H_
 
-#include <Base.h>
-#include <Library/SerialPortLib.h>
-#include <Library/BaseRiscVSbiLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
 
 BOOLEAN
 SbiImplementsDbcn (

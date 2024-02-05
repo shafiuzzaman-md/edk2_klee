@@ -7,17 +7,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Pcd.h>
-#include <Protocol/PiPcd.h>
-#include <Protocol/PcdInfo.h>
-#include <Protocol/PiPcdInfo.h>
+#include "edk2-master/MdePkg/Include/Protocol/Pcd.h"
+#include "edk2-master/MdePkg/Include/Protocol/PiPcd.h"
+#include "edk2-master/MdePkg/Include/Protocol/PcdInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PiPcdInfo.h"
 
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 PCD_PROTOCOL               *mPcd       = NULL;
 EFI_PCD_PROTOCOL           *mPiPcd     = NULL;

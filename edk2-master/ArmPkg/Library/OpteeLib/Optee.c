@@ -9,16 +9,16 @@
 
 **/
 
-#include <Library/ArmMmuLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/OpteeLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ArmPkg/Include/Library/OpteeLib.h"
 
-#include <IndustryStandard/ArmStdSmc.h>
-#include <OpteeSmc.h>
-#include <Uefi.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
+#include "edk2-master/ArmPkg/Library/OpteeLib/OpteeSmc.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 STATIC OPTEE_SHARED_MEMORY_INFORMATION  OpteeSharedMemoryInformation = { 0 };
 

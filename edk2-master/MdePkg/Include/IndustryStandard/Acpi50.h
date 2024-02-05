@@ -10,7 +10,7 @@
 #ifndef _ACPI_5_0_H_
 #define _ACPI_5_0_H_
 
-#include <IndustryStandard/Acpi40.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi40.h"
 
 //
 // Define for Descriptor

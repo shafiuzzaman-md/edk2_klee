@@ -8,7 +8,7 @@
 #ifndef _ACPI_2_0_H_
 #define _ACPI_2_0_H_
 
-#include <IndustryStandard/Acpi10.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
 
 //
 // Define for Descriptor

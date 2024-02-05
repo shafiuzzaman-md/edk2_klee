@@ -7,8 +7,8 @@
 
 **/
 
-#include <Base.h>
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 /**
   Build the GuidHob for tdx measurements which were done in SEC phase.

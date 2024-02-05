@@ -7,12 +7,12 @@
 
 **/
 
-#include <Uefi.h>
-#include <Pi/PiMultiPhase.h>
-#include <Guid/VariableFlashInfo.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/VariableFlashInfoLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFlashInfo.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariableFlashInfoLib.h"
 
 /**
   Get the HOB that contains variable flash information.

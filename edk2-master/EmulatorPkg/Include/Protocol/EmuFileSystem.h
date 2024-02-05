@@ -16,10 +16,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EMU_UGA_IO_H_
 #define _EMU_UGA_IO_H_
 
-#include <Protocol/SimplePointer.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/SimpleTextInEx.h>
-#include <Protocol/UgaDraw.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimplePointer.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/UgaDraw.h"
 
 #define EMU_GRAPHICS_WINDOW_PROTOCOL_GUID \
  { 0x30FD316A, 0x6728, 0x2E41, { 0xA6, 0x90, 0x0D, 0x13, 0x33, 0xD8, 0xCA, 0xC1 } }

@@ -7,12 +7,12 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
 
 /**
   Copy data from MMIO region to system memory by using 8-bit access.

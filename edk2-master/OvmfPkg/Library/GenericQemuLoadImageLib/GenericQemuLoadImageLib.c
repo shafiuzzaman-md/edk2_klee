@@ -6,19 +6,19 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Base.h>
-#include <Guid/QemuKernelLoaderFsMedia.h>
-#include <Library/DebugLib.h>
-#include <Library/FileHandleLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/QemuLoadImageLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/OvmfPkg/Include/Guid/QemuKernelLoaderFsMedia.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuLoadImageLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
 #pragma pack (1)
 typedef struct {

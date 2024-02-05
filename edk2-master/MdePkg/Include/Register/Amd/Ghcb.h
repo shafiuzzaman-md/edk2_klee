@@ -15,9 +15,9 @@
 #ifndef __GHCB_H__
 #define __GHCB_H__
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #define UD_EXCEPTION  6
 #define GP_EXCEPTION  13

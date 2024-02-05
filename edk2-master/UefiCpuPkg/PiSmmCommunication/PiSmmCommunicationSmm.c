@@ -6,18 +6,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiSmm.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SmmMemLib.h>
-#include <Protocol/SmmSwDispatch2.h>
-#include <Protocol/SmmCommunication.h>
-#include <Ppi/SmmCommunication.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmMemLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCommunication.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SmmCommunication.h"
 
 #include "PiSmmCommunicationPrivate.h"
 

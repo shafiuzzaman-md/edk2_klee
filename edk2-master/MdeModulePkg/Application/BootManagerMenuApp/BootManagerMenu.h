@@ -9,18 +9,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _BOOT_MANAGER_MENU_H_
 #define _BOOT_MANAGER_MENU_H_
 
-#include <Uefi.h>
-#include <Guid/MdeModuleHii.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DevicePathLib.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/BootLogo.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/BootLogo.h"
 
 #define TITLE_TOKEN_COUNT  1
 #define HELP_TOKEN_COUNT   3

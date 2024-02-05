@@ -7,20 +7,20 @@
 
 **/
 
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
-#include <stddef.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stddef.h"
 #include <setjmp.h>
 #include <cmocka.h>
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrmModuleDiscoveryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UnitTestLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmModuleDiscoveryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
 
 #include "../PrmModuleDiscovery.h"
 

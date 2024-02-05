@@ -9,13 +9,13 @@
 #ifndef __LZMADECOMPRESSLIB_INTERNAL_H__
 #define __LZMADECOMPRESSLIB_INTERNAL_H__
 
-#include <Base.h>
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
-#include <Guid/LzmaDecompress.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/LzmaDecompress.h"
 
 /**
   Given a Lzma compressed source buffer, this function retrieves the size of

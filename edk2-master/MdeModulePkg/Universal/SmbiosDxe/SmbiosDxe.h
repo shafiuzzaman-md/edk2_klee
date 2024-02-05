@@ -9,22 +9,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SMBIOS_DXE_H_
 #define _SMBIOS_DXE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Smbios.h>
-#include <IndustryStandard/SmBios.h>
-#include <Guid/EventGroup.h>
-#include <Guid/SmBios.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <UniversalPayload/SmbiosTable.h>
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/SmBios.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SmbiosTable.h"
 
 #define SMBIOS_INSTANCE_SIGNATURE  SIGNATURE_32 ('S', 'B', 'i', 's')
 typedef struct {

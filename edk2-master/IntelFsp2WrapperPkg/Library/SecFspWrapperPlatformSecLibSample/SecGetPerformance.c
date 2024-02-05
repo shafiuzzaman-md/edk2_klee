@@ -6,14 +6,14 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/SecPerformance.h>
-#include <Ppi/TopOfTemporaryRam.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/SecPerformance.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Ppi/TopOfTemporaryRam.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   This interface conveys performance information out of the Security (SEC) phase into PEI.

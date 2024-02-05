@@ -8,12 +8,12 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Ppi/Debug.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/Debug.h"
 
 #include "DebugService.h"
 

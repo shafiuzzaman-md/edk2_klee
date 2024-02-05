@@ -5,8 +5,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiPei.h>
-#include <Library/CpuExceptionHandlerLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
 
 /**
   Initializes all CPU exceptions entries and provides the default exception handlers.

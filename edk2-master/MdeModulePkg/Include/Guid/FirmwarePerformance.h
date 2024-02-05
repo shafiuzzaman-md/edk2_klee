@@ -9,9 +9,9 @@
 #ifndef _FIRMWARE_PERFORMANCE_GUID_H_
 #define _FIRMWARE_PERFORMANCE_GUID_H_
 
-#include <PiPei.h>
-#include <IndustryStandard/Acpi.h>
-#include <Ppi/SecPerformance.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SecPerformance.h"
 
 ///
 /// This GUID is used for FPDT implementation specific EFI Variable, LockBox and Hob.

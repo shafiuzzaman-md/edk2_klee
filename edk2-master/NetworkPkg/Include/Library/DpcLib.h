@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DPC_LIB_H_
 #define _DPC_LIB_H_
 
-#include <Protocol/Dpc.h>
+#include "edk2-master/NetworkPkg/Include/Protocol/Dpc.h"
 
 /**
   Add a Deferred Procedure Call to the end of the DPC queue.

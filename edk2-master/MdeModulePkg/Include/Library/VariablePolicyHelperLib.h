@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EDKII_VARIABLE_POLICY_HELPER_LIB_H_
 #define _EDKII_VARIABLE_POLICY_HELPER_LIB_H_
 
-#include <Protocol/VariablePolicy.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
 
 /**
   This helper function will allocate and populate a new VariablePolicy

@@ -12,10 +12,10 @@ Copyright (c) 2013 - 2018, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/RngLib.h>
-#include <Library/TimerLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/RngLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
 
 #include "AesCore.h"
 #include "RngDxeInternals.h"

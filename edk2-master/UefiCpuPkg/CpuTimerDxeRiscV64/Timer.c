@@ -7,9 +7,9 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseRiscVSbiLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "Timer.h"
 
 //

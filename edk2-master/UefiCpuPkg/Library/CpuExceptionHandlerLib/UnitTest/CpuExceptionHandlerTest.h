@@ -35,22 +35,22 @@
 #ifndef CPU_EXCEPTION_HANDLER_TEST_H_
 #define CPU_EXCEPTION_HANDLER_TEST_H_
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UnitTestLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UnitTestHostBaseLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/UefiLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/HobLib.h>
-#include <Library/CpuPageTableLib.h>
-#include <Guid/MemoryAllocationHob.h>
-#include <Protocol/MpService.h>
-#include <PiPei.h>
-#include <Ppi/MpServices2.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Test/UnitTest/Include/Library/UnitTestHostBaseLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CpuPageTableLib.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAllocationHob.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/MpServices2.h"
 
 #define UNIT_TEST_APP_NAME     "Cpu Exception Handler Lib Unit Tests"
 #define UNIT_TEST_APP_VERSION  "1.0"

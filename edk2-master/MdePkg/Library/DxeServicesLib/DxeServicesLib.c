@@ -8,19 +8,19 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/LoadFile2.h>
-#include <Protocol/LoadFile.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Guid/FileInfo.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile2.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
 
 /**
   Identify the device handle from which the Image is loaded from. As this device handle is passed to

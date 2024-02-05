@@ -8,18 +8,18 @@
 #ifndef TDX_ACPI_TABLE_H_
 #define TDX_ACPI_TABLE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/AcpiTable.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/PciIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
-#include <Library/BaseLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <IndustryStandard/IntelTdx.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/IntelTdx.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 VOID
 EFIAPI

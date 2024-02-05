@@ -11,7 +11,7 @@
 #ifdef USE_WINDOWS_FILE
 #include <windows.h>
 #else
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #endif
 
 #include "7zTypes.h"

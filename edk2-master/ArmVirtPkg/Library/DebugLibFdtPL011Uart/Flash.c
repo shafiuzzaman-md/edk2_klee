@@ -6,9 +6,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/FdtSerialPortAddressLib.h>
-#include <Library/PL011UartLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmVirtPkg/Include/Library/FdtSerialPortAddressLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/PL011UartLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 #include "Write.h"
 

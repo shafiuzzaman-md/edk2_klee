@@ -9,7 +9,7 @@
 #ifndef QEMU_FW_CFG_SIMPLE_PARSER_LIB_H_
 #define QEMU_FW_CFG_SIMPLE_PARSER_LIB_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Look up FileName with QemuFwCfgFindFile() from QemuFwCfgLib. Read the fw_cfg

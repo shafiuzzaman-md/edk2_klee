@@ -8,10 +8,10 @@
 **/
 
 #include "UefiShellDebug1CommandsLib.h"
-#include <Library/ShellLib.h>
-#include <Library/IoLib.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/DeviceIo.h>
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/DeviceIo.h"
 
 typedef enum {
   ShellMmMemory,

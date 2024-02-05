@@ -6,18 +6,18 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Pi/PiBootMode.h>
-#include <Pi/PiHob.h>
+#include "edk2-master/MdePkg/Include/Pi/PiBootMode.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PlatformHookLib.h>
-#include <Library/FdtSerialPortAddressLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PlatformHookLib.h"
+#include "edk2-master/ArmVirtPkg/Include/Library/FdtSerialPortAddressLib.h"
 
 /** Platform hook to retrieve the 16550 UART base address from the platform
     Device tree and store it in PcdSerialRegisterBase.

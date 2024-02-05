@@ -7,15 +7,15 @@
 
 **/
 
-#include <IndustryStandard/Acpi10.h>
-#include <IndustryStandard/Pci.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciHostBridgeLib.h>
-#include <Library/PciHostBridgeUtilityLib.h>
-#include <Library/PciLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciHostBridgeUtilityLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
 
 #pragma pack(1)
 typedef struct {

@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _AUTH_VARIABLE_LIB_H_
 #define _AUTH_VARIABLE_LIB_H_
 
-#include <Protocol/VarCheck.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
 
 ///
 /// Size of AuthInfo prior to the data payload.

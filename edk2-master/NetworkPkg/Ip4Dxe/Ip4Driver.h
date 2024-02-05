@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_IP4_DRIVER_H__
 #define __EFI_IP4_DRIVER_H__
 
-#include <Protocol/ServiceBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
 extern EFI_DRIVER_BINDING_PROTOCOL   gIp4DriverBinding;
 extern EFI_COMPONENT_NAME_PROTOCOL   gIp4ComponentName;

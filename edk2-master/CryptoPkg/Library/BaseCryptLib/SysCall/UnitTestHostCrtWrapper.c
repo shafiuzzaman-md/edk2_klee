@@ -8,10 +8,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 
-#include <Base.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /* Convert character to lowercase */
 int

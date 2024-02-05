@@ -5,14 +5,14 @@ Copyright (c) 2016 - 2017, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/HiiImageEx.h>
-#include <Protocol/PlatformLogo.h>
-#include <Protocol/HiiPackageList.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiImageEx.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/PlatformLogo.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPackageList.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 typedef struct {
   EFI_IMAGE_ID                             ImageId;

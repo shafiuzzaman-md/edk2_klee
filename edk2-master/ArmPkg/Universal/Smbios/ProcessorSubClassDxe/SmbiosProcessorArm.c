@@ -7,9 +7,9 @@
 
 **/
 
-#include <Uefi.h>
-#include <IndustryStandard/ArmCache.h>
-#include <Library/ArmLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmCache.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
 
 #include "SmbiosProcessor.h"
 

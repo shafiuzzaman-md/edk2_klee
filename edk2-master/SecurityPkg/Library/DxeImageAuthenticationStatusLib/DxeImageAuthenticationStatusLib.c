@@ -6,8 +6,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Library/SecurityManagementLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SecurityManagementLib.h"
 
 /**
   Check image authentication status returned from Section Extraction Protocol

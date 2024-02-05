@@ -6,14 +6,14 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
-#include <Ppi/EmuThunk.h>
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
 /**
   Stalls the CPU for at least the given number of microseconds.

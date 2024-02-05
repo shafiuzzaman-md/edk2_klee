@@ -8,14 +8,14 @@
  *
  */
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
-#include <Protocol/PeCoffImageEmulator.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/PeCoffImageEmulator.h"
 
 #pragma pack (1)
 typedef struct {

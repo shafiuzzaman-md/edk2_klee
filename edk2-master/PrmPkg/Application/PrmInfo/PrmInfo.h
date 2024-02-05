@@ -9,10 +9,10 @@
 #ifndef PRM_INFO_H_
 #define PRM_INFO_H_
 
-#include <Base.h>
-#include <Prm.h>
-#include <PrmDataBuffer.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/PrmPkg/Include/Prm.h"
+#include "edk2-master/PrmPkg/Include/PrmDataBuffer.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #define  APPLICATION_NAME  L"PrmInfo"
 

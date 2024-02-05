@@ -7,19 +7,19 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <AmlNodeDefines.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
 
-#include <AcpiTableGenerator.h>
+#include "edk2-master/DynamicTablesPkg/Include/AcpiTableGenerator.h"
 
-#include <AmlCoreInterface.h>
-#include <AcpiObjects.h>
-#include <AmlEncoding/Aml.h>
-#include <Api/AmlApiHelper.h>
-#include <CodeGen/AmlResourceDataCodeGen.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
-#include <String/AmlString.h>
-#include <Utils/AmlUtility.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Include/AcpiObjects.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlEncoding/Aml.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Api/AmlApiHelper.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/CodeGen/AmlResourceDataCodeGen.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Utils/AmlUtility.h"
 
 /** Utility function to link a node when returning from a CodeGen function.
 

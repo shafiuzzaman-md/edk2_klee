@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMM_SERVICES_TABLE_LIB_H__
 #define __SMM_SERVICES_TABLE_LIB_H__
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
 ///
 /// Cache pointer to the SMM Services Table

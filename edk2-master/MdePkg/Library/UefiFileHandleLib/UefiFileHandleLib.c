@@ -6,20 +6,20 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/UnicodeCollation.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
 
-#include <Guid/FileInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
 
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/FileHandleLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 CONST UINT16  gUnicodeFileTag = EFI_UNICODE_BYTE_ORDER_MARK;
 

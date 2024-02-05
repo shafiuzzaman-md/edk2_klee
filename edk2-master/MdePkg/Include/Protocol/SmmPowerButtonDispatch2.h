@@ -15,7 +15,7 @@
 #ifndef _SMM_POWER_BUTTON_DISPATCH2_H_
 #define _SMM_POWER_BUTTON_DISPATCH2_H_
 
-#include <Protocol/MmPowerButtonDispatch.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmPowerButtonDispatch.h"
 
 #define EFI_SMM_POWER_BUTTON_DISPATCH2_PROTOCOL_GUID  EFI_MM_POWER_BUTTON_DISPATCH_PROTOCOL_GUID
 

@@ -9,12 +9,12 @@
 //
 // The package level header files this module uses
 //
-#include <IndustryStandard/Q35MchIch9.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/PcdLib.h>
-#include <PiPei.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 #include <Register/Intel/SmramSaveStateMap.h>
 
 #include "Platform.h"

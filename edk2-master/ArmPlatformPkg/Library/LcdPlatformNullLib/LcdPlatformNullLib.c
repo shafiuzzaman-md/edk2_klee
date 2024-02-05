@@ -7,10 +7,10 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi/UefiBaseType.h>
-#include <Library/DebugLib.h>
-#include <Library/LcdPlatformLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/LcdPlatformLib.h"
 
 /** Platform related initialization function.
 

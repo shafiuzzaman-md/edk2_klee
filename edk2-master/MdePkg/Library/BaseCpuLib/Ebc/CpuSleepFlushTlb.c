@@ -5,8 +5,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Base.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Flushes all the Translation Lookaside Buffers(TLB) entries in a CPU.

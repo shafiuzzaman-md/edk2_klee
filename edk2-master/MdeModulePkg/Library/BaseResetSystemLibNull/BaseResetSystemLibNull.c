@@ -6,10 +6,10 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/ResetSystemLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   This function causes a system-wide reset (cold reset), in which

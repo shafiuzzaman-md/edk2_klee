@@ -6,7 +6,7 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 /**
   Test the output of FSP API - FspMemoryInit.

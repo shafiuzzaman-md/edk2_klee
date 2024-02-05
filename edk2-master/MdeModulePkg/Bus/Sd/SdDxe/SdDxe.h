@@ -12,26 +12,26 @@
 #ifndef _SD_DXE_H_
 #define _SD_DXE_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/Sd.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Sd.h"
 
-#include <Protocol/SdMmcPassThru.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/BlockIo2.h>
-#include <Protocol/EraseBlock.h>
-#include <Protocol/DiskInfo.h>
+#include "edk2-master/MdePkg/Include/Protocol/SdMmcPassThru.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo2.h"
+#include "edk2-master/MdePkg/Include/Protocol/EraseBlock.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskInfo.h"
 
-#include <Protocol/DevicePath.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 #include "SdBlockIo.h"
 #include "SdDiskInfo.h"

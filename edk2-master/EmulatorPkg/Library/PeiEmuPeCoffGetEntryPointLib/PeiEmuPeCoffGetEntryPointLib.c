@@ -7,13 +7,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "PiPei.h"
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/PeiServicesLib.h>
-#include <IndustryStandard/PeImage.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Ppi/EmuThunk.h>
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
 /**
   Retrieves and returns a pointer to the entry point to a PE/COFF image that has been loaded

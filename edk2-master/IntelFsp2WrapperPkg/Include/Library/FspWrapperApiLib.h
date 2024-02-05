@@ -9,7 +9,7 @@
 #ifndef __FSP_WRAPPER_API_LIB_H__
 #define __FSP_WRAPPER_API_LIB_H__
 
-#include <FspEas.h>
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 /**
   Find FSP header pointer.

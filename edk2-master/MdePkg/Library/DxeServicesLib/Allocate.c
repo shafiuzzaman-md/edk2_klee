@@ -7,9 +7,9 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
 
 /**
   Allocates one or more 4KB pages of a given type from a memory region that is

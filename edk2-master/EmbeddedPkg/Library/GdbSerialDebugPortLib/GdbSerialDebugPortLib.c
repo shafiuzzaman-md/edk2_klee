@@ -7,14 +7,14 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/GdbSerialLib.h>
-#include <Library/PcdLib.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/GdbSerialLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
-#include <Protocol/DebugPort.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugPort.h"
 
 EFI_DEBUGPORT_PROTOCOL  *gDebugPort = NULL;
 UINT32                  gTimeOut    = 0;

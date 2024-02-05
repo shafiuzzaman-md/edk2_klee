@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #ifndef _DRIVER_HEALTH_VFR_H_
 #define _DRIVER_HEALTH_VFR_H_
-#include <Guid/HiiPlatformSetupFormset.h>
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
 
 #define DRIVER_HEALTH_MANAGER_FORMSET_GUID    { 0xcfb3b000, 0x0b63, 0x444b, { 0xb1, 0xd1, 0x12, 0xd5, 0xd9, 0x5d, 0xc4, 0xfc } }
 #define DRIVER_HEALTH_CONFIGURE_FORMSET_GUID  { 0x4296d9f4, 0xf6fc, 0x4dde, { 0x86, 0x85, 0x8c, 0xe2, 0xd7, 0x9d, 0x90, 0xf0 } }

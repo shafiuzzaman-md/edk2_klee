@@ -11,8 +11,8 @@
 #ifndef PRMT_ACPI_TABLE_H_
 #define PRMT_ACPI_TABLE_H_
 
-#include <Base.h>
-#include <IndustryStandard/Acpi10.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
 
 #define PRM_TABLE_SIGNATURE  SIGNATURE_32 ('P', 'R', 'M', 'T')
 

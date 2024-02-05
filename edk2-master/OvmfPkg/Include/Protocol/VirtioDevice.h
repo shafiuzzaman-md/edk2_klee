@@ -14,7 +14,7 @@
 #ifndef __VIRTIO_DEVICE_H__
 #define __VIRTIO_DEVICE_H__
 
-#include <IndustryStandard/Virtio.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 //
 // VirtIo Specification Revision: Major[31:24].Minor[23:16].Revision[15:0]

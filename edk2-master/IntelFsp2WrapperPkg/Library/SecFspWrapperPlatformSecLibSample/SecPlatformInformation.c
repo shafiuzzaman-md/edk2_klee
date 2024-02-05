@@ -6,13 +6,13 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/SecPlatformInformation.h>
-#include <Ppi/TopOfTemporaryRam.h>
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Ppi/TopOfTemporaryRam.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   This interface conveys state information out of the Security (SEC) phase into PEI.

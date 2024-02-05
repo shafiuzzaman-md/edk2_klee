@@ -11,17 +11,17 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/PcdLib.h>
-#include <Library/PL011UartLib.h>
-#include <Library/SerialPortLib.h>
-#include <Pi/PiBootMode.h>
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiMultiPhase.h>
-#include <Pi/PiHob.h>
-#include <Library/HobLib.h>
-#include <Guid/EarlyPL011BaseAddress.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/PL011UartLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Pi/PiBootMode.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/ArmVirtPkg/Include/Guid/EarlyPL011BaseAddress.h"
 
 STATIC UINTN          mSerialBaseAddress;
 STATIC RETURN_STATUS  mPermanentStatus = RETURN_SUCCESS;

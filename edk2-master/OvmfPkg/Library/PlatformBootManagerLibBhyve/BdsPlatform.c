@@ -8,12 +8,12 @@
 **/
 
 #include "BdsPlatform.h"
-#include <Guid/RootBridgesConnectedEventGroup.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Library/PlatformBmPrintScLib.h>
-#include <Library/Tcg2PhysicalPresenceLib.h>
+#include "edk2-master/OvmfPkg/Include/Guid/RootBridgesConnectedEventGroup.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformBmPrintScLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
 
-#include <Protocol/BlockIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
 
 //
 // Global data

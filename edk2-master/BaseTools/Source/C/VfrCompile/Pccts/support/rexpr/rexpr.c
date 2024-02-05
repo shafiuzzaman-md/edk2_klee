@@ -61,10 +61,10 @@
  * April 1991
  */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 #ifdef __STDC__
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #else
 #include <malloc.h>
 #endif

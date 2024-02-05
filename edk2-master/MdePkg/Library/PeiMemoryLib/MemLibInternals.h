@@ -9,12 +9,12 @@
 #ifndef __MEM_LIB_INTERNALS__
 #define __MEM_LIB_INTERNALS__
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Copies a source buffer to a destination buffer, and returns the destination buffer.

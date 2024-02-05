@@ -7,7 +7,7 @@
 
 **/
 
-#include <GdbStubInternal.h>
+#include "edk2-master/EmbeddedPkg/GdbStub/GdbStubInternal.h"
 
 //
 // Array of exception types that need to be hooked by the debugger

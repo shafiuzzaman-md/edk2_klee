@@ -8,7 +8,7 @@
 #ifndef _EDKII_STORAGE_SECURITY_COMMAND_PPI_H_
 #define _EDKII_STORAGE_SECURITY_COMMAND_PPI_H_
 
-#include <Protocol/DevicePath.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 ///
 /// Global ID for the EDKII_PEI_STORAGE_SECURITY_CMD_PPI.

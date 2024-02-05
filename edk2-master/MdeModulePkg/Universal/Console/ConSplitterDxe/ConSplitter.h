@@ -9,34 +9,34 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _CON_SPLITTER_H_
 #define _CON_SPLITTER_H_
 
-#include <Uefi.h>
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/SimplePointer.h>
-#include <Protocol/AbsolutePointer.h>
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/SimpleTextInEx.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/UgaDraw.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimplePointer.h"
+#include "edk2-master/MdePkg/Include/Protocol/AbsolutePointer.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/UgaDraw.h"
 
-#include <Guid/ConsoleInDevice.h>
-#include <Guid/StandardErrorDevice.h>
-#include <Guid/ConsoleOutDevice.h>
-#include <Guid/ConnectConInEvent.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/ConsoleInDevice.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StandardErrorDevice.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ConsoleOutDevice.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ConnectConInEvent.h"
 
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 //
 // Driver Binding Externs

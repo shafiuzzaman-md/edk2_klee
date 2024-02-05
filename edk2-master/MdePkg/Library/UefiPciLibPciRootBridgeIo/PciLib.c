@@ -6,12 +6,12 @@
 
 **/
 
-#include <Protocol/PciRootBridgeIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
-#include <Library/PciLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Assert the validity of a PCI address. A valid PCI address should contain 1's

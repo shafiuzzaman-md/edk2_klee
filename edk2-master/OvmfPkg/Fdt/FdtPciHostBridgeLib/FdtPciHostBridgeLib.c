@@ -6,20 +6,20 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciHostBridgeLib.h>
-#include <Library/PciHostBridgeUtilityLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciHostBridgeUtilityLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
-#include <Protocol/FdtClient.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/PciHostBridgeResourceAllocation.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/FdtClient.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
 
 //
 // We expect the "ranges" property of "pci-host-ecam-generic" to consist of

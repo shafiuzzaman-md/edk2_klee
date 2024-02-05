@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiSmm.h>
-#include <Protocol/IpmiProtocol.h>
-#include <Library/IpmiLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/IpmiProtocol.h"
+#include "edk2-master/MdeModulePkg/Include/Library/IpmiLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 IPMI_PROTOCOL  *mIpmiProtocol = NULL;
 

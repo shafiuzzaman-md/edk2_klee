@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <IndustryStandard/ElTorito.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/ElTorito.h"
 #include "FatLitePeim.h"
 
 /**

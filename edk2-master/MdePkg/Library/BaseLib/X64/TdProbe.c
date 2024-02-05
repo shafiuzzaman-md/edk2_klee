@@ -5,7 +5,7 @@
 
 **/
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 #include <Register/Intel/Cpuid.h>
 
 /**

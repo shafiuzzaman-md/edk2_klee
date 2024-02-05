@@ -10,9 +10,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _FV_LIB_H_
 #define _FV_LIB_H_
 
-#include <Uefi.h>
-#include <Pi/PiFirmwareVolume.h>
-#include <Pi/PiFirmwareFile.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Pi/PiFirmwareVolume.h"
+#include "edk2-master/MdePkg/Include/Pi/PiFirmwareFile.h"
 
 /**
   Given the input file pointer, search for the next matching file in the

@@ -12,10 +12,10 @@
     SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
-#include <Library/JsonLib.h>
-#include <Library/BaseUcs2Utf8Lib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/RedfishPkg/Include/Library/JsonLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/BaseUcs2Utf8Lib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "jansson.h"
 

@@ -6,24 +6,24 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 //
 // The protocols, PPI and GUID definitions for this module
 //
-#include <Ppi/MasterBootMode.h>
-#include <Ppi/BootInRecoveryMode.h>
-#include <Ppi/GuidedSectionExtraction.h>
+#include "edk2-master/MdePkg/Include/Ppi/MasterBootMode.h"
+#include "edk2-master/MdePkg/Include/Ppi/BootInRecoveryMode.h"
+#include "edk2-master/MdePkg/Include/Ppi/GuidedSectionExtraction.h"
 //
 // The Library classes this module consumes
 //
-#include <Library/ArmPlatformLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 EFI_STATUS
 EFIAPI

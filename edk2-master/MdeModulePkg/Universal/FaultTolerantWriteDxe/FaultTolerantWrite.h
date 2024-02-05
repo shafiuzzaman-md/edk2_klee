@@ -11,23 +11,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_FAULT_TOLERANT_WRITE_H_
 #define _EFI_FAULT_TOLERANT_WRITE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/SystemNvDataGuid.h>
-#include <Guid/ZeroGuid.h>
-#include <Protocol/FaultTolerantWrite.h>
-#include <Protocol/FirmwareVolumeBlock.h>
-#include <Protocol/SwapAddressRange.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FaultTolerantWrite.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SwapAddressRange.h"
 
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/VariableFlashInfoLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariableFlashInfoLib.h"
 
 //
 // Flash erase polarity is 1

@@ -6,18 +6,18 @@
 
 **/
 
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
-#include <Protocol/StatusCode.h>
+#include "edk2-master/MdePkg/Include/Protocol/StatusCode.h"
 
-#include <Guid/StatusCodeDataTypeId.h>
-#include <Guid/StatusCodeDataTypeDebug.h>
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StatusCodeDataTypeDebug.h"
 
 EFI_STATUS_CODE_PROTOCOL  *mReportStatusCodeLibStatusCodeProtocol = NULL;
 

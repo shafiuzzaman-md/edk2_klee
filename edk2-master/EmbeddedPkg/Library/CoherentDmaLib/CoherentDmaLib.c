@@ -7,10 +7,10 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/DebugLib.h>
-#include <Library/DmaLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/DmaLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 STATIC
 PHYSICAL_ADDRESS

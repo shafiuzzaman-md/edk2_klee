@@ -9,17 +9,17 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DmaLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/IoLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/DmaLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
-#include <Protocol/Cpu.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
 
 typedef struct {
   EFI_PHYSICAL_ADDRESS    HostAddress;

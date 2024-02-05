@@ -9,15 +9,15 @@
 #ifndef __PEI_REPORT_STATUS_CODE_ROUTER_H__
 #define __PEI_REPORT_STATUS_CODE_ROUTER_H__
 
-#include <Ppi/ReportStatusCodeHandler.h>
-#include <Ppi/StatusCode.h>
+#include "edk2-master/MdePkg/Include/Ppi/ReportStatusCodeHandler.h"
+#include "edk2-master/MdePkg/Include/Ppi/StatusCode.h"
 
-#include <Guid/StatusCodeCallbackGuid.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/StatusCodeCallbackGuid.h"
 
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeimEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
 
 /**
   Register the callback function for ReportStatusCode() notification.

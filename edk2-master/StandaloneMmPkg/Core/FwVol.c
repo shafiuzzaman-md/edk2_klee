@@ -8,8 +8,8 @@
 **/
 
 #include "StandaloneMmCore.h"
-#include <Library/FvLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
+#include "edk2-master/StandaloneMmPkg/Include/Library/FvLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
 
 //
 // List of file types supported by dispatcher

@@ -12,32 +12,32 @@
 #ifndef HII_INTERNAL_H_
 #define HII_INTERNAL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/UnicodeCollation.h>
-#include <Protocol/HiiConfigRouting.h>
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/UserManager.h>
-#include <Protocol/DevicePathFromText.h>
-#include <Protocol/RegularExpressionProtocol.h>
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Protocol/UserManager.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathFromText.h"
+#include "edk2-master/MdePkg/Include/Protocol/RegularExpressionProtocol.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/ZeroGuid.h>
-#include <Guid/HiiPlatformSetupFormset.h>
-#include <Guid/HiiFormMapMethodGuid.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "edk2-master/MdePkg/Include/Guid/HiiFormMapMethodGuid.h"
 
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HiiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #include "HiiExpression.h"
-#include <Library/HiiUtilityLib.h>
+#include "edk2-master/RedfishPkg/Include/Library/HiiUtilityLib.h"
 
 #define EXPRESSION_STACK_SIZE_INCREMENT  0x100
 #define EFI_IFR_SPECIFICATION_VERSION    (UINT16) (((EFI_SYSTEM_TABLE_REVISION >> 16) << 8) | (((EFI_SYSTEM_TABLE_REVISION & 0xFFFF) / 10) << 4) | ((EFI_SYSTEM_TABLE_REVISION & 0xFFFF) % 10))

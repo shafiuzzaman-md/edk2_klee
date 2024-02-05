@@ -13,14 +13,14 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/EfiResetSystemLib.h>
-#include <Library/ArmSmcLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/EfiResetSystemLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
 
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 /**
   Resets the entire platform.

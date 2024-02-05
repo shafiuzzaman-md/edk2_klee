@@ -11,7 +11,7 @@
 #ifndef LCD_HW_LIB_H_
 #define LCD_HW_LIB_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 /**
   Check for presence of display

@@ -19,7 +19,7 @@
 #ifndef QEMU_CPU_HOTPLUG_H_
 #define QEMU_CPU_HOTPLUG_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 //
 // Each register offset is:

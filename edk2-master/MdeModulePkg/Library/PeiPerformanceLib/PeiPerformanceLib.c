@@ -13,18 +13,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Guid/ExtendedFirmwarePerformance.h>
-#include <Guid/PerformanceMeasurement.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/ExtendedFirmwarePerformance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PerformanceMeasurement.h"
 
-#include <Library/PerformanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 #define  STRING_SIZE          (FPDT_STRING_EVENT_RECORD_NAME_LENGTH * sizeof (CHAR8))
 #define  PEI_MAX_RECORD_SIZE  (sizeof (FPDT_DUAL_GUID_STRING_EVENT_RECORD) + STRING_SIZE)

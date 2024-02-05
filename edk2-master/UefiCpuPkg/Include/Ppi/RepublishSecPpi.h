@@ -17,7 +17,7 @@
 #ifndef __REPUBLISH_SEC_PPI_H__
 #define __REPUBLISH_SEC_PPI_H__
 
-#include <Pi/PiPeiCis.h>
+#include "edk2-master/MdePkg/Include/Pi/PiPeiCis.h"
 
 #define REPUBLISH_SEC_PPI_PPI_GUID \
   { \

@@ -11,7 +11,7 @@
   - linux/Documentation/devicetree/bindings/serial/pl011.yaml
 **/
 
-#include <IndustryStandard/DebugPort2Table.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/DebugPort2Table.h"
 
 #include "CmObjectDescUtility.h"
 #include "FdtHwInfoParser.h"

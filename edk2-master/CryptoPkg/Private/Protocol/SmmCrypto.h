@@ -9,7 +9,7 @@
 #ifndef __EDKII_SMM_CRYPTO_PROTOCOL_H__
 #define __EDKII_SMM_CRYPTO_PROTOCOL_H__
 
-#include <Protocol/Crypto.h>
+#include "edk2-master/CryptoPkg/Private/Protocol/Crypto.h"
 
 ///
 /// EDK II SMM Crypto Protocol is identical to EDK II Crypto Protocol

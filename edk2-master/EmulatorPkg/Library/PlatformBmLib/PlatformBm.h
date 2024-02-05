@@ -9,30 +9,30 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PLATFORM_BM_H
 #define _PLATFORM_BM_H
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/EmuSystemConfig.h>
-#include <Guid/EventGroup.h>
-#include <Protocol/EmuThunk.h>
-#include <Protocol/EmuIoThunk.h>
-#include <Protocol/EmuGraphicsWindow.h>
-#include <Protocol/GenericMemoryTest.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/FirmwareVolume2.h>
+#include "edk2-master/EmulatorPkg/Include/Guid/EmuSystemConfig.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuGraphicsWindow.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/GenericMemoryTest.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BootLogoLib.h>
-#include <Library/HobLib.h>
-#include <Library/HiiLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/BootLogoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
 
 #define CONSOLE_OUT  0x00000001
 #define STD_ERROR    0x00000002

@@ -7,9 +7,9 @@
 **/
 
 #include "CpuExceptionHandlerTest.h"
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
 
 /**
   Initialize Bsp Idt with a new Idt table and return the IA32_DESCRIPTOR buffer.

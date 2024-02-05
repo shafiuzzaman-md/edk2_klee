@@ -6,8 +6,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 /**
   Initialize the serial device hardware.

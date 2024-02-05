@@ -12,7 +12,7 @@
 #ifndef _UNIT_TEST_PERSISTENCE_LIB_H_
 #define _UNIT_TEST_PERSISTENCE_LIB_H_
 
-#include <Library/UnitTestLib.h>
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
 
 #define UNIT_TEST_PERSISTENCE_LIB_VERSION  1
 

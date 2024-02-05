@@ -9,18 +9,18 @@
 #ifndef __VIRT_NOR_FLASH__
 #define __VIRT_NOR_FLASH__
 
-#include <Base.h>
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
-#include <Protocol/FirmwareVolumeBlock.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
 
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/VirtNorFlashPlatformLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtNorFlashPlatformLib.h"
 
 #define NOR_FLASH_ERASE_RETRY  10
 

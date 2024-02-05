@@ -7,8 +7,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/QemuFwCfgLib.h>
-#include <Library/QemuFwCfgS3Lib.h>
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
 
 /**
   Determine if S3 support is explicitly enabled.

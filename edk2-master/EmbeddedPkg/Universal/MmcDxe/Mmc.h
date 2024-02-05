@@ -10,16 +10,16 @@
 #ifndef __MMC_H
 #define __MMC_H
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/DiskIo.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/MmcHost.h>
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/EmbeddedPkg/Include/Protocol/MmcHost.h"
 
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 #define MMC_TRACE(txt)  DEBUG((DEBUG_BLKIO, "MMC: " txt "\n"))
 

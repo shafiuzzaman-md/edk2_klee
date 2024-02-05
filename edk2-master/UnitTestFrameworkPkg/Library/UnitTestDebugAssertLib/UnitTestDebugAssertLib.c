@@ -6,9 +6,9 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/UnitTestLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
 
 ///
 /// Point to jump buffer used with SetJump()/LongJump() to test if a function

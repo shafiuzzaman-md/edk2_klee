@@ -9,8 +9,8 @@
 
 **/
 
-#include <Uefi.h>
-#include <Protocol/RestJsonStructure.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/RestJsonStructure.h"
 #include "RestJsonStructureInternal.h"
 
 LIST_ENTRY  mRestJsonStructureList;

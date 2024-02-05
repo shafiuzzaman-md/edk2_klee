@@ -9,9 +9,9 @@
 #ifndef __PL011_UART_LIB_H__
 #define __PL011_UART_LIB_H__
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
-#include <Protocol/SerialIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
 
 /**
 

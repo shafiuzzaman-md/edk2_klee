@@ -4,10 +4,10 @@
   Copyright (C) 2020 James Bottomley, IBM Corporation.
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
-#include <Base.h>
-#include <PiPei.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 EFI_STATUS
 EFIAPI

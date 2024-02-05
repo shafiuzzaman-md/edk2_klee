@@ -6,10 +6,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Tree/AmlNode.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
 
-#include <AmlCoreInterface.h>
-#include <Tree/AmlTree.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
 
 /** Initialize an AML_NODE_HEADER structure.
 

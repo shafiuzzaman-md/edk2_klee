@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __CUSTOMIZED_DISPLAY_LIB_H__
 #define __CUSTOMIZED_DISPLAY_LIB_H__
 
-#include <Protocol/DisplayProtocol.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/DisplayProtocol.h"
 
 /**
 +------------------------------------------------------------------------------+

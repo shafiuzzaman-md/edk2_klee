@@ -7,15 +7,15 @@
 
 **/
 
-#include <PiDxe.h>
-#include <IndustryStandard/SmBios.h>
-#include <Protocol/Smbios.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SmbiosLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmulatorPkg/Include/Library/SmbiosLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 extern SMBIOS_TEMPLATE_ENTRY  gSmbiosTemplate[];
 

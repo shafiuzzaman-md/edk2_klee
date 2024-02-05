@@ -6,8 +6,8 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Enables the 32-bit paging mode on the CPU.

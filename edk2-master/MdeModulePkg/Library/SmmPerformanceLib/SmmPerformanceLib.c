@@ -11,13 +11,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Guid/PerformanceMeasurement.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/PerformanceMeasurement.h"
 
-#include <Library/PerformanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 //
 // The cached SMM Performance Protocol and SMM PerformanceEx Protocol interface.

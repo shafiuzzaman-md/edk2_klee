@@ -9,7 +9,7 @@
 #ifndef __EFI_SHELL_PARAMETERS_PROTOCOL_H__
 #define __EFI_SHELL_PARAMETERS_PROTOCOL_H__
 
-#include <Protocol/Shell.h>
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
 
 #define EFI_SHELL_PARAMETERS_PROTOCOL_GUID \
   { \

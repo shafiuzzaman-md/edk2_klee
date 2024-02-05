@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiPei.h>
-#include <Ppi/IpmiPpi.h>
-#include <Library/IpmiLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/IpmiPpi.h"
+#include "edk2-master/MdeModulePkg/Include/Library/IpmiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   This service enables submitting commands via Ipmi.

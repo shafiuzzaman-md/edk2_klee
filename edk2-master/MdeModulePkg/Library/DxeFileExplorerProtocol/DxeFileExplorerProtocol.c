@@ -11,14 +11,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <Base.h>
-#include <Protocol/FileExplorer.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FileExplorer.h"
 
-#include <Library/FileExplorerLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/FileExplorerLib.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_FILE_EXPLORER_PROTOCOL  *mProtocol = NULL;
 

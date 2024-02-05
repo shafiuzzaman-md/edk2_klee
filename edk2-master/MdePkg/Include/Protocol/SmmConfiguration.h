@@ -14,8 +14,8 @@
 #ifndef _SMM_CONFIGURATION_H_
 #define _SMM_CONFIGURATION_H_
 
-#include <Protocol/MmConfiguration.h>
-#include <Pi/PiSmmCis.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmConfiguration.h"
+#include "edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
 
 #define EFI_SMM_CONFIGURATION_PROTOCOL_GUID  EFI_MM_CONFIGURATION_PROTOCOL_GUID
 

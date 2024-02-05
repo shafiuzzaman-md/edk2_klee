@@ -8,12 +8,12 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 #define PE_COFF_IMAGE_ALIGN_SIZE  4
 

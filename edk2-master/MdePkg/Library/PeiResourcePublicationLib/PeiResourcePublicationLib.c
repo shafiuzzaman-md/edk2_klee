@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/ResourcePublicationLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/ResourcePublicationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Declares the presence of permanent system memory in the platform.

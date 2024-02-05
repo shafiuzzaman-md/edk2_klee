@@ -8,10 +8,10 @@
 #ifndef _FSP_NOTIFY_PHASE_PEIM_H_
 #define _FSP_NOTIFY_PHASE_PEIM_H_
 
-#include <Library/PeiServicesLib.h>
-#include <Ppi/DxeIpl.h>
-#include <Library/DebugLib.h>
-#include <Library/FspPlatformLib.h>
-#include <Library/FspCommonLib.h>
-#include <Library/FspSwitchStackLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Ppi/DxeIpl.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspPlatformLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspSwitchStackLib.h"
 #endif

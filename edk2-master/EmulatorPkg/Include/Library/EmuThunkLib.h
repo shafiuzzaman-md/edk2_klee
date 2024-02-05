@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EMU_THUNK_LIB_H__
 #define __EMU_THUNK_LIB_H__
 
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
 extern EMU_THUNK_PROTOCOL  *gEmuThunk;
 

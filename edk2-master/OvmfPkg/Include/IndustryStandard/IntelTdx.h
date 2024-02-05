@@ -9,10 +9,10 @@
 #ifndef OVMF_INTEL_TDX_H_
 #define OVMF_INTEL_TDX_H_
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Uefi/UefiSpec.h>
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #define MP_CPU_PROTECTED_MODE_MAILBOX_APICID_INVALID    0xFFFFFFFF
 #define MP_CPU_PROTECTED_MODE_MAILBOX_APICID_BROADCAST  0xFFFFFFFE

@@ -5,13 +5,13 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <FspGlobalData.h>
-#include <FspEas.h>
-#include <Library/FspSwitchStackLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspSwitchStackLib.h"
 
 #pragma pack(1)
 

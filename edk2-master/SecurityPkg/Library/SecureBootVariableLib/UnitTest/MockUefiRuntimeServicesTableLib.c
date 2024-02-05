@@ -6,7 +6,7 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 extern EFI_RUNTIME_SERVICES  gMockRuntime;
 

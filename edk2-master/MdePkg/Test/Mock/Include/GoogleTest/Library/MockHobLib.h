@@ -8,12 +8,12 @@
 #ifndef MOCK_HOB_LIB_H_
 #define MOCK_HOB_LIB_H_
 
-#include <Library/GoogleTestLib.h>
-#include <Library/FunctionMockLib.h>
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
 extern "C" {
-  #include <Pi/PiMultiPhase.h>
-  #include <Uefi.h>
-  #include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 }
 
 struct MockHobLib {

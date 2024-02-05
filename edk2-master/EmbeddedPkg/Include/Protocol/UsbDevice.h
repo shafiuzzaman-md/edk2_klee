@@ -9,7 +9,7 @@
 #ifndef __USB_DEVICE_PROTOCOL_H__
 #define __USB_DEVICE_PROTOCOL_H__
 
-#include <IndustryStandard/Usb.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
 
 extern EFI_GUID  gUsbDeviceProtocolGuid;
 

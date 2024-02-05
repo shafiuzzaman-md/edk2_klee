@@ -9,27 +9,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #ifndef _GRAPHICS_OUTPUT_DXE_H_
 #define _GRAPHICS_OUTPUT_DXE_H_
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Acpi.h>
-#include <Guid/GraphicsInfoHob.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Guid/GraphicsInfoHob.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
 
-#include <Library/BaseLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/FrameBufferBltLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FrameBufferBltLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #define MAX_PCI_BAR  6
 

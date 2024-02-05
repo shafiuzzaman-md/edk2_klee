@@ -6,14 +6,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Guid/MemoryAllocationHob.h>
+#include "edk2-master/MdePkg/Include/Guid/MemoryAllocationHob.h"
 
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 /**
   Returns the pointer to the HOB list.

@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __FILE_EXPLORER_LIB_H__
 #define __FILE_EXPLORER_LIB_H__
 
-#include <Protocol/FileExplorer.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/FileExplorer.h"
 
 /**
   Choose a file in the specified directory.

@@ -7,10 +7,10 @@
 
 **/
 
-#include <Library/ArmHvcLib.h>
-#include <Library/ArmMonitorLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmHvcLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMonitorLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /** Monitor call.
 

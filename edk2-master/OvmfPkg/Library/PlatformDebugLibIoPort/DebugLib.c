@@ -8,14 +8,14 @@
 
 **/
 
-#include <Base.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/IoLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugPrintErrorLevelLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugPrintErrorLevelLib.h"
 #include "DebugLibDetect.h"
 
 //

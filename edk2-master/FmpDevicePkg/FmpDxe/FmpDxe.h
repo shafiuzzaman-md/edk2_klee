@@ -13,31 +13,31 @@
 #ifndef _FMP_DXE_H_
 #define _FMP_DXE_H_
 
-#include <PiDxe.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PrintLib.h>
-#include <Library/FmpAuthenticationLib.h>
-#include <Library/FmpDeviceLib.h>
-#include <Library/FmpPayloadHeaderLib.h>
-#include <Library/CapsuleUpdatePolicyLib.h>
-#include <Library/FmpDependencyLib.h>
-#include <Library/FmpDependencyCheckLib.h>
-#include <Library/FmpDependencyDeviceLib.h>
-#include <Protocol/FirmwareManagement.h>
-#include <Protocol/FirmwareManagementProgress.h>
-#include <Guid/SystemResourceTable.h>
-#include <Guid/EventGroup.h>
-#include <LastAttemptStatus.h>
-#include <FmpLastAttemptStatus.h>
-#include <Library/VariablePolicyHelperLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FmpAuthenticationLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDeviceLib.h"
+#include "edk2-master/FmpDevicePkg/PrivateInclude/Library/FmpPayloadHeaderLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/CapsuleUpdatePolicyLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDependencyLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDependencyCheckLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDependencyDeviceLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FirmwareManagementProgress.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/FmpDevicePkg/Include/LastAttemptStatus.h"
+#include "edk2-master/FmpDevicePkg/PrivateInclude/FmpLastAttemptStatus.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyHelperLib.h"
 
 #define VERSION_STRING_NOT_SUPPORTED  L"VERSION STRING NOT SUPPORTED"
 #define VERSION_STRING_NOT_AVAILABLE  L"VERSION STRING NOT AVAILABLE"

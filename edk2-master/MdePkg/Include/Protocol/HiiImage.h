@@ -12,7 +12,7 @@
 #ifndef __HII_IMAGE_H__
 #define __HII_IMAGE_H__
 
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 #define EFI_HII_IMAGE_PROTOCOL_GUID \
   { 0x31a6406a, 0x6bdf, 0x4e46, { 0xb2, 0xa2, 0xeb, 0xaa, 0x89, 0xc4, 0x9, 0x20 } }

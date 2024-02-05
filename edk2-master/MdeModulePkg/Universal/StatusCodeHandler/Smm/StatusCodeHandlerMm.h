@@ -10,22 +10,22 @@
 #ifndef __STATUS_CODE_HANDLER_MM_H__
 #define __STATUS_CODE_HANDLER_MM_H__
 
-#include <Protocol/MmReportStatusCodeHandler.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmReportStatusCodeHandler.h"
 
-#include <Guid/MemoryStatusCodeRecord.h>
-#include <Guid/StatusCodeDataTypeId.h>
-#include <Guid/StatusCodeDataTypeDebug.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryStatusCodeRecord.h"
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StatusCodeDataTypeDebug.h"
 
-#include <Library/SynchronizationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 //
 // Define the maximum message length

@@ -8,11 +8,11 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/DebugLib.h>
-#include <Library/S3BootScriptLib.h>
-#include <Library/PciSegmentLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentLib.h"
 
 /**
   Macro that converts address in PciSegmentLib format to the new address that can be pass

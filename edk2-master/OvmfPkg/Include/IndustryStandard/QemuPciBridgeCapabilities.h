@@ -12,7 +12,7 @@
 #ifndef __QEMU_PCI_BRIDGE_CAPABILITIES_H__
 #define __QEMU_PCI_BRIDGE_CAPABILITIES_H__
 
-#include <IndustryStandard/Pci23.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci23.h"
 
 //
 // The hints apply to PCI Bridges whose PCI_DEVICE_INDEPENDENT_REGION.VendorId

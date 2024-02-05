@@ -7,7 +7,7 @@
  * U of MN
  */
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include "pcctscfg.h" /* be sensitive to what ANTLR/DLG call the files */
 
 #ifdef VAXC

@@ -9,16 +9,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
-#include <Library/PeCoffLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeCoffExtraActionLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
 
 //
 // Cache of UnixThunk protocol

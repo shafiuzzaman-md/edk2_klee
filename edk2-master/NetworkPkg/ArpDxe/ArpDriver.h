@@ -9,16 +9,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ARP_DRIVER_H_
 #define _ARP_DRIVER_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Arp.h>
-#include <Protocol/ManagedNetwork.h>
-#include <Protocol/ServiceBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/Arp.h"
+#include "edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 //
 // Global variables

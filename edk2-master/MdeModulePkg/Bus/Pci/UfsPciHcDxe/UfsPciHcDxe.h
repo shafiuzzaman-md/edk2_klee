@@ -10,25 +10,25 @@
 #ifndef _EFI_UFS_HOST_CONTROLLER_H_
 #define _EFI_UFS_HOST_CONTROLLER_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/UfsHostController.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/UfsHostController.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 extern EFI_DRIVER_BINDING_PROTOCOL   gUfsHcDriverBinding;
 extern EFI_COMPONENT_NAME_PROTOCOL   gUfsHcComponentName;

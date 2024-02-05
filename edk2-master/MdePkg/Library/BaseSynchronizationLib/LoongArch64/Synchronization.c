@@ -7,7 +7,7 @@
 
 **/
 
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 UINT32
 EFIAPI

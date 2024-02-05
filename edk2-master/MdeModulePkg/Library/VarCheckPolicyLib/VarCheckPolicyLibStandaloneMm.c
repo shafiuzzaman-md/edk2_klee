@@ -6,7 +6,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/StandaloneMmMemLib.h>
+#include "edk2-master/StandaloneMmPkg/Include/Library/StandaloneMmMemLib.h"
 
 #include "VarCheckPolicyLib.h"
 

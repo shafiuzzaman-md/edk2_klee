@@ -7,13 +7,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <stdio.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 int
 my_snprintf (

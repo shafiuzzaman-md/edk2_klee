@@ -9,7 +9,7 @@
 **/
 
 #include "BaseLibInternals.h"
-#include <Library/RegisterFilterLib.h>
+#include "edk2-master/MdePkg/Include/Library/RegisterFilterLib.h"
 
 /**
   Enables CPU interrupts.

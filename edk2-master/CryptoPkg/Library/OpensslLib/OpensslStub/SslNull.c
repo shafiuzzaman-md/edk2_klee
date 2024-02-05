@@ -6,11 +6,11 @@
 
 **/
 
-#include <Base.h>
-#include <Library/DebugLib.h>
-#include <openssl/ssl.h>
-#include <openssl/bio.h>
-#include <openssl/err.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/ssl.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/bio.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/err.h"
 
 int
 OPENSSL_init_ssl (

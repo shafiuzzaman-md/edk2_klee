@@ -9,7 +9,7 @@
 
 **/
 
-#include <Library/VirtioLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/VirtioLib.h"
 
 #include "VirtioGpu.h"
 

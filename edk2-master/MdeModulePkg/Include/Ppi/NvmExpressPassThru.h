@@ -8,8 +8,8 @@
 #ifndef _EDKII_NVME_PASS_THRU_PPI_H_
 #define _EDKII_NVME_PASS_THRU_PPI_H_
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/NvmExpressPassthru.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/NvmExpressPassthru.h"
 
 ///
 /// Global ID for the EDKII_PEI_NVM_EXPRESS_PASS_THRU_PPI.

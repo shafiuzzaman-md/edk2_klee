@@ -11,9 +11,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EMU_MAGIC_PAGE_LIB_H__
 #define __EMU_MAGIC_PAGE_LIB_H__
 
-#include <PiPei.h>
-#include <Library/PcdLib.h>
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
 typedef struct {
   // Used by PEI Core and PEIMs to store the PEI Services pointer.

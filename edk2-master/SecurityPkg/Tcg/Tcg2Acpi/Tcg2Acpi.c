@@ -15,30 +15,30 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <IndustryStandard/Tpm2Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm2Acpi.h"
 
-#include <Guid/TpmInstance.h>
-#include <Guid/TpmNvsMm.h>
-#include <Guid/PiSmmCommunicationRegionTable.h>
+#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
+#include "edk2-master/SecurityPkg/Include/Guid/TpmNvsMm.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PiSmmCommunicationRegionTable.h"
 
-#include <Protocol/AcpiTable.h>
-#include <Protocol/Tcg2Protocol.h>
-#include <Protocol/MmCommunication.h>
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrintLib.h>
-#include <Library/TpmMeasurementLib.h>
-#include <Library/Tpm2DeviceLib.h>
-#include <Library/Tpm2CommandLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MmUnblockMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmUnblockMemoryLib.h"
 
 //
 // Physical Presence Interface Version supported by Platform

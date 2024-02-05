@@ -18,11 +18,11 @@
     - FID  - Function ID
 **/
 
-#include <Base.h>
-#include <Library/ArmLib.h>
-#include <Library/ArmMonitorLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMonitorLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #include "ArmTrngDefs.h"
 

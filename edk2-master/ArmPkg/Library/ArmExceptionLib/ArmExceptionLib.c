@@ -10,16 +10,16 @@
 *
 **/
 
-#include <Uefi.h>
-#include <Library/CpuExceptionHandlerLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
 
-#include <Library/ArmLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DefaultExceptionHandlerLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ArmPkg/Include/Library/DefaultExceptionHandlerLib.h"
 
 STATIC
 RETURN_STATUS

@@ -6,8 +6,8 @@
 *
 **/
 
-#include <Library/ArmLib.h>
-#include <Library/ArmGicLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
 
 ARM_GIC_ARCH_REVISION
 EFIAPI

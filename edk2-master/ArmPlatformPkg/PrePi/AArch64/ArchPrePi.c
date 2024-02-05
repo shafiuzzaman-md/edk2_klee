@@ -8,7 +8,7 @@
 
 #include "PrePi.h"
 
-#include <Chipset/AArch64.h>
+#include "edk2-master/ArmPkg/Include/Chipset/AArch64.h"
 
 VOID
 ArchInitialize (

@@ -6,17 +6,17 @@
 
 **/
 
-#include <Base.h>
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Usb.h>
-#include <Library/IoLib.h>
-#include <Library/PciLib.h>
-#include <Library/PcdLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugCommunicationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/SourceLevelDebugPkg/Include/Library/DebugCommunicationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #define SETUP_PID   0x2D
 #define INPUT_PID   0x69

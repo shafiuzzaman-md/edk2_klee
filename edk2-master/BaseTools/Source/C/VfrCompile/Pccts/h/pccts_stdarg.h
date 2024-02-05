@@ -4,7 +4,7 @@
 #ifdef PCCTS_USE_NAMESPACE_STD
 #include <cstdarg>
 #else
-#include <stdarg.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
 #endif
 
 #endif

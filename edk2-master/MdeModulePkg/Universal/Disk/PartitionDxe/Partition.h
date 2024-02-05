@@ -13,28 +13,28 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PARTITION_H_
 #define _PARTITION_H_
 
-#include <Uefi.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/BlockIo2.h>
-#include <Guid/Gpt.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/DiskIo.h>
-#include <Protocol/DiskIo2.h>
-#include <Protocol/PartitionInfo.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo2.h"
+#include "edk2-master/MdePkg/Include/Guid/Gpt.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo2.h"
+#include "edk2-master/MdePkg/Include/Protocol/PartitionInfo.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
-#include <IndustryStandard/Mbr.h>
-#include <IndustryStandard/ElTorito.h>
-#include <IndustryStandard/Udf.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Mbr.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/ElTorito.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Udf.h"
 
 //
 // Partition private data

@@ -7,7 +7,7 @@
 
 **/
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Flushes all the Translation Lookaside Buffers(TLB) entries in a CPU.

@@ -6,11 +6,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/TcgStorageCoreLib.h>
+#include "edk2-master/SecurityPkg/Include/Library/TcgStorageCoreLib.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 typedef struct {
   UINT16                                  FeatureCode;

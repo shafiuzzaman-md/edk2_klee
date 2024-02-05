@@ -9,14 +9,14 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/DebugLib.h>
-#include <Library/RealTimeClockLib.h>
-#include <Library/TimeBaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Protocol/RealTimeClock.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/RealTimeClockLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/TimeBaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/RealTimeClock.h"
 
 EFI_HANDLE  mHandle = NULL;
 

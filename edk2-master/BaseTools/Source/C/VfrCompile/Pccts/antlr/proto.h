@@ -837,7 +837,7 @@ extern int isEmptyAlt();
 #endif
 
 #ifdef __USE_PROTOS
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #endif
 
 /* MR20 G. Hobbelt  Create proper externs for dlg variables */

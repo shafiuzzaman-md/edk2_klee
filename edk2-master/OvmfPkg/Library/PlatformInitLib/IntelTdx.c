@@ -7,19 +7,19 @@
 
 **/
 
-#include <Base.h>
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <IndustryStandard/IntelTdx.h>
-#include <Library/PeiServicesLib.h>
-#include <Pi/PrePiHob.h>
-#include <WorkArea.h>
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/IntelTdx.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiHob.h"
+#include "edk2-master/OvmfPkg/Include/WorkArea.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
 /**
  * Build ResourceDescriptorHob for the unaccepted memory region.

@@ -10,9 +10,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCG2_PHYSICAL_PRESENCE_LIB_H_
 #define _TCG2_PHYSICAL_PRESENCE_LIB_H_
 
-#include <IndustryStandard/Tpm20.h>
-#include <IndustryStandard/TcgPhysicalPresence.h>
-#include <Protocol/Tcg2Protocol.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/TcgPhysicalPresence.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
 
 //
 // UEFI TCG2 library definition bit of the BIOS TPM Management Flags

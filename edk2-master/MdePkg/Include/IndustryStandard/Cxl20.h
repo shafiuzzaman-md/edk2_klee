@@ -13,7 +13,7 @@
 #ifndef CXL20_H_
 #define CXL20_H_
 
-#include <IndustryStandard/Cxl11.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Cxl11.h"
 
 //
 // CXL DVSEC IDs

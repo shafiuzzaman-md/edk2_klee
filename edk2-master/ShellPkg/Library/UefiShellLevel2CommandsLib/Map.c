@@ -10,11 +10,11 @@
 **/
 
 #include "UefiShellLevel2CommandsLib.h"
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/BlockIo.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HandleParsingLib.h>
-#include <Library/SortLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/ShellPkg/Include/Library/HandleParsingLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
 
 /**
   Determine if a string has only numbers and letters.

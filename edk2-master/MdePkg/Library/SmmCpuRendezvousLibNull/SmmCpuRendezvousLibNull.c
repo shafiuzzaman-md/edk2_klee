@@ -6,8 +6,8 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/SmmCpuRendezvousLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmCpuRendezvousLib.h"
 
 /**
   This routine wait for all AP processors to arrive in SMM.

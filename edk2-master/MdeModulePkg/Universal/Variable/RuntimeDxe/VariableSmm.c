@@ -20,16 +20,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Protocol/SmmVariable.h>
-#include <Protocol/SmmFirmwareVolumeBlock.h>
-#include <Protocol/SmmFaultTolerantWrite.h>
-#include <Protocol/MmEndOfDxe.h>
-#include <Protocol/SmmVarCheck.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmFirmwareVolumeBlock.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmFaultTolerantWrite.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmEndOfDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVarCheck.h"
 
-#include <Library/MmServicesTableLib.h>
-#include <Library/VariablePolicyLib.h>
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyLib.h"
 
-#include <Guid/SmmVariableCommon.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SmmVariableCommon.h"
 #include "Variable.h"
 #include "VariableParsing.h"
 #include "VariableRuntimeCache.h"

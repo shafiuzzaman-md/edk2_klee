@@ -9,7 +9,7 @@
 #ifndef __PLATFORM_FLASH_ACCESS_LIB_H__
 #define __PLATFORM_FLASH_ACCESS_LIB_H__
 
-#include <Protocol/FirmwareManagement.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
 
 typedef enum {
   FlashAddressTypeRelativeAddress,

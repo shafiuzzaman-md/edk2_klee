@@ -10,12 +10,12 @@
 #ifndef __ABOOTIMG_H__
 #define __ABOOTIMG_H__
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 #define ANDROID_BOOTIMG_KERNEL_ARGS_SIZE  512
 

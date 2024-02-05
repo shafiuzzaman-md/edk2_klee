@@ -7,20 +7,20 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrePiHobListPointerLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiHobListPointerLib.h"
 
-#include <Protocol/PeCoffLoader.h>
-#include <Guid/ExtractSection.h>
-#include <Guid/MemoryTypeInformation.h>
-#include <Guid/MemoryAllocationHob.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/PeCoffLoader.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/ExtractSection.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAllocationHob.h"
 
 VOID
 BuildMemoryTypeInformationHob (

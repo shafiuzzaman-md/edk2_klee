@@ -9,18 +9,18 @@
 #ifndef __NV_VARS_FILE_LIB_INSTANCE__
 #define __NV_VARS_FILE_LIB_INSTANCE__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/FileInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
 
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include <Library/BaseLib.h>
-#include <Library/FileHandleLib.h>
-#include <Library/SerializeVariablesLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/SerializeVariablesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 /**
   Loads the non-volatile variables from the NvVars file on the

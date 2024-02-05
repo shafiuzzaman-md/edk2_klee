@@ -16,9 +16,9 @@
 #ifndef MP_INFORMATION2_H_
 #define MP_INFORMATION2_H_
 
-#include <Protocol/MpService.h>
-#include <PiPei.h>
-#include <Ppi/SecPlatformInformation.h>
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
 
 #define MP_INFORMATION2_HOB_REVISION  1
 

@@ -6,9 +6,9 @@
 *
 **/
 
-#include <Uefi.h>
-#include <Library/IoLib.h>
-#include <Library/ArmGicLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
 
 VOID
 EFIAPI

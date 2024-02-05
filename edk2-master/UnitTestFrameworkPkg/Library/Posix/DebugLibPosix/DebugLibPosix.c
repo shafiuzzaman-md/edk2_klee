@@ -7,13 +7,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 
-#include <Base.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PrintLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 ///
 /// Define the maximum debug and assert message length that this library supports

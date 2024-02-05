@@ -9,18 +9,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __CRYPTEST_H__
 #define __CRYPTEST_H__
 
-#include <PiPei.h>
-#include <Uefi.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UnitTestLib.h>
-#include <Library/PrintLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 // #include <UnitTestTypes.h>
-#include <Library/UnitTestLib.h>
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
 // #include <Library/UnitTestAssertLib.h>
 
 #define UNIT_TEST_NAME     "BaseCryptLib Unit Test"

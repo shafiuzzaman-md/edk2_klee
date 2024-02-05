@@ -10,7 +10,7 @@
 #define __UNIT_TEST_HOST_H__
 
 #include "BaseLibInternals.h"
-#include <Library/UnitTestHostBaseLib.h>
+#include "edk2-master/MdePkg/Test/UnitTest/Include/Library/UnitTestHostBaseLib.h"
 
 /**
   Enables CPU interrupts.

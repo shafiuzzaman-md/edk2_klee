@@ -9,8 +9,8 @@
 #ifndef VAR_POLICY_DYNAMIC_SHELL_COMMAND_H_
 #define VAR_POLICY_DYNAMIC_SHELL_COMMAND_H_
 
-#include <Uefi.h>
-#include <Protocol/Shell.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
 
 #define VAR_POLICY_COMMAND_NAME  L"varpolicy"
 

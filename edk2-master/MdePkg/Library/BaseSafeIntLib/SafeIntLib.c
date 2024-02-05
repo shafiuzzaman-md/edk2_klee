@@ -9,9 +9,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/SafeIntLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 //
 // Magnitude of MIN_INT64 as expressed by a UINT64 number.

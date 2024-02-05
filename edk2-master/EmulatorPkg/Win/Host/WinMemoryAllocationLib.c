@@ -6,11 +6,11 @@
 
 **/
 
-#include <Base.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 
 /**
   Allocates a buffer of type EfiBootServicesData.

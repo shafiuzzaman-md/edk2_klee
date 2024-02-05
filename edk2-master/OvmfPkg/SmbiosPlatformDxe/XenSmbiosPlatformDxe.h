@@ -12,7 +12,7 @@
 #ifndef XEN_SMBIOS_PLATFORM_DXE_H_
 #define XEN_SMBIOS_PLATFORM_DXE_H_
 
-#include <IndustryStandard/SmBios.h> // SMBIOS_TABLE_ENTRY_POINT
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
 /**
   Locates the Xen SMBIOS data if it exists

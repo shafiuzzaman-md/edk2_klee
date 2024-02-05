@@ -20,10 +20,10 @@
 #define LIBREDFISH_REDFISH_PAYLOAD_H_
 
 #include <Include/Library/RedfishCrtLib.h>
-#include <Library/JsonLib.h>
+#include "edk2-master/RedfishPkg/Include/Library/JsonLib.h"
 #include <jansson.h>
-#include <redfishService.h>
-#include <redpath.h>
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishService.h"
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redpath.h"
 
 redfishPayload *
 createRedfishPayload (

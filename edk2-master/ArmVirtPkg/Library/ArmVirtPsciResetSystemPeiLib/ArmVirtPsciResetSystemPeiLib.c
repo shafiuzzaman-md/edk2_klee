@@ -10,17 +10,17 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <libfdt.h>
-#include <Library/ArmHvcLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/ResetSystemLib.h>
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmHvcLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
 
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 typedef enum {
   PsciMethodUnknown,

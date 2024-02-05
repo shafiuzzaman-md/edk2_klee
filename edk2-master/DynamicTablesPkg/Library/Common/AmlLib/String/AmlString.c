@@ -7,10 +7,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <String/AmlString.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
 
-#include <AmlDefines.h>
-#include <IndustryStandard/AcpiAml.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDefines.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/AcpiAml.h"
 
 /** Check NameString/path information is valid.
 

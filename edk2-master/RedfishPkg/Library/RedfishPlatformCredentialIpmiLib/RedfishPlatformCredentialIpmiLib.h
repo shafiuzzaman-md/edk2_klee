@@ -10,20 +10,20 @@
 #ifndef REDFISH_PLATFORM_CREDENTIAL_IPMI_LIB_H_
 #define REDFISH_PLATFORM_CREDENTIAL_IPMI_LIB_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/Ipmi.h>
-#include <IndustryStandard/RedfishHostInterfaceIpmi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Ipmi.h"
+#include "edk2-master/RedfishPkg/Include/IndustryStandard/RedfishHostInterfaceIpmi.h"
 
-#include <Protocol/EdkIIRedfishCredential.h>
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishCredential.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IpmiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/RedfishCredentialLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/IpmiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishCredentialLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 #define CREDENTIAL_VARIABLE_NAME  L"Partstooblaitnederc"
 

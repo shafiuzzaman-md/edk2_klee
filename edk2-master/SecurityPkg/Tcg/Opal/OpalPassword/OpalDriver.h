@@ -9,37 +9,37 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _OPAL_DRIVER_H_
 #define _OPAL_DRIVER_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 
-#include <Protocol/PciIo.h>
-#include <Protocol/SmmCommunication.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/StorageSecurityCommand.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCommunication.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdePkg/Include/Protocol/StorageSecurityCommand.h"
 
-#include <Guid/EventGroup.h>
-#include <Guid/S3StorageDeviceInitList.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/S3StorageDeviceInitList.h"
 
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HiiLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/PciLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/TcgStorageOpalLib.h>
-#include <Library/Tcg2PhysicalPresenceLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TcgStorageOpalLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
 
 #include "OpalPasswordCommon.h"
 #include "OpalHiiFormValues.h"

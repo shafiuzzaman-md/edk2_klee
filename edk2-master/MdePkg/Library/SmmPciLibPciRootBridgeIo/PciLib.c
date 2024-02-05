@@ -5,12 +5,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiSmm.h>
-#include <Protocol/SmmPciRootBridgeIo.h>
-#include <Library/PciLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/SmmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmPciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
 
 /**
   Assert the validity of a PCI address. A valid PCI address should contain 1's

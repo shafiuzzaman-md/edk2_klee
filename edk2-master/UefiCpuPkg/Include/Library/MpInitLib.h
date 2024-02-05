@@ -9,8 +9,8 @@
 #ifndef __MP_INIT_LIB_H__
 #define __MP_INIT_LIB_H__
 
-#include <Ppi/SecPlatformInformation.h>
-#include <Protocol/MpService.h>
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
 
 /**
   MP Initialize Library initialization.

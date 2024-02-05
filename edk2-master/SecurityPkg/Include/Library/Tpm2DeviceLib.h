@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TPM2_DEVICE_LIB_H_
 #define _TPM2_DEVICE_LIB_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Used in PcdActiveTpmInterfaceType to identify TPM interface type

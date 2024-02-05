@@ -12,9 +12,9 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 
 #include "Sdk/C/Alloc.h"
 #include "Sdk/C/7zFile.h"

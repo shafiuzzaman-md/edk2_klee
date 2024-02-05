@@ -5,6 +5,6 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 CONST EFI_PEI_PPI_DESCRIPTOR  *gPpiList = NULL;

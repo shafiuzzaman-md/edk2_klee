@@ -15,17 +15,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Guid/Tcg2PhysicalPresenceData.h>
+#include "edk2-master/SecurityPkg/Include/Guid/Tcg2PhysicalPresenceData.h"
 
-#include <Protocol/SmmVariable.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/Tcg2PpVendorLib.h>
-#include <Library/MmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PpVendorLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
 
 #define     PP_INF_VERSION_1_2  "1.2"
 

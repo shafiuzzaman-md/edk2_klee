@@ -9,27 +9,27 @@
 #ifndef _ACPI_TABLE_H_
 #define _ACPI_TABLE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/AcpiTable.h>
-#include <Guid/Acpi.h>
-#include <Protocol/AcpiSystemDescriptionTable.h>
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiSystemDescriptionTable.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <UniversalPayload/AcpiTable.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/AcpiTable.h"
 
 //
 // Statements that include other files
 //
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #include "AcpiSdt.h"
 

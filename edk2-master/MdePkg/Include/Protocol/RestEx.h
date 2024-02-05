@@ -18,7 +18,7 @@
 #ifndef EFI_REST_EX_PROTOCOL_H_
 #define EFI_REST_EX_PROTOCOL_H_
 
-#include <Protocol/Http.h>
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
 
 //
 // GUID definitions

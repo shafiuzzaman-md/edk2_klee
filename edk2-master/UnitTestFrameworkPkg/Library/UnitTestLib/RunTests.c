@@ -5,12 +5,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
-#include <Library/UnitTestLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UnitTestResultReportLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/PrivateInclude/Library/UnitTestResultReportLib.h"
 
 STATIC UNIT_TEST_FRAMEWORK_HANDLE  mFrameworkHandle = NULL;
 

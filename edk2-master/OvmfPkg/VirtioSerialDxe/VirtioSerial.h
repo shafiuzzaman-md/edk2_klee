@@ -11,12 +11,12 @@
 #ifndef _VIRTIO_SERIAL_DXE_H_
 #define _VIRTIO_SERIAL_DXE_H_
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/SerialIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
 
-#include <IndustryStandard/Virtio.h>
-#include <IndustryStandard/VirtioSerial.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/VirtioSerial.h"
 
 #define VIRTIO_SERIAL_SIG  SIGNATURE_32 ('V', 'S', 'I', 'O')
 

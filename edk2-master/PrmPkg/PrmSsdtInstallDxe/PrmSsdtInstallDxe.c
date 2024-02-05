@@ -9,13 +9,13 @@
 
 **/
 
-#include <IndustryStandard/Acpi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/AcpiTable.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
 
 #define _DBGMSGID_  "[PRMSSDTINSTALL]"
 

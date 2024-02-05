@@ -8,11 +8,11 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptSevLib.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
 
 #include "SnpPageStateChange.h"
 #include "VirtualMemory.h"

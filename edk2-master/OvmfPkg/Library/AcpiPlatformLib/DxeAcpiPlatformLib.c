@@ -9,9 +9,9 @@
 
 **/
 
-#include <Library/AcpiPlatformLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_STATUS
 EFIAPI

@@ -15,7 +15,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <redfishPayload.h>
+#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishPayload.h"
 
 static redfishPayload *
 getOpResult (

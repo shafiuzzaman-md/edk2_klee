@@ -7,20 +7,20 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/AcpiTable.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
 
 // Module specific include files.
-#include <AcpiTableGenerator.h>
-#include <ConfigurationManagerObject.h>
-#include <ConfigurationManagerHelper.h>
-#include <DeviceTreeTableGenerator.h>
-#include <Library/TableHelperLib.h>
-#include <Protocol/ConfigurationManagerProtocol.h>
-#include <Protocol/DynamicTableFactoryProtocol.h>
-#include <SmbiosTableGenerator.h>
+#include "edk2-master/DynamicTablesPkg/Include/AcpiTableGenerator.h"
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerHelper.h"
+#include "edk2-master/DynamicTablesPkg/Include/DeviceTreeTableGenerator.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/TableHelperLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/ConfigurationManagerProtocol.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/DynamicTableFactoryProtocol.h"
+#include "edk2-master/DynamicTablesPkg/Include/SmbiosTableGenerator.h"
 
 #include "DynamicTableFactory.h"
 

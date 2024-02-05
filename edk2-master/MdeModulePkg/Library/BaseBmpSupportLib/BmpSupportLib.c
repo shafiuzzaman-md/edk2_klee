@@ -18,14 +18,14 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SafeIntLib.h>
-#include <IndustryStandard/Bmp.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Bmp.h"
 
-#include <Library/BmpSupportLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/BmpSupportLib.h"
 
 //
 // BMP Image header for an uncompressed 24-bit per pixel BMP image.

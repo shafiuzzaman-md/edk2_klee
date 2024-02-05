@@ -7,14 +7,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <Protocol/DevicePathUtilities.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/DevicePathFromText.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePathUtilities.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathFromText.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 GLOBAL_REMOVE_IF_UNREFERENCED CONST EFI_DEVICE_PATH_UTILITIES_PROTOCOL  mDevicePathUtilities = {
   GetDevicePathSize,

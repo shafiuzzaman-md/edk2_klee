@@ -14,8 +14,8 @@
 #ifndef _S3_BOOT_SCRIPT_LIB_H_
 #define _S3_BOOT_SCRIPT_LIB_H_
 
-#include <Library/BaseLib.h>
-#include <IndustryStandard/SmBus.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
 
 /**
   Macro that converts PCI Bus, PCI Device, PCI Function and PCI Register to an

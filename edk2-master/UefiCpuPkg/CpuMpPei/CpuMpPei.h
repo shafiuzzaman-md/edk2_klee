@@ -9,30 +9,30 @@
 #ifndef _CPU_MP_PEI_H_
 #define _CPU_MP_PEI_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/MpServices.h>
-#include <Ppi/SecPlatformInformation.h>
-#include <Ppi/SecPlatformInformation2.h>
-#include <Ppi/EndOfPeiPhase.h>
-#include <Ppi/MpServices2.h>
+#include "edk2-master/MdePkg/Include/Ppi/MpServices.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation2.h"
+#include "edk2-master/MdePkg/Include/Ppi/EndOfPeiPhase.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/MpServices2.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/MpInitLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/CpuPageTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MpInitLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CpuPageTableLib.h"
 
-#include <Guid/MpInformation2.h>
+#include "edk2-master/UefiCpuPkg/Include/Guid/MpInformation2.h"
 
-#include <Register/Cpuid.h>
+#include "edk2-master/UefiCpuPkg/Include/Register/Cpuid.h"
 
 extern EFI_PEI_PPI_DESCRIPTOR  mPeiCpuMpPpiDesc;
 

@@ -12,13 +12,13 @@
 #ifndef _SMM_CPUIO_LIB_INTERNAL_H_
 #define _SMM_CPUIO_LIB_INTERNAL_H_
 
-#include <PiSmm.h>
-#include <Protocol/SmmCpuIo2.h>
-#include <Protocol/SmmPciRootBridgeIo.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/SmmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCpuIo2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmPciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
 
 /**
   Reads registers in the EFI CPU I/O space.

@@ -7,11 +7,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/AcpiPlatformLib.h>
-#include <Library/BaseLib.h>             // CpuDeadLoop()
-#include <Library/DebugLib.h>            // DEBUG()
-#include <Library/MemoryAllocationLib.h> // AllocatePool()
-#include <Library/QemuFwCfgS3Lib.h>      // QemuFwCfgS3ScriptSkipBytes()
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
 
 //
 // Condensed structure for capturing the fw_cfg operations -- select, skip,

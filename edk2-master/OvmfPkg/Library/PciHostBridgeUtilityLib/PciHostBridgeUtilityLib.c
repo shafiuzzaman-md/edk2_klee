@@ -10,18 +10,18 @@
 
 **/
 
-#include <IndustryStandard/Acpi10.h>
-#include <IndustryStandard/Pci.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HardwareInfoLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciHostBridgeUtilityLib.h>
-#include <Library/PciLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Protocol/PciHostBridgeResourceAllocation.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/HardwareInfoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciHostBridgeUtilityLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
 
 #pragma pack(1)
 typedef struct {

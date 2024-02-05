@@ -20,7 +20,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMI_HANDLER_PROFILE_LIB_H__
 #define __SMI_HANDLER_PROFILE_LIB_H__
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
 /**
   This function is called by SmmChildDispatcher module to report

@@ -14,7 +14,7 @@
 #ifndef PAGE_TABLE_H_
 #define PAGE_TABLE_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 #pragma pack(1)
 

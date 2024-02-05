@@ -9,8 +9,8 @@
     - ACPI 6.5 Specification - August 2022
 **/
 
-#include <IndustryStandard/Acpi.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 

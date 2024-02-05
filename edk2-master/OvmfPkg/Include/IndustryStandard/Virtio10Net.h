@@ -10,8 +10,8 @@
 #ifndef _VIRTIO_1_0_NET_H_
 #define _VIRTIO_1_0_NET_H_
 
-#include <IndustryStandard/Virtio10.h>
-#include <IndustryStandard/Virtio095Net.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio10.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio095Net.h"
 
 //
 // VirtIo 1.0 packet header

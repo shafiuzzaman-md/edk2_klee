@@ -7,7 +7,7 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 #include "DebugLibDetect.h"
 
 //

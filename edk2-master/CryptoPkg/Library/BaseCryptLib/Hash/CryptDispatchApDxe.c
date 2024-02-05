@@ -7,8 +7,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "CryptParallelHash.h"
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/MpService.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
 
 /**
   Dispatch the block task to each AP in PEI phase.

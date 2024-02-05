@@ -8,12 +8,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Base.h>                   // BIT13
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <IndustryStandard/Bhyve.h> // BHYVE_PM_REG
-#include <Library/BaseLib.h>        // CpuDeadLoop()
-#include <Library/IoLib.h>          // IoOr16()
-#include <Library/ResetSystemLib.h> // ResetShutdown()
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Bhyve.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
 
 /**
   Calling this function causes the system to enter a power state equivalent

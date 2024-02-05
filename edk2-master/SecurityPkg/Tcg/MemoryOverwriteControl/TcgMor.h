@@ -9,19 +9,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG_MOR_H__
 #define __TCG_MOR_H__
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/MemoryOverwriteControl.h>
+#include "edk2-master/MdePkg/Include/Guid/MemoryOverwriteControl.h"
 
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
-#include <Protocol/StorageSecurityCommand.h>
-#include <Protocol/BlockIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/StorageSecurityCommand.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
 
 //
 // Supported Security Protocols List Description.

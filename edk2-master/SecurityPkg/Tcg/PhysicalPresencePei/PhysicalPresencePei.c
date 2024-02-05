@@ -8,12 +8,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Ppi/LockPhysicalPresence.h>
-#include <Ppi/ReadOnlyVariable2.h>
-#include <Guid/PhysicalPresenceData.h>
-#include <Library/PcdLib.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/LockPhysicalPresence.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
+#include "edk2-master/SecurityPkg/Include/Guid/PhysicalPresenceData.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
 /**
   This interface returns whether TPM physical presence needs be locked or not.

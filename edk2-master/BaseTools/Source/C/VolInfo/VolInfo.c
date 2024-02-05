@@ -7,25 +7,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <assert.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 #ifdef __GNUC__
-#include <unistd.h>
+#include "edk2-master/CryptoPkg/Library/Include/unistd.h"
 #else
 #include <direct.h>
 #endif
 
-#include <FvLib.h>
-#include <Common/UefiBaseTypes.h>
-#include <Common/UefiCapsule.h>
-#include <Common/PiFirmwareFile.h>
-#include <Common/PiFirmwareVolume.h>
-#include <Guid/PiFirmwareFileSystem.h>
-#include <IndustryStandard/PeImage.h>
-#include <Protocol/GuidedSectionExtraction.h>
+#include "edk2-master/StandaloneMmPkg/Include/Library/FvLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiCapsule.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareFile.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareVolume.h"
+#include "edk2-master/BaseTools/Source/C/Include/Guid/PiFirmwareFileSystem.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GuidedSectionExtraction.h"
 
 #include "Compress.h"
 #include "Decompress.h"

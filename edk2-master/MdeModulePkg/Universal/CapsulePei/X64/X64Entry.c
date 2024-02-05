@@ -8,10 +8,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/DebugAgentLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
 #include "CommonHeader.h"
 
 #define EXCEPTION_VECTOR_NUMBER  0x22

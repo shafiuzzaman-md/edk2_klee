@@ -6,7 +6,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "UefiPciCapPciIoLib.h"
 

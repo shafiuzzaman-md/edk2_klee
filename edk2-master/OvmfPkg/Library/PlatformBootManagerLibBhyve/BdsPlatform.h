@@ -18,51 +18,51 @@ Abstract:
 #ifndef _PLATFORM_SPECIFIC_BDS_PLATFORM_H_
 #define _PLATFORM_SPECIFIC_BDS_PLATFORM_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/SmBios.h>
-#include <IndustryStandard/PeImage.h>
-#include <IndustryStandard/Virtio095.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio095.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/BootLogoLib.h>
-#include <Library/HobLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/IoLib.h>
-#include <Library/NvVarsFileLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/QemuFwCfgS3Lib.h>
-#include <Library/QemuBootOrderLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/BootLogoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/NvVarsFileLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuBootOrderLib.h"
 
-#include <Protocol/Decompress.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/S3SaveState.h>
-#include <Protocol/DxeSmmReadyToLock.h>
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/MdePkg/Include/Protocol/Decompress.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/S3SaveState.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
-#include <Guid/Acpi.h>
-#include <Guid/SmBios.h>
-#include <Guid/HobList.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/EventGroup.h>
-#include <Guid/DebugAgentGuid.h>
+#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
+#include "edk2-master/MdePkg/Include/Guid/SmBios.h"
+#include "edk2-master/MdePkg/Include/Guid/HobList.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/SourceLevelDebugPkg/Include/Guid/DebugAgentGuid.h"
 
-#include <OvmfPlatforms.h>
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 extern EFI_DEVICE_PATH_PROTOCOL  *gPlatformConnectSequence[];
 extern ACPI_HID_DEVICE_PATH      gPnpPs2KeyboardDeviceNode;

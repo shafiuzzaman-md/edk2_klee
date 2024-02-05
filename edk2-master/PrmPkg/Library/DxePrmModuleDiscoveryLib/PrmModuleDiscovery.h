@@ -10,7 +10,7 @@
 #ifndef PRM_MODULE_DISCOVERY_H_
 #define PRM_MODULE_DISCOVERY_H_
 
-#include <PrmModuleImageContext.h>
+#include "edk2-master/PrmPkg/Include/PrmModuleImageContext.h"
 
 #define PRM_MODULE_IMAGE_CONTEXT_LIST_ENTRY_SIGNATURE  SIGNATURE_32('P','R','M','E')
 

@@ -6,11 +6,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <AmlNodeDefines.h>
-#include <Tree/AmlTreeIterator.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTreeIterator.h"
 
-#include <AmlCoreInterface.h>
-#include <Tree/AmlTreeTraversal.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTreeTraversal.h"
 
 /** Iterator to traverse the tree.
 

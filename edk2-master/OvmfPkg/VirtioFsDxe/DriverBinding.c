@@ -6,11 +6,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>                  // AsciiStrCmp()
-#include <Library/MemoryAllocationLib.h>      // AllocatePool()
-#include <Library/UefiBootServicesTableLib.h> // gBS
-#include <Protocol/ComponentName2.h>          // EFI_COMPONENT_NAME2_PROTOCOL
-#include <Protocol/DriverBinding.h>           // EFI_DRIVER_BINDING_PROTOCOL
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
 
 #include "VirtioFsDxe.h"
 

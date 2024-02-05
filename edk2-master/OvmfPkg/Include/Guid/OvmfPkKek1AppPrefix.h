@@ -16,7 +16,7 @@
 #ifndef OVMF_PK_KEK1_APP_PREFIX_H_
 #define OVMF_PK_KEK1_APP_PREFIX_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 //
 // For the EnrollDefaultKeys application, the hypervisor is expected to add a

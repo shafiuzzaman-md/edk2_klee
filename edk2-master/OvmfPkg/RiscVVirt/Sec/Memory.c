@@ -15,23 +15,23 @@ Module Name:
 //
 // The package level header files this module uses
 //
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 //
 // The Library classes this module consumes
 //
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/ResourcePublicationLib.h>
-#include <Library/BaseRiscVSbiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/ResourcePublicationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
 #include <Register/RiscV64/RiscVEncoding.h>
-#include <Library/PrePiLib.h>
-#include <libfdt.h>
-#include <Guid/FdtHob.h>
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiLib.h"
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/FdtHob.h"
 
 VOID
 BuildMemoryTypeInformationHob (

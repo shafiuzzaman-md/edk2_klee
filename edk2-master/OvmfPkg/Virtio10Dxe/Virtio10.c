@@ -7,18 +7,18 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Virtio.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/VirtioDevice.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciCapLib.h>
-#include <Library/PciCapPciIoLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciCapLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciCapPciIoLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #include "Virtio10.h"
 

@@ -12,14 +12,14 @@
   - Rdl or RDL - Resource Data Large
 **/
 
-#include <AmlNodeDefines.h>
-#include <CodeGen/AmlResourceDataCodeGen.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/CodeGen/AmlResourceDataCodeGen.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlDefines.h>
-#include <Api/AmlApiHelper.h>
-#include <Tree/AmlNode.h>
-#include <ResourceData/AmlResourceData.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDefines.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Api/AmlApiHelper.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
 
 /** If ParentNode is not NULL, append RdNode.
     If NewRdNode is not NULL, update its value to RdNode.

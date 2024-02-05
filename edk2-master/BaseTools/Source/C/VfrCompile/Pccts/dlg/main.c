@@ -26,7 +26,7 @@
  * 1989-2001
  */
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include "stdpccts.h"
 
 char	program[] = "dlg";

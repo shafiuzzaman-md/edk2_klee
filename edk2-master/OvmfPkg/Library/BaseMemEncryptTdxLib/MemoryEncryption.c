@@ -18,18 +18,18 @@
 
 **/
 
-#include <Uefi.h>
-#include <Uefi/UefiBaseType.h>
-#include <Library/CpuLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptTdxLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptTdxLib.h"
 #include "VirtualMemory.h"
-#include <IndustryStandard/Tdx.h>
-#include <Library/TdxLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/MemoryAccept.h>
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/MemoryAccept.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
 typedef enum {
   SetSharedBit,

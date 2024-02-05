@@ -8,22 +8,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_EDB_COMMON_H_
 #define _EFI_EDB_COMMON_H_
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/Ebc.h>
-#include <Protocol/EbcVmTest.h>
-#include <Protocol/DebugSupport.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/DebuggerConfiguration.h>
-#include <Guid/FileInfo.h>
-#include <Guid/DebugImageInfoTable.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ebc.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EbcVmTest.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/DebuggerConfiguration.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/DebugImageInfoTable.h"
 
 typedef UINTN EFI_DEBUG_STATUS;
 

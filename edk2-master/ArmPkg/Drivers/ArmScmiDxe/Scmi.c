@@ -9,10 +9,10 @@
     DEN0056A_System_Control_and_Management_Interface.pdf
 **/
 
-#include <Library/ArmMtlLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmMtlLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 #include "ScmiPrivate.h"
 

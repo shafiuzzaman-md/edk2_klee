@@ -8,9 +8,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/DebugPrintErrorLevelLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugPrintErrorLevelLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /**
   Returns the debug print error level mask for the current module.

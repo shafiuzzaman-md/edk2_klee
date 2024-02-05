@@ -7,12 +7,12 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 #include <Register/RiscV64/RiscVEncoding.h>
 #include "CpuExceptionHandlerLib.h"
 

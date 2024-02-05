@@ -11,7 +11,7 @@
 #ifndef PRM_STATIC_DATA_SAMPLE_CONTEXT_BUFFER_MODULE_H_
 #define PRM_STATIC_DATA_SAMPLE_CONTEXT_BUFFER_MODULE_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 #define   SOME_VALUE_ARRAY_MAX_VALUES  16
 

@@ -13,23 +13,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // Libraries
 //
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/NetLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/TlsLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/TlsLib.h"
 
 //
 // Consumed Protocols
 //
-#include <Protocol/Tls.h>
-#include <Protocol/TlsConfig.h>
+#include "edk2-master/MdePkg/Include/Protocol/Tls.h"
+#include "edk2-master/MdePkg/Include/Protocol/TlsConfig.h"
 
-#include <IndustryStandard/Tls1.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tls1.h"
 
 #include "TlsDriver.h"
 

@@ -9,10 +9,10 @@
 #ifndef _EFI_EBC_DEBUGGER_HOOK_H_
 #define _EFI_EBC_DEBUGGER_HOOK_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/DebugSupport.h>
-#include <Protocol/EbcVmTest.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EbcVmTest.h"
 
 /**
   The VM interpreter calls this function when an exception is detected.

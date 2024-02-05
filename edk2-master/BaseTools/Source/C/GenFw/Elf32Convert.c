@@ -13,15 +13,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <windows.h>
 #include <io.h>
 #endif
-#include <assert.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <ctype.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/time.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 
-#include <Common/UefiBaseTypes.h>
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 #include "PeCoffLib.h"
 #include "EfiUtilityMsgs.h"

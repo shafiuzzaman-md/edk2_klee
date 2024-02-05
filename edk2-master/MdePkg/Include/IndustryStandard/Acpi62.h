@@ -9,7 +9,7 @@
 #ifndef _ACPI_6_2_H_
 #define _ACPI_6_2_H_
 
-#include <IndustryStandard/Acpi61.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi61.h"
 
 //
 // Large Item Descriptor Name

@@ -7,20 +7,20 @@
 *
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/ArmGenericTimerCounterLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmGenericTimerCounterLib.h"
 
-#include <Protocol/HardwareInterrupt2.h>
-#include <Protocol/WatchdogTimer.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/HardwareInterrupt2.h"
+#include "edk2-master/MdePkg/Include/Protocol/WatchdogTimer.h"
 
 #include "GenericWatchdog.h"
 

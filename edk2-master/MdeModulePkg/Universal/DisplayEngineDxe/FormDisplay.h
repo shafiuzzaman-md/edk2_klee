@@ -9,21 +9,21 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __FORM_DISPLAY_H__
 #define __FORM_DISPLAY_H__
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/CustomizedDisplayLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CustomizedDisplayLib.h"
 
-#include <Protocol/FormBrowserEx2.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/DisplayProtocol.h>
-#include <Protocol/HiiPopup.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/FormBrowserEx2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/DisplayProtocol.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPopup.h"
 
-#include <Guid/MdeModuleHii.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
 
 //
 // This is the generated header file which includes whatever needs to be exported (strings + IFR)

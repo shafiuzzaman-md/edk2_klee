@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _IPMI_LIB_H_
 #define _IPMI_LIB_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/Ipmi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Ipmi.h"
 
 /**
   This service enables submitting commands via Ipmi.

@@ -13,7 +13,7 @@
 #ifndef __USB_IO_H__
 #define __USB_IO_H__
 
-#include <IndustryStandard/Usb.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
 
 //
 // Global ID for the USB I/O Protocol

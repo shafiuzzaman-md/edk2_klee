@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/TimerLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 extern GUID  mFrequencyHobGuid;
 

@@ -1,7 +1,7 @@
 #ifndef __FSPUPD_H__
 #define __FSPUPD_H__
 
-#include <FspEas.h>
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 #pragma pack(1)
 

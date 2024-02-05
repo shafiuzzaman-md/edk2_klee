@@ -21,15 +21,15 @@
   Copyright (c) Microsoft Corporation.<BR>
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
-#include <Uefi.h>
-#include <Uefi/UefiSpec.h>
-#include <Library/SafeIntLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Protocol/BlockIo.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "DxeTpm2MeasureBootLibSanitization.h"
 

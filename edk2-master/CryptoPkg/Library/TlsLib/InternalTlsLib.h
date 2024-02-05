@@ -12,18 +12,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #undef _WIN32
 #undef _WIN64
 
-#include <Library/BaseCryptLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SafeIntLib.h>
-#include <Protocol/Tls.h>
-#include <IndustryStandard/Tls1.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tls.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tls1.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 #include <openssl/obj_mac.h>
-#include <openssl/ssl.h>
-#include <openssl/bio.h>
-#include <openssl/err.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/ssl.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/bio.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/err.h"
 
 typedef struct {
   //

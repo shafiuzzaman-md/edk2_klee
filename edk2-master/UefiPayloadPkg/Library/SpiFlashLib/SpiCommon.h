@@ -9,18 +9,18 @@
 #ifndef SPI_COMMON_LIB_H_
 #define SPI_COMMON_LIB_H_
 
-#include <PiDxe.h>
-#include <Uefi/UefiBaseType.h>
-#include <IndustryStandard/Pci30.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/SpiFlashLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/TimerLib.h>
-#include <Guid/SpiFlashInfoGuid.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci30.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Library/SpiFlashLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/SpiFlashInfoGuid.h"
 #include "RegsSpi.h"
 
 ///

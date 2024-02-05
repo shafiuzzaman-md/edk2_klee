@@ -10,14 +10,14 @@
 #ifndef EDKII_REDFISH_CREDENTIAL_DXE_H_
 #define EDKII_REDFISH_CREDENTIAL_DXE_H_
 
-#include <Protocol/EdkIIRedfishCredential.h>
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishCredential.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
-#include <Library/RedfishCredentialLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishCredentialLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   Retrieve platform's Redfish authentication information.

@@ -6,11 +6,11 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/PostCodeLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/PostCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /**
   Sends an 32-bit value to a POST card.

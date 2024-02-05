@@ -9,15 +9,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef  _SMI_HANDLER_PROFILE_H_
 #define  _SMI_HANDLER_PROFILE_H_
 
-#include <PiSmm.h>
-#include <Protocol/SmmGpiDispatch2.h>
-#include <Protocol/SmmIoTrapDispatch2.h>
-#include <Protocol/SmmPeriodicTimerDispatch2.h>
-#include <Protocol/SmmPowerButtonDispatch2.h>
-#include <Protocol/SmmStandbyButtonDispatch2.h>
-#include <Protocol/SmmSwDispatch2.h>
-#include <Protocol/SmmSxDispatch2.h>
-#include <Protocol/SmmUsbDispatch2.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmGpiDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmIoTrapDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmPeriodicTimerDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmPowerButtonDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmStandbyButtonDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSxDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmUsbDispatch2.h"
 
 typedef struct {
   UINT32    Signature;

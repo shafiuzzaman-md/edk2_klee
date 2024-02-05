@@ -14,7 +14,7 @@
 #ifndef __EFI_UDP6_PROTOCOL_H__
 #define __EFI_UDP6_PROTOCOL_H__
 
-#include <Protocol/Ip6.h>
+#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
 
 #define EFI_UDP6_SERVICE_BINDING_PROTOCOL_GUID \
   { \

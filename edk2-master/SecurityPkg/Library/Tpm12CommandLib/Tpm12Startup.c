@@ -7,11 +7,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/Tpm12DeviceLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12DeviceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #pragma pack(1)
 

@@ -10,9 +10,9 @@
 #ifndef __EDKII_CRYPTO_PROTOCOL_H__
 #define __EDKII_CRYPTO_PROTOCOL_H__
 
-#include <Base.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 ///
 /// The version of the EDK II Crypto Protocol.

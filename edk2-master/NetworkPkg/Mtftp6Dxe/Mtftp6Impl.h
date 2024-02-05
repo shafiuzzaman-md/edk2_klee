@@ -10,20 +10,20 @@
 #ifndef __EFI_MTFTP6_IMPL_H__
 #define __EFI_MTFTP6_IMPL_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Udp6.h>
-#include <Protocol/Mtftp6.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/DriverBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/Udp6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Mtftp6.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/NetLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 typedef struct _MTFTP6_SERVICE   MTFTP6_SERVICE;
 typedef struct _MTFTP6_INSTANCE  MTFTP6_INSTANCE;

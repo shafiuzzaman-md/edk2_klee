@@ -14,17 +14,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_DHCP4_IMPL_H__
 #define __EFI_DHCP4_IMPL_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Dhcp4.h>
-#include <Protocol/Udp4.h>
-#include <IndustryStandard/Dhcp.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/NetLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/Dhcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Udp4.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Dhcp.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 typedef struct _DHCP_SERVICE   DHCP_SERVICE;
 typedef struct _DHCP_PROTOCOL  DHCP_PROTOCOL;

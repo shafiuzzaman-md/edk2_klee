@@ -3592,7 +3592,7 @@ my_snprintf (
 #define MBEDTLS_PLATFORM_SNPRINTF_MACRO  my_snprintf
 
 #define MBEDTLS_PLATFORM_MEMORY
-#include <stddef.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stddef.h"
 extern void *
 mbedtls_calloc (
   size_t  n,

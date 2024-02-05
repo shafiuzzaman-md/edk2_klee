@@ -10,22 +10,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EBC_INT_H_
 #define _EBC_INT_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/DebugSupport.h>
-#include <Protocol/Ebc.h>
-#include <Protocol/EbcVmTest.h>
-#include <Protocol/EbcSimpleDebugger.h>
-#include <Protocol/PeCoffImageEmulator.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ebc.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EbcVmTest.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EbcSimpleDebugger.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/PeCoffImageEmulator.h"
 
-#include <Library/BaseLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 extern VM_CONTEXT  *mVmPtr;
 

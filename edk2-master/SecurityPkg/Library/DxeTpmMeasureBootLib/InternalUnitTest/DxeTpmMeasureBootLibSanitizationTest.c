@@ -5,14 +5,14 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UnitTestLib.h>
-#include <Protocol/BlockIo.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
 #include "../DxeTpmMeasureBootLibSanitization.h"
 

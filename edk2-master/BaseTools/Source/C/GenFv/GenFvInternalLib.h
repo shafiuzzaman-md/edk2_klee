@@ -13,15 +13,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // Include files
 //
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 
-#include <Common/UefiBaseTypes.h>
-#include <Common/UefiCapsule.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiCapsule.h"
 
-#include <Common/PiFirmwareFile.h>
-#include <Common/PiFirmwareVolume.h>
-#include <Guid/PiFirmwareFileSystem.h>
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareFile.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareVolume.h"
+#include "edk2-master/BaseTools/Source/C/Include/Guid/PiFirmwareFileSystem.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 #include "CommonLib.h"
 #include "ParseInf.h"

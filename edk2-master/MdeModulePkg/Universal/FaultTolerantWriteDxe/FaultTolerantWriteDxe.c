@@ -45,7 +45,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 #include "FaultTolerantWrite.h"
 VOID  *mFvbRegistration = NULL;
 

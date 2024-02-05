@@ -8,11 +8,11 @@
 
 **/
 
-#include <PrmModule.h>
+#include "edk2-master/PrmPkg/Include/PrmModule.h"
 
-#include <Library/BaseLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #include <Register/Intel/ArchitecturalMsr.h>
 #include <Register/Intel/Cpuid.h>

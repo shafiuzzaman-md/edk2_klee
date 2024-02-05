@@ -8,27 +8,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _FILE_EXPLORER_H_
 #define _FILE_EXPLORER_H_
 
-#include <PiDxe.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
-#include <Guid/FileInfo.h>
-#include <Guid/MdeModuleHii.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
 
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/FormBrowser2.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdePkg/Include/Protocol/FormBrowser2.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/FileExplorerLib.h>
-#include <Library/HiiLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FileExplorerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #include "FormGuid.h"
 

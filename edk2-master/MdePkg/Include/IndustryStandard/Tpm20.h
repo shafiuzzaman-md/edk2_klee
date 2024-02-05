@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TPM20_H_
 #define _TPM20_H_
 
-#include <IndustryStandard/Tpm12.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
 
 #pragma pack (1)
 

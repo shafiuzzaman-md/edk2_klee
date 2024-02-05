@@ -9,12 +9,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Guid/MemoryOverwriteControl.h>
-#include <IndustryStandard/MemoryOverwriteRequestControlLock.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryOverwriteControl.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/MemoryOverwriteRequestControlLock.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 #include "TcgMorLock.h"
 
 typedef struct {

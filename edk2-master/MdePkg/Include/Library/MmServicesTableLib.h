@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __MM_SERVICES_TABLE_LIB_H__
 #define __MM_SERVICES_TABLE_LIB_H__
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
 extern EFI_MM_SYSTEM_TABLE  *gMmst;
 

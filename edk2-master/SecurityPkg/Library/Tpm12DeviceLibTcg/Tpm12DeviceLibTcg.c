@@ -6,14 +6,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/Tpm12DeviceLib.h>
-#include <Protocol/TcgService.h>
-#include <IndustryStandard/Tpm12.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12DeviceLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/TcgService.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
 
 EFI_TCG_PROTOCOL  *mTcgProtocol = NULL;
 

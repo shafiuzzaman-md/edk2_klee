@@ -10,15 +10,15 @@
 #ifndef TIMER_H_
 #define TIMER_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Cpu.h>
-#include <Protocol/Timer.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/Timer.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
 
 //
 // RISC-V use 100ns timer.

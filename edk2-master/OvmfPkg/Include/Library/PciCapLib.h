@@ -12,7 +12,7 @@
 #ifndef __PCI_CAP_LIB_H__
 #define __PCI_CAP_LIB_H__
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 //
 // Base structure for representing a PCI device -- down to the PCI function

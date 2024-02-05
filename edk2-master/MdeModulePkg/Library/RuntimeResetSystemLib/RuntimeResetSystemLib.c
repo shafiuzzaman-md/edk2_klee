@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/ResetSystemLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_EVENT             mRuntimeResetSystemLibVirtualAddressChangeEvent;
 EFI_RUNTIME_SERVICES  *mInternalRT;

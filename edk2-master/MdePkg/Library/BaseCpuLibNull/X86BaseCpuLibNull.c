@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/CpuLib.h>
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
 
 /**
   Initializes floating point units for requirement of UEFI specification.

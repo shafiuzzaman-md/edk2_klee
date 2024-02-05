@@ -10,7 +10,7 @@
 #ifndef ACPI_PLATFORM_H_
 #define ACPI_PLATFORM_H_
 
-#include <Protocol/AcpiTable.h> // EFI_ACPI_TABLE_PROTOCOL
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
 
 EFI_STATUS
 EFIAPI

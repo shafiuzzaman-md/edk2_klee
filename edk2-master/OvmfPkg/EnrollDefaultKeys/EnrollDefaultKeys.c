@@ -5,22 +5,22 @@
 
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
-#include <Guid/AuthenticatedVariableFormat.h>    // gEfiCustomModeEnableGuid
-#include <Guid/GlobalVariable.h>                 // EFI_SETUP_MODE_NAME
-#include <Guid/ImageAuthentication.h>            // EFI_IMAGE_SECURITY_DATABASE
-#include <Guid/MicrosoftVendor.h>                // gMicrosoftVendorGuid
-#include <Guid/OvmfPkKek1AppPrefix.h>            // gOvmfPkKek1AppPrefixGuid
-#include <IndustryStandard/SmBios.h>             // SMBIOS_HANDLE_PI_RESERVED
-#include <Library/BaseLib.h>                     // GUID_STRING_LENGTH
-#include <Library/BaseMemoryLib.h>               // CopyGuid()
-#include <Library/DebugLib.h>                    // ASSERT()
-#include <Library/MemoryAllocationLib.h>         // FreePool()
-#include <Library/PrintLib.h>                    // AsciiSPrint()
-#include <Library/ShellCEntryLib.h>              // ShellAppMain()
-#include <Library/UefiBootServicesTableLib.h>    // gBS
-#include <Library/UefiLib.h>                     // AsciiPrint()
-#include <Library/UefiRuntimeServicesTableLib.h> // gRT
-#include <Protocol/Smbios.h>                     // EFI_SMBIOS_PROTOCOL
+#include "edk2-master/SecurityPkg/Include/Guid/AuthenticatedVariableFormat.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "edk2-master/OvmfPkg/Include/Guid/MicrosoftVendor.h"
+#include "edk2-master/OvmfPkg/Include/Guid/OvmfPkKek1AppPrefix.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellCEntryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
 
 #include "EnrollDefaultKeys.h"
 

@@ -10,7 +10,7 @@
 #define __PE_COFF_LOADER_H__
 
 // Needed for PE_COFF_LOADER_IMAGE_CONTEXT
-#include <Library/PeCoffLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
 // B323179B-97FB-477E-B0FE-D88591FA11AB
 #define PE_COFF_LOADER_PROTOCOL_GUID \

@@ -16,7 +16,7 @@
 #include "pcctscfg.h"
 #include "pccts_stdio.h"
 
-#include <ctype.h>
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 #include "dlg.h"
 #define zzSET_SIZE 8
 #include "antlr.h"

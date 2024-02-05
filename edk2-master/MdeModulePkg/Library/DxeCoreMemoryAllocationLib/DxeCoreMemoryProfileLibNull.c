@@ -6,9 +6,9 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/MemoryProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryProfile.h"
 
 /**
   Record memory profile of multilevel caller.

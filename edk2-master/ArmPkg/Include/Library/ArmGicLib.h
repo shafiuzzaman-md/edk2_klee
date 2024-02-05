@@ -9,7 +9,7 @@
 #ifndef ARMGIC_H_
 #define ARMGIC_H_
 
-#include <Library/ArmGicArchLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmGicArchLib.h"
 
 // GIC Distributor
 #define ARM_GIC_ICDDCR   0x000        // Distributor Control Register

@@ -7,15 +7,15 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/FmpDependencyLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Guid/SystemResourceTable.h>
-#include <LastAttemptStatus.h>
-#include <FmpLastAttemptStatus.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDependencyLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/FmpDevicePkg/Include/LastAttemptStatus.h"
+#include "edk2-master/FmpDevicePkg/PrivateInclude/FmpLastAttemptStatus.h"
 
 //
 // Define the initial size of the dependency expression evaluation stack

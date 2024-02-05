@@ -9,8 +9,8 @@
 #ifndef _LIBFDT_ENV_H
 #define _LIBFDT_ENV_H
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 typedef UINT16  fdt16_t;
 typedef UINT32  fdt32_t;

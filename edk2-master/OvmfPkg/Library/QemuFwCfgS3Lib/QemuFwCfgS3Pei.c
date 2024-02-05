@@ -9,7 +9,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/QemuFwCfgS3Lib.h>
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
 
 /**
   Install the client module's FW_CFG_BOOT_SCRIPT_CALLBACK_FUNCTION callback for

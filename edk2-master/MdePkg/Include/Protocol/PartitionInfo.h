@@ -12,8 +12,8 @@
 #ifndef __PARTITION_INFO_PROTOCOL_H__
 #define __PARTITION_INFO_PROTOCOL_H__
 
-#include <IndustryStandard/Mbr.h>
-#include <Uefi/UefiGpt.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Mbr.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiGpt.h"
 
 //
 // EFI Partition Information Protocol GUID value

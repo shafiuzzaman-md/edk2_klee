@@ -10,7 +10,7 @@
 #ifndef ARM_PERFORMANCE_MONITORING_UNIT_TABLE_H_
 #define ARM_PERFORMANCE_MONITORING_UNIT_TABLE_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #pragma pack(1)
 

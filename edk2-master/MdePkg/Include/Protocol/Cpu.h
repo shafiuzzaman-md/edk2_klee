@@ -11,7 +11,7 @@
 #ifndef __ARCH_PROTOCOL_CPU_H__
 #define __ARCH_PROTOCOL_CPU_H__
 
-#include <Protocol/DebugSupport.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
 #define EFI_CPU_ARCH_PROTOCOL_GUID \
   { 0x26baccb1, 0x6f42, 0x11d4, {0xbc, 0xe7, 0x0, 0x80, 0xc7, 0x3c, 0x88, 0x81 } }

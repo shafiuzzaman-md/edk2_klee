@@ -11,27 +11,27 @@
 #ifndef _NVM_EXPRESS_PEI_H_
 #define _NVM_EXPRESS_PEI_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <IndustryStandard/Nvme.h>
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Nvme.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 
-#include <Ppi/NvmExpressHostController.h>
-#include <Ppi/BlockIo.h>
-#include <Ppi/BlockIo2.h>
-#include <Ppi/StorageSecurityCommand.h>
-#include <Ppi/NvmExpressPassThru.h>
-#include <Ppi/IoMmu.h>
-#include <Ppi/EndOfPeiPhase.h>
-#include <Ppi/PciDevice.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/NvmExpressHostController.h"
+#include "edk2-master/MdePkg/Include/Ppi/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Ppi/BlockIo2.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/StorageSecurityCommand.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/NvmExpressPassThru.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/IoMmu.h"
+#include "edk2-master/MdePkg/Include/Ppi/EndOfPeiPhase.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/PciDevice.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/IoLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
 //
 // Structure forward declarations

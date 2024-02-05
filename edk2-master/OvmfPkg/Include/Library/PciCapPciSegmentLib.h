@@ -10,7 +10,7 @@
 #ifndef __PCI_CAP_PCI_SEGMENT_LIB_H__
 #define __PCI_CAP_PCI_SEGMENT_LIB_H__
 
-#include <Library/PciCapLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PciCapLib.h"
 
 /**
   Create a PCI_CAP_DEV object from the PCI Segment:Bus:Device.Function

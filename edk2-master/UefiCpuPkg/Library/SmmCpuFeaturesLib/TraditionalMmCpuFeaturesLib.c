@@ -6,8 +6,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 #include "CpuFeaturesLib.h"
 
 /**

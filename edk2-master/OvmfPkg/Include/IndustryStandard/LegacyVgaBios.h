@@ -14,7 +14,7 @@
 #ifndef __LEGACY_VGA_BIOS_H__
 #define __LEGACY_VGA_BIOS_H__
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 #pragma pack (1)
 typedef struct {

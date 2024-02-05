@@ -30,7 +30,7 @@
  * 1989-2000
  */
 
-#include <assert.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 
 #define ZZINC {if ( track_columns ) (++_endcol);}
 

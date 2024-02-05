@@ -10,19 +10,19 @@
 #ifndef _GENERIC_MEMORY_TEST_H_
 #define _GENERIC_MEMORY_TEST_H_
 
-#include <Guid/StatusCodeDataTypeId.h>
-#include <Protocol/GenericMemoryTest.h>
-#include <Protocol/Cpu.h>
+#include "edk2-master/MdePkg/Include/Guid/StatusCodeDataTypeId.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/GenericMemoryTest.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/HobLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 //
 // Some global define

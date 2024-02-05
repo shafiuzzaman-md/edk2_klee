@@ -7,12 +7,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/TraceHubDebugSysTLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/TraceHubDebugSysTLib.h"
 #include <Library/MipiSysTLib/mipi_syst.h>
-#include <Guid/TraceHubDebugInfoHob.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/TraceHubDebugInfoHob.h"
 #include "InternalTraceHubApiCommon.h"
 #include "InternalTraceHubApi.h"
 

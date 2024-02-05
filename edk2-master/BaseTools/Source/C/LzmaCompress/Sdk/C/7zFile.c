@@ -8,7 +8,7 @@
 #ifndef USE_WINDOWS_FILE
 
 #ifndef UNDER_CE
-#include <errno.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/errno.h"
 #endif
 
 #else

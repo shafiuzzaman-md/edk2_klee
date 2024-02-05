@@ -8,12 +8,12 @@
 
 **/
 
-#include <Base.h>
-#include <Library/TimerLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/LocalApicLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
 
 /**
   Internal function to return the frequency of the local APIC timer.

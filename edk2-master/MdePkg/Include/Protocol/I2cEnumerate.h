@@ -14,7 +14,7 @@
 #ifndef __I2C_ENUMERATE_H__
 #define __I2C_ENUMERATE_H__
 
-#include <Pi/PiI2c.h>
+#include "edk2-master/MdePkg/Include/Pi/PiI2c.h"
 
 #define EFI_I2C_ENUMERATE_PROTOCOL_GUID  { 0xda8cd7c4, 0x1c00, 0x49e2, { 0x80, 0x3e, 0x52, 0x14, 0xe7, 0x01, 0x89, 0x4c }}
 

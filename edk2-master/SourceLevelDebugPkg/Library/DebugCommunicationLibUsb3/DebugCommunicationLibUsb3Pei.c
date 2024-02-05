@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/HobLib.h>
-#include <Ppi/MemoryDiscovered.h>
-#include <Ppi/IoMmu.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Ppi/MemoryDiscovered.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/IoMmu.h"
 #include "DebugCommunicationLibUsb3Internal.h"
 
 GUID  gUsb3DbgGuid = USB3_DBG_GUID;

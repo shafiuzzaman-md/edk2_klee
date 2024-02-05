@@ -7,12 +7,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <stdlib.h>
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 
-#include <Uefi.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 ///
 /// Signature for PAGE_HEAD structure

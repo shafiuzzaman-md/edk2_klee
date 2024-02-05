@@ -9,21 +9,21 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // The package level header files this module uses
 //
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/PcdLib.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
 //
 // The protocols, PPI and GUID defintions for this module
 //
-#include <Ppi/MasterBootMode.h>
-#include <Ppi/BootInRecoveryMode.h>
+#include "edk2-master/MdePkg/Include/Ppi/MasterBootMode.h"
+#include "edk2-master/MdePkg/Include/Ppi/BootInRecoveryMode.h"
 //
 // The Library classes this module consumes
 //
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
 
 //
 // Module globals

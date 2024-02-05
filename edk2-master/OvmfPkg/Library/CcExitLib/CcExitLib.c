@@ -7,10 +7,10 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/CcExitLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 #include <Register/Amd/Msr.h>
 
 /**

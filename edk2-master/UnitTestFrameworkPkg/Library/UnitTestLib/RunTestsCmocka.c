@@ -5,20 +5,20 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
-#include <stddef.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stddef.h"
 #include <setjmp.h>
 #include <cmocka.h>
 
-#include <Uefi.h>
-#include <UnitTestFrameworkTypes.h>
-#include <Library/UnitTestLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/UnitTestFrameworkPkg/PrivateInclude/UnitTestFrameworkTypes.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 STATIC UNIT_TEST_FRAMEWORK_HANDLE  mFrameworkHandle = NULL;
 

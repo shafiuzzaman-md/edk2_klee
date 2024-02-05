@@ -6,8 +6,8 @@
 
 **/
 
-#include <Library/ArmLib.h>
-#include <Library/ArmPlatformLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
 
 /**
   Return the current Boot Mode.

@@ -9,7 +9,7 @@
 #ifndef ARM_CORTEX_A9_H_
 #define ARM_CORTEX_A9_H_
 
-#include <Chipset/ArmV7.h>
+#include "edk2-master/ArmPkg/Include/Chipset/ArmV7.h"
 
 //
 // Cortex A9 feature bit definitions

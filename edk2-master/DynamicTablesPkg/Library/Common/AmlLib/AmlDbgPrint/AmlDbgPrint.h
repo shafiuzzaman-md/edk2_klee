@@ -24,7 +24,7 @@
 
 #if !defined (MDEPKG_NDEBUG)
 
-  #include <AmlInclude.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
 
 /**
   @defgroup DbgPrintApis Print APIs for debugging.

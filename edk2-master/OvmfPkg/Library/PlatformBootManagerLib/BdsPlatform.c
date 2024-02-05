@@ -7,13 +7,13 @@
 **/
 
 #include "BdsPlatform.h"
-#include <Guid/RootBridgesConnectedEventGroup.h>
-#include <Guid/SerialPortLibVendor.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/VirtioDevice.h>
-#include <Library/PlatformBmPrintScLib.h>
-#include <Library/Tcg2PhysicalPresenceLib.h>
-#include <Library/XenPlatformLib.h>
+#include "edk2-master/OvmfPkg/Include/Guid/RootBridgesConnectedEventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SerialPortLibVendor.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformBmPrintScLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenPlatformLib.h"
 
 //
 // Global data

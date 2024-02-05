@@ -8,10 +8,10 @@
 
 #include "PiPei.h"
 #include "Platform.h"
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
 /**
   Publish PEI & DXE (Decompressed) Memory based FVs to let PEI

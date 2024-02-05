@@ -9,9 +9,9 @@
 **/
 
 #include "AhciPei.h"
-#include <Ppi/PciDevice.h>
-#include <Library/DevicePathLib.h>
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/PciDevice.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 
 EFI_PEI_PPI_DESCRIPTOR  mAhciAtaPassThruPpiListTemplate = {
   (EFI_PEI_PPI_DESCRIPTOR_PPI | EFI_PEI_PPI_DESCRIPTOR_TERMINATE_LIST),

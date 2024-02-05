@@ -7,12 +7,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Guid/PlatformHasAcpi.h>
-#include <Guid/PlatformHasDeviceTree.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/PlatformHasAcpi.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/PlatformHasDeviceTree.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /** Entry point for the Cloud Hypervisor PlatformHasAcpiDtDxe.
 

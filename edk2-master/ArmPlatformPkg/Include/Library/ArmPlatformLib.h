@@ -12,14 +12,14 @@
 //
 // The package level header files this module uses
 //
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 //
 // The protocols, PPI and GUID definitions for this module
 //
-#include <Ppi/MasterBootMode.h>
-#include <Ppi/BootInRecoveryMode.h>
+#include "edk2-master/MdePkg/Include/Ppi/MasterBootMode.h"
+#include "edk2-master/MdePkg/Include/Ppi/BootInRecoveryMode.h"
 
-#include <Library/ArmLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
 
 /**
   Return the core position from the value of its MpId register

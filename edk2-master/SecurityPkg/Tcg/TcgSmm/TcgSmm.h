@@ -9,28 +9,28 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG_SMM_H__
 #define __TCG_SMM_H__
 
-#include <PiDxe.h>
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
-#include <Guid/PhysicalPresenceData.h>
-#include <Guid/MemoryOverwriteControl.h>
-#include <Guid/TpmInstance.h>
+#include "edk2-master/SecurityPkg/Include/Guid/PhysicalPresenceData.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryOverwriteControl.h"
+#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
 
-#include <Protocol/SmmSwDispatch2.h>
-#include <Protocol/AcpiTable.h>
-#include <Protocol/SmmVariable.h>
+#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/TpmMeasurementLib.h>
-#include <Library/PcdLib.h>
-#include <Library/TcgPpVendorLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TcgPpVendorLib.h"
 
 #pragma pack(1)
 typedef struct {

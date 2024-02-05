@@ -20,11 +20,11 @@
 #ifndef DXE_TPM2_MEASURE_BOOT_LIB_SANITATION_
 #define DXE_TPM2_MEASURE_BOOT_LIB_SANITATION_
 
-#include <Uefi.h>
-#include <Uefi/UefiSpec.h>
-#include <Protocol/BlockIo.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Protocol/Tcg2Protocol.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
 
 /**
   This function will validate the EFI_PARTITION_TABLE_HEADER structure is safe to parse

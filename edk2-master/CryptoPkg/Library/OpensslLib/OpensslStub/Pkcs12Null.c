@@ -6,7 +6,7 @@
 
 **/
 
-#include <openssl/pkcs12.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/pkcs12.h"
 
 int
 PKCS12_PBE_keyivgen_ex (

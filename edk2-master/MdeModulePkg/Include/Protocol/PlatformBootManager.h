@@ -9,7 +9,7 @@
 #ifndef __PLATFORM_BOOT_MANAGER_PROTOCOL_H__
 #define __PLATFORM_BOOT_MANAGER_PROTOCOL_H__
 
-#include <Library/UefiBootManagerLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
 
 //
 // Platform Boot Manager Protocol GUID value

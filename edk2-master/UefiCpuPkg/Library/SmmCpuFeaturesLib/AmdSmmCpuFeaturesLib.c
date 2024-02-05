@@ -9,12 +9,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/SmmCpuFeaturesLib.h>
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/UefiCpuPkg/Include/Library/SmmCpuFeaturesLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 #include <Register/Amd/SmramSaveStateMap.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MmSaveStateLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MmSaveStateLib.h"
 
 // EFER register LMA bit
 #define LMA  BIT10

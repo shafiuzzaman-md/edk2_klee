@@ -7,7 +7,7 @@
 **/
 
 #include "PiDxe.h"
-#include <Library/PlatformFvbLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PlatformFvbLib.h"
 
 /**
   This function will be called following a call to the

@@ -10,9 +10,9 @@
 #ifndef _UDP6_DRIVER_H_
 #define _UDP6_DRIVER_H_
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/DevicePath.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 /**
   Tests to see if this driver supports a given controller. If a child device is provided,

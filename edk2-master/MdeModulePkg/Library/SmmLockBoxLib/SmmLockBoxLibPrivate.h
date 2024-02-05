@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SMM_LOCK_BOX_LIB_PRIVATE_H_
 #define _SMM_LOCK_BOX_LIB_PRIVATE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #pragma pack(1)
 

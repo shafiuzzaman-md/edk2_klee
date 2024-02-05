@@ -10,12 +10,12 @@
 #ifndef __BASE_PECOFF_LIB_INTERNALS__
 #define __BASE_PECOFF_LIB_INTERNALS__
 
-#include <Base.h>
-#include <Library/PeCoffLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 //
 // Macro definitions for RISC-V architecture.

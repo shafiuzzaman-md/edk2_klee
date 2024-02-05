@@ -6,10 +6,10 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/ArmLib.h>
-#include <Library/PrePiHobListPointerLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiHobListPointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Returns the pointer to the HOB list.

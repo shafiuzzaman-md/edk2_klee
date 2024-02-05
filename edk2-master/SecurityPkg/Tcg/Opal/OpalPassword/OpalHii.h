@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _OPAL_HII_H_
 #define _OPAL_HII_H_
 
-#include <Protocol/HiiConfigAccess.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
 
 #include "OpalDriver.h"
 #include "OpalHiiFormValues.h"

@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "MmSaveState.h"
 #include <Register/Amd/SmramSaveStateMap.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 // EFER register LMA bit
 #define LMA                                        BIT10

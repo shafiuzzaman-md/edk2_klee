@@ -10,9 +10,9 @@
       (https://developer.arm.com/documentation/den0085/0101/)
 **/
 
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
-#include <IndustryStandard/ArmErrorSourceTable.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/ArmErrorSourceTable.h"
 #include "AcpiParser.h"
 #include "AcpiView.h"
 #include "AcpiViewConfig.h"

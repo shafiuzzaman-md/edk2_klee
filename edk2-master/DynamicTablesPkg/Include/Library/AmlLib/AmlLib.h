@@ -37,8 +37,8 @@
   @}
 */
 
-#include <AcpiObjects.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/DynamicTablesPkg/Include/AcpiObjects.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #ifndef AML_HANDLE
 

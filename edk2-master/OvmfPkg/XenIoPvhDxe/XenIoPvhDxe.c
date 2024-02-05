@@ -10,10 +10,10 @@
 
 **/
 
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/XenIoMmioLib.h>
-#include <Library/XenPlatformLib.h>
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenIoMmioLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenPlatformLib.h"
 
 EFI_STATUS
 EFIAPI

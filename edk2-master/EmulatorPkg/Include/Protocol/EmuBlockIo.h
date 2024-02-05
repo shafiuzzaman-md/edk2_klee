@@ -13,8 +13,8 @@
 #ifndef __EMU_BLOCK_IO_H__
 #define __EMU_BLOCK_IO_H__
 
-#include <Protocol/BlockIo.h>
-#include <Protocol/BlockIo2.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo2.h"
 
 #define EMU_BLOCK_IO_PROTOCOL_GUID \
 { 0x6888A4AE, 0xAFCE, 0xE84B, { 0x91, 0x02, 0xF7, 0xB9, 0xDA, 0xE6, 0xA0, 0x30 } }

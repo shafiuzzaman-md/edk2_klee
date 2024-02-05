@@ -7,13 +7,13 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
 #include <IndustryStandard/Xen/hvm/params.h>
 #include <IndustryStandard/Xen/memory.h>
 
-#include <Library/DebugLib.h>
-#include <Library/XenHypercallLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenHypercallLib.h"
 
 RETURN_STATUS
 EFIAPI

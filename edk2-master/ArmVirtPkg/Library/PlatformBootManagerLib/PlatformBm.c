@@ -9,27 +9,27 @@
 
 **/
 
-#include <IndustryStandard/Pci22.h>
-#include <IndustryStandard/Virtio095.h>
-#include <Library/BootLogoLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PlatformBmPrintScLib.h>
-#include <Library/QemuBootOrderLib.h>
-#include <Library/QemuFwCfgSimpleParserLib.h>
-#include <Library/TpmPlatformHierarchyLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/VirtioDevice.h>
-#include <Guid/EventGroup.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/RootBridgesConnectedEventGroup.h>
-#include <Guid/SerialPortLibVendor.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio095.h"
+#include "edk2-master/MdeModulePkg/Include/Library/BootLogoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformBmPrintScLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuBootOrderLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgSimpleParserLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TpmPlatformHierarchyLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/OvmfPkg/Include/Guid/RootBridgesConnectedEventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SerialPortLibVendor.h"
 
 #include "PlatformBm.h"
 

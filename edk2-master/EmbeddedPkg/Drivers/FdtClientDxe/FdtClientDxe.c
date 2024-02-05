@@ -7,18 +7,18 @@
 *
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <libfdt.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
 
-#include <Guid/Fdt.h>
-#include <Guid/FdtHob.h>
-#include <Guid/PlatformHasDeviceTree.h>
+#include "edk2-master/EmbeddedPkg/Include/Guid/Fdt.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/FdtHob.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/PlatformHasDeviceTree.h"
 
-#include <Protocol/FdtClient.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/FdtClient.h"
 
 STATIC VOID  *mDeviceTreeBase;
 

@@ -7,8 +7,8 @@
 **/
 
 #include "TextEditor.h"
-#include <Guid/FileSystemInfo.h>
-#include <Library/FileHandleLib.h>
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
 
 EFI_EDITOR_FILE_BUFFER  FileBuffer;
 EFI_EDITOR_FILE_BUFFER  FileBufferBackupVar;

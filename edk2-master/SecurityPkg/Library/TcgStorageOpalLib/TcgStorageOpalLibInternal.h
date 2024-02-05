@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _OPAL_INTERNAL_H_
 #define _OPAL_INTERNAL_H_
 
-#include <Library/TcgStorageOpalLib.h>
+#include "edk2-master/SecurityPkg/Include/Library/TcgStorageOpalLib.h"
 
 /**
 

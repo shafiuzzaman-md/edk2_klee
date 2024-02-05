@@ -8,13 +8,13 @@
 
 **/
 
-#include <Uefi.h>
-#include <IndustryStandard/ArmCache.h>
-#include <IndustryStandard/ArmStdSmc.h>
-#include <IndustryStandard/SmBios.h>
-#include <Library/ArmLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmCache.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 #include "SmbiosProcessor.h"
 

@@ -8,9 +8,9 @@
 
 **/
 
-#include <Library/BaseLib.h> // AsciiStrnCmp()
-#include <Library/HobLib.h>  // GetFirstGuidHob()
-#include <Pi/PiHob.h>        // EFI_HOB_GUID_TYPE
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
 
 #include "XenSmbiosPlatformDxe.h"
 

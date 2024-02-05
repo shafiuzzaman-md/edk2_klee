@@ -8,7 +8,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Protocol/ShellDynamicCommand.h>
+#include "edk2-master/MdePkg/Include/Protocol/ShellDynamicCommand.h"
 #include "Http.h"
 
 /**

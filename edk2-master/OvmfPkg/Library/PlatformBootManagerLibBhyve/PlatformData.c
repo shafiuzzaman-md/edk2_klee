@@ -9,7 +9,7 @@
 **/
 
 #include "BdsPlatform.h"
-#include <Guid/QemuRamfb.h>
+#include "edk2-master/OvmfPkg/Include/Guid/QemuRamfb.h"
 
 //
 // Debug Agent UART Device Path structure

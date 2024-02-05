@@ -4,12 +4,12 @@
 **/
 
 #include "UefiPayloadEntry.h"
-#include <UniversalPayload/AcpiTable.h>
-#include <UniversalPayload/SerialPortInfo.h>
-#include <UniversalPayload/PciRootBridges.h>
-#include <UniversalPayload/ExtraData.h>
-#include <Guid/MemoryTypeInformation.h>
-#include <Guid/AcpiBoardInfoGuid.h>
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/AcpiTable.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SerialPortInfo.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/PciRootBridges.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/ExtraData.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/AcpiBoardInfoGuid.h"
 
 #define ROW_LIMITER  16
 

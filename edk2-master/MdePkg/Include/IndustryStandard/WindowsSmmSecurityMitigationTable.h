@@ -10,7 +10,7 @@
 #ifndef _WINDOWS_SMM_SECURITY_MITIGATION_TABLE_H_
 #define _WINDOWS_SMM_SECURITY_MITIGATION_TABLE_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #define EFI_ACPI_WINDOWS_SMM_SECURITY_MITIGATION_TABLE_SIGNATURE  SIGNATURE_32('W', 'S', 'M', 'T')
 

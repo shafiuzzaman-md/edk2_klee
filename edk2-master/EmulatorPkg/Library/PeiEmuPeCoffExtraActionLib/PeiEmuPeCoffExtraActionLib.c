@@ -8,16 +8,16 @@ Portions copyright (c) 2008 - 2011, Apple Inc. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiPei.h>
-#include <Ppi/EmuThunk.h>
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
-#include <Library/PeCoffLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <Library/EmuMagicPageLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/EmulatorPkg/Include/Library/EmuMagicPageLib.h"
 
 //
 // Cache of UnixThunk protocol

@@ -6,16 +6,16 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Parser/AmlParser.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlParser.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlDbgPrint/AmlDbgPrint.h>
-#include <Parser/AmlFieldListParser.h>
-#include <Parser/AmlMethodParser.h>
-#include <Parser/AmlResourceDataParser.h>
-#include <String/AmlString.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDbgPrint/AmlDbgPrint.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlFieldListParser.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlMethodParser.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlResourceDataParser.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
 
 /*
   AML Tree

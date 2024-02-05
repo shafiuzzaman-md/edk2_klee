@@ -8,19 +8,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _UEFI_DEVICE_PATH_LIB_H_
 #define _UEFI_DEVICE_PATH_LIB_H_
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <assert.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 #ifdef __GNUC__
-#include <unistd.h>
+#include "edk2-master/CryptoPkg/Library/Include/unistd.h"
 #else
 #include <direct.h>
 #endif
-#include <Common/UefiBaseTypes.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/DevicePathUtilities.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePathUtilities.h"
 #include "CommonLib.h"
 #include "EfiUtilityMsgs.h"
 

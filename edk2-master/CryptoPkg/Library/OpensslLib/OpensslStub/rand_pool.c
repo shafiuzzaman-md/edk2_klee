@@ -10,8 +10,8 @@
 #include "crypto/rand.h"
 #include <openssl/aes.h>
 
-#include <Uefi.h>
-#include <Library/RngLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/RngLib.h"
 
 /**
   Calls RandomNumber64 to fill

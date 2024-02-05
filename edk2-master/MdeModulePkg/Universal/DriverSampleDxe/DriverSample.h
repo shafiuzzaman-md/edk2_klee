@@ -18,29 +18,29 @@ Revision History
 #ifndef _DRIVER_SAMPLE_H_
 #define _DRIVER_SAMPLE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/HiiConfigRouting.h>
-#include <Protocol/FormBrowser2.h>
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/HiiString.h>
-#include <Protocol/FormBrowserEx.h>
-#include <Protocol/HiiConfigKeyword.h>
-#include <Protocol/HiiPopup.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "edk2-master/MdePkg/Include/Protocol/FormBrowser2.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FormBrowserEx.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigKeyword.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPopup.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HiiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #include "NVDataStruc.h"
 

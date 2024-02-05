@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef CC_PROBE_LIB_H_
 #define CC_PROBE_LIB_H_
 
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
 /**
   Probe the ConfidentialComputing Guest type. See defition of

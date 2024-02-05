@@ -28,8 +28,8 @@
  * 1989-2001
  */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 /* MR1						                                                */
 /* MR1  10-Apr-97  MR1	Replace use of __STDC__ with __USE_PROTOS	    */
 /* MR1				                                                        */

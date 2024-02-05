@@ -4,7 +4,7 @@
 #ifdef PCCTS_USE_NAMESPACE_STD
 #include <cstring>
 #else
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 #endif
 
 #endif

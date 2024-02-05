@@ -6,11 +6,11 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 #include <Register/Intel/Cpuid.h>
-#include <IndustryStandard/InstructionParsing.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/InstructionParsing.h"
 #include "CcInstruction.h"
 
 #define MAX_INSTRUCTION_LENGTH  15

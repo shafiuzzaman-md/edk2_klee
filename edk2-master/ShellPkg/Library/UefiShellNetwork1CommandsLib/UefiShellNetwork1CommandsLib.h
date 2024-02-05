@@ -10,33 +10,33 @@
 #ifndef _UEFI_SHELL_NETWORK1_COMMANDS_LIB_H_
 #define _UEFI_SHELL_NETWORK1_COMMANDS_LIB_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/ShellLibHiiGuid.h>
+#include "edk2-master/ShellPkg/Include/Guid/ShellLibHiiGuid.h"
 
-#include <Protocol/Cpu.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/Ip6.h>
-#include <Protocol/Ip6Config.h>
-#include <Protocol/Ip4.h>
-#include <Protocol/Ip4Config2.h>
-#include <Protocol/Arp.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip6Config.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip4Config2.h"
+#include "edk2-master/MdePkg/Include/Protocol/Arp.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/ShellCommandLib.h>
-#include <Library/ShellLib.h>
-#include <Library/SortLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HiiLib.h>
-#include <Library/NetLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellCommandLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 extern EFI_HII_HANDLE  gShellNetwork1HiiHandle;
 

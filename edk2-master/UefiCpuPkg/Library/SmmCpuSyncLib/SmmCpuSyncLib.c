@@ -27,13 +27,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/SmmCpuSyncLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/SmmCpuSyncLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 ///
 /// The implementation shall place one semaphore on exclusive cache line for good performance.

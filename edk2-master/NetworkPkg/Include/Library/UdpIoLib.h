@@ -10,10 +10,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _UDP_IO_H_
 #define _UDP_IO_H_
 
-#include <Protocol/Udp4.h>
-#include <Protocol/Udp6.h>
+#include "edk2-master/MdePkg/Include/Protocol/Udp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Udp6.h"
 
-#include <Library/NetLib.h>
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 typedef struct _UDP_IO UDP_IO;
 

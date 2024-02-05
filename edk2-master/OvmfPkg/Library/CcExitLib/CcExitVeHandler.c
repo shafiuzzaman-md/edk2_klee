@@ -6,13 +6,13 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 #include "CcExitTd.h"
-#include <Library/CcExitLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <IndustryStandard/InstructionParsing.h>
+#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/InstructionParsing.h"
 #include "CcInstruction.h"
 
 #define TDX_MMIO_READ   0

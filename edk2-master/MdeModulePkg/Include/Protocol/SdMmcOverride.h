@@ -11,7 +11,7 @@
 #ifndef __SD_MMC_OVERRIDE_H__
 #define __SD_MMC_OVERRIDE_H__
 
-#include <Protocol/SdMmcPassThru.h>
+#include "edk2-master/MdePkg/Include/Protocol/SdMmcPassThru.h"
 
 #define EDKII_SD_MMC_OVERRIDE_PROTOCOL_GUID \
   { 0xeaf9e3c1, 0xc9cd, 0x46db, { 0xa5, 0xe5, 0x5a, 0x12, 0x4c, 0x83, 0x23, 0x23 } }

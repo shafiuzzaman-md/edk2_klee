@@ -13,35 +13,35 @@ Module Name:
 //
 // The package level header files this module uses
 //
-#include <IndustryStandard/E820.h>
-#include <IndustryStandard/I440FxPiix4.h>
-#include <IndustryStandard/Q35MchIch9.h>
-#include <IndustryStandard/CloudHv.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/E820.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/I440FxPiix4.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/CloudHv.h"
 #include <IndustryStandard/Xen/arch-x86/hvm/start_info.h>
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 #include <Register/Intel/SmramSaveStateMap.h>
 
 //
 // The Library classes this module consumes
 //
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/CcProbeLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HardwareInfoLib.h>
-#include <Library/HobLib.h>
-#include <Library/IoLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/ResourcePublicationLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/QemuFwCfgSimpleParserLib.h>
-#include <Library/TdxLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/HardwareInfoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/ResourcePublicationLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgSimpleParserLib.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
 
-#include <Library/PlatformInitLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
 
 #define MEGABYTE_SHIFT  20
 

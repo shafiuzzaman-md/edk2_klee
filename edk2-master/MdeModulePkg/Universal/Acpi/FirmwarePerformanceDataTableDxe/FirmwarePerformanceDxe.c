@@ -10,31 +10,31 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/ReportStatusCodeHandler.h>
-#include <Protocol/AcpiTable.h>
-#include <Protocol/LockBox.h>
-#include <Protocol/Variable.h>
-#include <Protocol/VariablePolicy.h>
+#include "edk2-master/MdePkg/Include/Protocol/ReportStatusCodeHandler.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/LockBox.h"
+#include "edk2-master/MdePkg/Include/Protocol/Variable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
 
-#include <Guid/Acpi.h>
-#include <Guid/FirmwarePerformance.h>
+#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/FirmwarePerformance.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/TimerLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/UefiLib.h>
-#include <Library/VariablePolicyHelperLib.h>
-#include <Library/PerformanceLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyHelperLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
 
 #define SMM_BOOT_RECORD_COMM_SIZE  (OFFSET_OF (EFI_SMM_COMMUNICATE_HEADER, Data) + sizeof(SMM_BOOT_RECORD_COMMUNICATE))
 

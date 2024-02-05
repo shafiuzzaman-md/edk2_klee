@@ -11,8 +11,8 @@
 #ifndef __FMP_DEPENDENCY_DEVICE_LIB__
 #define __FMP_DEPENDENCY_DEVICE_LIB__
 
-#include <PiDxe.h>
-#include <Protocol/FirmwareManagement.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
 
 /**
   Save dependency to Fmp device.

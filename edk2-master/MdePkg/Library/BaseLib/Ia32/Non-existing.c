@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Disables the 64-bit paging mode on the CPU.

@@ -11,7 +11,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _STANDALONE_MM_H_
 #define _STANDALONE_MM_H_
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
 typedef
 EFI_STATUS

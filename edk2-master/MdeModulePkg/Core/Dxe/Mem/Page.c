@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include "DxeMain.h"
 #include "Imem.h"
 #include "HeapGuard.h"
-#include <Pi/PrePiDxeCis.h>
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiDxeCis.h"
 
 //
 // Entry for tracking the memory regions for each memory type to coalesce similar memory types

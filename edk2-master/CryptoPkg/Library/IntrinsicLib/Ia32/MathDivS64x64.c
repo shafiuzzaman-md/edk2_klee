@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /* https://gcc.gnu.org/onlinedocs/gccint/Integer-library-routines.html */
 __attribute__ ((__used__))

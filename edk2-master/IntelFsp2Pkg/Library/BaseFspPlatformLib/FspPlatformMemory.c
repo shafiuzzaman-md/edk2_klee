@@ -5,17 +5,17 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/FspCommonLib.h>
-#include <FspGlobalData.h>
-#include <FspEas.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 /**
   Get system memory resource descriptor by owner.

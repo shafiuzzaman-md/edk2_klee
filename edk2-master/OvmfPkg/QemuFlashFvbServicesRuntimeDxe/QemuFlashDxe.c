@@ -9,9 +9,9 @@
 
 **/
 
-#include <Library/UefiRuntimeLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/CcExitLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 #include <Register/Amd/Msr.h>
 
 #include "QemuFlash.h"

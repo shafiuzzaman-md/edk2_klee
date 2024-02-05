@@ -10,8 +10,8 @@
 #ifndef __QEMU_BOOT_ORDER_LIB_H__
 #define __QEMU_BOOT_ORDER_LIB_H__
 
-#include <Uefi/UefiBaseType.h>
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Connect devices based on the boot order retrieved from QEMU.

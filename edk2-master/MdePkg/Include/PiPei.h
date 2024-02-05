@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PI_PEI_H__
 #define __PI_PEI_H__
 
-#include <Uefi/UefiBaseType.h>
-#include <Pi/PiPeiCis.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Pi/PiPeiCis.h"
 
 #endif

@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _VARIABLE_POLICY_LIB_H_
 #define _VARIABLE_POLICY_LIB_H_
 
-#include <Protocol/VariablePolicy.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
 
 /**
   This API function validates and registers a new policy with

@@ -7,12 +7,12 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/PostCodeLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/PostCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Converts POST code value to status code value.

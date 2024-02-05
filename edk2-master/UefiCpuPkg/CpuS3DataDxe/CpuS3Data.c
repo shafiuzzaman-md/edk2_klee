@@ -16,19 +16,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <AcpiCpuData.h>
+#include "edk2-master/UefiCpuPkg/Include/AcpiCpuData.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
-#include <Protocol/MpService.h>
-#include <Guid/EventGroup.h>
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
 //
 // Data structure used to allocate ACPI_CPU_DATA and its supporting structures

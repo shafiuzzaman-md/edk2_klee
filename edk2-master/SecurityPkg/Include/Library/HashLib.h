@@ -11,9 +11,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _HASH_LIB_H_
 #define _HASH_LIB_H_
 
-#include <Uefi.h>
-#include <Protocol/Hash.h>
-#include <IndustryStandard/Tpm20.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/Hash.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 typedef UINTN HASH_HANDLE;
 
 /**

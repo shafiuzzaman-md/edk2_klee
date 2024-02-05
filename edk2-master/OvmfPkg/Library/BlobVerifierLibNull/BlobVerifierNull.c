@@ -7,8 +7,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BlobVerifierLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/BlobVerifierLib.h"
 
 /**
   Verify blob from an external source.

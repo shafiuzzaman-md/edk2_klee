@@ -11,10 +11,10 @@
 #ifndef REDFISH_CRT_LIB_H_
 #define REDFISH_CRT_LIB_H_
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #define MAX_STRING_SIZE  0x10000000
 

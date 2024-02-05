@@ -10,10 +10,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCP_IO_H_
 #define _TCP_IO_H_
 
-#include <Protocol/Tcp4.h>
-#include <Protocol/Tcp6.h>
+#include "edk2-master/MdePkg/Include/Protocol/Tcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp6.h"
 
-#include <Library/NetLib.h>
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 #define TCP_VERSION_4  IP_VERSION_4
 #define TCP_VERSION_6  IP_VERSION_6

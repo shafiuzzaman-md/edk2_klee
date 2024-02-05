@@ -7,20 +7,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/VarCheckLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/VarCheckLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
-#include <Protocol/MmCommunication.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication.h"
 
-#include <Protocol/VariablePolicy.h>
-#include <Library/VariablePolicyLib.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyLib.h"
 
-#include <Guid/VarCheckPolicyMmi.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/VarCheckPolicyMmi.h"
 
 #include "VarCheckPolicyLib.h"
 

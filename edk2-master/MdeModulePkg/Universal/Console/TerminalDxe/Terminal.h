@@ -10,30 +10,30 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TERMINAL_H_
 #define _TERMINAL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/GlobalVariable.h>
-#include <Guid/PcAnsi.h>
-#include <Guid/TtyTerm.h>
-#include <Guid/StatusCodeDataTypeVariable.h>
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/BaseTools/Source/C/Include/Guid/PcAnsi.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/TtyTerm.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StatusCodeDataTypeVariable.h"
 
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/SerialIo.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/SimpleTextInEx.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 #define RAW_FIFO_MAX_NUMBER  255
 #define FIFO_MAX_NUMBER      128

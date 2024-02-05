@@ -9,28 +9,28 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef FW_BLOCK_SERVICE_H_
 #define FW_BLOCK_SERVICE_H_
 
-#include <Guid/EventGroup.h>
-#include <Guid/FirmwareFileSystem2.h>
-#include <Guid/SystemNvDataGuid.h>
-#include <Guid/VariableFormat.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/FirmwareVolumeBlock.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/IoLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/FlashDeviceLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HobLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Guid/NvVariableInfoGuid.h>
-#include <Register/ArchitecturalMsr.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareFileSystem2.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Library/FlashDeviceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/NvVariableInfoGuid.h"
+#include "edk2-master/UefiCpuPkg/Include/Register/ArchitecturalMsr.h"
 
 //
 // Define two helper macro to extract the Capability field or Status field in FVB

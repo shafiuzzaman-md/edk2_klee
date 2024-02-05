@@ -12,8 +12,8 @@
 #ifndef __PVSCSI_DXE_H_
 #define __PVSCSI_DXE_H_
 
-#include <Library/DebugLib.h>
-#include <Protocol/ScsiPassThruExt.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
 
 typedef struct {
   EFI_PHYSICAL_ADDRESS    DeviceAddress;

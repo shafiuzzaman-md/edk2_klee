@@ -11,7 +11,7 @@
 #ifndef __UNIT_TEST_RESULT_REPORT_LIB_H__
 #define __UNIT_TEST_RESULT_REPORT_LIB_H__
 
-#include <UnitTestFrameworkTypes.h>
+#include "edk2-master/UnitTestFrameworkPkg/PrivateInclude/UnitTestFrameworkTypes.h"
 
 /**
 Method to produce the Unit Test run results

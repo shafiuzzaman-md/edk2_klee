@@ -6,9 +6,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Base.h>
-#include <Library/SmbusLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Executes an SMBUS quick read command.

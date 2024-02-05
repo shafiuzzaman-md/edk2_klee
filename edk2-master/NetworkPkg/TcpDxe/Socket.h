@@ -10,19 +10,19 @@
 #ifndef _SOCKET_H_
 #define _SOCKET_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Tcp4.h>
-#include <Protocol/Tcp6.h>
+#include "edk2-master/MdePkg/Include/Protocol/Tcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp6.h"
 
-#include <Library/NetLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DpcLib.h>
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/DpcLib.h"
 
 #define SOCK_SND_BUF  0
 #define SOCK_RCV_BUF  1

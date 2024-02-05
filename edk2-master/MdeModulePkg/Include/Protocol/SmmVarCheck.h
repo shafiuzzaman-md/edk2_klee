@@ -9,7 +9,7 @@
 #ifndef __SMM_VAR_CHECK_H__
 #define __SMM_VAR_CHECK_H__
 
-#include <Protocol/VarCheck.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
 
 #define EDKII_SMM_VAR_CHECK_PROTOCOL_GUID \
   { \

@@ -6,14 +6,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/Tpm2CommandLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HashLib.h>
-#include <Protocol/Tcg2Protocol.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/HashLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
 
 typedef struct {
   EFI_GUID    Guid;

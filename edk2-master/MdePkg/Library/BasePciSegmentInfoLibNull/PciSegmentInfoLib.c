@@ -7,9 +7,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/PciSegmentInfoLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentInfoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Return an array of PCI_SEGMENT_INFO holding the segment information.

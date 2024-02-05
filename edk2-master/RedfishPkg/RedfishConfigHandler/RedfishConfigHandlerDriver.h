@@ -17,9 +17,9 @@
 // UEFI Driver Model Protocols
 //
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/RedfishDiscover.h>
-#include <Protocol/RestEx.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/RedfishDiscover.h"
+#include "edk2-master/MdePkg/Include/Protocol/RestEx.h"
 
 //
 // Protocol instances

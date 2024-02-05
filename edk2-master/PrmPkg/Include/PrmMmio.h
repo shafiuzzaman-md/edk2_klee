@@ -10,7 +10,7 @@
 #ifndef PRM_MMIO_H_
 #define PRM_MMIO_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #pragma pack(push, 1)
 

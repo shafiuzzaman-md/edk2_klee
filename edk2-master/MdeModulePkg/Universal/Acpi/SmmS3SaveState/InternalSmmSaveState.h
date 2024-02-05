@@ -9,18 +9,18 @@
 
 #ifndef _INTERNAL_SMM_S3_SAVE_STATE_H_
 #define _INTERNAL_SMM_S3_SAVE_STATE_H_
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/S3SmmSaveState.h>
+#include "edk2-master/MdePkg/Include/Protocol/S3SmmSaveState.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/S3BootScriptLib.h>
-#include <Library/PcdLib.h>
-#include <Library/SmbusLib.h>
-#include <IndustryStandard/SmBus.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
 
 /**
   Adds a record into S3 boot script table.

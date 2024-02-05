@@ -5,9 +5,9 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/CacheAsRamLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/CacheAsRamLib.h"
 
 /**
   This function disable CAR.

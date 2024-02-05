@@ -6,36 +6,36 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/SmmBase2.h>
-#include <Protocol/SmmCommunication.h>
-#include <Protocol/MmCommunication2.h>
-#include <Protocol/SmmAccess2.h>
-#include <Protocol/SmmConfiguration.h>
-#include <Protocol/SmmControl2.h>
-#include <Protocol/DxeSmmReadyToLock.h>
-#include <Protocol/Cpu.h>
+#include "edk2-master/MdePkg/Include/Protocol/SmmBase2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCommunication.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmConfiguration.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmControl2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
 
-#include <Guid/EventGroup.h>
-#include <Guid/EventLegacyBios.h>
-#include <Guid/LoadModuleAtFixedAddress.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/EventLegacyBios.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/LoadModuleAtFixedAddress.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/PcdLib.h>
-#include <Library/ReportStatusCodeLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
 #include "PiSmmCorePrivateData.h"
-#include <Library/SafeIntLib.h>
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
 
 #define SMRAM_CAPABILITIES  (EFI_MEMORY_WB | EFI_MEMORY_UC)
 

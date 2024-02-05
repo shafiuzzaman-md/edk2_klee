@@ -7,8 +7,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Base.h>
-#include <Library/TraceHubDebugSysTLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/TraceHubDebugSysTLib.h"
 
 /**
   Write debug string to specified Trace Hub MMIO address.

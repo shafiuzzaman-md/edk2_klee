@@ -7,16 +7,16 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <IndustryStandard/Tpm20.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Library/HobLib.h>
-#include <Library/PrintLib.h>
-#include <Library/TcgEventLogRecordLib.h>
-#include <WorkArea.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TcgEventLogRecordLib.h"
+#include "edk2-master/OvmfPkg/Include/WorkArea.h"
 
 #pragma pack(1)
 

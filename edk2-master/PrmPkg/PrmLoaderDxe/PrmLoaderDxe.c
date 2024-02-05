@@ -11,22 +11,22 @@
 
 #include "PrmAcpiTable.h"
 
-#include <Guid/ZeroGuid.h>
-#include <IndustryStandard/Acpi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrmContextBufferLib.h>
-#include <Library/PrmModuleDiscoveryLib.h>
-#include <Library/PrmPeCoffLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Protocol/AcpiTable.h>
-#include <Protocol/PrmConfig.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmContextBufferLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmModuleDiscoveryLib.h"
+#include "edk2-master/PrmPkg/Include/Library/PrmPeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/PrmPkg/Include/Protocol/PrmConfig.h"
 
-#include <PrmContextBuffer.h>
-#include <PrmMmio.h>
+#include "edk2-master/PrmPkg/Include/PrmContextBuffer.h"
+#include "edk2-master/PrmPkg/Include/PrmMmio.h"
 
 #define _DBGMSGID_  "[PRMLOADER]"
 

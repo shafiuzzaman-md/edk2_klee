@@ -8,21 +8,21 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #ifndef _UEFI_DEVICE_PATH_LIB_H_
 #define _UEFI_DEVICE_PATH_LIB_H_
-#include <Uefi.h>
-#include <Protocol/DevicePathUtilities.h>
-#include <Protocol/DebugPort.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/DevicePathFromText.h>
-#include <Guid/PcAnsi.h>
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
-#include <IndustryStandard/Bluetooth.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePathUtilities.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugPort.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathFromText.h"
+#include "edk2-master/BaseTools/Source/C/Include/Guid/PcAnsi.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Bluetooth.h"
 
 #define IS_COMMA(a)          ((a) == L',')
 #define IS_HYPHEN(a)         ((a) == L'-')

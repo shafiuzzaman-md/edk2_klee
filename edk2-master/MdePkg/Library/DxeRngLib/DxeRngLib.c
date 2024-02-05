@@ -6,11 +6,11 @@
  SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/RngLib.h>
-#include <Protocol/Rng.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/RngLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Rng.h"
 
 /**
   Routine Description:

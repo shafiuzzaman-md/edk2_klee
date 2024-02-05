@@ -9,30 +9,30 @@
 #ifndef __ATA_ATAPI_PASS_THRU_H__
 #define __ATA_ATAPI_PASS_THRU_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Atapi.h>
-#include <IndustryStandard/Scsi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Atapi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Scsi.h"
 
-#include <Protocol/PciIo.h>
-#include <Protocol/IdeControllerInit.h>
-#include <Protocol/AtaPassThru.h>
-#include <Protocol/ScsiPassThruExt.h>
-#include <Protocol/AtaAtapiPolicy.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/IdeControllerInit.h"
+#include "edk2-master/MdePkg/Include/Protocol/AtaPassThru.h"
+#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/AtaAtapiPolicy.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PciLib.h>
-#include <Library/PcdLib.h>
-#include <Library/TimerLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
 #include "IdeMode.h"
 #include "AhciMode.h"

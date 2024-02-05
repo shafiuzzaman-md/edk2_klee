@@ -12,37 +12,37 @@
 #ifndef _MM_CORE_H_
 #define _MM_CORE_H_
 
-#include <PiMm.h>
-#include <StandaloneMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/StandaloneMmPkg/Include/StandaloneMm.h"
 
-#include <Protocol/DxeMmReadyToLock.h>
-#include <Protocol/MmReadyToLock.h>
-#include <Protocol/MmEndOfDxe.h>
-#include <Protocol/MmCommunication2.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/MmConfiguration.h>
+#include "edk2-master/MdePkg/Include/Protocol/DxeMmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmEndOfDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmConfiguration.h"
 
-#include <Guid/Apriori.h>
-#include <Guid/EventGroup.h>
-#include <Guid/EventLegacyBios.h>
-#include <Guid/ZeroGuid.h>
-#include <Guid/MemoryProfile.h>
-#include <Guid/HobList.h>
-#include <Guid/MmFvDispatch.h>
-#include <Guid/MmramMemoryReserve.h>
+#include "edk2-master/MdePkg/Include/Guid/Apriori.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/EventLegacyBios.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryProfile.h"
+#include "edk2-master/MdePkg/Include/Guid/HobList.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmFvDispatch.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmramMemoryReserve.h"
 
-#include <Library/StandaloneMmCoreEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/StandaloneMmPkg/Include/Library/StandaloneMmCoreEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <Library/StandaloneMmMemLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/StandaloneMmPkg/Include/Library/StandaloneMmMemLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 #include "StandaloneMmCorePrivateData.h"
 

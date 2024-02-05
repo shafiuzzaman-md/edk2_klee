@@ -9,9 +9,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_STRING_FUNCS_H
 #define _EFI_STRING_FUNCS_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <Common/UefiBaseTypes.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
 
 //
 // Common data structures

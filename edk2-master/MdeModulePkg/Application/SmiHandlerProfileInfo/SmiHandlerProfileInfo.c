@@ -6,21 +6,21 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Protocol/SmmCommunication.h>
-#include <Guid/PiSmmCommunicationRegionTable.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCommunication.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PiSmmCommunicationRegionTable.h"
 
-#include <Guid/SmiHandlerProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SmiHandlerProfile.h"
 
 #define PROFILE_NAME_STRING_LENGTH  64
 CHAR8  mNameString[PROFILE_NAME_STRING_LENGTH + 1];

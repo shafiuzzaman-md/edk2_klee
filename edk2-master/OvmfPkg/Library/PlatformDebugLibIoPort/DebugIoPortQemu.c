@@ -8,8 +8,8 @@
 
 **/
 
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 #include "DebugLibDetect.h"
 
 //

@@ -8,10 +8,10 @@
  */
 #include "AcpiPlatform.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/BhyveFwCtlLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/QemuFwCfgLib.h>             // QemuFwCfgFindFile()
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/BhyveFwCtlLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
 
 STATIC
 EFI_STATUS

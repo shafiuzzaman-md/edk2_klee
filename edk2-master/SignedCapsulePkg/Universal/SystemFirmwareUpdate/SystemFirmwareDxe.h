@@ -9,30 +9,30 @@
 #ifndef _SYSTEM_FIRMWARE_UPDATE_H_
 #define _SYSTEM_FIRMWARE_UPDATE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/SystemResourceTable.h>
-#include <Guid/FirmwareContentsSigned.h>
-#include <Guid/WinCertificate.h>
-#include <Guid/EdkiiSystemFmpCapsule.h>
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareContentsSigned.h"
+#include "edk2-master/MdePkg/Include/Guid/WinCertificate.h"
+#include "edk2-master/SignedCapsulePkg/Include/Guid/EdkiiSystemFmpCapsule.h"
 
-#include <Protocol/FirmwareManagement.h>
-#include <Protocol/FirmwareVolumeBlock.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HobLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/PlatformFlashAccessLib.h>
-#include <Library/EdkiiSystemCapsuleLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/SignedCapsulePkg/Include/Library/PlatformFlashAccessLib.h"
+#include "edk2-master/SignedCapsulePkg/Include/Library/EdkiiSystemCapsuleLib.h"
 
 typedef struct {
   UINT32    LastAttemptVersion;

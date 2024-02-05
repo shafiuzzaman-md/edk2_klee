@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/DxeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
 #include "PcRtc.h"
 
 PC_RTC_MODULE_GLOBALS  mModuleGlobal;

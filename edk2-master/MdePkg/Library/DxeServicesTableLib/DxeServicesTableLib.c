@@ -17,11 +17,11 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Guid/DxeServices.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/DxeServices.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 //
 // Cache copy of the DXE Services Table

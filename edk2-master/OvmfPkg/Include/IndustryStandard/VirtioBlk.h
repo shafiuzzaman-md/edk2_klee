@@ -12,7 +12,7 @@
 #ifndef _VIRTIO_BLK_H_
 #define _VIRTIO_BLK_H_
 
-#include <IndustryStandard/Virtio.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 //
 // virtio-0.9.5, Appendix D: Block Device

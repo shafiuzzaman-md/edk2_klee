@@ -18,27 +18,27 @@ Copyright (c) Microsoft Corporation.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Protocol/VariableWrite.h>
-#include <Protocol/Variable.h>
-#include <Protocol/MmCommunication2.h>
-#include <Protocol/SmmVariable.h>
-#include <Protocol/VariableLock.h>
-#include <Protocol/VarCheck.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/VariableWrite.h"
+#include "edk2-master/MdePkg/Include/Protocol/Variable.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication2.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariableLock.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/MmUnblockMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmUnblockMemoryLib.h"
 
-#include <Guid/EventGroup.h>
-#include <Guid/SmmVariableCommon.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SmmVariableCommon.h"
 
 #include "PrivilegePolymorphic.h"
 #include "VariableParsing.h"

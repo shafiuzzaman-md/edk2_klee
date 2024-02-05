@@ -9,11 +9,11 @@
 #ifndef PEILESS_STARTUP_INTERNAL_LIB_H_
 #define PEILESS_STARTUP_INTERNAL_LIB_H_
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Uefi/UefiSpec.h>
-#include <Uefi/UefiBaseType.h>
-#include <IndustryStandard/IntelTdx.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/IntelTdx.h"
 
 EFI_STATUS
 EFIAPI

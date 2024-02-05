@@ -6,8 +6,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/AuthVariableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/AuthVariableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Initialization for authenticated varibale services.

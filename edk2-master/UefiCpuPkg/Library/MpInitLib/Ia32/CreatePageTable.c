@@ -5,7 +5,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Only create page table for x64, and leave the CreatePageTable empty for Ia32.

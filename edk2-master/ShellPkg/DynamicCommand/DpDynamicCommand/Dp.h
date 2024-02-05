@@ -9,31 +9,31 @@
 #ifndef _DP_H_
 #define _DP_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/Performance.h>
-#include <Guid/ExtendedFirmwarePerformance.h>
-#include <Guid/FirmwarePerformance.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/Performance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ExtendedFirmwarePerformance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/FirmwarePerformance.h"
 
-#include <Protocol/HiiPackageList.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/UnicodeCollation.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiPackageList.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ShellLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/SortLib.h>
-#include <Library/HiiLib.h>
-#include <Library/FileHandleLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/PerformanceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
 
 extern EFI_HII_HANDLE  mDpHiiHandle;
 

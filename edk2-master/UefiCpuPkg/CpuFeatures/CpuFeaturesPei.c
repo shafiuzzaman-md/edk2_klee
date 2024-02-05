@@ -6,15 +6,15 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/RegisterCpuFeaturesLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/RegisterCpuFeaturesLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
-#include <Guid/CpuFeaturesInitDone.h>
+#include "edk2-master/UefiCpuPkg/Include/Guid/CpuFeaturesInitDone.h"
 
 EFI_PEI_PPI_DESCRIPTOR  mPeiCpuFeaturesInitDonePpiDesc = {
   (EFI_PEI_PPI_DESCRIPTOR_PPI | EFI_PEI_PPI_DESCRIPTOR_TERMINATE_LIST),

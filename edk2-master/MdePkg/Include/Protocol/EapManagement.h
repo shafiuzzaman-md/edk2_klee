@@ -17,7 +17,7 @@
 #ifndef __EFI_EAP_MANAGEMENT_PROTOCOL_H__
 #define __EFI_EAP_MANAGEMENT_PROTOCOL_H__
 
-#include <Protocol/Eap.h>
+#include "edk2-master/MdePkg/Include/Protocol/Eap.h"
 
 #define EFI_EAP_MANAGEMENT_PROTOCOL_GUID \
   { \

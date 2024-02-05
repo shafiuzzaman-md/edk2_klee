@@ -6,23 +6,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/FspWrapperApiLib.h>
-#include <Library/TpmMeasurementLib.h>
-#include <Library/FspMeasurementLib.h>
-#include <Library/TcgEventLogRecordLib.h>
-#include <Library/HashLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperApiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspMeasurementLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TcgEventLogRecordLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/HashLib.h"
 
-#include <Ppi/Tcg.h>
-#include <IndustryStandard/UefiTcgPlatform.h>
+#include "edk2-master/SecurityPkg/Include/Ppi/Tcg.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
 /**
   Tpm measure and log data, and extend the measurement result into a specific PCR.

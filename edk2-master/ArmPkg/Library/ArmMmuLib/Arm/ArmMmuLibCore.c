@@ -7,15 +7,15 @@
 *
 **/
 
-#include <Uefi.h>
-#include <Chipset/ArmV7.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ArmLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/ArmPkg/Include/Chipset/ArmV7.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 #define ID_MMFR0_SHARELVL_SHIFT  12
 #define ID_MMFR0_SHARELVL_MASK   0xf

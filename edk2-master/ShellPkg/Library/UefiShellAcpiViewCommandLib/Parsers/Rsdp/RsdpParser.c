@@ -8,7 +8,7 @@
     - ACPI 6.2 Specification - Errata A, September 2017
 **/
 
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 

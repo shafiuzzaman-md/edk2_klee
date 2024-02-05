@@ -5,9 +5,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/FspCommonLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
 
 /**
 

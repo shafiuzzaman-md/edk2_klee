@@ -11,24 +11,24 @@
 #ifndef __EFI_HTTP_UTILITIES_DXE_H__
 #define __EFI_HTTP_UTILITIES_DXE_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Libraries
 //
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HttpLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpLib.h"
 
 //
 // Consumed Protocols
 //
-#include <Protocol/HttpUtilities.h>
-#include <Protocol/Http.h>
+#include "edk2-master/MdePkg/Include/Protocol/HttpUtilities.h"
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
 
 //
 // Protocol instances

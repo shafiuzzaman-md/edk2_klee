@@ -10,20 +10,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PEI_CD_EXPRESS_H_
 #define _PEI_CD_EXPRESS_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/BlockIo.h>
-#include <Ppi/BlockIo2.h>
-#include <Guid/RecoveryDevice.h>
-#include <Ppi/DeviceRecoveryModule.h>
+#include "edk2-master/MdePkg/Include/Ppi/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Ppi/BlockIo2.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/RecoveryDevice.h"
+#include "edk2-master/MdePkg/Include/Ppi/DeviceRecoveryModule.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #pragma pack(1)
 

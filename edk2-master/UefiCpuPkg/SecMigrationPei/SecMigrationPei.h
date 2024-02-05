@@ -9,15 +9,15 @@
 #ifndef __SEC_MIGRATION_H__
 #define __SEC_MIGRATION_H__
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Pi/PiPeiCis.h>
-#include <Ppi/RepublishSecPpi.h>
-#include <Ppi/SecPerformance.h>
-#include <Ppi/SecPlatformInformation.h>
-#include <Ppi/SecPlatformInformation2.h>
-#include <Ppi/TemporaryRamDone.h>
-#include <Ppi/TemporaryRamSupport.h>
+#include "edk2-master/MdePkg/Include/Pi/PiPeiCis.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/RepublishSecPpi.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SecPerformance.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation2.h"
+#include "edk2-master/MdePkg/Include/Ppi/TemporaryRamDone.h"
+#include "edk2-master/MdePkg/Include/Ppi/TemporaryRamSupport.h"
 
 /**
   This interface conveys state information out of the Security (SEC) phase into PEI.

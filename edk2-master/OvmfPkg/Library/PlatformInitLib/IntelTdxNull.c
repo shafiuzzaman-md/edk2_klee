@@ -7,7 +7,7 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 /**
   In Tdx guest, the system memory is passed in TdHob by host VMM. So

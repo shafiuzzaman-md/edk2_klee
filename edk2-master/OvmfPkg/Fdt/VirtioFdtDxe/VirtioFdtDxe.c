@@ -7,18 +7,18 @@
 *
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/VirtioMmioDeviceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtioMmioDeviceLib.h"
 
-#include <Guid/VirtioMmioTransport.h>
+#include "edk2-master/OvmfPkg/Include/Guid/VirtioMmioTransport.h"
 
-#include <Protocol/FdtClient.h>
+#include "edk2-master/EmbeddedPkg/Include/Protocol/FdtClient.h"
 
 #pragma pack (1)
 typedef struct {

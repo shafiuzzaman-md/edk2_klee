@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_MANAGED_NETWORK_PROTOCOL_H__
 #define __EFI_MANAGED_NETWORK_PROTOCOL_H__
 
-#include <Protocol/SimpleNetwork.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
 
 #define EFI_MANAGED_NETWORK_SERVICE_BINDING_PROTOCOL_GUID \
   { \

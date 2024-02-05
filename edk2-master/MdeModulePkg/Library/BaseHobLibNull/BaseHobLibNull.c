@@ -7,11 +7,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <Pi/PiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
 
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 /**
   Returns the pointer to the HOB list.

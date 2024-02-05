@@ -21,19 +21,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __UEFI_LIB_H__
 #define __UEFI_LIB_H__
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/DriverConfiguration.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/DriverDiagnostics.h>
-#include <Protocol/DriverDiagnostics2.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverConfiguration.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverDiagnostics.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverDiagnostics2.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 ///
 /// Unicode String Table

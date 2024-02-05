@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __FMP_AUTHENTICATION_LIB_H__
 #define __FMP_AUTHENTICATION_LIB_H__
 
-#include <Protocol/FirmwareManagement.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
 
 /**
   The function is used to do the authentication for FMP capsule based upon

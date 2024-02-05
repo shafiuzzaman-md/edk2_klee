@@ -7,26 +7,26 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
 #include <Library/Arm/StandaloneMmCoreEntryPoint.h>
 
-#include <PiPei.h>
-#include <Guid/MmramMemoryReserve.h>
-#include <Guid/MpInformation.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmramMemoryReserve.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MpInformation.h"
 
-#include <Library/ArmSvcLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/StandaloneMmMmuLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmSvcLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/ArmPkg/Include/Library/StandaloneMmMmuLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <IndustryStandard/ArmStdSmc.h>
-#include <IndustryStandard/ArmMmSvc.h>
-#include <IndustryStandard/ArmFfaSvc.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmMmSvc.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmFfaSvc.h"
 
 #define SPM_MAJOR_VER_MASK   0xFFFF0000
 #define SPM_MINOR_VER_MASK   0x0000FFFF

@@ -6,10 +6,10 @@
 
 **/
 
-#include <PiSmm.h>
-#include <Protocol/SmmBase2.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmBase2.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_SMM_SYSTEM_TABLE2  *gSmst = NULL;
 

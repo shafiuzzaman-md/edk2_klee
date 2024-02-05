@@ -11,8 +11,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef IPMI_COMMAND_LIB_H_
 #define IPMI_COMMAND_LIB_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/Ipmi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Ipmi.h"
 
 //
 // IPMI NetFnApp

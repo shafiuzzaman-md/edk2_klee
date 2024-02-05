@@ -10,23 +10,23 @@
 #ifndef __GDB_STUB_INTERNAL__
 #define __GDB_STUB_INTERNAL__
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/GdbSerialLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/GdbSerialLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
-#include <Protocol/DebugSupport.h>
-#include <Protocol/SerialIo.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/LoadedImage.h>
-#include <Guid/DebugImageInfoTable.h>
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Guid/DebugImageInfoTable.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 extern CONST CHAR8  mHexToStr[];
 

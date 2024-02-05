@@ -7,8 +7,8 @@
 
 **/
 
-#include <Library/ArmGenericTimerCounterLib.h>
-#include <Library/ArmLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmGenericTimerCounterLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
 
 VOID
 EFIAPI

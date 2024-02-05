@@ -6,7 +6,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h> // AsciiStrSize()
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 #include "VirtioFsDxe.h"
 

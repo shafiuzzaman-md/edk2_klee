@@ -7,11 +7,11 @@
 **/
 
 #include "PiDxe.h"
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PlatformFvbLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformFvbLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
 
 /**
   This function will be called following a call to the

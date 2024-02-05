@@ -10,20 +10,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _RECOVERY_XHC_H_
 #define _RECOVERY_XHC_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/UsbController.h>
-#include <Ppi/Usb2HostController.h>
-#include <Ppi/IoMmu.h>
-#include <Ppi/EndOfPeiPhase.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/UsbController.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/Usb2HostController.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/IoMmu.h"
+#include "edk2-master/MdePkg/Include/Ppi/EndOfPeiPhase.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/TimerLib.h>
-#include <Library/IoLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 typedef struct _PEI_XHC_DEV      PEI_XHC_DEV;
 typedef struct _USB_DEV_CONTEXT  USB_DEV_CONTEXT;

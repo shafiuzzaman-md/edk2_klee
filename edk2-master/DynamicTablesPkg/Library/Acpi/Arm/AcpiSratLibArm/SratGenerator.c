@@ -12,18 +12,18 @@
   - Obj or OBJ - Object
 **/
 
-#include <Library/AcpiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Protocol/AcpiTable.h>
+#include "edk2-master/EmbeddedPkg/Include/Library/AcpiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
 
 // Module specific include files.
-#include <AcpiTableGenerator.h>
-#include <ConfigurationManagerObject.h>
-#include <ConfigurationManagerHelper.h>
-#include <Library/TableHelperLib.h>
-#include <Protocol/ConfigurationManagerProtocol.h>
+#include "edk2-master/DynamicTablesPkg/Include/AcpiTableGenerator.h"
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerHelper.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/TableHelperLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/ConfigurationManagerProtocol.h"
 
 /**
   ARM standard SRAT Generator

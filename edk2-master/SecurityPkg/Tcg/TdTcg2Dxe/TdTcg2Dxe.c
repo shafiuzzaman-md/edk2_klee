@@ -6,45 +6,45 @@
 
 **/
 
-#include <PiDxe.h>
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/PeImage.h>
-#include <IndustryStandard/TcpaAcpi.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/TcpaAcpi.h"
 
-#include <Guid/GlobalVariable.h>
-#include <Guid/HobList.h>
-#include <Guid/EventGroup.h>
-#include <Guid/EventExitBootServiceFailed.h>
-#include <Guid/ImageAuthentication.h>
-#include <Guid/TpmInstance.h>
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdePkg/Include/Guid/HobList.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/EventExitBootServiceFailed.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/MpService.h>
-#include <Protocol/VariableWrite.h>
-#include <Protocol/Tcg2Protocol.h>
-#include <Protocol/TrEEProtocol.h>
-#include <Protocol/ResetNotification.h>
-#include <Protocol/AcpiTable.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/Protocol/VariableWrite.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "edk2-master/MdePkg/Include/Protocol/TrEEProtocol.h"
+#include "edk2-master/MdePkg/Include/Protocol/ResetNotification.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/HobLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiLib.h>
-#include <Library/HashLib.h>
-#include <Library/PerformanceLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/TpmMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/HashLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 
-#include <Protocol/CcMeasurement.h>
-#include <Guid/CcEventHob.h>
-#include <Library/TdxLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/CcMeasurement.h"
+#include "edk2-master/SecurityPkg/Include/Guid/CcEventHob.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
 
 #define PERF_ID_CC_TCG2_DXE  0x3130
 

@@ -10,21 +10,21 @@
     - Obj or OBJ - Object
 **/
 
-#include <IndustryStandard/DebugPort2Table.h>
-#include <IndustryStandard/IoRemappingTable.h>
-#include <IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h>
-#include <IndustryStandard/SerialPortConsoleRedirectionTable.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DynamicPlatRepoLib.h>
-#include <Library/HobLib.h>
-#include <Library/HwInfoParserLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/TableHelperLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/AcpiTable.h>
-#include <Protocol/ConfigurationManagerProtocol.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/DebugPort2Table.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IoRemappingTable.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SerialPortConsoleRedirectionTable.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/DynamicPlatRepoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/HwInfoParserLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/TableHelperLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/ConfigurationManagerProtocol.h"
 
 #include "ConfigurationManager.h"
 

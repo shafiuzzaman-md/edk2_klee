@@ -6,20 +6,20 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Guid/ShellLibHiiGuid.h>
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/ArmErrorSourceTable.h>
+#include "edk2-master/ShellPkg/Include/Guid/ShellLibHiiGuid.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/ArmErrorSourceTable.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/ShellCommandLib.h>
-#include <Library/ShellLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/AcpiViewCommandLib.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellCommandLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/ShellPkg/Include/Library/AcpiViewCommandLib.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"

@@ -6,7 +6,7 @@
 
 **/
 
-#include <PrePi.h>
+#include "edk2-master/EmbeddedPkg/Library/PrePiLib/PrePi.h"
 
 //
 // Hack to work in NT32

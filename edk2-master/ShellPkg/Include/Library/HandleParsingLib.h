@@ -9,7 +9,7 @@
 #ifndef __HANDLE_PARSING_LIB__
 #define __HANDLE_PARSING_LIB__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 /**
   Function to add a new GUID/Name mapping.

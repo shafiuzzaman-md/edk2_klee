@@ -14,13 +14,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
     }                           \
   } while (FALSE)
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/HobList.h>
+#include "edk2-master/MdePkg/Include/Guid/HobList.h"
 
-#include <Library/HobLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 VOID  *mHobList = NULL;
 

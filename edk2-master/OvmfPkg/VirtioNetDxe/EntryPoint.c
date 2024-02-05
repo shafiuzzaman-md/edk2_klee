@@ -9,7 +9,7 @@
 
 **/
 
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #include "VirtioNet.h"
 

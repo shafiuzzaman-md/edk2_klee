@@ -6,11 +6,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Guid/FileSystemInfo.h>            // gEfiFileSystemInfoGuid
-#include <Guid/FileSystemVolumeLabelInfo.h> // gEfiFileSystemVolumeLabelInfo...
-#include <Library/BaseLib.h>                // StrCmp()
-#include <Library/BaseMemoryLib.h>          // CompareGuid()
-#include <Library/MemoryAllocationLib.h>    // FreePool()
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "VirtioFsDxe.h"
 

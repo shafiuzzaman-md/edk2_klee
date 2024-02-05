@@ -8,12 +8,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "SecureBootConfigImpl.h"
-#include <UefiSecureBoot.h>
-#include <Protocol/HiiPopup.h>
-#include <Protocol/RealTimeClock.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/SecureBootVariableLib.h>
-#include <Library/SecureBootVariableProvisionLib.h>
+#include "edk2-master/SecurityPkg/Include/UefiSecureBoot.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPopup.h"
+#include "edk2-master/MdePkg/Include/Protocol/RealTimeClock.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/SecureBootVariableLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/SecureBootVariableProvisionLib.h"
 
 CHAR16  mSecureBootStorageName[] = L"SECUREBOOT_CONFIGURATION";
 

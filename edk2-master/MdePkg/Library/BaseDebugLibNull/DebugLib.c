@@ -6,8 +6,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Prints a debug message to the debug output device if the specified error level is enabled.

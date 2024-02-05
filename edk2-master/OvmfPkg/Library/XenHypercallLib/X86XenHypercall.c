@@ -6,10 +6,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Guid/XenInfo.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Guid/XenInfo.h"
 
 STATIC VOID  *HyperPage;
 

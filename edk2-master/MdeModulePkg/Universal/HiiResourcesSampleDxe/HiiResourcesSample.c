@@ -7,14 +7,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
-#include <Guid/HiiResourceSampleHii.h>
-#include <Protocol/HiiPackageList.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/HiiLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/HiiResourceSampleHii.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPackageList.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
 
 #pragma pack(1)
 ///

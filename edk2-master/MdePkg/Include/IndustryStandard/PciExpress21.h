@@ -10,7 +10,7 @@
 #ifndef _PCIEXPRESS21_H_
 #define _PCIEXPRESS21_H_
 
-#include <IndustryStandard/Pci30.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci30.h"
 
 /**
   Macro that converts PCI Bus, PCI Device, PCI Function and PCI Register to an

@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_FORM_BROWSER2_H__
 #define __EFI_FORM_BROWSER2_H__
 
-#include <Guid/HiiPlatformSetupFormset.h>
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
 
 #define EFI_FORM_BROWSER2_PROTOCOL_GUID \
   {0xb9d4c360, 0xbcfb, 0x4f9b, {0x92, 0x98, 0x53, 0xc1, 0x36, 0x98, 0x22, 0x58 }}

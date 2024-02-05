@@ -17,8 +17,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Base.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 typedef int time_t;
 

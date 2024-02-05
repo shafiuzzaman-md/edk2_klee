@@ -7,12 +7,12 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/BaseLib.h>
-#include <Library/PciCf8Lib.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciCf8Lib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 //
 // Declare I/O Ports used to perform PCI Confguration Cycles

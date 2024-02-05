@@ -6,17 +6,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/DebugLib.h>
-#include <Guid/SmmLockBox.h>
-#include <Guid/EndOfS3Resume.h>
-#include <Protocol/MmReadyToLock.h>
-#include <Protocol/MmEndOfDxe.h>
-#include <Protocol/SmmSxDispatch2.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SmmLockBox.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/EndOfS3Resume.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmEndOfDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSxDispatch2.h"
 
 #include "SmmLockBoxLibPrivate.h"
 

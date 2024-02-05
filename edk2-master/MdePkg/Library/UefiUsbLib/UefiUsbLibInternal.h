@@ -11,13 +11,13 @@
 #ifndef _UEFI_USB_LIB_INTERNAL_H_
 #define _UEFI_USB_LIB_INTERNAL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/UefiUsbLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiUsbLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <IndustryStandard/Usb.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
 
 #endif

@@ -7,7 +7,7 @@
 
 **/
 #include "Dp.h"
-#include <Protocol/ShellDynamicCommand.h>
+#include "edk2-master/MdePkg/Include/Protocol/ShellDynamicCommand.h"
 
 /**
   This is the shell command handler function pointer callback type.  This

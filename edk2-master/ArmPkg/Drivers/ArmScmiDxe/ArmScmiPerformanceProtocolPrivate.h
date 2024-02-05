@@ -12,7 +12,7 @@
 #ifndef ARM_SCMI_PERFORMANCE_PROTOCOL_PRIVATE_H_
 #define ARM_SCMI_PERFORMANCE_PROTOCOL_PRIVATE_H_
 
-#include <Protocol/ArmScmiPerformanceProtocol.h>
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiPerformanceProtocol.h"
 
 // Number of performance levels returned by a call to the SCP, Lvls Bits[11:0]
 #define NUM_PERF_LEVELS_MASK  0x0FFF

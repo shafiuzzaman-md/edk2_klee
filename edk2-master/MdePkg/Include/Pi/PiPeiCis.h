@@ -12,8 +12,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PI_PEICIS_H__
 #define __PI_PEICIS_H__
 
-#include <Uefi/UefiMultiPhase.h>
-#include <Pi/PiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
 
 ///
 /// The handles of EFI FV.
@@ -35,8 +35,8 @@ typedef struct _EFI_PEI_SERVICES EFI_PEI_SERVICES;
 ///
 typedef struct _EFI_PEI_NOTIFY_DESCRIPTOR EFI_PEI_NOTIFY_DESCRIPTOR;
 
-#include <Ppi/CpuIo.h>
-#include <Ppi/PciCfg2.h>
+#include "edk2-master/MdePkg/Include/Ppi/CpuIo.h"
+#include "edk2-master/MdePkg/Include/Ppi/PciCfg2.h"
 
 /**
   The PEI Dispatcher will invoke each PEIM one time.  During this pass, the PEI

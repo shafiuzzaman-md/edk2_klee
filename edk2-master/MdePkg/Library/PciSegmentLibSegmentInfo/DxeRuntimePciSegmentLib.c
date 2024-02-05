@@ -10,13 +10,13 @@
 **/
 
 #include "PciSegmentLibCommon.h"
-#include <PiDxe.h>
-#include <Guid/EventGroup.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciSegmentInfoLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentInfoLib.h"
 
 ///
 /// Define table for mapping PCI Segment MMIO physical addresses to virtual addresses at OS runtime

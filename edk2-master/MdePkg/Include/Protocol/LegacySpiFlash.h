@@ -12,7 +12,7 @@
 #ifndef __LEGACY_SPI_FLASH_PROTOCOL_H__
 #define __LEGACY_SPI_FLASH_PROTOCOL_H__
 
-#include <Protocol/SpiNorFlash.h>
+#include "edk2-master/MdePkg/Include/Protocol/SpiNorFlash.h"
 
 ///
 /// Global ID for the Legacy SPI Flash Protocol

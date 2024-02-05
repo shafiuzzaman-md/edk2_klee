@@ -9,13 +9,13 @@
 
 **/
 
-#include <IndustryStandard/PeImage.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
-#include <PrmExportDescriptor.h>
-#include <PrmModuleImageContext.h>
+#include "edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
+#include "edk2-master/PrmPkg/Include/PrmModuleImageContext.h"
 
 #define _DBGMSGID_  "[PRMPECOFFLIB]"
 

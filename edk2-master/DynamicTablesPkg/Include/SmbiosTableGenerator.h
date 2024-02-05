@@ -9,9 +9,9 @@
 #ifndef SMBIOS_TABLE_GENERATOR_H_
 #define SMBIOS_TABLE_GENERATOR_H_
 
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
-#include <TableGenerator.h>
+#include "edk2-master/DynamicTablesPkg/Include/TableGenerator.h"
 
 #pragma pack(1)
 

@@ -7,12 +7,12 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Guid/AcpiBoardInfoGuid.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/AcpiBoardInfoGuid.h"
 
-#include <Library/HobLib.h>
-#include <Library/PciSegmentInfoLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentInfoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 STATIC PCI_SEGMENT_INFO  mPciSegment0 = {
   0,  // Segment number

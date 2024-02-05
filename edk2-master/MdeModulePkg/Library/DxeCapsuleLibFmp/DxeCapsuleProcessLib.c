@@ -14,24 +14,24 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/EsrtManagement.h>
-#include <Protocol/FirmwareManagementProgress.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EsrtManagement.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FirmwareManagementProgress.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/CapsuleLib.h>
-#include <Library/DisplayUpdateProgressLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DisplayUpdateProgressLib.h"
 
-#include <IndustryStandard/WindowsUxCapsule.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/WindowsUxCapsule.h"
 
 extern EDKII_FIRMWARE_MANAGEMENT_PROGRESS_PROTOCOL  *mFmpProgress;
 

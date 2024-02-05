@@ -11,7 +11,7 @@
 #ifndef _PLATFORM_SPECIFIC_RESET_HANDLER_PROTOCOL_H_
 #define _PLATFORM_SPECIFIC_RESET_HANDLER_PROTOCOL_H_
 
-#include <Protocol/ResetNotification.h>
+#include "edk2-master/MdePkg/Include/Protocol/ResetNotification.h"
 
 #define EDKII_PLATFORM_SPECIFIC_RESET_HANDLER_PROTOCOL_GUID \
   { 0x2df6ba0b, 0x7092, 0x440d, { 0xbd, 0x4, 0xfb, 0x9, 0x1e, 0xc3, 0xf3, 0xc1 } }

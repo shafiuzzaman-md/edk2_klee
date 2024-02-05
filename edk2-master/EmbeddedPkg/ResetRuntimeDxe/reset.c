@@ -6,12 +6,12 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/Reset.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/EfiResetSystemLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/Reset.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/EfiResetSystemLib.h"
 
 /**
   Resets the entire platform.

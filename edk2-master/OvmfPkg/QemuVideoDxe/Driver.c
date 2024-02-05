@@ -9,7 +9,7 @@
 **/
 
 #include "Qemu.h"
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 EFI_DRIVER_BINDING_PROTOCOL  gQemuVideoDriverBinding = {
   QemuVideoControllerDriverSupported,

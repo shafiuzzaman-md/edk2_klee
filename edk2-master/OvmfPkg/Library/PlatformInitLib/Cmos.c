@@ -6,8 +6,8 @@
 
 **/
 
-#include <Library/PlatformInitLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 #include "Library/IoLib.h"
 
 /**

@@ -8,7 +8,7 @@
 
 **/
 
-#include <RedfishCredentialDxe.h>
+#include "edk2-master/RedfishPkg/RedfishCredentialDxe/RedfishCredentialDxe.h"
 
 EDKII_REDFISH_CREDENTIAL_PROTOCOL  mRedfishCredentialProtocol = {
   RedfishCredentialGetAuthInfo,

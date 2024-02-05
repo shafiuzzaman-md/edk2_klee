@@ -6,12 +6,12 @@
 
 **/
 
-#include <Base.h>
-#include <Coreboot.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/UefiPayloadPkg/Include/Coreboot.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/BlParseLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Library/BlParseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 // Upper nibble contains flags
 #define CBMC_CURSOR_MASK  ((1 << 28) - 1)

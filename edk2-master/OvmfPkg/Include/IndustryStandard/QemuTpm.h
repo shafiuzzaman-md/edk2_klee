@@ -12,7 +12,7 @@
 #ifndef __QEMU_TPM_H__
 #define __QEMU_TPM_H__
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 //
 // whether function is blocked by BIOS settings; bits 0, 1, 2

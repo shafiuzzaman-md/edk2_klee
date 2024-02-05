@@ -6,13 +6,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 */
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/ArmLib.h>
-#include <Library/ArmMmuLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 #include "ArmMmuLibInternal.h"
 
 EFI_STATUS

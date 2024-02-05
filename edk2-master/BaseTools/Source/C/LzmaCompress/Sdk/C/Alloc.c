@@ -3,12 +3,12 @@
 
 #include "Precomp.h"
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 
 #ifdef _WIN32
 #include <windows.h>
 #endif
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 
 #include "Alloc.h"
 
@@ -17,7 +17,7 @@
 /* use _SZ_ALLOC_DEBUG to debug alloc/free operations */
 #ifdef _SZ_ALLOC_DEBUG
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 int g_allocCount = 0;
 int g_allocCountMid = 0;
 int g_allocCountBig = 0;

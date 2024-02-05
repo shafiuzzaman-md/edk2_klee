@@ -30,12 +30,12 @@
  * 1989-2001
  */
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include "pcctscfg.h"
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 
 #ifdef PCCTS_USE_STDARG
-#include <stdarg.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
 #else
 #include <varargs.h>
 #endif

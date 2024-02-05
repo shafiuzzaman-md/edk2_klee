@@ -6,13 +6,13 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/FspWrapperApiLib.h>
-#include <Library/FspWrapperPlatformLib.h>
-#include <Guid/FspHeaderFile.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperApiLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperPlatformLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Guid/FspHeaderFile.h"
 
 /**
 This interface disables temporary memory in SEC Phase.

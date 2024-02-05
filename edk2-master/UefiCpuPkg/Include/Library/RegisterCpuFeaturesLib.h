@@ -9,9 +9,9 @@
 #ifndef __REGISTER_CPU_FEATURES_LIB_H__
 #define __REGISTER_CPU_FEATURES_LIB_H__
 
-#include <AcpiCpuData.h>
+#include "edk2-master/UefiCpuPkg/Include/AcpiCpuData.h"
 #include <Register/Intel/Cpuid.h>
-#include <Protocol/MpService.h>
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
 
 ///
 /// Defines used to identify a CPU feature.  The lower 16-bits are used to

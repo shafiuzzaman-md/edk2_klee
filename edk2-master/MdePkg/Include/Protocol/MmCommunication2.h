@@ -13,7 +13,7 @@
 #ifndef _MM_COMMUNICATION2_H_
 #define _MM_COMMUNICATION2_H_
 
-#include <Protocol/MmCommunication.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication.h"
 
 #define EFI_MM_COMMUNICATION2_PROTOCOL_GUID \
   { \

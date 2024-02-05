@@ -11,8 +11,8 @@
 #ifndef __IMAGE_AUTHTICATION_H__
 #define __IMAGE_AUTHTICATION_H__
 
-#include <Guid/GlobalVariable.h>
-#include <Protocol/Hash.h>
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdePkg/Include/Protocol/Hash.h"
 
 #define EFI_IMAGE_SECURITY_DATABASE_GUID \
   { \

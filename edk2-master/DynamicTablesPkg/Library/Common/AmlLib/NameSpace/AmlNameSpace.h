@@ -9,8 +9,8 @@
 #ifndef AML_NAMESPACE_H_
 #define AML_NAMESPACE_H_
 
-#include <AmlNodeDefines.h>
-#include <Stream/AmlStream.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Stream/AmlStream.h"
 
 /** Return the first AML namespace node up in the parent hierarchy.
 

@@ -6,22 +6,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <PiDxe.h>
-#include <PiSmm.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/HobLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Protocol/SmmCommunication.h>
-#include <Ppi/SmmCommunication.h>
-#include <Ppi/SmmAccess.h>
-#include <Guid/AcpiS3Context.h>
-#include <Guid/SmmLockBox.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCommunication.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SmmCommunication.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SmmAccess.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/AcpiS3Context.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SmmLockBox.h"
 
 #include "SmmLockBoxLibPrivate.h"
 

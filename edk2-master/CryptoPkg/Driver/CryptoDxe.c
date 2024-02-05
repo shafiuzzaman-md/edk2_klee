@@ -6,9 +6,9 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/Crypto.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/CryptoPkg/Private/Protocol/Crypto.h"
 
 extern CONST EDKII_CRYPTO_PROTOCOL  mEdkiiCrypto;
 

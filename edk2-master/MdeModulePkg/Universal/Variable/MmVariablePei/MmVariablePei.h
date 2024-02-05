@@ -8,24 +8,24 @@
 #ifndef PEI_MM_VARIABLE_LIB_H_
 #define PEI_MM_VARIABLE_LIB_H_
 
-#include <PiPei.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
-#include <Guid/SmmVariableCommon.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SmmVariableCommon.h"
 
-#include <Ppi/ReadOnlyVariable2.h>
-#include <Ppi/MmCommunication.h>
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
+#include "edk2-master/MdePkg/Include/Ppi/MmCommunication.h"
 
-#include <Protocol/SmmVariable.h>
-#include <Protocol/MmCommunication.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication.h"
 
 /**
   Entry point of PEI Secure Variable read driver

@@ -10,8 +10,8 @@
 #ifndef __OVMF_WORK_AREA_H__
 #define __OVMF_WORK_AREA_H__
 
-#include <ConfidentialComputingGuestAttr.h>
-#include <IndustryStandard/Tpm20.h>
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 
 //
 // Confidential computing work area header definition. Any change

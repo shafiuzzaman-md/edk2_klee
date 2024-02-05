@@ -13,15 +13,15 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiMm.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
-#include <Guid/MmCoreData.h>
-#include <Guid/MmramMemoryReserve.h>
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmCoreData.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmramMemoryReserve.h"
 
 //
 // Maximum support address used to check input buffer

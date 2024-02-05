@@ -9,15 +9,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_ROM_H__
 #define __EFI_ROM_H__
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 
-#include <Common/UefiBaseTypes.h>
-#include <IndustryStandard/PeImage.h> // for PE32 structure definitions
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
-#include <IndustryStandard/Pci22.h>  // for option ROM header structures
-#include <IndustryStandard/Pci30.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci30.h"
 
 #include "Compress.h"
 #include "CommonLib.h"

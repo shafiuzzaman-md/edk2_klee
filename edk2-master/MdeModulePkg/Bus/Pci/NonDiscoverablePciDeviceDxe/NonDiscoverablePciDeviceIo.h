@@ -9,20 +9,20 @@
 #ifndef __NON_DISCOVERABLE_PCI_DEVICE_IO_H__
 #define __NON_DISCOVERABLE_PCI_DEVICE_IO_H__
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/NonDiscoverableDevice.h>
-#include <Protocol/Cpu.h>
-#include <Protocol/PciIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/NonDiscoverableDevice.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
 #define NON_DISCOVERABLE_PCI_DEVICE_SIG  SIGNATURE_32 ('P', 'P', 'I', 'D')
 

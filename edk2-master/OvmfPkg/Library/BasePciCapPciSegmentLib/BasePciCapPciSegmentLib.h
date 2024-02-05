@@ -10,9 +10,9 @@
 #ifndef __BASE_PCI_CAP_PCI_SEGMENT_LIB_H__
 #define __BASE_PCI_CAP_PCI_SEGMENT_LIB_H__
 
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Library/PciCapPciSegmentLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PciCapPciSegmentLib.h"
 
 #define SEGMENT_DEV_SIG  SIGNATURE_64 ('P', 'C', 'P', 'S', 'G', 'M', 'N', 'T')
 

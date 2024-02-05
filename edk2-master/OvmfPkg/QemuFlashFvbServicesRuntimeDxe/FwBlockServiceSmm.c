@@ -8,11 +8,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/SmmFirmwareVolumeBlock.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmFirmwareVolumeBlock.h"
 
 #include "FwBlockService.h"
 

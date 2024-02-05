@@ -11,28 +11,28 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SD_MMC_PCI_HC_DXE_H_
 #define _SD_MMC_PCI_HC_DXE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Pci.h>
-#include <IndustryStandard/Emmc.h>
-#include <IndustryStandard/Sd.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Emmc.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Sd.h"
 
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/SdMmcOverride.h>
-#include <Protocol/SdMmcPassThru.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SdMmcOverride.h"
+#include "edk2-master/MdePkg/Include/Protocol/SdMmcPassThru.h"
 
 #include "SdMmcPciHci.h"
 

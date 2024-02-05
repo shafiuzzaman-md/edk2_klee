@@ -16,7 +16,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include <openssl/bn.h>
 #include <openssl/rsa.h>
-#include <openssl/err.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/err.h"
 #include <openssl/objects.h>
 
 /**

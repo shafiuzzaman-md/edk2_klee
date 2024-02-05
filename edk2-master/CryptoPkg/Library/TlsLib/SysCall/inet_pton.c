@@ -58,14 +58,14 @@
 static char  rcsid[] = "$Id: inet_pton.c,v 1.1.1.1 2003/11/19 01:51:30 kyu3 Exp $";
 #endif /* LIBC_SCCS and not lint */
 
-#include <sys/param.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <arpa/nameser.h>
-#include <string.h>
-#include <errno.h>
+#include "edk2-master/CryptoPkg/Library/Include/sys/param.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/sys/types.h"
+#include "edk2-master/CryptoPkg/Library/Include/sys/socket.h"
+#include "edk2-master/CryptoPkg/Library/Include/netinet/in.h"
+#include "edk2-master/CryptoPkg/Library/Include/arpa/inet.h"
+#include "edk2-master/CryptoPkg/Library/Include/arpa/nameser.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/errno.h"
 
 /*
  * WARNING: Don't even consider trying to compile this on a system where

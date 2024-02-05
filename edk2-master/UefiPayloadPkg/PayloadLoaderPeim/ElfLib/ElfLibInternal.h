@@ -9,9 +9,9 @@
 #ifndef EFI_LIB_INTERNAL_H_
 #define EFI_LIB_INTERNAL_H_
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 #include "ElfLib.h"
 #include "ElfCommon.h"
 #include "Elf32.h"

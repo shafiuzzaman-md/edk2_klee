@@ -7,14 +7,14 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <IndustryStandard/Pci.h>                     // PCI_MAX_BUS
-#include <IndustryStandard/Q35MchIch9.h>              // INTEL_Q35_MCH_DEVIC...
-#include <Library/BaseMemoryLib.h>                    // ZeroMem()
-#include <Library/PcdLib.h>                           // PcdGet64()
-#include <Library/PciHostBridgeLib.h>                 // PCI_ROOT_BRIDGE_APE...
-#include <Library/PciHostBridgeUtilityLib.h>          // PciHostBridgeUtilit...
-#include <Protocol/PciHostBridgeResourceAllocation.h> // EFI_PCI_HOST_BRIDGE...
-#include <Protocol/PciRootBridgeIo.h>                 // EFI_PCI_ATTRIBUTE_I...
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciHostBridgeUtilityLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 STATIC PCI_ROOT_BRIDGE_APERTURE  mNonExistAperture = { MAX_UINT64, 0 };
 

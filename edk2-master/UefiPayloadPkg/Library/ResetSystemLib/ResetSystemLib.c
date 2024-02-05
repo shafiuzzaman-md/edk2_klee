@@ -6,13 +6,13 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Guid/AcpiBoardInfoGuid.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/AcpiBoardInfoGuid.h"
 
 ACPI_BOARD_INFO  mAcpiBoardInfo;
 

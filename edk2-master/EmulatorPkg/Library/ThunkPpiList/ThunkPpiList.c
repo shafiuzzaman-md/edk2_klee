@@ -8,9 +8,9 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 UINTN                   gThunkPpiListSize = 0;
 EFI_PEI_PPI_DESCRIPTOR  *gThunkPpiList    = NULL;

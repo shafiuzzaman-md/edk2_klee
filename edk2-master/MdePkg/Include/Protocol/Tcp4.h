@@ -15,7 +15,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_TCP4_PROTOCOL_H__
 #define __EFI_TCP4_PROTOCOL_H__
 
-#include <Protocol/Ip4.h>
+#include "edk2-master/MdePkg/Include/Protocol/Ip4.h"
 
 #define EFI_TCP4_SERVICE_BINDING_PROTOCOL_GUID \
   { \

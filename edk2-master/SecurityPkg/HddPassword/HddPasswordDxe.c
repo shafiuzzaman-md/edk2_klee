@@ -9,7 +9,7 @@
 **/
 
 #include "HddPasswordDxe.h"
-#include <Library/VariablePolicyHelperLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyHelperLib.h"
 
 EFI_GUID    mHddPasswordVendorGuid          = HDD_PASSWORD_CONFIG_GUID;
 CHAR16      mHddPasswordVendorStorageName[] = L"HDD_PASSWORD_CONFIG";

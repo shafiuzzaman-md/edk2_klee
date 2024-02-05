@@ -9,29 +9,29 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _CON_PLATFORM_H_
 #define _CON_PLATFORM_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/UsbIo.h>
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
-#include <Guid/GlobalVariable.h>
-#include <Guid/ConsoleInDevice.h>
-#include <Guid/StandardErrorDevice.h>
-#include <Guid/ConsoleOutDevice.h>
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ConsoleInDevice.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/StandardErrorDevice.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ConsoleOutDevice.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootManagerLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
 
 //
 // Driver Binding Externs

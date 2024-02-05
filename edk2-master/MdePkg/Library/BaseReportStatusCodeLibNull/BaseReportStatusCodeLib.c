@@ -6,9 +6,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Converts a status code to an 8-bit POST code value.

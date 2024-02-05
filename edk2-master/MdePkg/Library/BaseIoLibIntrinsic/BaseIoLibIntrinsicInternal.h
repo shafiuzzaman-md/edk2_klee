@@ -10,11 +10,11 @@
 #ifndef __BASEIOLIB_INTRINSIC_INTERNAL_H_
 #define __BASEIOLIB_INTRINSIC_INTERNAL_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/IoLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/RegisterFilterLib.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/RegisterFilterLib.h"
 
 #endif

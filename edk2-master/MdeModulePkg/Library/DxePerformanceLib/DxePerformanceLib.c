@@ -11,14 +11,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/PerformanceMeasurement.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/PerformanceMeasurement.h"
 
-#include <Library/PerformanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 //
 // The cached Performance Protocol and PerformanceEx Protocol interface.

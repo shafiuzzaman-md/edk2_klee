@@ -6,7 +6,7 @@
 
 **/
 
-#include <PeCoffExtraActionLib.h>
+#include "edk2-master/SourceLevelDebugPkg/Library/PeCoffExtraActionLibDebug/PeCoffExtraActionLib.h"
 
 /**
   Check if the hardware breakpoint in Drx is enabled by checking the Lx and Gx bit in Dr7.

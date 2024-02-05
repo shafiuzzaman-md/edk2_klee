@@ -8,7 +8,7 @@
 **/
 
 #include "UefiShellLevel1CommandsLib.h"
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 typedef enum {
   EndTagOr,

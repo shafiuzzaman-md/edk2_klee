@@ -8,7 +8,7 @@
 **/
 
 #include "BasePeCoffLibInternals.h"
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Pass in a pointer to an ARM MOVT or MOVW immediate instruciton and

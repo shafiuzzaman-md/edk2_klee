@@ -18,8 +18,8 @@
     - TRNG - True Random Number Generator
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/ArmTrngLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ArmTrngLib.h"
 
 /** Get the version of the Arm TRNG backend.
 

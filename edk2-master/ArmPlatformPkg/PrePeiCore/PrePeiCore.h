@@ -10,15 +10,15 @@
 #ifndef __PREPEICORE_H_
 #define __PREPEICORE_H_
 
-#include <Library/ArmLib.h>
-#include <Library/ArmPlatformLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <PiPei.h>
-#include <Ppi/TemporaryRamSupport.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/TemporaryRamSupport.h"
 
 VOID
 CreatePpiList (

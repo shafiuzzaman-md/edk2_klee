@@ -17,8 +17,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include "InternalCryptLib.h"
 
 #include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/pkcs7.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/pkcs7.h"
 
 //
 // OID ASN.1 Value for SPC_INDIRECT_DATA_OBJID

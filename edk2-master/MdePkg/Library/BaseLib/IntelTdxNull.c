@@ -7,8 +7,8 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 /**
   The TDCALL instruction causes a VM exit to the Intel TDX module.  It is

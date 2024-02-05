@@ -19,7 +19,7 @@
 #ifndef MICROSOFT_VENDOR_H_
 #define MICROSOFT_VENDOR_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 //
 // The following test cases of the Secure Boot Logo Test in the Microsoft

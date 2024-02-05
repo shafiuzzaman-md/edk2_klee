@@ -10,11 +10,11 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/ArmTrngLib.h>
-#include <Protocol/Rng.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/ArmTrngLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Rng.h"
 
 #include "RngDxeInternals.h"
 

@@ -14,8 +14,8 @@
 #ifndef SMBIOS_MISC_H_
 #define SMBIOS_MISC_H_
 
-#include <Protocol/Smbios.h>
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
 //
 // Data table entry update function.

@@ -9,27 +9,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PLAT_VAR_CLEANUP_
 #define _PLAT_VAR_CLEANUP_
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PrintLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HiiLib.h>
-#include <Library/PlatformVarCleanupLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PlatformVarCleanupLib.h"
 
-#include <Protocol/Variable.h>
-#include <Protocol/VarCheck.h>
-#include <Protocol/FormBrowser2.h>
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiConfigRouting.h>
-#include <Protocol/DevicePath.h>
+#include "edk2-master/MdePkg/Include/Protocol/Variable.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
+#include "edk2-master/MdePkg/Include/Protocol/FormBrowser2.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
-#include <Guid/EventGroup.h>
-#include <Guid/MdeModuleHii.h>
-#include <Guid/ImageAuthentication.h>
-#include <Guid/VarErrorFlag.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VarErrorFlag.h"
 
 #include "PlatVarCleanupHii.h"
 

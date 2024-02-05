@@ -7,7 +7,7 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 EFI_PEI_PPI_DESCRIPTOR *
 GetThunkPpiList (

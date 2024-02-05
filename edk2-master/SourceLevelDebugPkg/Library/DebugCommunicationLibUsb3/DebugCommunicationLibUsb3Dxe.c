@@ -6,13 +6,13 @@
 
 **/
 
-#include <Base.h>
-#include <PiDxe.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/IoMmu.h>
-#include <Protocol/DxeSmmReadyToLock.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
 #include "DebugCommunicationLibUsb3Internal.h"
 
 GUID  gUsb3DbgGuid =  USB3_DBG_GUID;

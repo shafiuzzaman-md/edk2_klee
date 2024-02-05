@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "CryptParallelHash.h"
-#include <Library/MmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
 
 /**
   Dispatch the block task to each AP in SMM mode.

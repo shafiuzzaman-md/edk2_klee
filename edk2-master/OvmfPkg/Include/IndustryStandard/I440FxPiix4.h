@@ -14,7 +14,7 @@
 #ifndef __I440FX_PIIX4_H__
 #define __I440FX_PIIX4_H__
 
-#include <Library/PciLib.h>
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
 
 //
 // Host Bridge Device ID (DID) value for I440FX

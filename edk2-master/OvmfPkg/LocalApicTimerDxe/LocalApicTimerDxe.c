@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/NestedInterruptTplLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/NestedInterruptTplLib.h"
 
 #include "LocalApicTimerDxe.h"
 

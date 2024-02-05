@@ -9,51 +9,51 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ISCSI_IMPL_H_
 #define _ISCSI_IMPL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Dhcp.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Dhcp.h"
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/HiiConfigAccess.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
 
-#include <Protocol/Ip6.h>
-#include <Protocol/Dhcp4.h>
-#include <Protocol/Dhcp6.h>
-#include <Protocol/Dns4.h>
-#include <Protocol/Dns6.h>
-#include <Protocol/Tcp4.h>
-#include <Protocol/Tcp6.h>
-#include <Protocol/Ip4Config2.h>
-#include <Protocol/Ip6Config.h>
+#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dhcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dhcp6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dns4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dns6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip4Config2.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip6Config.h"
 
-#include <Protocol/AuthenticationInfo.h>
-#include <Protocol/IScsiInitiatorName.h>
-#include <Protocol/ScsiPassThruExt.h>
-#include <Protocol/AdapterInformation.h>
-#include <Protocol/NetworkInterfaceIdentifier.h>
+#include "edk2-master/MdePkg/Include/Protocol/AuthenticationInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/IScsiInitiatorName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
+#include "edk2-master/MdePkg/Include/Protocol/AdapterInformation.h"
+#include "edk2-master/MdePkg/Include/Protocol/NetworkInterfaceIdentifier.h"
 
-#include <Library/BaseCryptLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HiiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
-#include <Library/PrintLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/TcpIoLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/TcpIoLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/EventGroup.h>
-#include <Guid/Acpi.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
 
 #include "IScsiConfigNVDataStruc.h"
 #include "IScsiDriver.h"

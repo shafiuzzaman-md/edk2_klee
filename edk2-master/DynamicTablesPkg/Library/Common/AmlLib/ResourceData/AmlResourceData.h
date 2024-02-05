@@ -26,8 +26,8 @@
    functions. They provide a "safe" way to interact with the AmlLib.
 */
 
-#include <AmlInclude.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 /**
   @defgroup ResourceDataLibrary Resource data library

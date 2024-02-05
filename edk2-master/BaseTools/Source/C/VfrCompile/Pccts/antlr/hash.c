@@ -37,20 +37,20 @@
  * 1989-2001
  */
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include "pcctscfg.h"
 #include "hash.h"
 
 #ifdef __USE_PROTOS
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #else
 #ifdef VAXC
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #else
 #include <malloc.h>
 #endif
 #endif
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 
 #define StrSame		0
 

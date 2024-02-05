@@ -12,10 +12,10 @@
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /// "canary" value that is inserted by the compiler into the stack frame.
 VOID  *__stack_chk_guard = (VOID *)0x0AFF;

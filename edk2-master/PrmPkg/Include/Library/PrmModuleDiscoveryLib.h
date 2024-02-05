@@ -10,10 +10,10 @@
 #ifndef PRM_MODULE_DISCOVERY_LIB_H_
 #define PRM_MODULE_DISCOVERY_LIB_H_
 
-#include <Base.h>
-#include <PrmContextBuffer.h>
-#include <PrmModuleImageContext.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/PrmPkg/Include/PrmContextBuffer.h"
+#include "edk2-master/PrmPkg/Include/PrmModuleImageContext.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 /**
   Gets the next PRM module discovered after the given PRM module.

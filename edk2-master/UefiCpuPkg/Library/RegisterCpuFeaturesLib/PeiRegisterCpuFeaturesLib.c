@@ -6,12 +6,12 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Ppi/MpServices2.h>
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/MpServices2.h"
 
 #include "RegisterCpuFeatures.h"
 

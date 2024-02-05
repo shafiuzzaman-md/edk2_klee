@@ -12,7 +12,7 @@
 #ifndef __EFI_SUPER_IO_PPI_H__
 #define __EFI_SUPER_IO_PPI_H__
 
-#include <Protocol/SuperIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/SuperIo.h"
 
 #define EFI_SIO_PPI_GUID \
   { \

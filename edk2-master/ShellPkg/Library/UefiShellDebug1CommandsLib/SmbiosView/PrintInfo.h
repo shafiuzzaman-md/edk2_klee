@@ -11,7 +11,7 @@
 #ifndef _SMBIOS_PRINT_INFO_H_
 #define _SMBIOS_PRINT_INFO_H_
 
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
 extern UINT8  SmbiosMajorVersion;
 extern UINT8  SmbiosMinorVersion;

@@ -31,23 +31,23 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/ArmLib.h>
-#include <Library/ArmMmuLib.h>
-#include <Library/ArmPlatformLib.h>
-#include <Library/ArmSmcLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <IndustryStandard/ArmStdSmc.h>
-#include <Ppi/ArmMpCoreInfo.h>
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
+#include "edk2-master/ArmPkg/Include/Ppi/ArmMpCoreInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
 #include "MpServicesInternal.h"
 

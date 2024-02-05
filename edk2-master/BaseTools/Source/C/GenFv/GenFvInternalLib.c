@@ -17,13 +17,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifdef __GNUC__
 #include <sys/stat.h>
 #endif
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 #ifndef __GNUC__
 #include <io.h>
 #endif
-#include <assert.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 
-#include <Guid/FfsSectionAlignmentPadding.h>
+#include "edk2-master/BaseTools/Source/C/Include/Guid/FfsSectionAlignmentPadding.h"
 
 #include "GenFvInternalLib.h"
 #include "FvLib.h"

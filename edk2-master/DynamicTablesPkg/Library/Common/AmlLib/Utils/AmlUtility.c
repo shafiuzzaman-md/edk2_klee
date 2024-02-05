@@ -6,11 +6,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Utils/AmlUtility.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Utils/AmlUtility.h"
 
-#include <AmlCoreInterface.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
 
 /** This function computes and updates the ACPI table checksum.
 

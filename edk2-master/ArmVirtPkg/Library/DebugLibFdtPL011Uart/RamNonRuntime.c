@@ -11,7 +11,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Empty library instance constructor, only for ensuring the connectivity of the

@@ -5,7 +5,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 #include "BasePeCoffLibInternals.h"
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Performs an RISC-V specific relocation fixup and is a no-op on

@@ -19,13 +19,13 @@ Abstract:
 
 #include "WinHost.h"
 
-#include <Protocol/EmuIoThunk.h>
-#include <Protocol/EmuGraphicsWindow.h>
-#include <Protocol/SimplePointer.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/SimpleTextInEx.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Library/FrameBufferBltLib.h>
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuGraphicsWindow.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimplePointer.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FrameBufferBltLib.h"
 
 //
 // WM_SYSKEYDOWN/WM_SYSKEYUP Notification

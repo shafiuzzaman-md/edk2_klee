@@ -6,8 +6,8 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/FspCommonLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
 
 /**
   This function check the signature of UPD.

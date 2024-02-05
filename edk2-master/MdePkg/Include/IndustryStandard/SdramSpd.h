@@ -8,9 +8,9 @@
 #ifndef _SDRAM_SPD_H_
 #define _SDRAM_SPD_H_
 
-#include <IndustryStandard/SdramSpdDdr3.h>
-#include <IndustryStandard/SdramSpdDdr4.h>
-#include <IndustryStandard/SdramSpdLpDdr.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SdramSpdDdr3.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SdramSpdDdr4.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SdramSpdLpDdr.h"
 
 //
 // SDRAM SPD field definitions

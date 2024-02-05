@@ -17,7 +17,7 @@
 
 **/
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
 #include "FirmwarePerformanceCommon.h"
 

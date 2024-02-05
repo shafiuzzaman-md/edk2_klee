@@ -6,14 +6,14 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/FspCommonLib.h>
-#include <Library/FspSwitchStackLib.h>
-#include <Library/FspSecPlatformLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <FspEas/FspApi.h>
-#include <FspGlobalData.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspSwitchStackLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspSecPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas/FspApi.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
 
 EFI_STATUS
 EFIAPI

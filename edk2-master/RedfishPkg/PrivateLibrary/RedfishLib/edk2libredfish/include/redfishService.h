@@ -19,22 +19,22 @@
 #ifndef LIBREDFISH_REDFISH_SERVICE_H_
 #define LIBREDFISH_REDFISH_SERVICE_H_
 
-#include <IndustryStandard/Http11.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Http11.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HttpLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
-#include <Library/RedfishContentCodingLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishContentCodingLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 #include <Include/Library/RedfishCrtLib.h>
 
-#include <Protocol/EdkIIRedfishConfigHandler.h>
-#include <Protocol/RestEx.h>
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishConfigHandler.h"
+#include "edk2-master/MdePkg/Include/Protocol/RestEx.h"
 
 #include <jansson.h>
 

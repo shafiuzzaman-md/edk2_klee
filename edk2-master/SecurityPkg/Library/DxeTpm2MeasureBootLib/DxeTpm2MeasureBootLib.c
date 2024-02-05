@@ -24,27 +24,27 @@ Copyright (c) Microsoft Corporation.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Tcg2Protocol.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/DiskIo.h>
-#include <Protocol/DevicePathToText.h>
-#include <Protocol/FirmwareVolumeBlock.h>
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathToText.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
 
-#include <Guid/MeasuredFvHob.h>
+#include "edk2-master/SecurityPkg/Include/Guid/MeasuredFvHob.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/SecurityManagementLib.h>
-#include <Library/HobLib.h>
-#include <Protocol/CcMeasurement.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SecurityManagementLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/CcMeasurement.h"
 
 #include "DxeTpm2MeasureBootLibSanitization.h"
 

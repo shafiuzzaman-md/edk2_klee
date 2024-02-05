@@ -13,7 +13,7 @@
 #ifndef _XEN_PLATFORM_LIB_H_
 #define _XEN_PLATFORM_LIB_H_
 
-#include <Guid/XenInfo.h>
+#include "edk2-master/OvmfPkg/Include/Guid/XenInfo.h"
 
 /**
   This function detects if OVMF is running on Xen.

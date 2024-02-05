@@ -10,7 +10,7 @@
 #ifndef __SMI_FEATURES_H__
 #define __SMI_FEATURES_H__
 
-#include <Protocol/S3SaveState.h>
+#include "edk2-master/MdePkg/Include/Protocol/S3SaveState.h"
 
 /**
   Negotiate SMI features with QEMU.

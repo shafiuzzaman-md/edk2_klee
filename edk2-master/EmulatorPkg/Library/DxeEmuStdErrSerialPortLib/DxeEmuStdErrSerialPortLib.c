@@ -8,9 +8,9 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/SerialPortLib.h>
-#include <Library/EmuThunkLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/EmulatorPkg/Include/Library/EmuThunkLib.h"
 
 /**
   Initialize the serial device hardware.

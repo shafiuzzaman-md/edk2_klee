@@ -6,9 +6,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Library/PciHostBridgeLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 GLOBAL_REMOVE_IF_UNREFERENCED
 CHAR16  *mPciHostBridgeLibAcpiAddressSpaceTypeStr[] = {

@@ -12,7 +12,7 @@
 #ifndef ARM_GIC_DISPATCHER_H_
 #define ARM_GIC_DISPATCHER_H_
 
-#include <FdtHwInfoParserInclude.h>
+#include "edk2-master/DynamicTablesPkg/Library/FdtHwInfoParserLib/FdtHwInfoParserInclude.h"
 #include "FdtUtility.h"
 
 /** COMPATIBILITY_INFO structure for the GICv2.

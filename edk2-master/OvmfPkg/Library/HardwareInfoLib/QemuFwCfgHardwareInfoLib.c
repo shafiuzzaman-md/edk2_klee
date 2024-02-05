@@ -8,10 +8,10 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/QemuFwCfgLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
 
-#include <Library/HardwareInfoLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/HardwareInfoLib.h"
 
 /**
   Update an optional pointer value if possible

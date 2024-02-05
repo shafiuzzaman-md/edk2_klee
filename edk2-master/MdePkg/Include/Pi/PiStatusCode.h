@@ -16,7 +16,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // Required for IA32, X64, IPF, ARM and EBC defines for CPU exception types
 //
-#include <Protocol/DebugSupport.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
 ///
 /// Status Code Type Definition.

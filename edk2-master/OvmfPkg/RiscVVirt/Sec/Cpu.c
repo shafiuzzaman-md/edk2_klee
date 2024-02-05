@@ -10,10 +10,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 //// The package level header files this module uses
 ////
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 /**
   Cpu Peim initialization.

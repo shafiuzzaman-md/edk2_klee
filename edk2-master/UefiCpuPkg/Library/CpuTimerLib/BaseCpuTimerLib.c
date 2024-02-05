@@ -6,9 +6,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/TimerLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   CPUID Leaf 0x15 for Core Crystal Clock Frequency.

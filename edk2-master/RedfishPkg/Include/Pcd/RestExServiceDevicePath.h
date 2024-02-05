@@ -13,7 +13,7 @@
 #ifndef REST_EX_SERVICE_DEVICE_PATH_H_
 #define REST_EX_SERVICE_DEVICE_PATH_H_
 
-#include <Protocol/DevicePath.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 #define MAX_DEVICE_PATH_NODE  40
 

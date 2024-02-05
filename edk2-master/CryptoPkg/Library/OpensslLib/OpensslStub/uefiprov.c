@@ -6,8 +6,8 @@
 
 **/
 
-#include <string.h>
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include <openssl/opensslconf.h>
 #include <openssl/core.h>
 #include <openssl/core_dispatch.h>

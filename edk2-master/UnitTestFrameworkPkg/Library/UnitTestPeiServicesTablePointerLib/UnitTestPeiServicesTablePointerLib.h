@@ -9,15 +9,15 @@
 #ifndef PEI_SERVICES_TABLE_POINTER_LIB_UNIT_TEST_H_
 #define PEI_SERVICES_TABLE_POINTER_LIB_UNIT_TEST_H_
 
-#include <Base.h>
-#include <PiPei.h>
-#include <Pi/PiMultiPhase.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UnitTestLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #define MAX_PPI_COUNT  100
 #define MAX_HOB_SIZE   SIZE_32MB

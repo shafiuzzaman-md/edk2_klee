@@ -6,13 +6,13 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Protocol/SmmCpuService.h>
-#include <Library/SmmCpuRendezvousLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Protocol/SmmCpuService.h"
+#include "edk2-master/MdePkg/Include/Library/SmmCpuRendezvousLib.h"
 
 STATIC EDKII_SMM_CPU_RENDEZVOUS_PROTOCOL  *mSmmCpuRendezvous = NULL;
 STATIC VOID                               *mRegistration     = NULL;

@@ -8,22 +8,22 @@
 
 **/
 
-#include <Base.h>
-#include <Pi/PiMmCis.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Pi/PiMmCis.h"
 
-#include <Library/ArmSvcLib.h>
-#include <Library/ArmLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmSvcLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
-#include <Protocol/DebugSupport.h> // for EFI_SYSTEM_CONTEXT
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
-#include <Guid/ZeroGuid.h>
-#include <Guid/MmramMemoryReserve.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmramMemoryReserve.h"
 
-#include <IndustryStandard/ArmFfaSvc.h>
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmFfaSvc.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 #include "StandaloneMmCpu.h"
 

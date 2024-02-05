@@ -8,8 +8,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/SynchronizationLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
 
 INT32
 EFIAPI

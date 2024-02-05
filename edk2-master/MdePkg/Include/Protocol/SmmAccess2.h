@@ -19,7 +19,7 @@
 #ifndef _SMM_ACCESS2_H_
 #define _SMM_ACCESS2_H_
 
-#include <Protocol/MmAccess.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmAccess.h"
 
 #define EFI_SMM_ACCESS2_PROTOCOL_GUID  EFI_MM_ACCESS_PROTOCOL_GUID
 

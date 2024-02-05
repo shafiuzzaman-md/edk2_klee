@@ -9,19 +9,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DEFER_3RD_PARTY_IMAGE_LOAD_H_
 #define _DEFER_3RD_PARTY_IMAGE_LOAD_H_
 
-#include <PiDxe.h>
-#include <Guid/EventGroup.h>
-#include <Protocol/DeferredImageLoad.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/DxeSmmReadyToLock.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Protocol/DeferredImageLoad.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/ReportStatusCodeLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
 
 /**
   Returns information about a deferred image.

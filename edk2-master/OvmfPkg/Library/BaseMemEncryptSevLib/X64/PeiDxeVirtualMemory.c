@@ -11,10 +11,10 @@
 
 **/
 
-#include <Library/CpuLib.h>
-#include <Library/MemEncryptSevLib.h>
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
 #include <Register/Amd/Cpuid.h>
-#include <Register/Cpuid.h>
+#include "edk2-master/UefiCpuPkg/Include/Register/Cpuid.h"
 
 #include "VirtualMemory.h"
 #include "SnpPageStateChange.h"

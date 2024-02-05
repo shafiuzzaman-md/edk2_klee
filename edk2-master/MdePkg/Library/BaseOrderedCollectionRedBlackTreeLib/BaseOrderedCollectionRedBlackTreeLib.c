@@ -16,9 +16,9 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/OrderedCollectionLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 typedef enum {
   RedBlackTreeRed,

@@ -18,17 +18,17 @@
 //
 // The package level header files this module uses
 //
-#include <Pi/PiFirmwareVolume.h>
+#include "edk2-master/MdePkg/Include/Pi/PiFirmwareVolume.h"
 
 //
 // The protocols, PPI and GUID definitions for this module
 //
-#include <Guid/SystemNvDataGuid.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
 //
 // The Library classes this module consumes
 //
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 typedef struct {
   UINT64                        FvLength;

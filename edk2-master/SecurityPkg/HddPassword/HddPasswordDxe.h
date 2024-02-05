@@ -10,35 +10,35 @@
 #ifndef _HDD_PASSWORD_DXE_H_
 #define _HDD_PASSWORD_DXE_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Atapi.h>
-#include <IndustryStandard/Pci.h>
-#include <Protocol/AtaPassThru.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/HiiConfigAccess.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Atapi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Protocol/AtaPassThru.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/EventGroup.h>
-#include <Guid/S3StorageDeviceInitList.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/S3StorageDeviceInitList.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/HiiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/S3BootScriptLib.h>
-#include <Library/PciLib.h>
-#include <Library/BaseCryptLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
 
 #include "HddPasswordCommon.h"
 #include "HddPasswordHiiDataStruc.h"

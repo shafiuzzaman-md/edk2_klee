@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/BcfgCommandLib.h>
+#include "edk2-master/ShellPkg/Include/Library/BcfgCommandLib.h"
 
 /**
   Constructor for the Shell Level 1 Commands library.

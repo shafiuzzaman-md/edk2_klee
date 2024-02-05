@@ -11,12 +11,12 @@
 #ifndef _VIRTIO_GPU_DXE_H_
 #define _VIRTIO_GPU_DXE_H_
 
-#include <IndustryStandard/VirtioGpu.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/VirtioDevice.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/VirtioGpu.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
 
 //
 // Forward declaration of VGPU_GOP.

@@ -12,7 +12,7 @@
 
 **/
 
-#include <GdbStubInternal.h>
+#include "edk2-master/EmbeddedPkg/GdbStub/GdbStubInternal.h"
 
 //
 // Set TRUE if F Reply package signals a ctrl-c. We can not process the Ctrl-c

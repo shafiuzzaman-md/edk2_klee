@@ -11,25 +11,25 @@
 #ifndef EFI_REDFISH_CONFIG_HANDLER_COMMON_H_
 #define EFI_REDFISH_CONFIG_HANDLER_COMMON_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Libraries
 //
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/NetLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 //
 // Consumed Protocols
 //
-#include <Protocol/EdkIIRedfishCredential.h>
-#include <Protocol/EdkIIRedfishConfigHandler.h>
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishCredential.h"
+#include "edk2-master/RedfishPkg/Include/Protocol/EdkIIRedfishConfigHandler.h"
 
 //
 // Driver Version

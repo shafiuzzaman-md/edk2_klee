@@ -8,36 +8,36 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PerformanceLib.h>
-#include <Library/FspWrapperPlatformLib.h>
-#include <Library/FspWrapperHobProcessLib.h>
-#include <Library/FspWrapperMultiPhaseProcessLib.h>
-#include <Library/FspWrapperApiLib.h>
-#include <Library/FspMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperPlatformLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperHobProcessLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperMultiPhaseProcessLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperApiLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspMeasurementLib.h"
 
-#include <Ppi/FspSiliconInitDone.h>
-#include <Ppi/EndOfPeiPhase.h>
-#include <Ppi/MemoryDiscovered.h>
-#include <Ppi/SecPlatformInformation.h>
-#include <Ppi/Tcg.h>
-#include <Ppi/FirmwareVolumeInfoMeasurementExcluded.h>
-#include <Library/FspWrapperApiTestLib.h>
-#include <FspEas.h>
-#include <FspStatusCode.h>
-#include <FspGlobalData.h>
-#include <Library/FspCommonLib.h>
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Ppi/FspSiliconInitDone.h"
+#include "edk2-master/MdePkg/Include/Ppi/EndOfPeiPhase.h"
+#include "edk2-master/MdePkg/Include/Ppi/MemoryDiscovered.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/Tcg.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/FirmwareVolumeInfoMeasurementExcluded.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperApiTestLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspStatusCode.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Library/FspCommonLib.h"
 
 extern EFI_GUID  gFspHobGuid;
 

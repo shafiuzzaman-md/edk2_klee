@@ -7,12 +7,12 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/LcdHwLib.h>
-#include <Library/LcdPlatformLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/LcdHwLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/LcdPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 #include "HdLcd.h"
 

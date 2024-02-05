@@ -11,7 +11,7 @@
 #ifndef _VIRTIO_0_9_5_NET_H_
 #define _VIRTIO_0_9_5_NET_H_
 
-#include <IndustryStandard/Virtio095.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio095.h"
 
 //
 // virtio-0.9.5, Appendix C: Network Device

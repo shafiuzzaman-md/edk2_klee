@@ -12,15 +12,15 @@
 #ifndef _VIRTIO_NET_DXE_H_
 #define _VIRTIO_NET_DXE_H_
 
-#include <IndustryStandard/VirtioNet.h>
-#include <Library/DebugLib.h>
-#include <Library/VirtioLib.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/DriverBinding.h>
-#include <Protocol/SimpleNetwork.h>
-#include <Library/OrderedCollectionLib.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/VirtioNet.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtioLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
+#include "edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
 
 #define VNET_SIG  SIGNATURE_32 ('V', 'N', 'E', 'T')
 

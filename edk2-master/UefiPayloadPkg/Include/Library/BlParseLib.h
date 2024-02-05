@@ -10,13 +10,13 @@
 #ifndef BOOTLOADER_PARSE_LIB_
 #define BOOTLOADER_PARSE_LIB_
 
-#include <PiPei.h>
-#include <Guid/GraphicsInfoHob.h>
-#include <Guid/MemoryMapInfoGuid.h>
-#include <Guid/SerialPortInfoGuid.h>
-#include <Guid/AcpiBoardInfoGuid.h>
-#include <UniversalPayload/AcpiTable.h>
-#include <UniversalPayload/SmbiosTable.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Guid/GraphicsInfoHob.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/MemoryMapInfoGuid.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/SerialPortInfoGuid.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/AcpiBoardInfoGuid.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/AcpiTable.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SmbiosTable.h"
 
 #define GET_BOOTLOADER_PARAMETER()  PcdGet64 (PcdBootloaderParameter)
 

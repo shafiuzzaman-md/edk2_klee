@@ -6,8 +6,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/PlatformHookLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PlatformHookLib.h"
 
 /**
   Performs platform specific initialization required for the CPU to access

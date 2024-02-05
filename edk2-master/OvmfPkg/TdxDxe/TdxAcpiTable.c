@@ -9,24 +9,24 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/OrderedCollectionLib.h>
-#include <Library/TdxLib.h>
-#include <IndustryStandard/Acpi.h>
-#include <Protocol/AcpiSystemDescriptionTable.h>
-#include <Protocol/AcpiTable.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/TdxMailboxLib.h>
-#include <Protocol/Cpu.h>
-#include <Uefi.h>
-#include <TdxAcpiTable.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiSystemDescriptionTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxMailboxLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/OvmfPkg/TdxDxe/TdxAcpiTable.h"
 
 /**
   At the beginning of system boot, a 4K-aligned, 4K-size memory (Td mailbox) is

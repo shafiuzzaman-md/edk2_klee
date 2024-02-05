@@ -15,8 +15,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef MM_SAVE_STATE_LIB_H_
 #define MM_SAVE_STATE_LIB_H_
 
-#include <Protocol/MmCpu.h>
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCpu.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 /**
   Read a save state register on the target processor.  If this function

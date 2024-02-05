@@ -10,27 +10,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG_CONFIG_IMPL_H__
 #define __TCG_CONFIG_IMPL_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiConfigRouting.h>
-#include <Protocol/TcgService.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "edk2-master/MdePkg/Include/Protocol/TcgService.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiLib.h>
-#include <Library/HiiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PrintLib.h>
-#include <Library/Tpm12DeviceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12DeviceLib.h"
 
-#include <Guid/MdeModuleHii.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
 
 #include "TcgConfigNvData.h"
 

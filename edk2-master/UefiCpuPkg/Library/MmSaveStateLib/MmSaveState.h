@@ -10,12 +10,12 @@
 #ifndef MM_SAVESTATE_H_
 #define MM_SAVESTATE_H_
 
-#include <Uefi/UefiBaseType.h>
-#include <Protocol/MmCpu.h>
-#include <Library/DebugLib.h>
-#include <Library/MmSaveStateLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCpu.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MmSaveStateLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 // Macro used to simplify the lookup table entries of type CPU_MM_SAVE_STATE_REGISTER_RANGE
 #define MM_REGISTER_RANGE(Start, End)  { Start, End, End - Start + 1 }

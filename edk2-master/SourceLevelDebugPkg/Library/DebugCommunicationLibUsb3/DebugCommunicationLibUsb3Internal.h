@@ -9,21 +9,21 @@
 #ifndef __USB3_DEBUG_PORT_LIB_INTERNAL__
 #define __USB3_DEBUG_PORT_LIB_INTERNAL__
 
-#include <Uefi.h>
-#include <Base.h>
-#include <IndustryStandard/Usb.h>
-#include <Library/IoLib.h>
-#include <IndustryStandard/Pci.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugCommunicationLib.h>
-#include <Library/PciLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/SourceLevelDebugPkg/Include/Library/DebugCommunicationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
 
 //
 // USB Debug GUID value

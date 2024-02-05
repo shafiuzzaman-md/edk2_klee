@@ -7,8 +7,8 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 #include "EfiMpServicesUnitTestCommom.h"
 
 #define UNIT_TEST_NAME     "EfiMpServiceProtocol Unit Test"

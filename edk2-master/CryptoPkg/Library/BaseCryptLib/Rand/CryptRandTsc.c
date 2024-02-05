@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include "InternalCryptLib.h"
 #include <openssl/rand.h>
 #include <openssl/evp.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 /**
   Sets up the seed value for the pseudorandom number generator.

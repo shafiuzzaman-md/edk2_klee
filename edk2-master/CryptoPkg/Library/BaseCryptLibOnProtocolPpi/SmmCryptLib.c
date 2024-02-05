@@ -7,11 +7,11 @@
 
 **/
 
-#include <PiSmm.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Protocol/SmmCrypto.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/CryptoPkg/Private/Protocol/SmmCrypto.h"
 
 EDKII_SMM_CRYPTO_PROTOCOL  *mSmmCryptoProtocol = NULL;
 

@@ -11,15 +11,15 @@ Header file for HttpLib.
 #ifndef _DXE_HTTP_LIB_H_
 #define _DXE_HTTP_LIB_H_
 
-#include <Uefi.h>
-#include <Library/NetLib.h>
-#include <Library/HttpLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <IndustryStandard/Http11.h>
-#include <Protocol/HttpUtilities.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Http11.h"
+#include "edk2-master/MdePkg/Include/Protocol/HttpUtilities.h"
 
 #define BIT(x)  (1 << x)
 

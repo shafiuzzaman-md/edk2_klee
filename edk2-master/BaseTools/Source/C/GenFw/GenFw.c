@@ -9,27 +9,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __GNUC__
 #include <windows.h>
 #include <io.h>
-#include <sys/types.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/sys/types.h"
 #include <sys/stat.h>
 #endif
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <ctype.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/time.h"
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 
-#include <Common/UefiBaseTypes.h>
-#include <IndustryStandard/PeImage.h>
-#include <Common/UefiInternalFormRepresentation.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiInternalFormRepresentation.h"
 
 //
 // Acpi Table definition
 //
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/Acpi10.h>
-#include <IndustryStandard/Acpi20.h>
-#include <IndustryStandard/Acpi30.h>
-#include <IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi20.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi30.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h"
 
 #include "CommonLib.h"
 #include "PeCoffLib.h"

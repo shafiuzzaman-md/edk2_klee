@@ -10,38 +10,38 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __CUSTOMIZED_DISPLAY_LIB_INTERNAL_H__
 #define __CUSTOMIZED_DISPLAY_LIB_INTERNAL_H__
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/SimpleTextIn.h>
-#include <Protocol/FormBrowser2.h>
-#include <Protocol/FormBrowserEx2.h>
-#include <Protocol/DisplayProtocol.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/UnicodeCollation.h>
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/HiiConfigRouting.h>
-#include <Protocol/HiiDatabase.h>
-#include <Protocol/HiiString.h>
-#include <Protocol/UserManager.h>
-#include <Protocol/DevicePathFromText.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "edk2-master/MdePkg/Include/Protocol/FormBrowser2.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/FormBrowserEx2.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/DisplayProtocol.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
+#include "edk2-master/MdePkg/Include/Protocol/UserManager.h"
+#include "edk2-master/MdePkg/Include/Protocol/DevicePathFromText.h"
 
-#include <Guid/MdeModuleHii.h>
-#include <Guid/HiiPlatformSetupFormset.h>
-#include <Guid/HiiFormMapMethodGuid.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MdeModuleHii.h"
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "edk2-master/MdePkg/Include/Guid/HiiFormMapMethodGuid.h"
 
-#include <Library/PrintLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/HiiLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/CustomizedDisplayLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CustomizedDisplayLib.h"
 
 #include "Colors.h"
 

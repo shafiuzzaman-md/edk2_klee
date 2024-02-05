@@ -12,7 +12,7 @@
 #ifndef ARM_SCMI_BASE_PROTOCOL_H_
 #define ARM_SCMI_BASE_PROTOCOL_H_
 
-#include <Protocol/ArmScmi.h>
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmi.h"
 
 #define BASE_PROTOCOL_VERSION_V1  0x10000
 #define BASE_PROTOCOL_VERSION_V2  0x20000

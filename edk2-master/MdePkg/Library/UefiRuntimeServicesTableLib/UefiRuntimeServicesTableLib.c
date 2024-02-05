@@ -9,8 +9,8 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 EFI_RUNTIME_SERVICES  *gRT = NULL;
 

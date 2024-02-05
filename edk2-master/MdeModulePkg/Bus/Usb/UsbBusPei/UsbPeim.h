@@ -10,20 +10,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PEI_USB_PEIM_H_
 #define _PEI_USB_PEIM_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/UsbHostController.h>
-#include <Ppi/Usb2HostController.h>
-#include <Ppi/UsbIo.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/UsbHostController.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/Usb2HostController.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/UsbIo.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <IndustryStandard/Usb.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
 
 //
 // A common header for usb standard descriptor.

@@ -8,16 +8,16 @@
 #ifndef _HSTI_DXE_H_
 #define _HSTI_DXE_H_
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <IndustryStandard/Hsti.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Hsti.h"
 
-#include <Protocol/AdapterInformation.h>
+#include "edk2-master/MdePkg/Include/Protocol/AdapterInformation.h"
 
 #define HSTI_AIP_PRIVATE_SIGNATURE  SIGNATURE_32('H', 'S', 'T', 'I')
 

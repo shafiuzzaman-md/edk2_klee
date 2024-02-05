@@ -6,9 +6,9 @@
 
 **/
 
-#include <Library/ArmGicLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
 
-#include <Ppi/ArmMpCoreInfo.h>
+#include "edk2-master/ArmPkg/Include/Ppi/ArmMpCoreInfo.h"
 
 #include "PrePeiCore.h"
 

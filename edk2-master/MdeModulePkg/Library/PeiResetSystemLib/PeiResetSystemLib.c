@@ -6,9 +6,9 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/ResetSystemLib.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
 /**
   This function causes a system-wide reset (cold reset), in which

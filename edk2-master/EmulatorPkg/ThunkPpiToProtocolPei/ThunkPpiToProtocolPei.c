@@ -7,16 +7,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
 
-#include <Ppi/EmuThunk.h>
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
 EFI_STATUS
 EFIAPI

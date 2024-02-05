@@ -10,10 +10,10 @@
 //
 // The package level header files this module uses
 //
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/PcdLib.h>
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 #include "Platform.h"
 

@@ -10,18 +10,18 @@
 
 **/
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Protocol/SmmReadyToLock.h>
-#include <Protocol/SmmEndOfDxe.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmEndOfDxe.h"
 
 EFI_GCD_MEMORY_SPACE_DESCRIPTOR  *mSmmIoLibGcdMemSpace       = NULL;
 UINTN                            mSmmIoLibGcdMemNumberOfDesc = 0;

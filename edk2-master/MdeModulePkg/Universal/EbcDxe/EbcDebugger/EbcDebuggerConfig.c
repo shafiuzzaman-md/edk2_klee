@@ -6,8 +6,8 @@
 
 **/
 
-#include <Uefi.h>
-#include <Protocol/ShellParameters.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
 
 #include "EdbCommon.h"
 #include "EdbSupport.h"

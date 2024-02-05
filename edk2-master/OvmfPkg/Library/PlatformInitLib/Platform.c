@@ -10,31 +10,31 @@
 //
 // The package level header files this module uses
 //
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 //
 // The Library classes this module consumes
 //
-#include <Library/BaseMemoryLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/IoLib.h>
-#include <IndustryStandard/I440FxPiix4.h>
-#include <IndustryStandard/Microvm.h>
-#include <IndustryStandard/Pci22.h>
-#include <IndustryStandard/Q35MchIch9.h>
-#include <IndustryStandard/QemuCpuHotplug.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/QemuFwCfgS3Lib.h>
-#include <Library/QemuFwCfgSimpleParserLib.h>
-#include <Library/PciLib.h>
-#include <Guid/SystemNvDataGuid.h>
-#include <Guid/VariableFormat.h>
-#include <OvmfPlatforms.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/I440FxPiix4.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Microvm.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuCpuHotplug.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgSimpleParserLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
-#include <Library/PlatformInitLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
 
 #define CPUHP_BUGCHECK_OVERRIDE_FWCFG_FILE \
   "opt/org.tianocore/X-Cpuhp-Bugcheck-Override"

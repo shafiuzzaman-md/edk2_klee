@@ -6,23 +6,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiSmm.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/SmmAccess2.h>
-#include <Protocol/SmmReadyToLock.h>
-#include <Protocol/SmmEndOfDxe.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmEndOfDxe.h"
 
-#include <Guid/SmiHandlerProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/SmiHandlerProfile.h"
 
 #include "PiSmmCore.h"
 

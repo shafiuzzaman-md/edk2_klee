@@ -14,7 +14,7 @@
 #ifndef __EFI_WIFI_PROTOCOL_H__
 #define __EFI_WIFI_PROTOCOL_H__
 
-#include <Protocol/WiFi2.h>
+#include "edk2-master/MdePkg/Include/Protocol/WiFi2.h"
 
 #define EFI_WIRELESS_MAC_CONNECTION_PROTOCOL_GUID \
   { \

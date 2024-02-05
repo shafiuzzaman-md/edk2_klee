@@ -21,22 +21,22 @@ Abstract:
 #ifndef _EMU_BLOCK_IO_H_
 #define _EMU_BLOCK_IO_H_
 
-#include <PiDxe.h>
-#include <Protocol/EmuIoThunk.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/BlockIo2.h>
-#include <Protocol/EmuBlockIo.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo2.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuBlockIo.h"
 
-#include <Guid/EmuPhysicalDisk.h>
-#include <Guid/EmuVirtualDisk.h>
+#include "edk2-master/EmulatorPkg/Include/Guid/EmuPhysicalDisk.h"
+#include "edk2-master/EmulatorPkg/Include/Guid/EmuVirtualDisk.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 //
 // Language supported for driverconfiguration protocol

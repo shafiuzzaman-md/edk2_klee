@@ -10,10 +10,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Ppi/MpServices.h>
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Ppi/MpServices.h"
 
 #include "Platform.h"
 

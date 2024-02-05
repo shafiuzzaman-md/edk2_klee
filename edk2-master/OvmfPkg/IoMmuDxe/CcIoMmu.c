@@ -12,8 +12,8 @@
 
 **/
 
-#include <Library/PcdLib.h>
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 #include "CcIoMmu.h"
 #include "IoMmuInternal.h"
 

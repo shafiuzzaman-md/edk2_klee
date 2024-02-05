@@ -6,4 +6,4 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <OnigurumaUefiPort.h>
+#include "edk2-master/MdeModulePkg/Universal/RegularExpressionDxe/OnigurumaUefiPort.h"

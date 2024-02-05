@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCG_EVENTLOGRECORD_LIB_H_
 #define _TCG_EVENTLOGRECORD_LIB_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #pragma pack (1)
 

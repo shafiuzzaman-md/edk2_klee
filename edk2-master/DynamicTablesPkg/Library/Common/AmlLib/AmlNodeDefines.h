@@ -9,8 +9,8 @@
 #ifndef AML_NODE_DEFINES_H_
 #define AML_NODE_DEFINES_H_
 
-#include <AmlEncoding/Aml.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlEncoding/Aml.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 /** AML header node.
 

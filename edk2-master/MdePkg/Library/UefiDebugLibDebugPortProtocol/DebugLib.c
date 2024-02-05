@@ -6,16 +6,16 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugPrintErrorLevelLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugPrintErrorLevelLib.h"
 
-#include <Protocol/DebugPort.h>
+#include "edk2-master/MdePkg/Include/Protocol/DebugPort.h"
 
 //
 // Define the maximum debug and assert message length that this library supports

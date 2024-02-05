@@ -8,8 +8,8 @@
 #ifndef _EDKII_ATA_PASS_THRU_PPI_H_
 #define _EDKII_ATA_PASS_THRU_PPI_H_
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/AtaPassThru.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/AtaPassThru.h"
 
 ///
 /// Global ID for the EDKII_PEI_ATA_PASS_THRU_PPI.

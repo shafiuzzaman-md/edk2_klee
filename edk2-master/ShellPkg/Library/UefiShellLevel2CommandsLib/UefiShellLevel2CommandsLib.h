@@ -17,30 +17,30 @@
 #ifndef _UEFI_SHELL_LEVEL2_COMMANDS_LIB_H_
 #define _UEFI_SHELL_LEVEL2_COMMANDS_LIB_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/GlobalVariable.h>
-#include <Guid/ShellLibHiiGuid.h>
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/ShellPkg/Include/Guid/ShellLibHiiGuid.h"
 
-#include <Protocol/Shell.h>
-#include <Protocol/ShellParameters.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/UnicodeCollation.h>
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/ShellCommandLib.h>
-#include <Library/ShellLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HiiLib.h>
-#include <Library/SortLib.h>
-#include <Library/FileHandleLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellCommandLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
 
 extern CONST  CHAR16          mFileName[];
 extern        EFI_HII_HANDLE  gShellLevel2HiiHandle;

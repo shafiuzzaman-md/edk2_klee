@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SERIAL_PORT_LIB__
 #define __SERIAL_PORT_LIB__
 
-#include <Uefi/UefiBaseType.h>
-#include <Protocol/SerialIo.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
 
 /**
   Initialize the serial device hardware.

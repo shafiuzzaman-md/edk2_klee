@@ -9,13 +9,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/AcpiLib.h>
-#include <Library/DynamicTablesScmiInfoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/ArmScmi.h>
-#include <Protocol/ArmScmiPerformanceProtocol.h>
+#include "edk2-master/EmbeddedPkg/Include/Library/AcpiLib.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/DynamicTablesScmiInfoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmi.h"
+#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiPerformanceProtocol.h"
 
 /** Arm FFH registers
 

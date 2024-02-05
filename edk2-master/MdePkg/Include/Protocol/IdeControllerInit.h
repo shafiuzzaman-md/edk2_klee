@@ -25,7 +25,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_IDE_CONTROLLER_INIT_PROTOCOL_H_
 #define _EFI_IDE_CONTROLLER_INIT_PROTOCOL_H_
 
-#include <IndustryStandard/Atapi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Atapi.h"
 
 ///
 /// Global ID for the EFI_IDE_CONTROLLER_INIT_PROTOCOL.

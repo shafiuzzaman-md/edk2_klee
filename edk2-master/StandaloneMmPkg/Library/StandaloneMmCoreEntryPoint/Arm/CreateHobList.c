@@ -7,22 +7,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <PiPei.h>
-#include <Guid/MmramMemoryReserve.h>
-#include <Guid/MpInformation.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmramMemoryReserve.h"
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MpInformation.h"
 
 #include <Library/Arm/StandaloneMmCoreEntryPoint.h>
-#include <Library/ArmMmuLib.h>
-#include <Library/ArmSvcLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSvcLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 extern EFI_HOB_HANDOFF_INFO_TABLE *
 HobConstructor (

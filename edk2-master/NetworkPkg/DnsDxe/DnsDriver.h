@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _DNS_DRIVER_H_
 #define _DNS_DRIVER_H_
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/ServiceBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
 ///
 /// Dns service block

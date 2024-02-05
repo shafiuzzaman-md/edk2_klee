@@ -12,7 +12,7 @@
 #ifndef HII_EXPRESSION_H_
 #define HII_EXPRESSION_H_
 
-#include <Library/HiiUtilityLib.h>
+#include "edk2-master/RedfishPkg/Include/Library/HiiUtilityLib.h"
 
 /**
   Get the expression list count.

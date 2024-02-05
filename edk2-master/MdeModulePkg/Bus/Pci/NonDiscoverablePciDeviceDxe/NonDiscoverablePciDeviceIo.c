@@ -9,11 +9,11 @@
 
 #include "NonDiscoverablePciDeviceIo.h"
 
-#include <Library/DxeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
-#include <Protocol/PciRootBridgeIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 typedef struct {
   EFI_PHYSICAL_ADDRESS             AllocAddress;

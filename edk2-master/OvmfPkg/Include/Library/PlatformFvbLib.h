@@ -10,7 +10,7 @@
 #ifndef __PLATFORM_FVB_LIB__
 #define __PLATFORM_FVB_LIB__
 
-#include <Protocol/FirmwareVolumeBlock.h>
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
 
 /**
   This function will be called following a call to the

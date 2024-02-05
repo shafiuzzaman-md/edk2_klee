@@ -5,15 +5,15 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/FirmwareVolumeBlock.h>
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Guid/FirmwareFileSystem2.h>
-#include <Guid/SystemNvDataGuid.h>
-#include <Guid/NvVariableInfoGuid.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareFileSystem2.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/NvVariableInfoGuid.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 #define FVB_MEDIA_BLOCK_SIZE  0x1000
 

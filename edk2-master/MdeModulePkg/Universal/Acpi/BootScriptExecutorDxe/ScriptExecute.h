@@ -14,33 +14,33 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _BOOT_SCRIPT_EXECUTOR_H_
 #define _BOOT_SCRIPT_EXECUTOR_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/S3BootScriptLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/DxeServicesLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/TimerLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/DxeServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
 
-#include <Guid/AcpiS3Context.h>
-#include <Guid/BootScriptExecutorVariable.h>
-#include <Guid/MemoryProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/AcpiS3Context.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/BootScriptExecutorVariable.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryProfile.h"
 
-#include <Protocol/DxeSmmReadyToLock.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #define PAGING_1G_ADDRESS_MASK_64  0x000FFFFFC0000000ull
 

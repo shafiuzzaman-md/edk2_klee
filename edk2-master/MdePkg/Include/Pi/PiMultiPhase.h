@@ -12,13 +12,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PI_MULTIPHASE_H__
 #define __PI_MULTIPHASE_H__
 
-#include <Pi/PiFirmwareVolume.h>
-#include <Pi/PiFirmwareFile.h>
-#include <Pi/PiBootMode.h>
-#include <Pi/PiHob.h>
-#include <Pi/PiDependency.h>
-#include <Pi/PiStatusCode.h>
-#include <Pi/PiS3BootScript.h>
+#include "edk2-master/MdePkg/Include/Pi/PiFirmwareVolume.h"
+#include "edk2-master/MdePkg/Include/Pi/PiFirmwareFile.h"
+#include "edk2-master/MdePkg/Include/Pi/PiBootMode.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
+#include "edk2-master/MdePkg/Include/Pi/PiDependency.h"
+#include "edk2-master/MdePkg/Include/Pi/PiStatusCode.h"
+#include "edk2-master/MdePkg/Include/Pi/PiS3BootScript.h"
 
 /**
   Produces an error code in the range reserved for use by the Platform Initialization

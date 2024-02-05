@@ -11,7 +11,7 @@
 #ifndef __PE_COFF_EXTRA_ACTION_LIB_H__
 #define __PE_COFF_EXTRA_ACTION_LIB_H__
 
-#include <Library/PeCoffLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
 /**
   Performs additional actions after a PE/COFF image has been loaded and relocated.

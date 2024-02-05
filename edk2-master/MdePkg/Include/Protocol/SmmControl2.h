@@ -19,7 +19,7 @@
 #ifndef _SMM_CONTROL2_H_
 #define _SMM_CONTROL2_H_
 
-#include <Protocol/MmControl.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmControl.h"
 
 #define EFI_SMM_CONTROL2_PROTOCOL_GUID  EFI_MM_CONTROL_PROTOCOL_GUID
 

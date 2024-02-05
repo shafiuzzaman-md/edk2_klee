@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SCSI_LIB_H__
 #define __SCSI_LIB_H__
 
-#include <Protocol/ScsiIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/ScsiIo.h"
 
 /**
   Execute Test Unit Ready SCSI command on a specific SCSI target.

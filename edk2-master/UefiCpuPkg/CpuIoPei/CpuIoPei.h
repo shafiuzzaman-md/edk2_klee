@@ -9,14 +9,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _CPU_IO2_PEI_H_
 #define _CPU_IO2_PEI_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Ppi/CpuIo.h>
+#include "edk2-master/MdePkg/Include/Ppi/CpuIo.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PeiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 
 #define MAX_IO_PORT_ADDRESS  0xFFFF
 

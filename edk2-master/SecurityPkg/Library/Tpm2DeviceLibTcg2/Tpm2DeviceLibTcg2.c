@@ -6,13 +6,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/Tpm2DeviceLib.h>
-#include <Protocol/Tcg2Protocol.h>
-#include <IndustryStandard/Tpm20.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 
 STATIC  EFI_TCG2_PROTOCOL  *mTcg2Protocol = NULL;
 

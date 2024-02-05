@@ -6,8 +6,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseMemoryLib.h>       // CopyMem()
-#include <Library/MemoryAllocationLib.h> // AllocatePool()
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "VirtioFsDxe.h"
 

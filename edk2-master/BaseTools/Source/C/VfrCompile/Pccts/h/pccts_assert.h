@@ -4,7 +4,7 @@
 #ifdef PCCTS_USE_NAMESPACE_STD
 #include <cassert>
 #else
-#include <assert.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 #endif
 
 #endif

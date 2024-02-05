@@ -6,4 +6,4 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <BrotliDecUefiSupport.h>
+#include "edk2-master/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecUefiSupport.h"

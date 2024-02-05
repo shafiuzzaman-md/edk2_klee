@@ -8,7 +8,7 @@
 #ifndef __NON_DISCOVERABLE_DEVICE_REGISTRATION_LIB_H__
 #define __NON_DISCOVERABLE_DEVICE_REGISTRATION_LIB_H__
 
-#include <Protocol/NonDiscoverableDevice.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/NonDiscoverableDevice.h"
 
 typedef enum {
   NonDiscoverableDeviceTypeAhci,

@@ -18,7 +18,7 @@
 #ifndef _SHELLINTERFACE_H_
 #define _SHELLINTERFACE_H_
 
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
 #define SHELL_INTERFACE_PROTOCOL_GUID \
   { \

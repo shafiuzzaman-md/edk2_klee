@@ -9,35 +9,35 @@
 #ifndef _CPU_DXE_H_
 #define _CPU_DXE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Cpu.h>
-#include <Protocol/MpService.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/Msr.h>
 
-#include <Ppi/SecPlatformInformation.h>
-#include <Ppi/SecPlatformInformation2.h>
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation2.h"
 
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/CpuLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/UefiLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/HobLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/MpInitLib.h>
-#include <Library/TimerLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MpInitLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
 
-#include <Guid/IdleLoopEvent.h>
-#include <Guid/VectorHandoffTable.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/IdleLoopEvent.h"
+#include "edk2-master/MdePkg/Include/Guid/VectorHandoffTable.h"
 
 #define HEAP_GUARD_NONSTOP_MODE       \
         ((PcdGet8 (PcdHeapGuardPropertyMask) & (BIT6|BIT4|BIT1|BIT0)) > BIT6)

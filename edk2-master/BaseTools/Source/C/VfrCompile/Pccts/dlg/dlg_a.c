@@ -13,7 +13,7 @@
 #include "pcctscfg.h"
 #include "pccts_stdio.h"
 
-#include <ctype.h>
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 #include "dlg.h"
 #include "antlr.h"
 #include "tokens.h"

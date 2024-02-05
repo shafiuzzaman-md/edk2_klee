@@ -9,7 +9,7 @@
 #ifndef PAYLOAD_SMM_REGISTER_INFO_GUID_H_
 #define PAYLOAD_SMM_REGISTER_INFO_GUID_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 ///
 /// SMM Information GUID

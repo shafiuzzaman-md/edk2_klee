@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _IP4_NV_DATA_H_
 #define _IP4_NV_DATA_H_
 
-#include <Guid/Ip4Config2Hii.h>
+#include "edk2-master/NetworkPkg/Include/Guid/Ip4Config2Hii.h"
 
 #define FORMID_MAIN_FORM    1
 #define FORMID_DEVICE_FORM  2

@@ -5,11 +5,11 @@
 *
 **/
 
-#include <PiPei.h>
-#include <Library/PrePiHobListPointerLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseRiscVSbiLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/PrePiHobListPointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
 
 /**
   Returns the pointer to the HOB list.

@@ -12,25 +12,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Tcg2Protocol.h>
-#include <Protocol/VariableLock.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/HiiLib.h>
-#include <Library/HobLib.h>
-#include <Guid/EventGroup.h>
-#include <Guid/Tcg2PhysicalPresenceData.h>
-#include <Library/Tpm2CommandLib.h>
-#include <Library/Tcg2PhysicalPresenceLib.h>
-#include <Library/Tcg2PpVendorLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariableLock.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/SecurityPkg/Include/Guid/Tcg2PhysicalPresenceData.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tcg2PpVendorLib.h"
 
 #define CONFIRM_BUFFER_SIZE  4096
 

@@ -6,8 +6,8 @@
 
 **/
 
-#include <PiSmm.h>
-#include <Library/SmmServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
 #include "FvbSmmCommon.h"
 #include "FvbService.h"
 

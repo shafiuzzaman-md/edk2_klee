@@ -12,11 +12,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // Include files
 //
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 
-#include <Common/UefiBaseTypes.h>
-#include <Common/PiFirmwareFile.h>
-#include <Common/PiFirmwareVolume.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareFile.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareVolume.h"
 
 EFI_STATUS
 InitializeFvLib (

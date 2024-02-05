@@ -6,17 +6,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Guid/CcEventHob.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HashLib.h>
-#include <Library/HobLib.h>
-#include <Library/PrintLib.h>
-#include <IndustryStandard/Tpm20.h>
-#include <Protocol/CcMeasurement.h>
-#include <Library/TpmMeasurementLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/SecurityPkg/Include/Guid/CcEventHob.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/HashLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "edk2-master/MdePkg/Include/Protocol/CcMeasurement.h"
+#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 
 #pragma pack(1)
 

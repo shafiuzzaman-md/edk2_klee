@@ -12,7 +12,7 @@
 #ifndef _SMM_COMMUNICATION_H_
 #define _SMM_COMMUNICATION_H_
 
-#include <Protocol/MmCommunication.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmCommunication.h"
 
 typedef EFI_MM_COMMUNICATE_HEADER EFI_SMM_COMMUNICATE_HEADER;
 

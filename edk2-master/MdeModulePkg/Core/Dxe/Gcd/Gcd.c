@@ -8,8 +8,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Pi/PrePiDxeCis.h>
-#include <Pi/PrePiHob.h>
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiDxeCis.h"
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiHob.h"
 #include "DxeMain.h"
 #include "Gcd.h"
 #include "Mem/HeapGuard.h"

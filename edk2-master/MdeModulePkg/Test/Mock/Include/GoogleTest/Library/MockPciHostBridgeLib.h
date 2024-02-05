@@ -8,11 +8,11 @@
 #ifndef MOCK_PCI_HOST_BRIDGE_LIB_H_
 #define MOCK_PCI_HOST_BRIDGE_LIB_H_
 
-#include <Library/GoogleTestLib.h>
-#include <Library/FunctionMockLib.h>
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
 extern "C" {
-  #include <Uefi.h>
-  #include <Library/PciHostBridgeLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
 }
 
 struct MockPciHostBridgeLib {

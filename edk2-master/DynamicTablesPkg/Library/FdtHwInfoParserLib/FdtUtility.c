@@ -10,7 +10,7 @@
   - linux//Documentation/devicetree/bindings/interrupt-controller/arm%2Cgic.yaml
 **/
 
-#include <FdtHwInfoParserInclude.h>
+#include "edk2-master/DynamicTablesPkg/Library/FdtHwInfoParserLib/FdtHwInfoParserInclude.h"
 #include "FdtUtility.h"
 
 /** Get the interrupt Id of an interrupt described in a fdt.

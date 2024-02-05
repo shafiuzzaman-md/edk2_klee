@@ -7,9 +7,9 @@
 
 **/
 
-#include <GdbStubInternal.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/EmbeddedPkg/GdbStub/GdbStubInternal.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 //
 // Array of exception types that need to be hooked by the debugger

@@ -10,23 +10,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PEI_VARIABLE_H_
 #define _PEI_VARIABLE_H_
 
-#include <PiPei.h>
-#include <Ppi/ReadOnlyVariable2.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/VariableFlashInfoLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariableFlashInfoLib.h"
 
-#include <Guid/VariableFormat.h>
-#include <Guid/VariableIndexTable.h>
-#include <Guid/SystemNvDataGuid.h>
-#include <Guid/FaultTolerantWrite.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableIndexTable.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SystemNvDataGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/FaultTolerantWrite.h"
 
 typedef enum {
   VariableStoreTypeHob,

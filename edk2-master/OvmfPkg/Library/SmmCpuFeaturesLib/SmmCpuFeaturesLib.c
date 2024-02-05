@@ -6,22 +6,22 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <IndustryStandard/Q35MchIch9.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/SmmCpuFeaturesLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/HobLib.h>
-#include <Pcd/CpuHotEjectData.h>
-#include <PiSmm.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/SmmCpuFeaturesLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/OvmfPkg/Include/Pcd/CpuHotEjectData.h"
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 #include <Register/Amd/SmramSaveStateMap.h>
-#include <Guid/SmmBaseHob.h>
+#include "edk2-master/UefiCpuPkg/Include/Guid/SmmBaseHob.h"
 
 //
 // EFER register LMA bit

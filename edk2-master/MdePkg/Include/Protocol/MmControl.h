@@ -19,7 +19,7 @@
 #ifndef _MM_CONTROL_H_
 #define _MM_CONTROL_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
 #define EFI_MM_CONTROL_PROTOCOL_GUID \
   { \

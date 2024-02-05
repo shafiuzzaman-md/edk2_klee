@@ -10,10 +10,10 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/ArmLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Caches a pointer PEI Services Table.

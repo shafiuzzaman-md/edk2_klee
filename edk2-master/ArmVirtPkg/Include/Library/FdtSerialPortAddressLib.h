@@ -9,7 +9,7 @@
 #ifndef FDT_SERIAL_PORT_ADDRESS_LIB_H_
 #define FDT_SERIAL_PORT_ADDRESS_LIB_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 typedef struct {
   UINTN     NumberOfPorts;

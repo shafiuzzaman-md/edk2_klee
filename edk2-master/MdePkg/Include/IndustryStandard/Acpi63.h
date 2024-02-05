@@ -10,7 +10,7 @@
 #ifndef _ACPI_6_3_H_
 #define _ACPI_6_3_H_
 
-#include <IndustryStandard/Acpi62.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi62.h"
 
 ///
 /// _PSD Revision for ACPI 6.3

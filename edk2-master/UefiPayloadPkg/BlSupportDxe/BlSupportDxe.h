@@ -9,19 +9,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __DXE_BOOTLOADER_SUPPORT_H__
 #define __DXE_BOOTLOADER_SUPPORT_H__
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiLib.h>
-#include <Library/IoLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
-#include <Guid/SmBios.h>
-#include <Guid/AcpiBoardInfoGuid.h>
-#include <Guid/GraphicsInfoHob.h>
+#include "edk2-master/MdePkg/Include/Guid/SmBios.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/AcpiBoardInfoGuid.h"
+#include "edk2-master/MdePkg/Include/Guid/GraphicsInfoHob.h"
 
 #endif

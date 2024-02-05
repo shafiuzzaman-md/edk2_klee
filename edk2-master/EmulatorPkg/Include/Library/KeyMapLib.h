@@ -5,7 +5,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Protocol/SimpleTextInEx.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
 
 /**
   KeyMapMake gets called on key presses.

@@ -14,8 +14,8 @@
 //
 // Include processor specific binding
 //
-#include <ProcessorBind.h>
-#include <stdarg.h>
+#include "edk2-master/MdePkg/Include/Arm/ProcessorBind.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
 
 //
 // Modifiers to abstract standard types to aid in debug of problems

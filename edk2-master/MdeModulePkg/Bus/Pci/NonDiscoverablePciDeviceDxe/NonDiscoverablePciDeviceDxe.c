@@ -8,7 +8,7 @@
 
 #include "NonDiscoverablePciDeviceIo.h"
 
-#include <Protocol/DriverBinding.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
 
 #define MAX_NON_DISCOVERABLE_PCI_DEVICE_ID  (32 * 256)
 

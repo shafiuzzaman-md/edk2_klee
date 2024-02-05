@@ -6,11 +6,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>             // StrLen()
-#include <Library/BaseMemoryLib.h>       // CopyMem()
-#include <Library/MemoryAllocationLib.h> // AllocatePool()
-#include <Library/TimeBaseLib.h>         // EpochToEfiTime()
-#include <Library/VirtioLib.h>           // Virtio10WriteFeatures()
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/EmbeddedPkg/Include/Library/TimeBaseLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtioLib.h"
 
 #include "VirtioFsDxe.h"
 

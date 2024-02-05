@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "CryptParallelHash.h"
-#include <Library/SynchronizationLib.h>
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
 
 #define PARALLELHASH_CUSTOMIZATION  "ParallelHash"
 

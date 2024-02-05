@@ -14,14 +14,14 @@
 #ifndef _SHELL_COMMAND_LIB_
 #define _SHELL_COMMAND_LIB_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Shell.h>
-#include <Protocol/ShellParameters.h>
-#include <Protocol/UnicodeCollation.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 //
 // The extern global protocol poionters.

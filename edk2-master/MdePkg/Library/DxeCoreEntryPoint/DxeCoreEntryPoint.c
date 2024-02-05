@@ -6,11 +6,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/DxeCoreEntryPoint.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/DxeCoreEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 //
 // Cache copy of HobList pointer.

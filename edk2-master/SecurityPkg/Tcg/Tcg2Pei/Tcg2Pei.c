@@ -7,39 +7,39 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <IndustryStandard/UefiTcgPlatform.h>
-#include <Ppi/FirmwareVolumeInfo.h>
-#include <Ppi/FirmwareVolumeInfo2.h>
-#include <Ppi/TpmInitialized.h>
-#include <Ppi/FirmwareVolume.h>
-#include <Ppi/EndOfPeiPhase.h>
-#include <Ppi/FirmwareVolumeInfoMeasurementExcluded.h>
-#include <Ppi/FirmwareVolumeInfoPrehashedFV.h>
-#include <Ppi/Tcg.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolumeInfo.h"
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolumeInfo2.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/TpmInitialized.h"
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolume.h"
+#include "edk2-master/MdePkg/Include/Ppi/EndOfPeiPhase.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/FirmwareVolumeInfoMeasurementExcluded.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/FirmwareVolumeInfoPrehashedFV.h"
+#include "edk2-master/SecurityPkg/Include/Ppi/Tcg.h"
 
-#include <Guid/TcgEventHob.h>
-#include <Guid/MeasuredFvHob.h>
-#include <Guid/TpmInstance.h>
-#include <Guid/MigratedFvInfo.h>
+#include "edk2-master/SecurityPkg/Include/Guid/TcgEventHob.h"
+#include "edk2-master/SecurityPkg/Include/Guid/MeasuredFvHob.h"
+#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/MigratedFvInfo.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/Tpm2CommandLib.h>
-#include <Library/Tpm2DeviceLib.h>
-#include <Library/HashLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Protocol/Tcg2Protocol.h>
-#include <Library/PerformanceLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/ResetSystemLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/HashLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #define PERF_ID_TCG2_PEI  0x3080
 

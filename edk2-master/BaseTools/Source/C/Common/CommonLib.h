@@ -9,11 +9,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_COMMON_LIB_H
 #define _EFI_COMMON_LIB_H
 
-#include <Common/UefiBaseTypes.h>
-#include <Common/BuildVersion.h>
-#include <assert.h>
+#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "edk2-master/BaseTools/Source/C/Include/Common/BuildVersion.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
 #ifndef _WIN32
-#include <limits.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/limits.h"
 #endif
 
 #define PRINTED_GUID_BUFFER_SIZE  37  // including null-termination
@@ -444,7 +444,7 @@ Returns:
 #endif
 
 #ifdef __GNUC__
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include <sys/stat.h>
 #define stricmp strcasecmp
 #define _stricmp strcasecmp

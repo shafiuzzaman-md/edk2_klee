@@ -10,18 +10,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PEI_BOT_PEIM_H_
 #define _PEI_BOT_PEIM_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/UsbIo.h>
-#include <Ppi/UsbHostController.h>
-#include <Ppi/BlockIo.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/UsbIo.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/UsbHostController.h"
+#include "edk2-master/MdePkg/Include/Ppi/BlockIo.h"
 
 // #include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
-#include <IndustryStandard/Atapi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Atapi.h"
 
 #pragma pack(1)
 //

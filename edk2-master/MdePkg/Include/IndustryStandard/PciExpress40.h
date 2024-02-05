@@ -12,7 +12,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PCIEXPRESS40_H_
 #define _PCIEXPRESS40_H_
 
-#include <IndustryStandard/PciExpress31.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/PciExpress31.h"
 
 #pragma pack(1)
 

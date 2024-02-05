@@ -8,21 +8,21 @@
   Copyright (c) 2021, Semihalf All rights reserved.<BR>
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
-#include <Uefi.h>
-#include <UefiSecureBoot.h>
-#include <Guid/GlobalVariable.h>
-#include <Guid/AuthenticatedVariableFormat.h>
-#include <Guid/ImageAuthentication.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/SecureBootVariableLib.h>
-#include <Library/SecureBootVariableProvisionLib.h>
-#include <Library/DxeServicesLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/SecurityPkg/Include/UefiSecureBoot.h"
+#include "edk2-master/MdePkg/Include/Guid/GlobalVariable.h"
+#include "edk2-master/SecurityPkg/Include/Guid/AuthenticatedVariableFormat.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/SecureBootVariableLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/SecureBootVariableProvisionLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesLib.h"
 
 /**
   Create a EFI Signature List with data fetched from section specified as a argument.

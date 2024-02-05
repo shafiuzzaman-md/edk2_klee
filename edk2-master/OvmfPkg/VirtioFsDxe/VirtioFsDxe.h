@@ -10,13 +10,13 @@
 #ifndef VIRTIO_FS_DXE_H_
 #define VIRTIO_FS_DXE_H_
 
-#include <Base.h>                      // SIGNATURE_64()
-#include <Guid/FileInfo.h>             // EFI_FILE_INFO
-#include <IndustryStandard/VirtioFs.h> // VIRTIO_FS_TAG_BYTES
-#include <Library/DebugLib.h>          // CR()
-#include <Protocol/SimpleFileSystem.h> // EFI_SIMPLE_FILE_SYSTEM_PROTOCOL
-#include <Protocol/VirtioDevice.h>     // VIRTIO_DEVICE_PROTOCOL
-#include <Uefi/UefiBaseType.h>         // EFI_EVENT
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/VirtioFs.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #define VIRTIO_FS_SIG  SIGNATURE_64 ('V', 'I', 'R', 'T', 'I', 'O', 'F', 'S')
 

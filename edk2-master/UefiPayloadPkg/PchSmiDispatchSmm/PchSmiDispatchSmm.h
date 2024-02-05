@@ -9,16 +9,16 @@
 #ifndef SMM_SW_DISPATCH2_H_
 #define SMM_SW_DISPATCH2_H_
 
-#include <PiDxe.h>
-#include <Protocol/SmmSwDispatch2.h>
-#include <Protocol/SmmCpu.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Guid/SmmRegisterInfoGuid.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmCpu.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/SmmRegisterInfoGuid.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 #define SMI_SW_HANDLER_SIGNATURE  SIGNATURE_32('s','s','w','h')
 #define MAXIMUM_SWI_VALUE         0xFF

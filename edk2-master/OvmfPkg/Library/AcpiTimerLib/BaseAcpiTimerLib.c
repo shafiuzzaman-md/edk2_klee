@@ -6,10 +6,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PciLib.h>
-#include <OvmfPlatforms.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
 
 //
 // Cached ACPI Timer IO Address

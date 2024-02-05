@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PCI_HOST_RESOURCE_H_
 #define _PCI_HOST_RESOURCE_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
 #define PCI_RESOURCE_LESS  0xFFFFFFFFFFFFFFFEULL
 

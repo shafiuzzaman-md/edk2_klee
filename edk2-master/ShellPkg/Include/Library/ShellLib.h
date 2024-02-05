@@ -10,14 +10,14 @@
 #ifndef __SHELL_LIB__
 #define __SHELL_LIB__
 
-#include <Uefi.h>
-#include <Guid/FileInfo.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/EfiShellInterface.h>
-#include <Protocol/EfiShellEnvironment2.h>
-#include <Protocol/Shell.h>
-#include <Protocol/ShellParameters.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/ShellPkg/Include/Protocol/EfiShellInterface.h"
+#include "edk2-master/ShellPkg/Include/Protocol/EfiShellEnvironment2.h"
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
 
 #define SHELL_FREE_NON_NULL(Pointer)  \
   do {                                \

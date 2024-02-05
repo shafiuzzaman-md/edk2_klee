@@ -15,8 +15,8 @@
 #ifndef QEMU_CPUHP_H_
 #define QEMU_CPUHP_H_
 
-#include <Protocol/MmCpuIo.h>  // EFI_MM_CPU_IO_PROTOCOL
-#include <Uefi/UefiBaseType.h> // EFI_STATUS
+#include "edk2-master/MdePkg/Include/Protocol/MmCpuIo.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #include "ApicId.h"            // APIC_ID
 

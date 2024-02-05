@@ -9,15 +9,15 @@
 #ifndef __REPORT_STATUS_CODE_ROUTER_COMMON_H__
 #define __REPORT_STATUS_CODE_ROUTER_COMMON_H__
 
-#include <Protocol/MmReportStatusCodeHandler.h>
-#include <Protocol/MmStatusCode.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmReportStatusCodeHandler.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmStatusCode.h"
 
-#include <Library/BaseLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #define MM_RSC_HANDLER_CALLBACK_ENTRY_SIGNATURE  SIGNATURE_32 ('s', 'h', 'c', 'e')
 

@@ -9,8 +9,8 @@
 #ifndef __DT_PLATFORM_DXE_H__
 #define __DT_PLATFORM_DXE_H__
 
-#include <Guid/HiiPlatformSetupFormset.h>
-#include <Guid/DtPlatformFormSet.h>
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/DtPlatformFormSet.h"
 
 #define DT_ACPI_SELECT_DT    0x0
 #define DT_ACPI_SELECT_ACPI  0x1

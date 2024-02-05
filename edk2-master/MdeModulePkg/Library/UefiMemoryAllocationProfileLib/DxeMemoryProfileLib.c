@@ -6,12 +6,12 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Guid/MemoryProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryProfile.h"
 
 EDKII_MEMORY_PROFILE_PROTOCOL  *mLibProfileProtocol;
 

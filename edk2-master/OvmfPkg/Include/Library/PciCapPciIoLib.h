@@ -10,9 +10,9 @@
 #ifndef __PCI_CAP_PCI_IO_LIB_H__
 #define __PCI_CAP_PCI_IO_LIB_H__
 
-#include <Protocol/PciIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
-#include <Library/PciCapLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/PciCapLib.h"
 
 /**
   Create a PCI_CAP_DEV object from an EFI_PCI_IO_PROTOCOL instance. The config

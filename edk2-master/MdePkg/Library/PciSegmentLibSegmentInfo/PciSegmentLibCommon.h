@@ -10,13 +10,13 @@
 #ifndef _PCI_SEGMENT_LIB_COMMON_H_
 #define _PCI_SEGMENT_LIB_COMMON_H_
 
-#include <Base.h>
-#include <IndustryStandard/PciExpress21.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PciSegmentLib.h>
-#include <Library/PciSegmentInfoLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PciExpress21.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentInfoLib.h"
 
 /**
   Return the linear address for the physical address.

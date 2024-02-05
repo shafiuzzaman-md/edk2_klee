@@ -6,9 +6,9 @@
 //
 //
 
-#include <Base.h>
-#include <Library/ArmSmcLib.h>
-#include <IndustryStandard/ArmStdSmc.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 VOID
 ArmCallSmc (

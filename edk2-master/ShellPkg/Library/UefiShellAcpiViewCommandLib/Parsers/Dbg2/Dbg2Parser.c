@@ -8,8 +8,8 @@
     - Microsoft Debug Port Table 2 (DBG2) Specification - December 10, 2015.
 **/
 
-#include <IndustryStandard/DebugPort2Table.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/DebugPort2Table.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 

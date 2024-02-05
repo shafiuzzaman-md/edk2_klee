@@ -9,17 +9,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef ARM_GIC_DXE_H_
 #define ARM_GIC_DXE_H_
 
-#include <Library/ArmGicLib.h>
-#include <Library/ArmLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/Cpu.h>
-#include <Protocol/HardwareInterrupt.h>
-#include <Protocol/HardwareInterrupt2.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/EmbeddedPkg/Include/Protocol/HardwareInterrupt.h"
+#include "edk2-master/EmbeddedPkg/Include/Protocol/HardwareInterrupt2.h"
 
 extern UINTN                       mGicNumInterrupts;
 extern HARDWARE_INTERRUPT_HANDLER  *gRegisteredInterruptHandlers;

@@ -10,7 +10,7 @@
 
 #include "AcpiPlatform.h"
 
-#include <Library/AcpiPlatformLib.h> // InstallAcpiTablesFromMemory()
+#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
 
 #define BHYVE_ACPI_PHYSICAL_ADDRESS  ((UINTN)0x000F2400)
 #define BHYVE_BIOS_PHYSICAL_END      ((UINTN)0x00100000)

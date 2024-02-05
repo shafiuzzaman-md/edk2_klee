@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef EDKII_MEMORY_ATTRIBUTE_PPI_H_
 #define EDKII_MEMORY_ATTRIBUTE_PPI_H_
 
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 ///
 /// Global ID for the EDKII_MEMORY_ATTRIBUTE_PPI.

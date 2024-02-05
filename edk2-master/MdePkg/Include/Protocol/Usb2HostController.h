@@ -12,7 +12,7 @@
 #ifndef _USB2_HOSTCONTROLLER_H_
 #define _USB2_HOSTCONTROLLER_H_
 
-#include <Protocol/UsbIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
 
 #define EFI_USB2_HC_PROTOCOL_GUID \
   { \

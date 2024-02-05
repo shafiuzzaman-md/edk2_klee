@@ -14,7 +14,7 @@
 **/
 
 #include "UefiDevicePathLib.h"
-#include <Protocol/DevicePathUtilities.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePathUtilities.h"
 
 //
 // Template for an end-of-device path node.

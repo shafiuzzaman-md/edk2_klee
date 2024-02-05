@@ -6,20 +6,20 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Pi/PiBootMode.h>
-#include <Pi/PiHob.h>
+#include "edk2-master/MdePkg/Include/Pi/PiBootMode.h"
+#include "edk2-master/MdePkg/Include/Pi/PiHob.h"
 
-#include <Guid/Early16550UartBaseAddress.h>
-#include <Guid/Fdt.h>
-#include <Guid/FdtHob.h>
+#include "edk2-master/ArmVirtPkg/Include/Guid/Early16550UartBaseAddress.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/Fdt.h"
+#include "edk2-master/EmbeddedPkg/Include/Guid/FdtHob.h"
 
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PlatformHookLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PlatformHookLib.h"
 
 /** Platform hook to retrieve the 16550 UART base address from the GUID Hob
     that caches the UART base address from early boot stage and store it in

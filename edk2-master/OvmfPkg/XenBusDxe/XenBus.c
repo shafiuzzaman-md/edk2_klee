@@ -17,7 +17,7 @@
   SPDX-License-Identifier: MIT
 **/
 
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #include "XenBus.h"
 #include "GrantTable.h"

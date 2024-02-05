@@ -10,7 +10,7 @@
 #ifndef __FRAMEBUFFER_BLT_LIB__
 #define __FRAMEBUFFER_BLT_LIB__
 
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 //
 // Opaque structure for the frame buffer configure.

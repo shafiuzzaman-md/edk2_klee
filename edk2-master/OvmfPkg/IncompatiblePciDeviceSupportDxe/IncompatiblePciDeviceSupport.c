@@ -9,18 +9,18 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <IndustryStandard/Acpi10.h>
-#include <IndustryStandard/Pci22.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
 
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/CcProbeLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
 
-#include <Protocol/IncompatiblePciDeviceSupport.h>
+#include "edk2-master/MdePkg/Include/Protocol/IncompatiblePciDeviceSupport.h"
 
 //
 // The protocol interface this driver produces.

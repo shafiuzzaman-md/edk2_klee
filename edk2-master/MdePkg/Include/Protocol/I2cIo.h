@@ -15,7 +15,7 @@
 #ifndef __I2C_IO_H__
 #define __I2C_IO_H__
 
-#include <Pi/PiI2c.h>
+#include "edk2-master/MdePkg/Include/Pi/PiI2c.h"
 
 #define EFI_I2C_IO_PROTOCOL_GUID  { 0xb60a3e6b, 0x18c4, 0x46e5, { 0xa2, 0x9a, 0xc9, 0xa1, 0x06, 0x65, 0xa2, 0x8e }}
 

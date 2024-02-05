@@ -7,7 +7,7 @@
 
 **/
 
-#include <Library/CcProbeLib.h>
+#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
 
 /**
   Probe the ConfidentialComputing Guest type. See defition of

@@ -9,7 +9,7 @@
 #ifndef PLATFORM_INIT_LIB_H_
 #define PLATFORM_INIT_LIB_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 #pragma pack(1)
 typedef struct {

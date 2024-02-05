@@ -11,13 +11,13 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/PciExpressLib.h>
-#include <Library/IoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciExpressLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 ///
 /// Module global that contains the base physical address and size of the PCI Express MMIO range.

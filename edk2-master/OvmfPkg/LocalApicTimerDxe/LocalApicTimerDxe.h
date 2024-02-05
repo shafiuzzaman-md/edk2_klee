@@ -10,18 +10,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef LOCAL_APIC_TIMER_H_
 #define LOCAL_APIC_TIMER_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Cpu.h>
-#include <Protocol/Timer.h>
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Protocol/Timer.h"
 
-#include <Register/LocalApic.h>
+#include "edk2-master/UefiCpuPkg/Include/Register/LocalApic.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 // The default timer tick duration is set to 10 ms = 100000 100 ns units
 //

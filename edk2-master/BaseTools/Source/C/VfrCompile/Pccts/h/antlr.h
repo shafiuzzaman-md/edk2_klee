@@ -52,7 +52,7 @@
 #include "pccts_stdlib.h"
 #else
 #ifdef VAXC
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #else
 #include <malloc.h>
 #endif

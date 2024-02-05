@@ -8,16 +8,16 @@
 #ifndef USB_CDC_NCM_H_
 #define USB_CDC_NCM_H_
 
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiUsbLib.h>
-#include <Protocol/UsbIo.h>
-#include <Protocol/UsbEthernetProtocol.h>
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiUsbLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/UsbEthernetProtocol.h"
 
 typedef struct {
   UINTN                          Signature;

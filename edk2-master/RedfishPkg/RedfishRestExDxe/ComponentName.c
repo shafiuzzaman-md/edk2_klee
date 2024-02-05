@@ -8,12 +8,12 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
 
 //
 // EFI Component Name Functions

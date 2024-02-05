@@ -16,36 +16,36 @@ Abstract:
 #ifndef _HOST_H_
 #define _HOST_H_
 
-#include <stdio.h>
-#include <time.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/time.h"
 #include "WinInclude.h"
 
-#include <PiPei.h>
-#include <IndustryStandard/PeImage.h>
-#include <Guid/FileInfo.h>
-#include <Guid/FileSystemInfo.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
-#include <Ppi/EmuThunk.h>
-#include <Ppi/Reset2.h>
-#include <Protocol/EmuThunk.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
+#include "edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
+#include "edk2-master/MdePkg/Include/Ppi/Reset2.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include <Protocol/EmuBlockIo.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/EmuSnp.h>
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuBlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuSnp.h"
 
-#include <Library/BaseLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ThunkPpiList.h>
-#include <Library/ThunkProtocolList.h>
-#include <Library/PcdLib.h>
-#include <Library/PrintLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <Library/NetLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/EmulatorPkg/Include/Library/ThunkPpiList.h"
+#include "edk2-master/EmulatorPkg/Include/Library/ThunkProtocolList.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 #define TEMPORARY_RAM_SIZE  0x20000
 

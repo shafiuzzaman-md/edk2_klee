@@ -11,7 +11,7 @@
 #ifndef ACPI_6_5_H_
 #define ACPI_6_5_H_
 
-#include <IndustryStandard/Acpi64.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi64.h"
 
 //
 // Ensure proper structure formats

@@ -11,8 +11,8 @@
 #ifndef __UEFILZMA_H__
 #define __UEFILZMA_H__
 
-#include <Uefi.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 #ifdef _WIN32
   #undef _WIN32

@@ -8,15 +8,15 @@
 #ifndef LCD_GRAPHICS_OUTPUT_DXE_H_
 #define LCD_GRAPHICS_OUTPUT_DXE_H_
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/DebugLib.h>
-#include <Library/LcdHwLib.h>
-#include <Library/LcdPlatformLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/LcdHwLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/LcdPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/DevicePath.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 //
 // Device structures

@@ -10,16 +10,16 @@
 #ifndef _ACPI_PLATFORM_H_INCLUDED_
 #define _ACPI_PLATFORM_H_INCLUDED_
 
-#include <PiDxe.h>
-#include <Protocol/AcpiTable.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/PciIo.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/XenPlatformLib.h>
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/XenPlatformLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 typedef struct S3_CONTEXT S3_CONTEXT;
 

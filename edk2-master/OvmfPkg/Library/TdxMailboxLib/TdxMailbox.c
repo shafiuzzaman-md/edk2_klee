@@ -7,15 +7,15 @@
 
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CpuLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Uefi/UefiBaseType.h>
-#include <IndustryStandard/IntelTdx.h>
-#include <IndustryStandard/Tdx.h>
-#include <Library/TdxMailboxLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/IntelTdx.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxMailboxLib.h"
 
 /**
   This function will be called by BSP to get the CPU number.

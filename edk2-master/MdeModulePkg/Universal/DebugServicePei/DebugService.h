@@ -10,7 +10,7 @@
 #ifndef __DEBUG_SERVICE_H__
 #define __DEBUG_SERVICE_H__
 
-#include <Ppi/Debug.h>
+#include "edk2-master/MdeModulePkg/Include/Ppi/Debug.h"
 
 /**
   Print a debug message to debug output device if the specified error level

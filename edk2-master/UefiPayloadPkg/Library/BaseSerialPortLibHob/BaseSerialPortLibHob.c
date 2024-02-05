@@ -5,16 +5,16 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Base.h>
-#include <Library/PcdLib.h>
-#include <Library/IoLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/TimerLib.h>
-#include <Library/DebugLib.h>
-#include <Protocol/SerialIo.h>
-#include <UniversalPayload/SerialPortInfo.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SerialPortInfo.h"
 
 //
 // 16550 UART register offsets and bitfields

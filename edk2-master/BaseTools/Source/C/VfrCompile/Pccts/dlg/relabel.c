@@ -30,13 +30,13 @@
  * 1989-2001
  */
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #include "dlg.h"
 #ifdef MEMCHK
 #include "trax.h"
 #else
 #ifdef __STDC__
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #else
 #include <malloc.h>
 #endif /* __STDC__ */

@@ -7,8 +7,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/QemuFwCfgS3Lib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgS3Lib.h"
 
 /**
   Produce ACPI S3 Boot Script opcodes that (optionally) select an fw_cfg item,

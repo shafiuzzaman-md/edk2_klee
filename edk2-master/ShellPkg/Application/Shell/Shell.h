@@ -10,38 +10,38 @@
 #ifndef _SHELL_INTERNAL_HEADER_
 #define _SHELL_INTERNAL_HEADER_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/ShellVariableGuid.h>
-#include <Guid/ShellAliasGuid.h>
+#include "edk2-master/ShellPkg/Include/Guid/ShellVariableGuid.h"
+#include "edk2-master/ShellPkg/Include/Guid/ShellAliasGuid.h"
 
-#include <Protocol/LoadedImage.h>
-#include <Protocol/SimpleTextOut.h>
-#include <Protocol/Shell.h>
-#include <Protocol/EfiShellInterface.h>
-#include <Protocol/EfiShellEnvironment2.h>
-#include <Protocol/ShellParameters.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/HiiPackageList.h>
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
+#include "edk2-master/ShellPkg/Include/Protocol/EfiShellInterface.h"
+#include "edk2-master/ShellPkg/Include/Protocol/EfiShellEnvironment2.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiPackageList.h"
 
-#include <Library/BaseLib.h>
-#include <Library/UefiApplicationEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/ShellCommandLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PcdLib.h>
-#include <Library/ShellLib.h>
-#include <Library/SortLib.h>
-#include <Library/HiiLib.h>
-#include <Library/PrintLib.h>
-#include <Library/HandleParsingLib.h>
-#include <Library/FileHandleLib.h>
-#include <Library/UefiHiiServicesLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiApplicationEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellCommandLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/ShellPkg/Include/Library/HandleParsingLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
 
 #include "ShellParametersProtocol.h"
 #include "ShellProtocol.h"

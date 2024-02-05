@@ -7,7 +7,7 @@
 
 **/
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Uses as a barrier to stop speculative execution.

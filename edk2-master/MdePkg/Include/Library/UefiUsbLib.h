@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __USB_DXE_LIB_H__
 #define __USB_DXE_LIB_H__
 
-#include <Protocol/UsbIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
 
 /**
   Get the descriptor of the specified USB HID interface.

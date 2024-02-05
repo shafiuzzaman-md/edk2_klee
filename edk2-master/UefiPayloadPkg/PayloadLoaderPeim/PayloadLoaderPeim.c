@@ -6,17 +6,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <UniversalPayload/UniversalPayload.h>
-#include <UniversalPayload/ExtraData.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/ExtraData.h"
 
-#include <Ppi/LoadFile.h>
+#include "edk2-master/MdePkg/Include/Ppi/LoadFile.h"
 
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 #include "ElfLib.h"
 

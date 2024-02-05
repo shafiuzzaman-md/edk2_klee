@@ -9,7 +9,7 @@
 #ifndef AML_UTILITY_H_
 #define AML_UTILITY_H_
 
-#include <AmlNodeDefines.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
 
 /** This function computes and updates the ACPI table checksum.
 

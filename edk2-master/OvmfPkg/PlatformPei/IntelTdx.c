@@ -7,21 +7,21 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <IndustryStandard/Tdx.h>
-#include <IndustryStandard/QemuFwCfg.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/TdxLib.h>
-#include <Library/TdxHelperLib.h>
-#include <Library/PlatformInitLib.h>
-#include <WorkArea.h>
-#include <ConfidentialComputingGuestAttr.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tdx.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuFwCfg.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/TdxHelperLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PlatformInitLib.h"
+#include "edk2-master/OvmfPkg/Include/WorkArea.h"
+#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 #include "Platform.h"
 
 /**

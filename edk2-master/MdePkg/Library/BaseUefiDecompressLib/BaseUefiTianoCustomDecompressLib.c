@@ -7,8 +7,8 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/ExtractGuidedSectionLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
 #include "BaseUefiDecompressLibInternals.h"
 
 /**

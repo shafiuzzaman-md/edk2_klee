@@ -8,10 +8,10 @@
 **/
 
 #include "UefiShellDebug1CommandsLib.h"
-#include <IndustryStandard/Pci22.h>
-#include <IndustryStandard/Pci23.h>
-#include <IndustryStandard/PeImage.h>
-#include <Protocol/Decompress.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci23.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/Protocol/Decompress.h"
 
 /**
   Connects all available drives and controllers.

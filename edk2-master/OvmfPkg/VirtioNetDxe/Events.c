@@ -12,8 +12,8 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 #include "VirtioNet.h"
 

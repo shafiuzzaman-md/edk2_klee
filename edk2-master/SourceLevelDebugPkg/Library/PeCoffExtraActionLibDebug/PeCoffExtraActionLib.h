@@ -9,15 +9,15 @@
 #ifndef _PE_COFF_EXTRA_ACTION_LIB_H_
 #define _PE_COFF_EXTRA_ACTION_LIB_H_
 
-#include <Base.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
-#include <ImageDebugSupport.h>
+#include "edk2-master/SourceLevelDebugPkg/Include/ImageDebugSupport.h"
 
 #define DEBUG_LOAD_IMAGE_METHOD_IO_HW_BREAKPOINT  1
 #define DEBUG_LOAD_IMAGE_METHOD_SOFT_INT3         2

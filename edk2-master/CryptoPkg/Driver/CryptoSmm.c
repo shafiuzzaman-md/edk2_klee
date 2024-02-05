@@ -6,9 +6,9 @@
 
 **/
 
-#include <PiSmm.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Protocol/SmmCrypto.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/CryptoPkg/Private/Protocol/SmmCrypto.h"
 
 extern CONST EDKII_CRYPTO_PROTOCOL  mEdkiiCrypto;
 

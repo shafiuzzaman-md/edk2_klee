@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_HII_IMAGE_EX_H__
 #define __EFI_HII_IMAGE_EX_H__
 
-#include <Protocol/HiiImage.h>
+#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
 
 //
 // Global ID for the Hii Image Ex Protocol.

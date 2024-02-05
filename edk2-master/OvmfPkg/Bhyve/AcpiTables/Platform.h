@@ -13,9 +13,9 @@
 #ifndef _Platform_h_INCLUDED_
 #define _Platform_h_INCLUDED_
 
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h>
-#include <IndustryStandard/SerialPortConsoleRedirectionTable.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SerialPortConsoleRedirectionTable.h"
 
 //
 // ACPI table information used to initialize tables.

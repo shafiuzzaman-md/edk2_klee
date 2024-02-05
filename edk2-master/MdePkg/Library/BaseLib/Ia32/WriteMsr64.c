@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/RegisterFilterLib.h>
+#include "edk2-master/MdePkg/Include/Library/RegisterFilterLib.h"
 
 /**
   Writes a 64-bit value to a Machine Specific Register(MSR), and returns the

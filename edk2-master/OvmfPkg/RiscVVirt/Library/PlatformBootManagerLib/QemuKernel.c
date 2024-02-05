@@ -9,8 +9,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/QemuLoadImageLib.h>
-#include <Library/ReportStatusCodeLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/QemuLoadImageLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
 
 #include "PlatformBm.h"
 

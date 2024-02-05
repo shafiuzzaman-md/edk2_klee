@@ -6,13 +6,13 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/ArchitecturalMsr.h>
 #include <Register/Intel/Microcode.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Ppi/ShadowMicrocode.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/ShadowMicrocode.h"
 
 /**
   Get microcode update signature of currently loaded microcode update.

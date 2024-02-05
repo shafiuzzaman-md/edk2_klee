@@ -13,7 +13,7 @@
 #ifndef _PLATFORM_SPECIFIC_RESET_FILTER_PROTOCOL_H_
 #define _PLATFORM_SPECIFIC_RESET_FILTER_PROTOCOL_H_
 
-#include <Protocol/ResetNotification.h>
+#include "edk2-master/MdePkg/Include/Protocol/ResetNotification.h"
 
 #define EDKII_PLATFORM_SPECIFIC_RESET_FILTER_PROTOCOL_GUID \
   { 0x695d7835, 0x8d47, 0x4c11, { 0xab, 0x22, 0xfa, 0x8a, 0xcc, 0xe7, 0xae, 0x7a } }

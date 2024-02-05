@@ -7,23 +7,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Capsule.h>
-#include <Protocol/DxeSmmReadyToLock.h>
-#include <Protocol/VariableLock.h>
+#include "edk2-master/MdePkg/Include/Protocol/Capsule.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariableLock.h"
 
-#include <Guid/CapsuleVendor.h>
-#include <Guid/AcpiS3Context.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/CapsuleVendor.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/AcpiS3Context.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 //
 // 8 extra pages for PF handler.

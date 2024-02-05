@@ -7,15 +7,15 @@
 *
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/ArmMmuLib.h>
-#include <Library/ArmVirtMemInfoLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/CacheMaintenanceLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/ArmVirtPkg/Include/Library/ArmVirtMemInfoLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
 
 VOID
 BuildMemoryTypeInformationHob (

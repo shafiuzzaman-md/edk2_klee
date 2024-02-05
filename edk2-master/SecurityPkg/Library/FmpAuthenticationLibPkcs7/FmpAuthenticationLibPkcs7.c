@@ -15,21 +15,21 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/SystemResourceTable.h>
-#include <Guid/FirmwareContentsSigned.h>
-#include <Guid/WinCertificate.h>
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareContentsSigned.h"
+#include "edk2-master/MdePkg/Include/Guid/WinCertificate.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/FmpAuthenticationLib.h>
-#include <Library/PcdLib.h>
-#include <Protocol/FirmwareManagement.h>
-#include <Guid/SystemResourceTable.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FmpAuthenticationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
 
 /**
   The handler is used to do the authentication for FMP capsule based upon

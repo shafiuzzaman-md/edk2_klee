@@ -7,7 +7,7 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 VOID  *gHobList = NULL;
 

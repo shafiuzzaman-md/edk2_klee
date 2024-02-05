@@ -457,7 +457,7 @@ SaveFrameworkState (
                             is an optional parameter that may be NULL.
 **/
 #if defined (EDKII_UNIT_TEST_FRAMEWORK_ENABLED)
-  #include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 ///
 /// Pointer to jump buffer used with SetJump()/LongJump() to test if a

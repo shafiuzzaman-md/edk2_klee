@@ -16,14 +16,14 @@
 
 #include "jansson_private.h"
 
-#include <assert.h>
-#include <errno.h>
-#include <limits.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/assert.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/errno.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/limits.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
 #ifdef HAVE_UNISTD_H
-  #include <unistd.h>
+#include "edk2-master/CryptoPkg/Library/Include/unistd.h"
 #endif
 
 #include "jansson.h"

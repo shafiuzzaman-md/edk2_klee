@@ -6,17 +6,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/BaseLib.h>
-#include <Library/SafeIntLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <Protocol/VariablePolicy.h>
-#include <Library/VariablePolicyLib.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyLib.h"
 
 // IMPORTANT NOTE: This library is currently rife with multiple return statements
 //                 for error handling. A refactor should remove these at some point.

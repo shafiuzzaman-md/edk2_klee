@@ -9,7 +9,7 @@
 #ifndef __PCI30_H__
 #define __PCI30_H__
 
-#include <IndustryStandard/Pci23.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci23.h"
 
 ///
 /// PCI_CLASS_MASS_STORAGE, Base Class 01h.

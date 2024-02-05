@@ -9,7 +9,7 @@
 #ifndef MEMORY_MAP_INFO_GUID_H_
 #define MEMORY_MAP_INFO_GUID_H_
 
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 ///
 /// Memory Map Information GUID

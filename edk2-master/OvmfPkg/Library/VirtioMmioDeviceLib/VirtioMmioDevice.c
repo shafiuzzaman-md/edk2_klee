@@ -9,8 +9,8 @@
 
 **/
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 #include "VirtioMmioDevice.h"
 

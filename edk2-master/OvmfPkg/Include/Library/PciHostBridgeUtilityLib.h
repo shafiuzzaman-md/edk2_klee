@@ -13,7 +13,7 @@
 #ifndef __PCI_HOST_BRIDGE_UTILITY_LIB_H__
 #define __PCI_HOST_BRIDGE_UTILITY_LIB_H__
 
-#include <Library/PciHostBridgeLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
 
 /**
   Utility function to initialize a PCI_ROOT_BRIDGE structure.

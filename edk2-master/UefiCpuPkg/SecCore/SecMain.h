@@ -9,31 +9,31 @@
 #ifndef _SEC_CORE_H_
 #define _SEC_CORE_H_
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/SecPlatformInformation2.h>
-#include <Ppi/TemporaryRamDone.h>
-#include <Ppi/SecPerformance.h>
-#include <Ppi/PeiCoreFvLocation.h>
-#include <Ppi/RepublishSecPpi.h>
+#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation2.h"
+#include "edk2-master/MdePkg/Include/Ppi/TemporaryRamDone.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/SecPerformance.h"
+#include "edk2-master/MdePkg/Include/Ppi/PeiCoreFvLocation.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/RepublishSecPpi.h"
 
-#include <Guid/FirmwarePerformance.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/FirmwarePerformance.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/PlatformSecLib.h>
-#include <Library/CpuLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/CpuPageTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/PlatformSecLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/CpuPageTableLib.h"
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/Msr.h>
 

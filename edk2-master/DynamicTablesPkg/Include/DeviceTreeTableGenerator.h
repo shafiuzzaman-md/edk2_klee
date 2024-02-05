@@ -13,7 +13,7 @@
 #ifndef DEVICETREE_TABLE_GENERATOR_H_
 #define DEVICETREE_TABLE_GENERATOR_H_
 
-#include <TableGenerator.h>
+#include "edk2-master/DynamicTablesPkg/Include/TableGenerator.h"
 
 #pragma pack(1)
 

@@ -10,20 +10,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_USBMASS_H_
 #define _EFI_USBMASS_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/Scsi.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/UsbIo.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/DiskInfo.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Scsi.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/DiskInfo.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
 typedef struct _USB_MASS_TRANSPORT  USB_MASS_TRANSPORT;
 typedef struct _USB_MASS_DEVICE     USB_MASS_DEVICE;

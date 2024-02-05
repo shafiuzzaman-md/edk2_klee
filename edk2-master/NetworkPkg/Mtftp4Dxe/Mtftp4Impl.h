@@ -18,17 +18,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_MTFTP4_IMPL_H__
 #define __EFI_MTFTP4_IMPL_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Protocol/Udp4.h>
-#include <Protocol/Mtftp4.h>
+#include "edk2-master/MdePkg/Include/Protocol/Udp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Mtftp4.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UdpIoLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/UdpIoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 extern EFI_MTFTP4_PROTOCOL  gMtftp4ProtocolTemplate;
 

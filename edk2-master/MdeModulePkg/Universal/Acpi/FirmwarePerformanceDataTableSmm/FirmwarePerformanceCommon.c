@@ -16,19 +16,19 @@
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Protocol/MmReportStatusCodeHandler.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmReportStatusCodeHandler.h"
 
-#include <Guid/FirmwarePerformance.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/FirmwarePerformance.h"
 
-#include <Library/MmServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/TimerLib.h>
-#include <Library/LockBoxLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 #include "FirmwarePerformanceCommon.h"
 
 EFI_MM_RSC_HANDLER_PROTOCOL  *mRscHandlerProtocol   = NULL;

@@ -7,8 +7,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/Tpm12DeviceLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12DeviceLib.h"
 
 #include "Tpm12Support.h"
 

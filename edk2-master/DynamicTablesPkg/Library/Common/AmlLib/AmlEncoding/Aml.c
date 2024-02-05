@@ -7,7 +7,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <AmlEncoding/Aml.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlEncoding/Aml.h"
 
 /** AML grammar encoding table.
 

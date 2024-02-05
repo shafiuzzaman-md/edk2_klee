@@ -10,25 +10,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PCI_ROOT_BRIDGE_H_
 #define _PCI_ROOT_BRIDGE_H_
 
-#include <PiDxe.h>
-#include <IndustryStandard/Acpi.h>
-#include <IndustryStandard/Pci.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci.h"
 
 //
 // Driver Consumed Protocol Prototypes
 //
-#include <Protocol/CpuIo2.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PciSegmentLib.h>
-#include <Library/UefiLib.h>
-#include <Library/TimerLib.h>
+#include "edk2-master/MdePkg/Include/Protocol/CpuIo2.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
 #include "PciHostResource.h"
 
 typedef enum {

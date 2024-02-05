@@ -6,9 +6,9 @@
 
 **/
 
-#include <Base.h>
-#include <Library/IoLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 // ---------------------------------------------
 // UART Register Offsets

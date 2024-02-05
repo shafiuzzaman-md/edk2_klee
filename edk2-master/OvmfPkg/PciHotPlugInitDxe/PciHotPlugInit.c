@@ -7,22 +7,22 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <IndustryStandard/Acpi10.h>
-#include <IndustryStandard/Q35MchIch9.h>
-#include <IndustryStandard/QemuPciBridgeCapabilities.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi10.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuPciBridgeCapabilities.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PciCapLib.h>
-#include <Library/PciCapPciSegmentLib.h>
-#include <Library/PciLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciCapLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/PciCapPciSegmentLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
-#include <Protocol/PciHotPlugInit.h>
-#include <Protocol/PciRootBridgeIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciHotPlugInit.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 //
 // TRUE if the PCI platform supports extended config space, FALSE otherwise.

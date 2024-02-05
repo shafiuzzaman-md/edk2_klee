@@ -9,29 +9,29 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _CAPSULE_PEIM_H_
 #define _CAPSULE_PEIM_H_
 
-#include <PiPei.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
-#include <Ppi/Capsule.h>
-#include <Ppi/LoadFile.h>
-#include <Ppi/ReadOnlyVariable2.h>
-#include <Guid/CapsuleVendor.h>
+#include "edk2-master/MdePkg/Include/Ppi/Capsule.h"
+#include "edk2-master/MdePkg/Include/Ppi/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/CapsuleVendor.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/PrintLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/PcdLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 #include "Common/CommonHeader.h"
 
 #ifdef MDE_CPU_IA32

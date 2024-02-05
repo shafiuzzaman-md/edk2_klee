@@ -7,12 +7,12 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/VariablePolicyLib.h>
-#include <Library/VariablePolicyHelperLib.h>
-#include <Protocol/VariableLock.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyHelperLib.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/VariableLock.h"
 
 /**
   DEPRECATED. THIS IS ONLY HERE AS A CONVENIENCE WHILE PORTING.

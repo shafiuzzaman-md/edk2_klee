@@ -7,10 +7,10 @@
 
 **/
 
-#include <PiMm.h>
-#include <Library/SmiHandlerProfileLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Guid/SmiHandlerProfile.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Library/SmiHandlerProfileLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SmiHandlerProfile.h"
 
 SMI_HANDLER_PROFILE_PROTOCOL  *mSmiHandlerProfile;
 

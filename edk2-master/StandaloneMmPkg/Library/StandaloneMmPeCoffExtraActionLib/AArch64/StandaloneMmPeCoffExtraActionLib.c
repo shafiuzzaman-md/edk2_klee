@@ -8,15 +8,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PeCoffLib.h>
-#include <Library/PeCoffExtraActionLib.h>
-#include <Library/StandaloneMmMmuLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "edk2-master/ArmPkg/Include/Library/StandaloneMmMmuLib.h"
 
 typedef RETURN_STATUS (*REGION_PERMISSION_UPDATE_FUNC) (
   IN  EFI_PHYSICAL_ADDRESS  BaseAddress,

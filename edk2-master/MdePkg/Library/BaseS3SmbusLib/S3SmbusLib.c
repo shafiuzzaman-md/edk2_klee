@@ -9,12 +9,12 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/DebugLib.h>
-#include <Library/S3BootScriptLib.h>
-#include <Library/SmbusLib.h>
-#include <Library/S3SmbusLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "edk2-master/MdePkg/Include/Library/S3SmbusLib.h"
 
 /**
   Saves an SMBus operation to S3 script to be replayed on S3 resume.

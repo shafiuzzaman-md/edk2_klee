@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __INTERNAL_CRYPT_LIB_H__
 #define __INTERNAL_CRYPT_LIB_H__
 
-#include <Base.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #endif

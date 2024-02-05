@@ -6,8 +6,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/SmmLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SmmLib.h"
 
 /**
   Triggers an SMI at boot time.

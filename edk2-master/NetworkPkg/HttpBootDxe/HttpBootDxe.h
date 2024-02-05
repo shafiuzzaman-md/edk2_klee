@@ -10,61 +10,61 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_HTTP_BOOT_DXE_H__
 #define __EFI_HTTP_BOOT_DXE_H__
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <IndustryStandard/Http11.h>
-#include <IndustryStandard/Dhcp.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Http11.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Dhcp.h"
 
 //
 // Libraries
 //
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiHiiServicesLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/DebugLib.h>
-#include <Library/NetLib.h>
-#include <Library/HttpLib.h>
-#include <Library/HttpIoLib.h>
-#include <Library/HiiLib.h>
-#include <Library/PrintLib.h>
-#include <Library/DpcLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiHiiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpIoLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/DpcLib.h"
 
 //
 // UEFI Driver Model Protocols
 //
-#include <Protocol/DriverBinding.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/ComponentName.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
 
 //
 // Consumed Protocols
 //
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/HiiConfigAccess.h>
-#include <Protocol/NetworkInterfaceIdentifier.h>
-#include <Protocol/Dhcp4.h>
-#include <Protocol/Dhcp6.h>
-#include <Protocol/Dns6.h>
-#include <Protocol/Http.h>
-#include <Protocol/Ip4Config2.h>
-#include <Protocol/Ip6Config.h>
-#include <Protocol/RamDisk.h>
-#include <Protocol/AdapterInformation.h>
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiConfigAccess.h"
+#include "edk2-master/MdePkg/Include/Protocol/NetworkInterfaceIdentifier.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dhcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dhcp6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dns6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip4Config2.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip6Config.h"
+#include "edk2-master/MdePkg/Include/Protocol/RamDisk.h"
+#include "edk2-master/MdePkg/Include/Protocol/AdapterInformation.h"
 
 //
 // Produced Protocols
 //
-#include <Protocol/LoadFile.h>
-#include <Protocol/HttpBootCallback.h>
+#include "edk2-master/MdePkg/Include/Protocol/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Protocol/HttpBootCallback.h"
 
 //
 // Consumed Guids
 //
-#include <Guid/HttpBootConfigHii.h>
+#include "edk2-master/NetworkPkg/Include/Guid/HttpBootConfigHii.h"
 
 //
 // Driver Version

@@ -9,13 +9,13 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PL011UartClockLib.h>
-#include <Library/PL011UartLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/PL011UartClockLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/PL011UartLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 /** Initialise the serial device hardware with default settings.
 

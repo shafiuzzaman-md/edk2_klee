@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _MEASURED_FV_HOB_H_
 #define _MEASURED_FV_HOB_H_
 
-#include <IndustryStandard/UefiTcgPlatform.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
 ///
 /// The Global ID of a GUIDed HOB used to pass all PEI measured FV info to DXE Driver.

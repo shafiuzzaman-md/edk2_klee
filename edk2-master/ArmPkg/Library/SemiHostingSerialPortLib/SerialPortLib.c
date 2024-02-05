@@ -8,10 +8,10 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/DebugLib.h>
-#include <Library/SemihostLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/ArmPkg/Include/Library/SemihostLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 /*
 

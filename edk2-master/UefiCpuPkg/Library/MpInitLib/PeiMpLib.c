@@ -7,9 +7,9 @@
 **/
 
 #include "MpLib.h"
-#include <Library/PeiServicesLib.h>
-#include <Guid/S3SmmInitDone.h>
-#include <Ppi/ShadowMicrocode.h>
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/S3SmmInitDone.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/ShadowMicrocode.h"
 
 STATIC UINT64  mSevEsPeiWakeupBuffer = BASE_1MB;
 

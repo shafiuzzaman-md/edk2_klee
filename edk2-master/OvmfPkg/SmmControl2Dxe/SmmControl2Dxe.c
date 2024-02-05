@@ -19,15 +19,15 @@
 
 **/
 
-#include <IndustryStandard/Q35MchIch9.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
-#include <Library/PciLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/S3SaveState.h>
-#include <Protocol/SmmControl2.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/S3SaveState.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmControl2.h"
 
 #include "SmiFeatures.h"
 

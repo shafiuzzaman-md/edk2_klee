@@ -12,10 +12,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <IndustryStandard/Q35MchIch9.h>     // ICH9_CPU_HOTPLUG_BASE
-#include <IndustryStandard/QemuCpuHotplug.h> // QEMU_CPUHP_R_CMD_DATA2
-#include <Library/BaseLib.h>                 // CpuDeadLoop()
-#include <Library/DebugLib.h>                // DEBUG()
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuCpuHotplug.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 #include "QemuCpuhp.h"
 

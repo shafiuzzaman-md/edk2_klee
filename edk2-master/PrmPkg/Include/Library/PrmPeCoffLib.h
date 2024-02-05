@@ -11,10 +11,10 @@
 #ifndef PRM_PECOFF_LIB_H_
 #define PRM_PECOFF_LIB_H_
 
-#include <Base.h>
-#include <PrmExportDescriptor.h>
-#include <IndustryStandard/PeImage.h>
-#include <Library/PeCoffLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
 /**
   Gets a pointer to the export directory in a given PE/COFF image.

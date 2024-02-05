@@ -11,9 +11,9 @@
     - Arm Server Base Boot Requirements 1.2, September 2019
 **/
 
-#include <Uefi.h>
-#include <IndustryStandard/Acpi.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 #include "AcpiView.h"

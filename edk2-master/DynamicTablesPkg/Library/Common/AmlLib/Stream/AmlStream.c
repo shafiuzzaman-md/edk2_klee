@@ -6,7 +6,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Stream/AmlStream.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Stream/AmlStream.h"
 
 /** Initialize a stream.
 

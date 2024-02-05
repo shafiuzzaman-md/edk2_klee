@@ -10,11 +10,11 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include <Ppi/MemoryDiscovered.h>
+#include "edk2-master/MdePkg/Include/Ppi/MemoryDiscovered.h"
 
 CONST EFI_PEI_SERVICES  **gPeiServices = NULL;
 

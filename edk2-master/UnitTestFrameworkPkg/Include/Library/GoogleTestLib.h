@@ -14,7 +14,7 @@
 #include <cstring>
 
 extern "C" {
-  #include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 }
 
 //////////////////////////////////////////////////////////////////////////////

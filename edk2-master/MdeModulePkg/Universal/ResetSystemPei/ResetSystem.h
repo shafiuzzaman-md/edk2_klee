@@ -9,21 +9,21 @@
 #ifndef _RESET_SYSTEM2_H_
 #define _RESET_SYSTEM2_H_
 
-#include <Uefi.h>
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Ppi/Reset2.h>
-#include <Ppi/PlatformSpecificResetFilter.h>
-#include <Ppi/PlatformSpecificResetNotification.h>
-#include <Ppi/PlatformSpecificResetHandler.h>
+#include "edk2-master/MdePkg/Include/Ppi/Reset2.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/PlatformSpecificResetFilter.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/PlatformSpecificResetNotification.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/PlatformSpecificResetHandler.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/HobLib.h>
-#include <Library/ResetSystemLib.h>
-#include <Library/ReportStatusCodeLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
 
 //
 // The maximum recursion depth to ResetSystem() by reset notification handlers

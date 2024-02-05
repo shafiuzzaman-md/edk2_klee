@@ -10,7 +10,7 @@
 #ifndef __DEBUG_IO_PORT_DETECT_H__
 #define __DEBUG_IO_PORT_DETECT_H__
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Helper function to return whether the virtual machine has a debug I/O port.

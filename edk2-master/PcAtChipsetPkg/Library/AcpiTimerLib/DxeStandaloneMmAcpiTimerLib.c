@@ -6,10 +6,10 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Library/TimerLib.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 //
 // Cached performance counter frequency

@@ -9,16 +9,16 @@
 #ifndef _CPU_EXCEPTION_COMMON_H_
 #define _CPU_EXCEPTION_COMMON_H_
 
-#include <Ppi/VectorHandoffInfo.h>
-#include <Protocol/Cpu.h>
-#include <Library/BaseLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/PrintLib.h>
-#include <Library/LocalApicLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/CpuExceptionHandlerLib.h>
+#include "edk2-master/MdePkg/Include/Ppi/VectorHandoffInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
 
 #define  CPU_EXCEPTION_NUM    32
 #define  CPU_INTERRUPT_NUM    256

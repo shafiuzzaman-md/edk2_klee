@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __BASE_PE_COFF_LIB_H__
 #define __BASE_PE_COFF_LIB_H__
 
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 //
 // Return status codes from the PE/COFF Loader services
 //

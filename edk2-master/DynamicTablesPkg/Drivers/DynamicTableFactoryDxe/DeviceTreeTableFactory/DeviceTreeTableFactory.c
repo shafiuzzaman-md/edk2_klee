@@ -9,15 +9,15 @@
     - Std - Standard
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 // Module specific include files.
-#include <DeviceTreeTableGenerator.h>
-#include <ConfigurationManagerObject.h>
-#include <Protocol/ConfigurationManagerProtocol.h>
-#include <Protocol/DynamicTableFactoryProtocol.h>
+#include "edk2-master/DynamicTablesPkg/Include/DeviceTreeTableGenerator.h"
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/ConfigurationManagerProtocol.h"
+#include "edk2-master/DynamicTablesPkg/Include/Protocol/DynamicTableFactoryProtocol.h"
 
 #include "DynamicTableFactory.h"
 

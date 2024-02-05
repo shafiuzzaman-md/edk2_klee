@@ -11,7 +11,7 @@
 **/
 #include "EventChannel.h"
 
-#include <Library/XenHypercallLib.h>
+#include "edk2-master/OvmfPkg/Include/Library/XenHypercallLib.h"
 
 UINT32
 XenEventChannelNotify (

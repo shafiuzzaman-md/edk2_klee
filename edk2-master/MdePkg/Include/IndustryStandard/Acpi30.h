@@ -8,7 +8,7 @@
 #ifndef _ACPI_3_0_H_
 #define _ACPI_3_0_H_
 
-#include <IndustryStandard/Acpi20.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi20.h"
 
 //
 // Define for Descriptor

@@ -48,13 +48,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiMm.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Protocol/SmmSwapAddressRange.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmSwapAddressRange.h"
 #include "FaultTolerantWrite.h"
 #include "FaultTolerantWriteSmmCommon.h"
-#include <Protocol/MmEndOfDxe.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmEndOfDxe.h"
 
 VOID            *mFvbRegistration = NULL;
 EFI_FTW_DEVICE  *mFtwDevice       = NULL;

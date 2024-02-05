@@ -9,9 +9,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include "InternalCryptLib.h"
 
 #include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/pkcs7.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509v3.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/pkcs7.h"
 
 /**
   Check the contents of PKCS7 is not data.

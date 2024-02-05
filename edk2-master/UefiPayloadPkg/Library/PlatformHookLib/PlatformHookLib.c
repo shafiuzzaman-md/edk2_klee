@@ -6,12 +6,12 @@
 
 **/
 
-#include <Base.h>
-#include <PiDxe.h>
-#include <UniversalPayload/SerialPortInfo.h>
-#include <Library/PlatformHookLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/SerialPortInfo.h"
+#include "edk2-master/MdeModulePkg/Include/Library/PlatformHookLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 
 /** Library Constructor
 

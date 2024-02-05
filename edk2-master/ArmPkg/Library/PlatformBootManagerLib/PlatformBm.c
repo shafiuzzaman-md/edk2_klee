@@ -11,29 +11,29 @@
 
 **/
 
-#include <IndustryStandard/Pci22.h>
-#include <Library/BootLogoLib.h>
-#include <Library/CapsuleLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
-#include <Library/UefiBootManagerLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Protocol/BootManagerPolicy.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/EsrtManagement.h>
-#include <Protocol/GraphicsOutput.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/NonDiscoverableDevice.h>
-#include <Protocol/PciIo.h>
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/PlatformBootManager.h>
-#include <Guid/BootDiscoveryPolicy.h>
-#include <Guid/EventGroup.h>
-#include <Guid/NonDiscoverableDevice.h>
-#include <Guid/TtyTerm.h>
-#include <Guid/SerialPortLibVendor.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2-master/MdeModulePkg/Include/Library/BootLogoLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/UefiBootManagerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/BootManagerPolicy.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/EsrtManagement.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/NonDiscoverableDevice.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/EmbeddedPkg/Include/Protocol/PlatformBootManager.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/BootDiscoveryPolicy.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/NonDiscoverableDevice.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/TtyTerm.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SerialPortLibVendor.h"
 
 #include "PlatformBm.h"
 

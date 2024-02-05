@@ -9,23 +9,23 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PEI_PCD_SERVICE_H_
 #define _PEI_PCD_SERVICE_H_
 
-#include <PiPei.h>
-#include <Ppi/ReadOnlyVariable2.h>
-#include <Ppi/Pcd.h>
-#include <Ppi/PiPcd.h>
-#include <Ppi/PcdInfo.h>
-#include <Ppi/PiPcdInfo.h>
-#include <Guid/PcdDataBaseHobGuid.h>
-#include <Guid/PcdDataBaseSignatureGuid.h>
-#include <Guid/VariableFormat.h>
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PcdLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
+#include "edk2-master/MdePkg/Include/Ppi/Pcd.h"
+#include "edk2-master/MdePkg/Include/Ppi/PiPcd.h"
+#include "edk2-master/MdePkg/Include/Ppi/PcdInfo.h"
+#include "edk2-master/MdePkg/Include/Ppi/PiPcdInfo.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PcdDataBaseHobGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/PcdDataBaseSignatureGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 //
 // Please make sure the PCD Serivce PEIM Version is consistent with

@@ -20,7 +20,7 @@
 #ifndef WIFI_PROFILE_SYNC_PROTOCOL_H_
 #define WIFI_PROFILE_SYNC_PROTOCOL_H_
 
-#include <WifiConnectionManagerDxe/WifiConnectionMgrConfig.h>
+#include "edk2-master/NetworkPkg/WifiConnectionManagerDxe/WifiConnectionMgrConfig.h"
 
 //
 //  WiFi Profile Sync Protocol GUID variable.

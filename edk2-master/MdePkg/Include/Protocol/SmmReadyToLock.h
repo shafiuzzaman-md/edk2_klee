@@ -19,7 +19,7 @@
 #ifndef _SMM_READY_TO_LOCK_H_
 #define _SMM_READY_TO_LOCK_H_
 
-#include <Protocol/MmReadyToLock.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmReadyToLock.h"
 
 #define EFI_SMM_READY_TO_LOCK_PROTOCOL_GUID  EFI_MM_READY_TO_LOCK_PROTOCOL_GUID
 

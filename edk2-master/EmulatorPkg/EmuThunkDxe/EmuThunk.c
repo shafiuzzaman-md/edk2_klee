@@ -6,18 +6,18 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 
 **/
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/DevicePath.h>
-#include <Protocol/EmuThunk.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/EmuThunkLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/EmulatorPkg/Include/Library/EmuThunkLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
 //
 // EmuThunk Device Path Protocol Instance

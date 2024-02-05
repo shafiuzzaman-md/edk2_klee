@@ -17,30 +17,30 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // The package level header files this module uses
 //
-#include <Uefi.h>
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 //
 // The protocols, PPI and GUID definitions for this module
 //
-#include <Ppi/MasterBootMode.h>
-#include <Ppi/BootInRecoveryMode.h>
-#include <Ppi/RecoveryModule.h>
-#include <Ppi/DeviceRecoveryModule.h>
-#include <Ppi/FirmwareVolumeInfo.h>
-#include <Guid/FirmwareFileSystem2.h>
-#include <Guid/FmpCapsule.h>
-#include <Guid/EdkiiSystemFmpCapsule.h>
+#include "edk2-master/MdePkg/Include/Ppi/MasterBootMode.h"
+#include "edk2-master/MdePkg/Include/Ppi/BootInRecoveryMode.h"
+#include "edk2-master/MdePkg/Include/Ppi/RecoveryModule.h"
+#include "edk2-master/MdePkg/Include/Ppi/DeviceRecoveryModule.h"
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolumeInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareFileSystem2.h"
+#include "edk2-master/MdePkg/Include/Guid/FmpCapsule.h"
+#include "edk2-master/SignedCapsulePkg/Include/Guid/EdkiiSystemFmpCapsule.h"
 
 //
 // The Library classes this module consumes
 //
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/HobLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 #include "RecoveryModuleLoadPei.h"
 

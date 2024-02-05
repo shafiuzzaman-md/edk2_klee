@@ -9,9 +9,9 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Guid/SystemResourceTable.h>
-#include <Library/FmpDeviceLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDeviceLib.h"
 
 /**
   Provide a function to install the Firmware Management Protocol instance onto a

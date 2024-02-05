@@ -18,10 +18,10 @@
 
 **/
 
-#include <IndustryStandard/LegacyVgaBios.h>
-#include <Library/DebugLib.h>
-#include <Library/PciLib.h>
-#include <Library/PrintLib.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/LegacyVgaBios.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #include "Gop.h"
 #include "VbeShim.h"

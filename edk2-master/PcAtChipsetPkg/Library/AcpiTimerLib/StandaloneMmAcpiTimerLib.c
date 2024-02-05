@@ -7,7 +7,7 @@
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
 #include "DxeStandaloneMmAcpiTimerLib.h"
 

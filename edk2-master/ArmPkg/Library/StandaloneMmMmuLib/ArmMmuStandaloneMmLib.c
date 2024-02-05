@@ -13,17 +13,17 @@
         (https://developer.arm.com/documentation/den0077/a)
 **/
 
-#include <Uefi.h>
-#include <IndustryStandard/ArmMmSvc.h>
-#include <IndustryStandard/ArmFfaSvc.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmMmSvc.h"
+#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmFfaSvc.h"
 
-#include <Library/ArmLib.h>
-#include <Library/ArmMmuLib.h>
-#include <Library/ArmSvcLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmMmuLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmSvcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /** Send memory permission request to target.
 

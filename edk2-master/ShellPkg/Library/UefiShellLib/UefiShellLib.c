@@ -10,8 +10,8 @@
 **/
 
 #include "UefiShellLib.h"
-#include <Library/SortLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 //
 // globals...

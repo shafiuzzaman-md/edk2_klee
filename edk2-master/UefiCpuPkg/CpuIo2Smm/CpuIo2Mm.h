@@ -9,15 +9,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _CPU_IO2_SMM_H_
 #define _CPU_IO2_SMM_H_
 
-#include <PiSmm.h>
+#include "edk2-master/MdePkg/Include/PiSmm.h"
 
-#include <Protocol/SmmCpuIo2.h>
+#include "edk2-master/MdePkg/Include/Protocol/SmmCpuIo2.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/MmServicesTableLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 #define MAX_IO_PORT_ADDRESS  0xFFFF
 

@@ -7,8 +7,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "PiSmmCpuDxeSmm.h"
-#include <PiPei.h>
-#include <Ppi/MpServices2.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/UefiCpuPkg/Include/Ppi/MpServices2.h"
 
 #pragma pack(1)
 typedef struct {

@@ -6,17 +6,17 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/FspWrapperApiLib.h>
-#include <Library/FspWrapperPlatformLib.h>
-#include <FspEas.h>
-#include <FspGlobalData.h>
-#include <Ppi/ReadOnlyVariable2.h>
-#include <Ppi/Variable.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/FspWrapperPlatformMultiPhaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperApiLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperPlatformLib.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
+#include "edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
+#include "edk2-master/IntelFsp2Pkg/Include/Ppi/Variable.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/IntelFsp2WrapperPkg/Include/Library/FspWrapperPlatformMultiPhaseLib.h"
 
 /**
   Execute 32-bit FSP API entry code.

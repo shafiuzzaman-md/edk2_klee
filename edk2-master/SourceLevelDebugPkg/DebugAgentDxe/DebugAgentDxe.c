@@ -6,11 +6,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiDxe.h>
-#include <Guid/EventGroup.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 EFI_EVENT  mExitBootServiceEvent;
 

@@ -8,7 +8,7 @@
 
 **/
 
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #include "VirtioNet.h"
 

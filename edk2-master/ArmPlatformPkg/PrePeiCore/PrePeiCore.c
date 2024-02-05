@@ -7,12 +7,12 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/CacheMaintenanceLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/ArmLib.h>
-#include <Library/PrintLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 #include "PrePeiCore.h"
 

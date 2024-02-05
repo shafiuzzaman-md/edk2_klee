@@ -8,7 +8,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <IndustryStandard/Mbr.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Mbr.h"
 #include "FatLitePeim.h"
 
 /**

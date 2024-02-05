@@ -12,7 +12,7 @@
 #ifndef __SPI_NOR_FLASH_PROTOCOL_H__
 #define __SPI_NOR_FLASH_PROTOCOL_H__
 
-#include <Protocol/SpiConfiguration.h>
+#include "edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
 
 ///
 /// Global ID for the SPI NOR Flash Protocol

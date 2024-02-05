@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_EDB_DISASM_H_
 #define _EFI_EDB_DISASM_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Definition for instruction OPCODE, MODIFIER, and OPERAND

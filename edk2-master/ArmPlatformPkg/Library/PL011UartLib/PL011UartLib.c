@@ -8,13 +8,13 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <Protocol/SerialIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
 
 #include "PL011Uart.h"
 

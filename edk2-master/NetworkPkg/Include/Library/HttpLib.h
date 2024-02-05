@@ -11,7 +11,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _HTTP_LIB_H_
 #define _HTTP_LIB_H_
 
-#include <Protocol/Http.h>
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
 
 /**
   Decode a percent-encoded URI component to the ASCII character.

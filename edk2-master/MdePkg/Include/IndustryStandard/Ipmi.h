@@ -13,16 +13,16 @@
 #ifndef _IPMI_H_
 #define _IPMI_H_
 
-#include <IndustryStandard/IpmiNetFnChassis.h>
-#include <IndustryStandard/IpmiNetFnBridge.h>
-#include <IndustryStandard/IpmiNetFnSensorEvent.h>
-#include <IndustryStandard/IpmiNetFnApp.h>
-#include <IndustryStandard/IpmiNetFnFirmware.h>
-#include <IndustryStandard/IpmiNetFnStorage.h>
-#include <IndustryStandard/IpmiNetFnTransport.h>
-#include <IndustryStandard/IpmiNetFnGroupExtension.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnChassis.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnBridge.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnSensorEvent.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnApp.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnFirmware.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnStorage.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnTransport.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnGroupExtension.h"
 
-#include <IndustryStandard/IpmiFruInformationStorage.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiFruInformationStorage.h"
 
 //
 // Generic Completion Codes definitions

@@ -6,13 +6,13 @@
 
 **/
 
-#include <Uefi/UefiBaseType.h>
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/FrameBufferBltLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FrameBufferBltLib.h"
 
 struct FRAME_BUFFER_CONFIGURE {
   UINT32                       PixelsPerScanLine;

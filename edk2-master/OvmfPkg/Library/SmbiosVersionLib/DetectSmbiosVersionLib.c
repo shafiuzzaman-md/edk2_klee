@@ -11,13 +11,13 @@
 
 **/
 
-#include <IndustryStandard/SmBios.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
-#include <Base.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
-#include <Library/QemuFwCfgLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
 
 typedef union {
   SMBIOS_TABLE_ENTRY_POINT        V2;

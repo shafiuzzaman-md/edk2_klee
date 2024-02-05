@@ -6,8 +6,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <PiDxe.h>
-#include <Library/FmpDependencyDeviceLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/FmpDependencyDeviceLib.h"
 
 /**
   Save dependency to Fmp device.

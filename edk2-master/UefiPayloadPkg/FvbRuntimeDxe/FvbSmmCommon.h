@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef SMM_FVB_COMMON_H_
 #define SMM_FVB_COMMON_H_
 
-#include <Protocol/SmmFirmwareVolumeBlock.h>
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmFirmwareVolumeBlock.h"
 
 #define EFI_FUNCTION_GET_ATTRIBUTES        1
 #define EFI_FUNCTION_SET_ATTRIBUTES        2

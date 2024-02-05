@@ -15,7 +15,7 @@
 
 #include "pcctscfg.h"
 #include "set.h"
-#include <ctype.h>
+#include "edk2-master/CryptoPkg/Library/Include/ctype.h"
 #include "syn.h"
 #include "hash.h"
 #include "generic.h"

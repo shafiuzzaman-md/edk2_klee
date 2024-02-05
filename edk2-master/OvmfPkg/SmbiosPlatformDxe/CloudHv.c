@@ -4,8 +4,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <IndustryStandard/CloudHv.h> // CLOUDHV_SMBIOS_ADDRESS
-#include <IndustryStandard/SmBios.h>  // SMBIOS_TABLE_3_0_ENTRY_POINT
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/CloudHv.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
 /**
   Locates and extracts Cloud Hypervisor SMBIOS data

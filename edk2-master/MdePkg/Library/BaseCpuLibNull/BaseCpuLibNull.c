@@ -6,7 +6,7 @@
 
 **/
 
-#include <Library/CpuLib.h>
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
 
 /**
   Places the CPU in a sleep state until an interrupt is received.

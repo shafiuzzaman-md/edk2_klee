@@ -6,11 +6,11 @@
 
 **/
 #include "BaseIoLibIntrinsicInternal.h"
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 #include <Include/IndustryStandard/Tdx.h>
-#include <Library/TdxLib.h>
+#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
 #include <Register/Intel/Cpuid.h>
-#include <Library/CcProbeLib.h>
+#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
 #include "IoLibTdx.h"
 
 // Size of TDVMCALL Access, including IO and MMIO

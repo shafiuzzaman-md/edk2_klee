@@ -8,8 +8,8 @@
 **/
 
 #include "BdsPlatform.h"
-#include <Guid/QemuRamfb.h>
-#include <Guid/SerialPortLibVendor.h>
+#include "edk2-master/OvmfPkg/Include/Guid/QemuRamfb.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SerialPortLibVendor.h"
 
 //
 // Vendor UART Device Path structure

@@ -9,16 +9,16 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 #include "InternalCryptLib.h"
-#include <openssl/x509v3.h>
-#include <openssl/asn1.h>
-#include <openssl/x509.h>
-#include <openssl/bio.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509v3.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/asn1.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509.h"
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/bio.h"
 #include <crypto/x509.h>
-#include <openssl/pkcs7.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/pkcs7.h"
 #include <openssl/bn.h>
-#include <openssl/x509_vfy.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509_vfy.h"
 #include <openssl/pem.h>
 #include <openssl/evp.h>
 #include <crypto/asn1.h>

@@ -13,8 +13,8 @@
 #ifndef BLOB_VERIFIER_LIB_H_
 #define BLOB_VERIFIER_LIB_H_
 
-#include <Uefi/UefiBaseType.h>
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Base.h"
 
 /**
   Verify blob from an external source.

@@ -8,7 +8,7 @@
 
 **/
 
-#include <BrotliDecompressLibInternal.h>
+#include "edk2-master/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecompressLibInternal.h"
 
 /**
   Examines a GUIDed section and returns the size of the decoded buffer and the

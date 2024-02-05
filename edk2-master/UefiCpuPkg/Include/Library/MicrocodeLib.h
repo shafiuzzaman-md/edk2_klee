@@ -10,7 +10,7 @@
 #define MICROCODE_LIB_H_
 
 #include <Register/Intel/Microcode.h>
-#include <Ppi/ShadowMicrocode.h>
+#include "edk2-master/UefiCpuPkg/Include/Ppi/ShadowMicrocode.h"
 
 /**
   Get microcode update signature of currently loaded microcode update.

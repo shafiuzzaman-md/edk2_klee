@@ -8,12 +8,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Guid/Crc32GuidedSectionExtraction.h>
-#include <Library/BaseLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/Crc32GuidedSectionExtraction.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 ///
 /// CRC32 Guided Section header

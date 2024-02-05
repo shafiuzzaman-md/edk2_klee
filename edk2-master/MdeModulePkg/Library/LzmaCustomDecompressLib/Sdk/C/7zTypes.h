@@ -11,7 +11,7 @@
 #ifdef EFIAPI
   #include "UefiLzma.h"
 #else
-  #include <stddef.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stddef.h"
 #endif
 
 #ifndef EXTERN_C_BEGIN

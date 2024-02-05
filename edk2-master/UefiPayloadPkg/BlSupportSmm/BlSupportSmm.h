@@ -9,25 +9,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef BL_SUPPORT_SMM_H_
 #define BL_SUPPORT_SMM_H_
 
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/IoLib.h>
-#include <Library/HobLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/SmmServicesTableLib.h>
-#include <Library/PciLib.h>
-#include <Protocol/SmmSwDispatch2.h>
-#include <Protocol/SmmAccess2.h>
-#include <Protocol/MpService.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
+#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 #include <Register/Intel/ArchitecturalMsr.h>
-#include <Guid/SmmRegisterInfoGuid.h>
-#include <Guid/SmmS3CommunicationInfoGuid.h>
-#include <Guid/SmramMemoryReserve.h>
+#include "edk2-master/UefiPayloadPkg/Include/Guid/SmmRegisterInfoGuid.h"
+#include "edk2-master/UefiPayloadPkg/Include/Guid/SmmS3CommunicationInfoGuid.h"
+#include "edk2-master/MdePkg/Include/Guid/SmramMemoryReserve.h"
 
 #define  EFI_MSR_SMRR_MASK            0xFFFFF000
 #define  MSR_SMM_FEATURE_CONTROL      0x4E0

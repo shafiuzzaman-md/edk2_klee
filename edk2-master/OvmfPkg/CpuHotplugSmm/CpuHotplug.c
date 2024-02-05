@@ -6,20 +6,20 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <CpuHotPlugData.h>                  // CPU_HOT_PLUG_DATA
-#include <IndustryStandard/Q35MchIch9.h>     // ICH9_APM_CNT
-#include <IndustryStandard/QemuCpuHotplug.h> // QEMU_CPUHP_CMD_GET_PENDING
-#include <Library/BaseLib.h>                 // CpuDeadLoop()
-#include <Library/CpuLib.h>                  // CpuSleep()
-#include <Library/DebugLib.h>                // ASSERT()
-#include <Library/MmServicesTableLib.h>      // gMmst
-#include <Library/PcdLib.h>                  // PcdGetBool()
-#include <Library/SafeIntLib.h>              // SafeUintnSub()
-#include <Pcd/CpuHotEjectData.h>             // CPU_HOT_EJECT_DATA
-#include <Protocol/MmCpuIo.h>                // EFI_MM_CPU_IO_PROTOCOL
-#include <Protocol/SmmCpuService.h>          // EFI_SMM_CPU_SERVICE_PROTOCOL
+#include "edk2-master/UefiCpuPkg/Include/CpuHotPlugData.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuCpuHotplug.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
+#include "edk2-master/OvmfPkg/Include/Pcd/CpuHotEjectData.h"
+#include "edk2-master/MdePkg/Include/Protocol/MmCpuIo.h"
+#include "edk2-master/UefiCpuPkg/Include/Protocol/SmmCpuService.h"
 #include <Register/Intel/ArchitecturalMsr.h> // MSR_IA32_APIC_BASE_REGISTER
-#include <Uefi/UefiBaseType.h>               // EFI_STATUS
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #include "ApicId.h"                          // APIC_ID
 #include "QemuCpuhp.h"                       // QemuCpuhpWriteCpuSelector()

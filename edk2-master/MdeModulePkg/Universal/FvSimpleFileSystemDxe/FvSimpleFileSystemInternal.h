@@ -11,26 +11,26 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __FVFS_INTERNAL_H__
 #define __FVFS_INTERNAL_H__
 
-#include <Uefi.h>
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/DriverBinding.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/UnicodeCollation.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
 
-#include <Guid/FileSystemInfo.h>
-#include <Guid/FileInfo.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
 
 typedef struct _FV_FILESYSTEM_FILE       FV_FILESYSTEM_FILE;
 typedef struct _FV_FILESYSTEM_FILE_INFO  FV_FILESYSTEM_FILE_INFO;

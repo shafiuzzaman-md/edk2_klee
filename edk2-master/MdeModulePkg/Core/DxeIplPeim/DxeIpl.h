@@ -10,38 +10,38 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PEI_DXEIPL_H__
 #define __PEI_DXEIPL_H__
 
-#include <PiPei.h>
-#include <Ppi/DxeIpl.h>
-#include <Ppi/EndOfPeiPhase.h>
-#include <Ppi/MemoryDiscovered.h>
-#include <Ppi/ReadOnlyVariable2.h>
-#include <Ppi/Decompress.h>
-#include <Ppi/FirmwareVolumeInfo.h>
-#include <Ppi/GuidedSectionExtraction.h>
-#include <Ppi/LoadFile.h>
-#include <Ppi/S3Resume2.h>
-#include <Ppi/RecoveryModule.h>
-#include <Ppi/CapsuleOnDisk.h>
-#include <Ppi/VectorHandoffInfo.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/DxeIpl.h"
+#include "edk2-master/MdePkg/Include/Ppi/EndOfPeiPhase.h"
+#include "edk2-master/MdePkg/Include/Ppi/MemoryDiscovered.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
+#include "edk2-master/MdePkg/Include/Ppi/Decompress.h"
+#include "edk2-master/MdePkg/Include/Ppi/FirmwareVolumeInfo.h"
+#include "edk2-master/MdePkg/Include/Ppi/GuidedSectionExtraction.h"
+#include "edk2-master/MdePkg/Include/Ppi/LoadFile.h"
+#include "edk2-master/MdePkg/Include/Ppi/S3Resume2.h"
+#include "edk2-master/MdePkg/Include/Ppi/RecoveryModule.h"
+#include "edk2-master/MdeModulePkg/Include/Ppi/CapsuleOnDisk.h"
+#include "edk2-master/MdePkg/Include/Ppi/VectorHandoffInfo.h"
 
-#include <Guid/MemoryTypeInformation.h>
-#include <Guid/MemoryAllocationHob.h>
-#include <Guid/FirmwareFileSystem2.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAllocationHob.h"
+#include "edk2-master/MdePkg/Include/Guid/FirmwareFileSystem2.h"
 
-#include <Library/DebugLib.h>
-#include <Library/PeimEntryPoint.h>
-#include <Library/BaseLib.h>
-#include <Library/HobLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/UefiDecompressLib.h>
-#include <Library/ExtractGuidedSectionLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DebugAgentLib.h>
-#include <Library/PeiServicesTablePointerLib.h>
-#include <Library/PerformanceLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDecompressLib.h"
+#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/DebugAgentLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesTablePointerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PerformanceLib.h"
 
 #define STACK_SIZE      0x20000
 #define BSP_STORE_SIZE  0x4000

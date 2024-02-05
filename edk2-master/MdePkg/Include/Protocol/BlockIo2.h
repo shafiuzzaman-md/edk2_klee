@@ -13,7 +13,7 @@
 #ifndef __BLOCK_IO2_H__
 #define __BLOCK_IO2_H__
 
-#include <Protocol/BlockIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
 
 #define EFI_BLOCK_IO2_PROTOCOL_GUID \
   { \

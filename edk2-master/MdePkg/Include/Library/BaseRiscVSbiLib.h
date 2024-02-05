@@ -16,7 +16,7 @@
 #ifndef RISCV_SBI_LIB_H_
 #define RISCV_SBI_LIB_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 /* SBI Extension IDs */
 #define SBI_EXT_0_1_CONSOLE_PUTCHAR  0x1

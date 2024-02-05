@@ -12,7 +12,7 @@
 #ifndef __DEBUG_IMAGE_INFO_GUID_H__
 #define __DEBUG_IMAGE_INFO_GUID_H__
 
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
 ///
 /// EFI_DEBUG_IMAGE_INFO_TABLE configuration table GUID declaration.

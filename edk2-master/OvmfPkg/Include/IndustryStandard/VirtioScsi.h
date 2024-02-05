@@ -12,7 +12,7 @@
 #ifndef _VIRTIO_SCSI_H_
 #define _VIRTIO_SCSI_H_
 
-#include <IndustryStandard/Virtio.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 //
 // virtio-0.9.5, Appendix I: SCSI Host Device

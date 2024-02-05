@@ -9,10 +9,10 @@
 #ifndef IOMMU_INTERNAL_H_
 #define IOMMU_INTERNAL_H_
 
-#include <Base.h>
-#include <Protocol/IoMmu.h>
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 #define MAP_INFO_SIG  SIGNATURE_64 ('M', 'A', 'P', '_', 'I', 'N', 'F', 'O')
 

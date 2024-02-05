@@ -6,10 +6,10 @@
 
 **/
 
-#include <Library/ArmLib.h>
-#include <Library/ArmPlatformLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
 
-#include <Ppi/ArmMpCoreInfo.h>
+#include "edk2-master/ArmPkg/Include/Ppi/ArmMpCoreInfo.h"
 
 ARM_CORE_INFO  mArmPlatformNullMpCoreInfoTable[] = {
   {

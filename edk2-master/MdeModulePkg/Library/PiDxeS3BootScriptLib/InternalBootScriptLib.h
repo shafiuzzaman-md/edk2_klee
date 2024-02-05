@@ -11,28 +11,28 @@
 #ifndef __INTERNAL_BOOT_SCRIPT_LIB__
 #define __INTERNAL_BOOT_SCRIPT_LIB__
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Guid/EventGroup.h>
-#include <Protocol/SmmBase2.h>
-#include <Protocol/DxeSmmReadyToLock.h>
-#include <Protocol/SmmReadyToLock.h>
-#include <Protocol/SmmExitBootServices.h>
-#include <Protocol/SmmLegacyBoot.h>
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmBase2.h"
+#include "edk2-master/MdePkg/Include/Protocol/DxeSmmReadyToLock.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmReadyToLock.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmExitBootServices.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/SmmLegacyBoot.h"
 
-#include <Library/S3BootScriptLib.h>
+#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/SmbusLib.h>
-#include <Library/IoLib.h>
-#include <Library/PciSegmentLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/TimerLib.h>
-#include <Library/UefiLib.h>
-#include <Library/LockBoxLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciSegmentLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
 
 #include "BootScriptInternalFormat.h"
 

@@ -8,8 +8,8 @@
     - PCI Firmware Specification - Revision 3.2, January 26, 2015.
 **/
 
-#include <IndustryStandard/Acpi.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 

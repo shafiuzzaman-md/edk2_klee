@@ -14,7 +14,7 @@
 #ifndef __PEI_GRAPHICS_PPI_H__
 #define __PEI_GRAPHICS_PPI_H__
 
-#include <Protocol/GraphicsOutput.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 #define EFI_PEI_GRAPHICS_PPI_GUID \
   { \

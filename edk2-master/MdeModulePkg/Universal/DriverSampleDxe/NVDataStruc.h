@@ -20,10 +20,10 @@ Revision History:
 #ifndef _NVDATASTRUC_H_
 #define _NVDATASTRUC_H_
 
-#include <Guid/HiiPlatformSetupFormset.h>
-#include <Guid/HiiFormMapMethodGuid.h>
-#include <Guid/DriverSampleHii.h>
-#include <Guid/ZeroGuid.h>
+#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "edk2-master/MdePkg/Include/Guid/HiiFormMapMethodGuid.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/DriverSampleHii.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/ZeroGuid.h"
 
 #define CONFIGURATION_VARSTORE_ID  0x1234
 #define BITS_VARSTORE_ID           0x2345

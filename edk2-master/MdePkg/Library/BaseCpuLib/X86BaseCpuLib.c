@@ -12,8 +12,8 @@
 #include <Register/Intel/Cpuid.h>
 #include <Register/Amd/Cpuid.h>
 
-#include <Library/BaseLib.h>
-#include <Library/CpuLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
 
 /**
   Determine if the standard CPU signature is "AuthenticAMD".

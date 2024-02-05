@@ -107,10 +107,10 @@
  *			during searching etc...
  */
 
-#include <stdio.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
 #if defined(__STDC__) || defined(__USE_PROTOS)
-#include <string.h>
-#include <stdlib.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 #else
 #include <malloc.h>
 #endif

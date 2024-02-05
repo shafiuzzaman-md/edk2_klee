@@ -6,21 +6,21 @@
 
 **/
 
-#include <Uefi.h>
-#include <PiDxe.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
-#include <Protocol/UnicodeCollation.h>
-#include <Protocol/PiPcd.h>
-#include <Protocol/Pcd.h>
-#include <Protocol/PiPcdInfo.h>
-#include <Protocol/PcdInfo.h>
-#include <Protocol/ShellParameters.h>
-#include <Protocol/Shell.h>
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
+#include "edk2-master/MdePkg/Include/Protocol/PiPcd.h"
+#include "edk2-master/MdePkg/Include/Protocol/Pcd.h"
+#include "edk2-master/MdePkg/Include/Protocol/PiPcdInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/PcdInfo.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
 
 //
 // String token ID of help message text.

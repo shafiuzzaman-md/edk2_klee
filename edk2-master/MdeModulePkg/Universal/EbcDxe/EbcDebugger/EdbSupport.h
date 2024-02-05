@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_EDB_SUPPORT_H_
 #define _EFI_EDB_SUPPORT_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 #define EFI_DEBUG_PROMPT_STRING      L"EDB > "
 #define EFI_DEBUG_PROMPT_COLUMN      5

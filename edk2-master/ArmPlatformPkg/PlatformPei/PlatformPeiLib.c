@@ -6,11 +6,11 @@
 
 **/
 
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
-#include <Library/ArmPlatformLib.h>
-#include <Library/HobLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/ArmPlatformPkg/Include/Library/ArmPlatformLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 EFI_STATUS
 EFIAPI

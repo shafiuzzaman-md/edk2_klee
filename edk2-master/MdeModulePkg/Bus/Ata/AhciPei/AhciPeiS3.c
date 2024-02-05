@@ -10,9 +10,9 @@
 
 #include "AhciPei.h"
 
-#include <Guid/S3StorageDeviceInitList.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/S3StorageDeviceInitList.h"
 
-#include <Library/LockBoxLib.h>
+#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
 
 /**
   Collect the ports that need to be enumerated on a controller for S3 phase.

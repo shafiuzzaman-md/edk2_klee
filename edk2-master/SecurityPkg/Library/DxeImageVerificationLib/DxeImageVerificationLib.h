@@ -10,27 +10,27 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __IMAGEVERIFICATIONLIB_H__
 #define __IMAGEVERIFICATIONLIB_H__
 
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseCryptLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/SecurityManagementLib.h>
-#include <Library/PeCoffLib.h>
-#include <Protocol/FirmwareVolume2.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/VariableWrite.h>
-#include <Guid/ImageAuthentication.h>
-#include <Guid/AuthenticatedVariableFormat.h>
-#include <IndustryStandard/PeImage.h>
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SecurityManagementLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/VariableWrite.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "edk2-master/SecurityPkg/Include/Guid/AuthenticatedVariableFormat.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 #define EFI_CERT_TYPE_RSA2048_SHA256_SIZE  256
 #define EFI_CERT_TYPE_RSA2048_SIZE         256

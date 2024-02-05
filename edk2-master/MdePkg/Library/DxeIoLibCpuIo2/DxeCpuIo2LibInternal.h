@@ -11,14 +11,14 @@
 #ifndef _DXE_CPUIO2_LIB_INTERNAL_H_
 #define _DXE_CPUIO2_LIB_INTERNAL_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/CpuIo2.h>
+#include "edk2-master/MdePkg/Include/Protocol/CpuIo2.h"
 
-#include <Library/IoLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Reads registers in the EFI CPU I/O space.

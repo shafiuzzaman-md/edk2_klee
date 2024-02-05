@@ -10,8 +10,8 @@
 #ifndef QEMU_LOADER_H_
 #define QEMU_LOADER_H_
 
-#include <Base.h>
-#include <IndustryStandard/QemuFwCfg.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuFwCfg.h"
 
 //
 // The types and the documentation reflects the SeaBIOS interface.

@@ -6,28 +6,28 @@
 
 **/
 
-#include <PiDxe.h>
-#include <Protocol/FirmwareManagement.h>
-#include <Guid/CapsuleReport.h>
-#include <Guid/FmpCapsule.h>
-#include <Guid/CapsuleVendor.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "edk2-master/MdePkg/Include/Guid/CapsuleReport.h"
+#include "edk2-master/MdePkg/Include/Guid/FmpCapsule.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/CapsuleVendor.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiLib.h>
-#include <Library/PcdLib.h>
-#include <Library/HobLib.h>
-#include <Library/PrintLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/CapsuleLib.h>
-#include <Library/VariablePolicyHelperLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/VariablePolicyHelperLib.h"
 
-#include <IndustryStandard/WindowsUxCapsule.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/WindowsUxCapsule.h"
 
 /**
   This routine is called to clear CapsuleOnDisk Relocation Info variable.

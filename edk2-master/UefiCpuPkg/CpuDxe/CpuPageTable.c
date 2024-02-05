@@ -8,13 +8,13 @@
 
 **/
 
-#include <Base.h>
-#include <Uefi.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/PrintLib.h>
-#include <Protocol/SmmBase2.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/SmmBase2.h"
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/Msr.h>
 

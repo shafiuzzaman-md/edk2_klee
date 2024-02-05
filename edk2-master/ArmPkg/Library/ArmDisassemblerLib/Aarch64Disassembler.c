@@ -7,10 +7,10 @@
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
-#include <Library/PrintLib.h>
-#include <Library/ArmDisassemblerLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmDisassemblerLib.h"
 
 /**
   Place a disassembly of **OpCodePtr into buffer, and update OpCodePtr to

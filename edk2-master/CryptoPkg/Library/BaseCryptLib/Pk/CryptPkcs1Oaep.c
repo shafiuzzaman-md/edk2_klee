@@ -11,8 +11,8 @@
 #include "InternalCryptLib.h"
 #include <openssl/objects.h>
 #include <openssl/rsa.h>
-#include <openssl/x509.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/x509.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 /**
   Encrypts a blob using PKCS1v2 (RSAES-OAEP) schema. On success, will return the

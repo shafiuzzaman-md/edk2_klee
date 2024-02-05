@@ -9,15 +9,15 @@
 #ifndef _CPU_COMMON_FEATURES_H_
 #define _CPU_COMMON_FEATURES_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseLib.h>
-#include <Library/PcdLib.h>
-#include <Library/DebugLib.h>
-#include <Library/RegisterCpuFeaturesLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/LocalApicLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/RegisterCpuFeaturesLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/LocalApicLib.h"
 
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/Msr.h>

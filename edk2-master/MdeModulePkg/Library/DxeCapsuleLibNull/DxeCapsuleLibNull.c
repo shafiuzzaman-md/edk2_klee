@@ -5,8 +5,8 @@ Copyright (c) 2007 - 2019, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Library/CapsuleLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdeModulePkg/Include/Library/CapsuleLib.h"
 
 /**
   The firmware checks whether the capsule image is supported

@@ -7,9 +7,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/UefiLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 /**
   Retrieves a Unicode string that is the user readable name of the driver.

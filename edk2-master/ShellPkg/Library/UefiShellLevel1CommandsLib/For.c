@@ -8,7 +8,7 @@
 **/
 
 #include "UefiShellLevel1CommandsLib.h"
-#include <Library/PrintLib.h>
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 /**
   Determine if a valid string is a valid number for the 'for' command.

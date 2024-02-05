@@ -6,9 +6,9 @@
 
 **/
 
-#include <PiPei.h>
-#include <Library/DebugLib.h>
-#include <Library/SerialPortLib.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
 
 /**
   Platform initialization.

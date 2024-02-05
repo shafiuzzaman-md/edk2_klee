@@ -10,7 +10,7 @@
 #ifndef __UNIT_TEST_TYPES_H__
 #define __UNIT_TEST_TYPES_H__
 
-#include <Library/UnitTestLib.h>
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
 
 ///
 /// The maximum length of a string stored in the unit test framework

@@ -11,8 +11,8 @@
 #ifndef PRM_H_
 #define PRM_H_
 
-#include <Uefi.h>
-#include <PrmContextBuffer.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/PrmPkg/Include/PrmContextBuffer.h"
 
 #if defined (_MSC_VER)
 #define PRM_EXPORT_API  __declspec(dllexport)

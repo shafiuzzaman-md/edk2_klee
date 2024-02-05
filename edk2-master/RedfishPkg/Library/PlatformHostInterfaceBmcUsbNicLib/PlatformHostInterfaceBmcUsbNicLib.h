@@ -11,26 +11,26 @@
 #ifndef PLATFORM_HOST_INTERFACE_BMC_USB_NIC_LIB_H_
 #define PLATFORM_HOST_INTERFACE_BMC_USB_NIC_LIB_H_
 
-#include <Uefi.h>
-#include <IndustryStandard/Ipmi.h>
-#include <IndustryStandard/IpmiNetFnApp.h>
-#include <IndustryStandard/IpmiNetFnTransport.h>
-#include <IndustryStandard/RedfishHostInterfaceIpmi.h>
-#include <IndustryStandard/SmBios.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/IpmiLib.h>
-#include <Library/IpmiCommandLib.h>
-#include <Library/RedfishHostInterfaceLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/RedfishDebugLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Ipmi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnApp.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/IpmiNetFnTransport.h"
+#include "edk2-master/RedfishPkg/Include/IndustryStandard/RedfishHostInterfaceIpmi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/IpmiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/IpmiCommandLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishHostInterfaceLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/RedfishPkg/Include/Library/RedfishDebugLib.h"
 
-#include <Protocol/SimpleNetwork.h>
-#include <Protocol/UsbIo.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleNetwork.h"
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
 
 #define BMC_USB_NIC_HOST_INTERFASCE_READINESS_GUID \
     {  \

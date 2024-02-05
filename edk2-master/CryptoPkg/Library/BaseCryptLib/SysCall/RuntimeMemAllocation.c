@@ -7,11 +7,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <CrtLibSupport.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Guid/EventGroup.h>
+#include "edk2-master/CryptoPkg/Library/Include/CrtLibSupport.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
 // ----------------------------------------------------------------
 // Initial version. Needs further optimizations.

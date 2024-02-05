@@ -8,7 +8,7 @@
 #ifndef _EDKII_ATA_AHCI_HOST_CONTROLLER_PPI_H_
 #define _EDKII_ATA_AHCI_HOST_CONTROLLER_PPI_H_
 
-#include <Protocol/DevicePath.h>
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 ///
 /// Global ID for the EDKII_ATA_AHCI_HOST_CONTROLLER_PPI.

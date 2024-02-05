@@ -6,12 +6,12 @@
 **/
 
 #include "UefiShellCommandLib.h"
-#include <Library/DevicePathLib.h>
-#include <Library/SortLib.h>
-#include <Library/UefiLib.h>
-#include <Protocol/UsbIo.h>
-#include <Protocol/BlockIo.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
 typedef enum {
   MTDTypeUnknown,

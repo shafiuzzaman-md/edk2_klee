@@ -15,20 +15,20 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "PiDxe.h"
 
-#include <Guid/FileSystemInfo.h>
-#include <Guid/FileInfo.h>
-#include <Guid/FileSystemVolumeLabelInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileSystemInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "edk2-master/MdePkg/Include/Guid/FileSystemVolumeLabelInfo.h"
 
-#include <Protocol/EmuIoThunk.h>
-#include <Protocol/SimpleFileSystem.h>
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include <Library/DebugLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 extern EFI_DRIVER_BINDING_PROTOCOL   gEmuSimpleFileSystemDriverBinding;
 extern EFI_COMPONENT_NAME_PROTOCOL   gEmuSimpleFileSystemComponentName;

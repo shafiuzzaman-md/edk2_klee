@@ -10,10 +10,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _IP_IO_H_
 #define _IP_IO_H_
 
-#include <Protocol/Ip4.h>
-#include <Protocol/Ip6.h>
+#include "edk2-master/MdePkg/Include/Protocol/Ip4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
 
-#include <Library/NetLib.h>
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 //
 // type and code define for ICMP protocol error

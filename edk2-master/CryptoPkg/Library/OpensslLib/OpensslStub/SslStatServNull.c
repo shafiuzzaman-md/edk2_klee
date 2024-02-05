@@ -11,7 +11,7 @@
 #include "internal/constant_time.h"
 #include "internal/cryptlib.h"
 #include <openssl/core_names.h>
-#include <openssl/asn1t.h>
+#include "edk2-master/CryptoPkg/Library/OpensslLib/OpensslGen/include/openssl/asn1t.h"
 
 int
 ossl_statem_server_read_transition (

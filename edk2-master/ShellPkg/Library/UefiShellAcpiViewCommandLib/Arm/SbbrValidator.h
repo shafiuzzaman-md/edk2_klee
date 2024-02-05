@@ -18,7 +18,7 @@
 #ifndef SBBR_VALIDATOR_H_
 #define SBBR_VALIDATOR_H_
 
-#include <IndustryStandard/Acpi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 /**
   Arm SBBR specification versions.

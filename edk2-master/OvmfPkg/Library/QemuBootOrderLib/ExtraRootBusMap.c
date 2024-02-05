@@ -6,13 +6,13 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Library/DebugLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/OrderedCollectionLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/PciRootBridgeIo.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 #include "ExtraRootBusMap.h"
 

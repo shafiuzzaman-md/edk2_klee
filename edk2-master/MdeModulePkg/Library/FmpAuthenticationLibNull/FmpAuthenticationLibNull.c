@@ -6,10 +6,10 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/DebugLib.h>
-#include <Library/FmpAuthenticationLib.h>
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/FmpAuthenticationLib.h"
 
 /**
   The function is used to do the authentication for FMP capsule based upon

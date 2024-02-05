@@ -8,19 +8,19 @@
 
 **/
 
-#include <Uefi.h>
-#include <Library/UefiLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeCoffGetEntryPointLib.h>
-#include <Library/PrintLib.h>
-#include <Library/ArmDisassemblerLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/UefiBootServicesTableLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/ArmPkg/Include/Library/ArmDisassemblerLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
-#include <Guid/DebugImageInfoTable.h>
-#include <Protocol/DebugSupport.h>
-#include <Protocol/LoadedImage.h>
+#include "edk2-master/MdePkg/Include/Guid/DebugImageInfoTable.h"
+#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
 
 //
 // Maximum number of characters to print to serial (UINT8s) and to console if

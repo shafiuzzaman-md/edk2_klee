@@ -6,5 +6,5 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <LibFdtSupport.h>
+#include "edk2-master/MdePkg/Library/BaseFdtLib/LibFdtSupport.h"
 

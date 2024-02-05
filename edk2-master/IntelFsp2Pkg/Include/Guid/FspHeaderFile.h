@@ -7,7 +7,7 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
 #ifndef __FSP_HEADER_FILE_H__
 #define __FSP_HEADER_FILE_H__

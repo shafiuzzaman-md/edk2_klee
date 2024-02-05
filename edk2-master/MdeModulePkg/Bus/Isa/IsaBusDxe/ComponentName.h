@@ -9,9 +9,9 @@
 #ifndef _ISA_BUS_COMPONENT_NAME_H_
 #define _ISA_BUS_COMPONENT_NAME_H_
 
-#include <Uefi.h>
-#include <Protocol/ComponentName.h>
-#include <Protocol/ComponentName2.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
 
 extern EFI_COMPONENT_NAME_PROTOCOL   gIsaBusComponentName;
 extern EFI_COMPONENT_NAME2_PROTOCOL  gIsaBusComponentName2;

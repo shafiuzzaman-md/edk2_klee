@@ -8,10 +8,10 @@
 #ifndef FDT_HW_INFO_PARSER_H_
 #define FDT_HW_INFO_PARSER_H_
 
-#include <FdtHwInfoParserInclude.h>
+#include "edk2-master/DynamicTablesPkg/Library/FdtHwInfoParserLib/FdtHwInfoParserInclude.h"
 
-#include <ConfigurationManagerObject.h>
-#include <Library/HwInfoParserLib.h>
+#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
+#include "edk2-master/DynamicTablesPkg/Include/Library/HwInfoParserLib.h"
 
 #include "FdtUtility.h"
 

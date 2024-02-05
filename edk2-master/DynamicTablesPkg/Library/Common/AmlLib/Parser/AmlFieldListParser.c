@@ -6,14 +6,14 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Parser/AmlFieldListParser.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlFieldListParser.h"
 
-#include <AmlCoreInterface.h>
-#include <AmlDbgPrint/AmlDbgPrint.h>
-#include <Parser/AmlMethodParser.h>
-#include <Parser/AmlParser.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDbgPrint/AmlDbgPrint.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlMethodParser.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Parser/AmlParser.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
 
 /** Parse a field element.
 

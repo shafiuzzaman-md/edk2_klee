@@ -9,8 +9,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/SafeIntLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SafeIntLib.h"
 
 /**
   INT32 -> UINTN conversion

@@ -6,9 +6,9 @@
 
  **/
 
-#include <Base.h>
-#include <PiDxe.h>
-#include <Library/VirtNorFlashPlatformLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "edk2-master/OvmfPkg/Include/Library/VirtNorFlashPlatformLib.h"
 
 #define QEMU_NOR_BLOCK_SIZE  SIZE_256KB
 

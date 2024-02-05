@@ -11,7 +11,7 @@
 #ifndef _RESET_UTILITY_LIB_H_
 #define _RESET_UTILITY_LIB_H_
 
-#include <Uefi/UefiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
 
 /**
   This is a shorthand helper function to reset with reset type and a subtype

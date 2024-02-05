@@ -13,6 +13,6 @@
 #ifndef _VIRTIO_H_
 #define _VIRTIO_H_
 
-#include <IndustryStandard/Virtio10.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio10.h"
 
 #endif // _VIRTIO_H_

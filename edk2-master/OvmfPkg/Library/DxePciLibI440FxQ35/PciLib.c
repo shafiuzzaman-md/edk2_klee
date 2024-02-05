@@ -15,14 +15,14 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <IndustryStandard/Q35MchIch9.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
 
-#include <Library/PciLib.h>
-#include <Library/PciCf8Lib.h>
-#include <Library/PciExpressLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/PciLib.h"
+#include "edk2-master/MdePkg/Include/Library/PciCf8Lib.h"
+#include "edk2-master/MdePkg/Include/Library/PciExpressLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 STATIC BOOLEAN  mRunningOnQ35;
 

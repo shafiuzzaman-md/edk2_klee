@@ -9,7 +9,7 @@
 #ifndef _MEMORY_PROFILE_LIB_H_
 #define _MEMORY_PROFILE_LIB_H_
 
-#include <Guid/MemoryProfile.h>
+#include "edk2-master/MdeModulePkg/Include/Guid/MemoryProfile.h"
 
 /**
   Record memory profile of multilevel caller.

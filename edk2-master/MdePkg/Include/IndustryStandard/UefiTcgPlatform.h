@@ -10,9 +10,9 @@
 #ifndef __UEFI_TCG_PLATFORM_H__
 #define __UEFI_TCG_PLATFORM_H__
 
-#include <IndustryStandard/Tpm12.h>
-#include <IndustryStandard/Tpm20.h>
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Standard event types

@@ -6,8 +6,8 @@
 
 **/
 
-#include <Base.h>
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 /**
   Executes an infinite loop.

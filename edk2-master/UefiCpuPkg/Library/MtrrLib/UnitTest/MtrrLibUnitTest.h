@@ -8,26 +8,26 @@
 #ifndef _MTRR_SUPPORT_H_
 #define _MTRR_SUPPORT_H_
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdarg.h>
-#include <stddef.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stddef.h"
 #include <setjmp.h>
 #include <cmocka.h>
-#include <time.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/time.h"
 
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UnitTestLib.h>
-#include <Library/MtrrLib.h>
-#include <Library/UnitTestHostBaseLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UnitTestLib.h"
+#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "edk2-master/MdePkg/Test/UnitTest/Include/Library/UnitTestHostBaseLib.h"
 
-#include <Register/ArchitecturalMsr.h>
-#include <Register/Cpuid.h>
-#include <Register/Msr.h>
+#include "edk2-master/UefiCpuPkg/Include/Register/ArchitecturalMsr.h"
+#include "edk2-master/UefiCpuPkg/Include/Register/Cpuid.h"
+#include "edk2-master/UefiCpuPkg/Include/Register/Msr.h"
 
 #define UNIT_TEST_APP_NAME     "MtrrLib Unit Tests"
 #define UNIT_TEST_APP_VERSION  "1.0"

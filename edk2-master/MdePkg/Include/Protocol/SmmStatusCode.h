@@ -11,7 +11,7 @@
 #ifndef _SMM_STATUS_CODE_H__
 #define _SMM_STATUS_CODE_H__
 
-#include <Protocol/MmStatusCode.h>
+#include "edk2-master/MdePkg/Include/Protocol/MmStatusCode.h"
 
 #define EFI_SMM_STATUS_CODE_PROTOCOL_GUID  EFI_MM_STATUS_CODE_PROTOCOL_GUID
 

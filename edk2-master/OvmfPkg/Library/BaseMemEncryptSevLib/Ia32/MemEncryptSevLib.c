@@ -8,12 +8,12 @@
 
 **/
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemEncryptSevLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
 #include <Register/Amd/Cpuid.h>
 #include <Register/Amd/Msr.h>
-#include <Register/Cpuid.h>
+#include "edk2-master/UefiCpuPkg/Include/Register/Cpuid.h"
 
 /**
   This function clears memory encryption bit for the memory region specified by

@@ -11,7 +11,7 @@
 #ifndef PCI_HOST_BRIDGE_H_
 #define PCI_HOST_BRIDGE_H_
 
-#include <UniversalPayload/PciRootBridges.h>
+#include "edk2-master/MdeModulePkg/Include/UniversalPayload/PciRootBridges.h"
 
 typedef struct {
   ACPI_HID_DEVICE_PATH        AcpiDevicePath;

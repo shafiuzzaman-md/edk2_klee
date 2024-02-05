@@ -11,14 +11,14 @@
 #ifndef __CAPSULE_UPDATE_POLICY_DXE_H__
 #define __CAPSULE_UPDATE_POLICY_DXE_H__
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/CapsuleUpdatePolicy.h>
+#include "edk2-master/FmpDevicePkg/PrivateInclude/Protocol/CapsuleUpdatePolicy.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/CapsuleUpdatePolicyLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/FmpDevicePkg/Include/Library/CapsuleUpdatePolicyLib.h"
 
 /**
   Determine if the system power state supports a capsule update.

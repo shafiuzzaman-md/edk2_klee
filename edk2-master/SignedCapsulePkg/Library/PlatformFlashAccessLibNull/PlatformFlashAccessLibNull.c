@@ -6,10 +6,10 @@
 
 **/
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Library/BaseMemoryLib.h>
-#include <Library/PlatformFlashAccessLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/SignedCapsulePkg/Include/Library/PlatformFlashAccessLib.h"
 
 UINT64  mInternalFdAddress;
 

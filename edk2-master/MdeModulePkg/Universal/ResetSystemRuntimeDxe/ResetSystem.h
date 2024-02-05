@@ -9,24 +9,24 @@
 #ifndef _RESET_SYSTEM_H_
 #define _RESET_SYSTEM_H_
 
-#include <PiDxe.h>
+#include "edk2-master/MdePkg/Include/PiDxe.h"
 
-#include <Protocol/Reset.h>
-#include <Protocol/ResetNotification.h>
-#include <Protocol/PlatformSpecificResetFilter.h>
-#include <Protocol/PlatformSpecificResetHandler.h>
-#include <Guid/CapsuleVendor.h>
+#include "edk2-master/MdePkg/Include/Protocol/Reset.h"
+#include "edk2-master/MdePkg/Include/Protocol/ResetNotification.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/PlatformSpecificResetFilter.h"
+#include "edk2-master/MdeModulePkg/Include/Protocol/PlatformSpecificResetHandler.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/CapsuleVendor.h"
 
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/UefiLib.h>
-#include <Library/UefiDriverEntryPoint.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/ResetSystemLib.h>
-#include <Library/ReportStatusCodeLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "edk2-master/MdePkg/Include/Library/ReportStatusCodeLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 //
 // The maximum recurstion depth to ResetSystem() by reset notification handlers

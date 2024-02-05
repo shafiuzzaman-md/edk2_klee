@@ -10,30 +10,30 @@
 #ifndef _UEFI_SHELL_LIB_INTERNAL_H_
 #define _UEFI_SHELL_LIB_INTERNAL_H_
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/FileInfo.h>
+#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
 
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/EfiShellInterface.h>
-#include <Protocol/EfiShellEnvironment2.h>
-#include <Protocol/Shell.h>
-#include <Protocol/ShellParameters.h>
-#include <Protocol/UnicodeCollation.h>
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/ShellPkg/Include/Protocol/EfiShellInterface.h"
+#include "edk2-master/ShellPkg/Include/Protocol/EfiShellEnvironment2.h"
+#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
+#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
+#include "edk2-master/MdePkg/Include/Protocol/UnicodeCollation.h"
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/DevicePathLib.h>
-#include <Library/PcdLib.h>
-#include <Library/FileHandleLib.h>
-#include <Library/PrintLib.h>
-#include <Library/UefiLib.h>
-#include <Library/HiiLib.h>
-#include <Library/ShellLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdePkg/Include/Library/FileHandleLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
 
 typedef struct  {
   EFI_SHELL_GET_FILE_INFO        GetFileInfo;

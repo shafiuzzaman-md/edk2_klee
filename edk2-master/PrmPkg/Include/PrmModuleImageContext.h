@@ -10,10 +10,10 @@
 #ifndef PRM_MODULE_IMAGE_CONTEXT_H_
 #define PRM_MODULE_IMAGE_CONTEXT_H_
 
-#include <IndustryStandard/PeImage.h>
-#include <Library/PeCoffLib.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
-#include <PrmExportDescriptor.h>
+#include "edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
 
 #pragma pack(push, 1)
 

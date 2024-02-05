@@ -6,17 +6,17 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include <PiPei.h>
-#include <Ppi/ReadOnlyVariable2.h>
+#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "edk2-master/MdePkg/Include/Ppi/ReadOnlyVariable2.h"
 
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PeiServicesLib.h>
-#include <Library/PcdLib.h>
-#include <Library/Tpm12DeviceLib.h>
-#include <Library/Tpm12CommandLib.h>
-#include <IndustryStandard/Tpm12.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12DeviceLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/Tpm12CommandLib.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
 
 #include "Tcg2ConfigNvData.h"
 #include "Tcg2Internal.h"

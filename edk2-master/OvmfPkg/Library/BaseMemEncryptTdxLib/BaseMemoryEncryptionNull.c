@@ -11,10 +11,10 @@
 
 **/
 
-#include <Uefi.h>
-#include <Uefi/UefiBaseType.h>
-#include <Library/BaseLib.h>
-#include <Library/MemEncryptTdxLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptTdxLib.h"
 
 /**
   Returns boolean to indicate whether to indicate which, if any, memory encryption is enabled

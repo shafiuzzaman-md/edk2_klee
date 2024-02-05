@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __RESET_SYSTEM_LIB_H__
 #define __RESET_SYSTEM_LIB_H__
 
-#include <Uefi/UefiBaseType.h>
-#include <Uefi/UefiMultiPhase.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
 
 /**
   This function causes a system-wide reset (cold reset), in which

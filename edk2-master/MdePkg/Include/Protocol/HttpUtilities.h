@@ -13,7 +13,7 @@
 #ifndef __EFI_HTTP_UTILITIES_PROTOCOL_H__
 #define __EFI_HTTP_UTILITIES_PROTOCOL_H__
 
-#include <Protocol/Http.h>
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
 
 #define EFI_HTTP_UTILITIES_PROTOCOL_GUID  \
   { \

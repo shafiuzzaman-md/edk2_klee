@@ -4,14 +4,14 @@
   Copyright (c) Microsoft Corporation.
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
-#include <stddef.h>
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdio.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdarg.h"
+#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stddef.h"
 #include <setjmp.h>
 #include <cmocka.h>
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 /**
   Disable any applicable protection against variable 'PK'. The implementation

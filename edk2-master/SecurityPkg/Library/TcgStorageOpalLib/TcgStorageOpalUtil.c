@@ -5,10 +5,10 @@ Copyright (c) 2016 - 2018, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include <Uefi.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/TcgStorageOpalLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/SecurityPkg/Include/Library/TcgStorageOpalLib.h"
 #include "TcgStorageOpalLibInternal.h"
 
 #define OPAL_MSID_LENGTH  128

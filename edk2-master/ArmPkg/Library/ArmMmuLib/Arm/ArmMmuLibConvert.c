@@ -7,11 +7,11 @@
 *
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Library/ArmLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
 
-#include <Chipset/ArmV7.h>
+#include "edk2-master/ArmPkg/Include/Chipset/ArmV7.h"
 
 UINT32
 ConvertSectionAttributesToPageAttributes (

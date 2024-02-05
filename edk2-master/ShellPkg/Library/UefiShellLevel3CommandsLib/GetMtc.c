@@ -9,7 +9,7 @@
 
 #include "UefiShellLevel3CommandsLib.h"
 
-#include <Library/ShellLib.h>
+#include "edk2-master/ShellPkg/Include/Library/ShellLib.h"
 
 /**
   Function for 'getmtc' command.

@@ -9,12 +9,12 @@
 #ifndef __BASE_SYNCHRONIZATION_LIB_INTERNALS__
 #define __BASE_SYNCHRONIZATION_LIB_INTERNALS__
 
-#include <Base.h>
-#include <Library/SynchronizationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/TimerLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /**
   Performs an atomic increment of an 32-bit unsigned integer.

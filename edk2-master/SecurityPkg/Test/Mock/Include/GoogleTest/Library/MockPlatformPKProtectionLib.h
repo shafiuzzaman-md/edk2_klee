@@ -8,11 +8,11 @@
 #ifndef MOCK_PLATFORM_PK_PROTECTION_LIB_H_
 #define MOCK_PLATFORM_PK_PROTECTION_LIB_H_
 
-#include <Library/GoogleTestLib.h>
-#include <Library/FunctionMockLib.h>
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
 extern "C" {
-  #include <Uefi.h>
-  #include <Library/PlatformPKProtectionLib.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/SecurityPkg/Include/Library/PlatformPKProtectionLib.h"
 }
 
 struct MockPlatformPKProtectionLib {

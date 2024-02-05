@@ -11,7 +11,7 @@
 #ifndef _PLATFORM_SPECIFIC_RESET_HANDLER_PPI_H_
 #define _PLATFORM_SPECIFIC_RESET_HANDLER_PPI_H_
 
-#include <Protocol/ResetNotification.h>
+#include "edk2-master/MdePkg/Include/Protocol/ResetNotification.h"
 
 #define EDKII_PLATFORM_SPECIFIC_RESET_HANDLER_PPI_GUID \
   { 0x75cf14ae, 0x3441, 0x49dc, { 0xaa, 0x10, 0xbb, 0x35, 0xa7, 0xba, 0x8b, 0xab } }

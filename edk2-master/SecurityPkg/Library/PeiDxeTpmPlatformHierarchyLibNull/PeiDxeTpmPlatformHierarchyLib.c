@@ -8,7 +8,7 @@
 
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
 /**
   A NULL implementation of ConfigureTpmPlatformHierarchy.

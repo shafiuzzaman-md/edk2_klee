@@ -7,8 +7,8 @@
 
 **/
 
-#include <Base.h>
-#include <PiPei.h>
+#include "edk2-master/MdePkg/Include/Base.h"
+#include "edk2-master/MdePkg/Include/PiPei.h"
 
 /**
   In Tdx guest, some information need to be passed from host VMM to guest

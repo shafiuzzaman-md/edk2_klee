@@ -11,19 +11,19 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <Uefi.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
 
-#include <Guid/QemuKernelLoaderFsMedia.h>
-#include <Library/DebugLib.h>
-#include <Library/LoadLinuxLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/PrintLib.h>
-#include <Library/QemuFwCfgLib.h>
-#include <Library/QemuLoadImageLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Protocol/DevicePath.h>
-#include <Protocol/LoadedImage.h>
-#include <Protocol/OvmfLoadedX86LinuxKernel.h>
+#include "edk2-master/OvmfPkg/Include/Guid/QemuKernelLoaderFsMedia.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/LoadLinuxLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/QemuLoadImageLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdePkg/Include/Protocol/LoadedImage.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/OvmfLoadedX86LinuxKernel.h"
 
 #pragma pack (1)
 typedef struct {

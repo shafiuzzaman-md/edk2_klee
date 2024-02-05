@@ -7,8 +7,8 @@
 
 **/
 
-#include <Library/ArmSmcLib.h>
-#include <Library/BaseMemoryLib.h>
+#include "edk2-master/ArmPkg/Include/Library/ArmSmcLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 /** Triggers an SMC call with 3 arguments.
 

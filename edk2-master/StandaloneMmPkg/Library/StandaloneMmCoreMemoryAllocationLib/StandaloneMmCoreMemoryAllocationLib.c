@@ -8,13 +8,13 @@
 
 **/
 
-#include <PiMm.h>
+#include "edk2-master/MdePkg/Include/PiMm.h"
 
-#include <Guid/MmramMemoryReserve.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/HobLib.h>
+#include "edk2-master/StandaloneMmPkg/Include/Guid/MmramMemoryReserve.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/HobLib.h"
 #include "StandaloneMmCoreMemoryAllocationServices.h"
 
 EFI_MM_SYSTEM_TABLE  *gMmst = NULL;

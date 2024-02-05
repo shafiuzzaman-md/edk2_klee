@@ -10,20 +10,20 @@
 
 **/
 
-#include <IndustryStandard/Q35MchIch9.h>
-#include <Library/BaseLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DebugLib.h>
-#include <Library/DxeServicesTableLib.h>
-#include <Library/MemEncryptSevLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/UefiBootServicesTableLib.h>
-#include <Guid/ConfidentialComputingSevSnpBlob.h>
-#include <Library/PcdLib.h>
-#include <Pi/PrePiDxeCis.h>
-#include <Protocol/SevMemoryAcceptance.h>
-#include <Protocol/MemoryAccept.h>
-#include <Uefi/UefiSpec.h>
+#include "edk2-master/OvmfPkg/Include/IndustryStandard/Q35MchIch9.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "edk2-master/OvmfPkg/Include/Library/MemEncryptSevLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/OvmfPkg/Include/Guid/ConfidentialComputingSevSnpBlob.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "edk2-master/MdeModulePkg/Include/Pi/PrePiDxeCis.h"
+#include "edk2-master/OvmfPkg/Include/Protocol/SevMemoryAcceptance.h"
+#include "edk2-master/MdePkg/Include/Protocol/MemoryAccept.h"
+#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 // Present, initialized, tested bits defined in MdeModulePkg/Core/Dxe/DxeMain.h
 #define EFI_MEMORY_INTERNAL_MASK  0x0700000000000000ULL

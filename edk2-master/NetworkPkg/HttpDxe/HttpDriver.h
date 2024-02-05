@@ -11,54 +11,54 @@
 #ifndef __EFI_HTTP_DRIVER_H__
 #define __EFI_HTTP_DRIVER_H__
 
-#include <Uefi.h>
-#include <IndustryStandard/Http11.h>
+#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "edk2-master/MdePkg/Include/IndustryStandard/Http11.h"
 
 //
 // Libraries
 //
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/MemoryAllocationLib.h>
-#include <Library/BaseLib.h>
-#include <Library/UefiLib.h>
-#include <Library/DebugLib.h>
-#include <Library/NetLib.h>
-#include <Library/HttpLib.h>
-#include <Library/DpcLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/HttpLib.h"
+#include "edk2-master/NetworkPkg/Include/Library/DpcLib.h"
 
 //
 // UEFI Driver Model Protocols
 //
-#include <Protocol/DriverBinding.h>
-#include <Protocol/ServiceBinding.h>
-#include <Protocol/ComponentName2.h>
-#include <Protocol/ComponentName.h>
+#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
 
 //
 // Consumed Protocols
 //
-#include <Protocol/HttpUtilities.h>
-#include <Protocol/Tcp4.h>
-#include <Protocol/Tcp6.h>
-#include <Protocol/Dns4.h>
-#include <Protocol/Dns6.h>
-#include <Protocol/Ip4Config2.h>
-#include <Protocol/Ip6Config.h>
-#include <Protocol/Tls.h>
-#include <Protocol/TlsConfig.h>
-#include <Protocol/HttpCallback.h>
+#include "edk2-master/MdePkg/Include/Protocol/HttpUtilities.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tcp6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dns4.h"
+#include "edk2-master/MdePkg/Include/Protocol/Dns6.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip4Config2.h"
+#include "edk2-master/MdePkg/Include/Protocol/Ip6Config.h"
+#include "edk2-master/MdePkg/Include/Protocol/Tls.h"
+#include "edk2-master/MdePkg/Include/Protocol/TlsConfig.h"
+#include "edk2-master/NetworkPkg/Include/Protocol/HttpCallback.h"
 
-#include <Guid/ImageAuthentication.h>
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
 //
 // Produced Protocols
 //
-#include <Protocol/Http.h>
+#include "edk2-master/MdePkg/Include/Protocol/Http.h"
 
-#include <Guid/TlsAuthentication.h>
-#include <Guid/HttpTlsCipherList.h>
+#include "edk2-master/NetworkPkg/Include/Guid/TlsAuthentication.h"
+#include "edk2-master/NetworkPkg/Include/Guid/HttpTlsCipherList.h"
 
-#include <IndustryStandard/Tls1.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/Tls1.h"
 
 //
 // Driver Version

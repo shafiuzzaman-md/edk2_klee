@@ -6,14 +6,14 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include <AmlNodeDefines.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
 
-#include <AmlCoreInterface.h>
-#include <ResourceData/AmlResourceData.h>
-#include <String/AmlString.h>
-#include <Tree/AmlNode.h>
-#include <Tree/AmlTree.h>
-#include <Utils/AmlUtility.h>
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlCoreInterface.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/String/AmlString.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlNode.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Tree/AmlTree.h"
+#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Utils/AmlUtility.h"
 
 /** Returns the tree node type (Root/Object/Data).
 

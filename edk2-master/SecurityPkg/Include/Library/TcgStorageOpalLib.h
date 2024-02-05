@@ -29,10 +29,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _OPAL_CORE_H_
 #define _OPAL_CORE_H_
 
-#include <IndustryStandard/TcgStorageOpal.h>
+#include "edk2-master/MdePkg/Include/IndustryStandard/TcgStorageOpal.h"
 
-#include <Library/TcgStorageCoreLib.h>
-#include <Protocol/StorageSecurityCommand.h>
+#include "edk2-master/SecurityPkg/Include/Library/TcgStorageCoreLib.h"
+#include "edk2-master/MdePkg/Include/Protocol/StorageSecurityCommand.h"
 
 #pragma pack(1)
 

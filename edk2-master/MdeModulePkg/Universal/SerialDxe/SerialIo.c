@@ -9,14 +9,14 @@
 
 **/
 
-#include <Library/UefiBootServicesTableLib.h>
-#include <Library/SerialPortLib.h>
-#include <Library/DebugLib.h>
-#include <Library/PcdLib.h>
+#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
 
-#include <Protocol/SerialIo.h>
-#include <Protocol/DevicePath.h>
-#include <Guid/SerialPortLibVendor.h>
+#include "edk2-master/MdePkg/Include/Protocol/SerialIo.h"
+#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "edk2-master/MdeModulePkg/Include/Guid/SerialPortLibVendor.h"
 
 typedef struct {
   VENDOR_DEVICE_PATH          Guid;

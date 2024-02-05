@@ -11,12 +11,12 @@
 #ifndef ARM_LIB_H_
 #define ARM_LIB_H_
 
-#include <Uefi/UefiBaseType.h>
+#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #ifdef MDE_CPU_ARM
-  #include <Chipset/ArmV7.h>
+#include "edk2-master/ArmPkg/Include/Chipset/ArmV7.h"
 #elif defined (MDE_CPU_AARCH64)
-  #include <Chipset/AArch64.h>
+#include "edk2-master/ArmPkg/Include/Chipset/AArch64.h"
 #else
   #error "Unknown chipset."
 #endif

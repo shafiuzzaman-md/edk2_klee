@@ -9,16 +9,16 @@
 **/
 
 #include "UefiShellDebug1CommandsLib.h"
-#include <Protocol/PciRootBridgeIo.h>
-#include <Protocol/HiiDatabase.h>
-#include <Guid/Acpi.h>
-#include <Guid/Mps.h>
-#include <Guid/SmBios.h>
-#include <Guid/MemoryAttributesTable.h>
-#include <Guid/RtPropertiesTable.h>
-#include <Guid/SystemResourceTable.h>
-#include <Guid/DebugImageInfoTable.h>
-#include <Guid/ImageAuthentication.h>
+#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
+#include "edk2-master/MdePkg/Include/Guid/Mps.h"
+#include "edk2-master/MdePkg/Include/Guid/SmBios.h"
+#include "edk2-master/MdePkg/Include/Guid/MemoryAttributesTable.h"
+#include "edk2-master/MdePkg/Include/Guid/RtPropertiesTable.h"
+#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "edk2-master/MdePkg/Include/Guid/DebugImageInfoTable.h"
+#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
 
 /**
   Make a printable character.

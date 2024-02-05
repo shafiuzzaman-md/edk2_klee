@@ -6,18 +6,18 @@
 
 **/
 
-#include <Base.h>
+#include "edk2-master/MdePkg/Include/Base.h"
 
-#include <Protocol/EmuThunk.h>
-#include <Protocol/EmuGraphicsWindow.h>
-#include <Protocol/EmuBlockIo.h>
-#include <Protocol/SimpleFileSystem.h>
-#include <Protocol/EmuThread.h>
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuGraphicsWindow.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuBlockIo.h"
+#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThread.h"
 
-#include <Library/BaseLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
 #include <Library/DevicePathToTextLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Library/DevicePathLib.h>
+#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
 
 /**
   Converts a Vendor device path structure to its string representative.

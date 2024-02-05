@@ -9,10 +9,10 @@
 #ifndef __ANDROID_FASTBOOT_APP_H__
 #define __ANDROID_FASTBOOT_APP_H__
 
-#include <Library/AndroidBootImgLib.h>
-#include <Library/BaseLib.h>
-#include <Library/DebugLib.h>
-#include <Library/MemoryAllocationLib.h>
+#include "edk2-master/EmbeddedPkg/Include/Library/AndroidBootImgLib.h"
+#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 #define BOOTIMG_KERNEL_ARGS_SIZE  512
 
