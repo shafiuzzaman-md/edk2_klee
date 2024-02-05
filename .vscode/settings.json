@@ -1,3 +1,13 @@
 {
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "processorbind.h": "c",
+        "uefibasetype.h": "c",
+        "uefimultiphase.h": "c",
+        "uefispec.h": "c",
+        "componentname.h": "c",
+        "pci22.h": "c",
+        "graphicsoutput.h": "c",
+        "pcibus.h": "c"
+    }
 }
