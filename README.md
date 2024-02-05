@@ -5,8 +5,10 @@ This updates headerfiles of edk2 source to prepare it for running klee on it.
 ```
 python3 process_headers.py <path_to_edk2>
 ```
-The eek2 source (edk2-master) in this repo has already been updated using the script
+The edk2 source (edk2-master) in this repo has already been updated using the script
 
+
+## Build and Run
 ```
 python3 generate_stubs.py
 
