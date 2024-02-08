@@ -11,7 +11,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMM_FIRMWARE_VOLUME_BLOCK_H__
 #define __SMM_FIRMWARE_VOLUME_BLOCK_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
 
 #define EFI_SMM_FIRMWARE_VOLUME_BLOCK_PROTOCOL_GUID \
   { \

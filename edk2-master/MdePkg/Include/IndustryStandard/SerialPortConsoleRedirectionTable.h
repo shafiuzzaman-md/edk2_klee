@@ -11,7 +11,7 @@
 #ifndef _SERIAL_PORT_CONSOLE_REDIRECTION_TABLE_H_
 #define _SERIAL_PORT_CONSOLE_REDIRECTION_TABLE_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 //
 // Ensure proper structure formats

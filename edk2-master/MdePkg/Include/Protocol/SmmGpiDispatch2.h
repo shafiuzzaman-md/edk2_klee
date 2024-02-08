@@ -20,8 +20,8 @@
 #ifndef _SMM_GPI_DISPATCH2_H_
 #define _SMM_GPI_DISPATCH2_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/MmGpiDispatch.h"
-#include "edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmGpiDispatch.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
 
 #define EFI_SMM_GPI_DISPATCH2_PROTOCOL_GUID  EFI_MM_GPI_DISPATCH_PROTOCOL_GUID
 ///

@@ -10,7 +10,7 @@
 #ifndef PRM_DATA_BUFFER_H_
 #define PRM_DATA_BUFFER_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 #define PRM_DATA_BUFFER_HEADER_SIGNATURE  SIGNATURE_32('P','R','M','D')
 

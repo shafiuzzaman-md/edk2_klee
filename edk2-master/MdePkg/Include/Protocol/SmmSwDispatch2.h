@@ -12,8 +12,8 @@
 #ifndef _SMM_SW_DISPATCH2_H_
 #define _SMM_SW_DISPATCH2_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/MmSwDispatch.h"
-#include "edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmSwDispatch.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
 
 #define EFI_SMM_SW_DISPATCH2_PROTOCOL_GUID  EFI_MM_SW_DISPATCH_PROTOCOL_GUID
 

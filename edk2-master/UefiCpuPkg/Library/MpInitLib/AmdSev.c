@@ -8,7 +8,7 @@
 **/
 
 #include "MpLib.h"
-#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 
 /**
   Get Protected mode code segment with 16-bit default addressing

@@ -9,7 +9,7 @@
 #ifndef AML_CPC_INFO_H_
 #define AML_CPC_INFO_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #pragma pack(1)
 

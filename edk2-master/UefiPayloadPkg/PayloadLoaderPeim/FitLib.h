@@ -7,9 +7,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef FIT_LIB_H_
 #define FIT_LIB_H_
 
-#include "edk2-master/MdePkg/Include/PiPei.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/FdtLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/FdtLib.h"
 
 typedef struct {
   UINT64    RelocateType;

@@ -7,7 +7,7 @@
 **/
 
 #include "PiSmmCore.h"
-#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
 
 #define TRUNCATE_TO_PAGES(a)  ((a) >> EFI_PAGE_SHIFT)
 

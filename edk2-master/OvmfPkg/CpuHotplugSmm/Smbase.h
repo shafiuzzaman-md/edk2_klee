@@ -9,8 +9,8 @@
 #ifndef SMBASE_H_
 #define SMBASE_H_
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
 
 #include "ApicId.h"            // APIC_ID
 

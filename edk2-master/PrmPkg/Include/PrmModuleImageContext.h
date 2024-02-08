@@ -10,10 +10,10 @@
 #ifndef PRM_MODULE_IMAGE_CONTEXT_H_
 #define PRM_MODULE_IMAGE_CONTEXT_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
-#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeCoffLib.h"
 
-#include "edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
 
 #pragma pack(push, 1)
 

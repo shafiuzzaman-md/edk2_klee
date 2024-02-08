@@ -8,8 +8,8 @@
 **/
 
 #include "CpuDxe.h"
-#include "edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
-#include "edk2-master/MdePkg/Include/Guid/VectorHandoffTable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/VectorHandoffTable.h"
 
 EFI_STATUS
 InitializeExceptions (

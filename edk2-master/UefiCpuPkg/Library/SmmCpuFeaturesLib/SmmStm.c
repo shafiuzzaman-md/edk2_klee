@@ -6,16 +6,16 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiMm.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
-#include "edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiMm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/TpmMeasurementLib.h"
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/ArchitecturalMsr.h>
 #include <Register/Intel/SmramSaveStateMap.h>
 
-#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MpService.h"
 
 #include "CpuFeaturesLib.h"
 #include "SmmStm.h"

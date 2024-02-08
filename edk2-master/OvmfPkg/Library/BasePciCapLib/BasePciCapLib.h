@@ -9,9 +9,9 @@
 #ifndef __BASE_PCI_CAP_LIB_H__
 #define __BASE_PCI_CAP_LIB_H__
 
-#include "edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/OrderedCollectionLib.h"
 
-#include "edk2-master/OvmfPkg/Include/Library/PciCapLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Library/PciCapLib.h"
 
 //
 // Structure that uniquely identifies a capability instance and serves as key

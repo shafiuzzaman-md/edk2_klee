@@ -8,8 +8,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 #include "VirtioGpu.h"
 

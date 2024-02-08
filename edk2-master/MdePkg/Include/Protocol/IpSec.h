@@ -21,7 +21,7 @@
 #ifndef __EFI_IPSEC_PROTOCOL_H__
 #define __EFI_IPSEC_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/IpSecConfig.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/IpSecConfig.h"
 
 #define EFI_IPSEC_PROTOCOL_GUID \
   { \

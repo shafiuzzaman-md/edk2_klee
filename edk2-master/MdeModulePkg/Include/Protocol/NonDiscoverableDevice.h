@@ -10,7 +10,7 @@
 #ifndef __NON_DISCOVERABLE_DEVICE_H__
 #define __NON_DISCOVERABLE_DEVICE_H__
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #define EDKII_NON_DISCOVERABLE_DEVICE_PROTOCOL_GUID \
   { 0x0d51905b, 0xb77e, 0x452a, {0xa2, 0xc0, 0xec, 0xa0, 0xcc, 0x8d, 0x51, 0x4a } }

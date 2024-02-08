@@ -9,7 +9,7 @@
 #ifndef __EDKII_CRYPTO_PPI_H__
 #define __EDKII_CRYPTO_PPI_H__
 
-#include "edk2-master/CryptoPkg/Private/Protocol/Crypto.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/CryptoPkg/Private/Protocol/Crypto.h"
 
 ///
 /// EDK II Crypto PPI is identical to EDK II Crypto Protocol

@@ -10,8 +10,8 @@
 #ifndef _FSP_API_H_
 #define _FSP_API_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiStatusCode.h"
-#include "edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiStatusCode.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
 
 ///
 /// FSP Reset Status code

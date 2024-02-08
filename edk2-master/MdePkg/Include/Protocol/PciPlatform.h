@@ -20,7 +20,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 /// This file must be included because the EFI_PCI_PLATFORM_PROTOCOL uses
 /// EFI_PCI_HOST_BRIDGE_RESOURCE_ALLOCATION_PHASE.
 ///
-#include "edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/PciHostBridgeResourceAllocation.h"
 
 ///
 /// Global ID for the EFI_PCI_PLATFORM_PROTOCOL.

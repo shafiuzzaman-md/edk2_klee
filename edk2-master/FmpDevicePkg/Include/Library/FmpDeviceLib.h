@@ -12,7 +12,7 @@
 #ifndef __FMP_DEVICE_LIB__
 #define __FMP_DEVICE_LIB__
 
-#include "edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/FirmwareManagement.h"
 
 /**
   Callback function that installs a Firmware Management Protocol instance onto

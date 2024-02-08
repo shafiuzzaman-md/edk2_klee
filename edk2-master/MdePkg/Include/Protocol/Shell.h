@@ -10,7 +10,7 @@
 #ifndef __EFI_SHELL_PROTOCOL_H__
 #define __EFI_SHELL_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/FileInfo.h"
 
 #define EFI_SHELL_PROTOCOL_GUID \
   { \

@@ -9,12 +9,12 @@
 #ifndef __BASE_SYNCHRONIZATION_LIB_INTERNALS__
 #define __BASE_SYNCHRONIZATION_LIB_INTERNALS__
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/TimerLib.h"
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/TimerLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
 
 /**
   Performs an atomic increment of an 32-bit unsigned integer.

@@ -12,7 +12,7 @@
 #ifndef _GRAPHICS_INFO_HOB_GUID_H_
 #define _GRAPHICS_INFO_HOB_GUID_H_
 
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 #define EFI_PEI_GRAPHICS_INFO_HOB_GUID \
   { \

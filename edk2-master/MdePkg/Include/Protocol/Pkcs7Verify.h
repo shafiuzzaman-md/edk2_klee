@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_PKCS7_VERIFY_PROTOCOL_H__
 #define __EFI_PKCS7_VERIFY_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
 
 ///
 /// Global ID for the PKCS7 Verification Protocol

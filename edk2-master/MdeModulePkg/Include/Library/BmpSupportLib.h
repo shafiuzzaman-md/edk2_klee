@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __BMP_SUPPORT_LIB_H__
 #define __BMP_SUPPORT_LIB_H__
 
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 /**
   Translate a *.BMP graphics image to a GOP blt buffer. If a NULL Blt buffer

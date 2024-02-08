@@ -10,9 +10,9 @@
 #ifndef AML_H_
 #define AML_H_
 
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDefines.h"
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/AcpiAml.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlDefines.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/AcpiAml.h"
 
 #if !defined (MDEPKG_NDEBUG)
 #define AML_OPCODE_DEF(str, OpCode)  str, OpCode

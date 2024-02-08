@@ -15,9 +15,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCG2_PP_VENDOR_LIB_H_
 #define _TCG2_PP_VENDOR_LIB_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
-#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
-#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
 
 /**
   Check and execute the requested physical presence command.

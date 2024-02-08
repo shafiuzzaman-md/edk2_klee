@@ -9,7 +9,7 @@
 #ifndef ARM_MP_CORE_INFO_PPI_H_
 #define ARM_MP_CORE_INFO_PPI_H_
 
-#include "edk2-master/ArmPkg/Include/Guid/ArmMpCoreInfo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Guid/ArmMpCoreInfo.h"
 
 #define ARM_MP_CORE_INFO_PPI_GUID  \
   { 0x6847cc74, 0xe9ec, 0x4f8f, {0xa2, 0x9d, 0xab, 0x44, 0xe7, 0x54, 0xa8, 0xfc} }

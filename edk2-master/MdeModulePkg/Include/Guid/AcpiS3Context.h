@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ACPI_S3_DATA_H_
 #define _ACPI_S3_DATA_H_
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 #define SMM_S3_RESUME_SMM_32  SIGNATURE_64 ('S','M','M','S','3','_','3','2')
 #define SMM_S3_RESUME_SMM_64  SIGNATURE_64 ('S','M','M','S','3','_','6','4')

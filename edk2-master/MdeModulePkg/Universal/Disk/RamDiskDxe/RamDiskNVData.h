@@ -10,8 +10,8 @@
 #ifndef _RAM_DISK_NVDATA_H_
 #define _RAM_DISK_NVDATA_H_
 
-#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
-#include "edk2-master/MdeModulePkg/Include/Guid/RamDiskHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Guid/RamDiskHii.h"
 
 #define MAIN_FORM_ID                     0x1000
 #define MAIN_GOTO_FILE_EXPLORER_ID       0x1001

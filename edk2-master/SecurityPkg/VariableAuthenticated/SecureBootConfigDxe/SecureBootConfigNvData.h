@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SECUREBOOT_CONFIG_NV_DATA_H__
 #define __SECUREBOOT_CONFIG_NV_DATA_H__
 
-#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
-#include "edk2-master/SecurityPkg/Include/Guid/SecureBootConfigHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/SecureBootConfigHii.h"
 
 //
 // Used by VFR for form or button identification

@@ -10,22 +10,22 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EBC_INT_H_
 #define _EBC_INT_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
-#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
-#include "edk2-master/MdePkg/Include/Protocol/Ebc.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/EbcVmTest.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/EbcSimpleDebugger.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/PeCoffImageEmulator.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Ebc.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/EbcVmTest.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/EbcSimpleDebugger.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/PeCoffImageEmulator.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/CacheMaintenanceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 
 extern VM_CONTEXT  *mVmPtr;
 

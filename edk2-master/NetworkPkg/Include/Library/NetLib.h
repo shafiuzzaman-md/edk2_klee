@@ -10,10 +10,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _NET_LIB_H_
 #define _NET_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Ip6.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
 
 typedef UINT32  IP4_ADDR;
 typedef UINT32  TCP_SEQNO;

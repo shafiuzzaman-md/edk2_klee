@@ -12,10 +12,10 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmAccess2.h"
 
 #include "SmramInternal.h"
 

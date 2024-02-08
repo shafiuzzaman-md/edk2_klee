@@ -7,8 +7,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
 
 /**
   Save I/O write to boot script

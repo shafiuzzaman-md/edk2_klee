@@ -10,8 +10,8 @@
 #ifndef __CPU_EXCEPTION_HANDLER_LIB_H__
 #define __CPU_EXCEPTION_HANDLER_LIB_H__
 
-#include "edk2-master/MdePkg/Include/Ppi/VectorHandoffInfo.h"
-#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Ppi/VectorHandoffInfo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Cpu.h"
 
 /**
   Initializes all CPU exceptions entries and provides the default exception handlers.

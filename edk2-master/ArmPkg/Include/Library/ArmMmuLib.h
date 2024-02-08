@@ -9,9 +9,9 @@
 #ifndef ARM_MMU_LIB_H_
 #define ARM_MMU_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
-#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Library/ArmLib.h"
 
 EFI_STATUS
 EFIAPI

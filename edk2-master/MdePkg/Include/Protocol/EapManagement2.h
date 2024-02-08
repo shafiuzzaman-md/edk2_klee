@@ -12,7 +12,7 @@
 #ifndef __EFI_EAP_MANAGEMENT2_PROTOCOL_H__
 #define __EFI_EAP_MANAGEMENT2_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/EapManagement.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/EapManagement.h"
 
 ///
 /// This EFI EAP Management2 protocol provides the ability to configure and control EAPOL

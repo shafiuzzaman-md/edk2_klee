@@ -15,12 +15,12 @@
  { 0x5CF32E0B, 0x8EDF, 0x2E44, { 0x9C, 0xDA, 0x93, 0x20, 0x5E, 0x99, 0xEC, 0x1C } }
 
 // neded for things like EFI_TIME_CAPABILITIES
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
-#include "edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeCoffExtraActionLib.h"
 
-#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
 
 typedef struct {
   VENDOR_DEVICE_PATH    VendorDevicePath;

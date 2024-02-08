@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "TcgConfigImpl.h"
-#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
 
 /**
   The entry point for Tcg configuration driver.

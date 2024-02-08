@@ -10,9 +10,9 @@
 #ifndef PRM_CONTEXT_BUFFER_LIB_H_
 #define PRM_CONTEXT_BUFFER_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/PrmPkg/Include/PrmContextBuffer.h"
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmContextBuffer.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 typedef enum {
   ///

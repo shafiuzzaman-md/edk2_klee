@@ -11,7 +11,7 @@
 #ifndef UNIVERSAL_PAYLOAD_SERIAL_PORT_INFO_H_
 #define UNIVERSAL_PAYLOAD_SERIAL_PORT_INFO_H_
 
-#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
 
 #pragma pack(1)
 typedef struct {

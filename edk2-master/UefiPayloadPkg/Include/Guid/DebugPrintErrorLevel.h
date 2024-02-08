@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef UEFI_PAYLOAD_DEBUG_PRINT_ERROR_LEVEL_H_
 #define UEFI_PAYLOAD_DEBUG_PRINT_ERROR_LEVEL_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
 
 #pragma pack (1)
 //

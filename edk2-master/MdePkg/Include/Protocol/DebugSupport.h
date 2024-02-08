@@ -16,7 +16,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __DEBUG_SUPPORT_H__
 #define __DEBUG_SUPPORT_H__
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
 
 typedef struct _EFI_DEBUG_SUPPORT_PROTOCOL EFI_DEBUG_SUPPORT_PROTOCOL;
 

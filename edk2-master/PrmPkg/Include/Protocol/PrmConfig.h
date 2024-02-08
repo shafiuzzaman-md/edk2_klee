@@ -14,8 +14,8 @@
 #ifndef PRM_CONFIG_H_
 #define PRM_CONFIG_H_
 
-#include "edk2-master/PrmPkg/Include/PrmContextBuffer.h"
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmContextBuffer.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 typedef struct _PRM_CONFIG_PROTOCOL PRM_CONFIG_PROTOCOL;
 

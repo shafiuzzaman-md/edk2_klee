@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _VARIABLE_CHECK_LIB_H_
 #define _VARIABLE_CHECK_LIB_H_
 
-#include "edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
 
 typedef enum {
   VarCheckRequestReserved0 = 0,

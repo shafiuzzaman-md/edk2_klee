@@ -12,7 +12,7 @@
 #ifndef __EFI_SUPPLICANT_PROTOCOL_H__
 #define __EFI_SUPPLICANT_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/WiFi2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/WiFi2.h"
 
 ///
 /// The EFI Supplicant Service Binding Protocol is used to locate EFI

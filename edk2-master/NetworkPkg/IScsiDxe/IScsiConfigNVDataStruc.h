@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ISCSI_NVDATASTRUC_H_
 #define _ISCSI_NVDATASTRUC_H_
 
-#include "edk2-master/NetworkPkg/Include/Guid/IScsiConfigHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Guid/IScsiConfigHii.h"
 
 #define VAR_EQ_TEST_NAME           0x100
 #define CONFIGURATION_VARSTORE_ID  0x6666

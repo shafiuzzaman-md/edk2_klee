@@ -10,7 +10,7 @@
 #ifndef RNGDXE_INTERNALS_H_
 #define RNGDXE_INTERNALS_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/Rng.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Rng.h"
 
 //
 // Array containing the validated Rng algorithm.

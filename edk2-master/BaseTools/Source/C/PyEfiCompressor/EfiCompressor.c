@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include <Python.h>
-#include "edk2-master/BaseTools/Source/C/Common/Decompress.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Common/Decompress.h"
 
 /*
  UefiDecompress(data_buffer, size, original_size)

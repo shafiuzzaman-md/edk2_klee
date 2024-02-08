@@ -10,29 +10,29 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG2_SMM_H__
 #define __TCG2_SMM_H__
 
-#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiMm.h"
 
-#include "edk2-master/MdePkg/Include/Guid/MemoryOverwriteControl.h"
-#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
-#include "edk2-master/SecurityPkg/Include/Guid/TpmNvsMm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/MemoryOverwriteControl.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/TpmNvsMm.h"
 
-#include "edk2-master/MdePkg/Include/Protocol/MmReadyToLock.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
-#include "edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmReadyToLock.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/SmmVariable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Tcg2Protocol.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
-#include "edk2-master/MdePkg/Include/Library/IoLib.h"
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/TpmPtp.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/TpmPtp.h"
 
 //
 // The definition for TCG MOR

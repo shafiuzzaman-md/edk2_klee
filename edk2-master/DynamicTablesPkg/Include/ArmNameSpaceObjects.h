@@ -13,8 +13,8 @@
 #ifndef ARM_NAMESPACE_OBJECTS_H_
 #define ARM_NAMESPACE_OBJECTS_H_
 
-#include "edk2-master/DynamicTablesPkg/Include/AcpiObjects.h"
-#include "edk2-master/DynamicTablesPkg/Include/StandardNameSpaceObjects.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/AcpiObjects.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/StandardNameSpaceObjects.h"
 
 #pragma pack(1)
 

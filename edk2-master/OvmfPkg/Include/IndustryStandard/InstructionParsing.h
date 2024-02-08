@@ -9,8 +9,8 @@
 #ifndef __INSTRUCTION_PARSING_H__
 #define __INSTRUCTION_PARSING_H__
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Instruction REX prefix definition

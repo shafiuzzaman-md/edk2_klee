@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __AUTHENTICATED_VARIABLE_FORMAT_H__
 #define __AUTHENTICATED_VARIABLE_FORMAT_H__
 
-#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
 
 #define EFI_SECURE_BOOT_ENABLE_DISABLE \
   { 0xf0a30bc7, 0xaf08, 0x4556, { 0x99, 0xc4, 0x0, 0x10, 0x9, 0xc9, 0x3a, 0x44 } }

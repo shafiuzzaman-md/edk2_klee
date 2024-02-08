@@ -9,8 +9,8 @@
 #ifndef AML_METHOD_PARSER_H_
 #define AML_METHOD_PARSER_H_
 
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Stream/AmlStream.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Stream/AmlStream.h"
 
 /** AML namespace reference node.
 

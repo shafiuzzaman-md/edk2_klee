@@ -12,8 +12,8 @@
 #ifndef __SPI_IO_PROTOCOL_H__
 #define __SPI_IO_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/LegacySpiController.h"
-#include "edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/LegacySpiController.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
 
 typedef struct _EFI_SPI_IO_PROTOCOL EFI_SPI_IO_PROTOCOL;
 

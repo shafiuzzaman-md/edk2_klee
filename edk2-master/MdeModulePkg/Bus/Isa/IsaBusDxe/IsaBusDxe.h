@@ -10,15 +10,15 @@
 #ifndef _ISA_BUS_H_
 #define _ISA_BUS_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdePkg/Include/Protocol/IsaHc.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/DevicePathLib.h"
-#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
-#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/IsaHc.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DevicePathLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
 typedef struct {
   UINT32                          Signature;

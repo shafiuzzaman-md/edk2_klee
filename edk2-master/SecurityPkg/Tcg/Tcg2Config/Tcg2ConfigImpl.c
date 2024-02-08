@@ -9,14 +9,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "Tcg2ConfigImpl.h"
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
-#include "edk2-master/MdePkg/Include/Library/IoLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tpm2CommandLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/IoLib.h"
 
-#include "edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/TpmInstance.h"
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/TpmPtp.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/TpmPtp.h"
 
 #define EFI_TCG2_EVENT_LOG_FORMAT_ALL  (EFI_TCG2_EVENT_LOG_FORMAT_TCG_1_2 | EFI_TCG2_EVENT_LOG_FORMAT_TCG_2)
 

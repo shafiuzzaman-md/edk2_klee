@@ -10,9 +10,9 @@
 
 #include "NvmExpressPei.h"
 
-#include "edk2-master/MdeModulePkg/Include/Guid/S3StorageDeviceInitList.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Guid/S3StorageDeviceInitList.h"
 
-#include "edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/LockBoxLib.h"
 
 /**
   Determine if a specific NVM Express controller can be skipped for S3 phase.

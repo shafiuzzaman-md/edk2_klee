@@ -12,8 +12,8 @@
 #ifndef OEM_MISC_LIB_H_
 #define OEM_MISC_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
 typedef enum {
   CpuCacheL1 = 1,

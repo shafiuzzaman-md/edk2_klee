@@ -9,25 +9,25 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __UGA_H_
 #define __UGA_H_
 
-#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
 
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimplePointer.h"
-#include "edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
-#include "edk2-master/EmulatorPkg/Include/Protocol/EmuGraphicsWindow.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimplePointer.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmulatorPkg/Include/Protocol/EmuIoThunk.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmulatorPkg/Include/Protocol/EmuGraphicsWindow.h"
 
-#include "edk2-master/MdePkg/Include/Guid/EventGroup.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/EventGroup.h"
 
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
-#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/EmulatorPkg/Include/Library/KeyMapLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmulatorPkg/Include/Library/KeyMapLib.h"
 
 #define MAX_Q  256
 

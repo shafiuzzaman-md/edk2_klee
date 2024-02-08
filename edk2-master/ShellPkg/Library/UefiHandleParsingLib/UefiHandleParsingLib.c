@@ -11,8 +11,8 @@
 #include "UefiHandleParsingLib.h"
 #include "IndustryStandard/Acpi10.h"
 #include "IndustryStandard/Pci.h"
-#include "edk2-master/MdePkg/Include/PiDxe.h"
-#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/FirmwareVolume2.h"
 
 EFI_HII_HANDLE     mHandleParsingHiiHandle = NULL;
 HANDLE_INDEX_LIST  mHandleList             = {

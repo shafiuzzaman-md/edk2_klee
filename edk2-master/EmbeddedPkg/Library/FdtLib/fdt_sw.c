@@ -50,8 +50,8 @@
  */
 #include "libfdt_env.h"
 
-#include "edk2-master/EmbeddedPkg/Include/fdt.h"
-#include "edk2-master/EmbeddedPkg/Include/libfdt.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/fdt.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/libfdt.h"
 
 #include "libfdt_internal.h"
 

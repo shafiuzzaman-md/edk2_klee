@@ -6,8 +6,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/TcgPpVendorLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/TcgPpVendorLib.h"
 
 /**
   Check and execute the requested physical presence command.

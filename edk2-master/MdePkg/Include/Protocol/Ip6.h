@@ -21,7 +21,7 @@
 #ifndef __EFI_IP6_PROTOCOL_H__
 #define __EFI_IP6_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
 
 #define EFI_IP6_SERVICE_BINDING_PROTOCOL_GUID \
   { \

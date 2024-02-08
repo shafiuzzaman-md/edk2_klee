@@ -20,10 +20,10 @@
 #ifndef DXE_TPM_MEASURE_BOOT_LIB_VALIDATION_
 #define DXE_TPM_MEASURE_BOOT_LIB_VALIDATION_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
-#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
 /**
   This function will validate the EFI_PARTITION_TABLE_HEADER structure is safe to parse

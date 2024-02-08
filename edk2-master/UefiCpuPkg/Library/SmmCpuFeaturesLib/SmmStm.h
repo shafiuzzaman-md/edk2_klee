@@ -9,7 +9,7 @@
 #ifndef _SMM_STM_H_
 #define _SMM_STM_H_
 
-#include "edk2-master/UefiCpuPkg/Include/Protocol/SmMonitorInit.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Protocol/SmMonitorInit.h"
 
 /**
 

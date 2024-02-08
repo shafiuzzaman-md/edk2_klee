@@ -12,9 +12,9 @@
 #ifndef SERIAL_PORT_SBI_COMMON_H_
 #define SERIAL_PORT_SBI_COMMON_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/MdePkg/Include/Library/SerialPortLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SerialPortLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseRiscVSbiLib.h"
 
 BOOLEAN
 SbiImplementsDbcn (

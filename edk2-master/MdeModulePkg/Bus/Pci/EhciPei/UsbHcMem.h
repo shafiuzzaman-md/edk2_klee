@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_EHCI_MEM_H_
 #define _EFI_EHCI_MEM_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
 
 #define USB_HC_BIT(a)  ((UINTN)(1 << (a)))
 

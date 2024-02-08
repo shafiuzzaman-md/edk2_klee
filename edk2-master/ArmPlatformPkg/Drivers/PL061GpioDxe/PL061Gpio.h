@@ -9,7 +9,7 @@
 #ifndef __PL061_GPIO_H__
 #define __PL061_GPIO_H__
 
-#include "edk2-master/EmbeddedPkg/Include/Protocol/EmbeddedGpio.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/Protocol/EmbeddedGpio.h"
 
 // PL061 GPIO Registers
 #define PL061_GPIO_DATA_REG_OFFSET  ((UINTN) 0x000)

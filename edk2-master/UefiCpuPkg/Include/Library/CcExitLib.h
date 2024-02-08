@@ -15,7 +15,7 @@
 #ifndef CC_EXIT_LIB_H_
 #define CC_EXIT_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 #include <Register/Amd/Ghcb.h>
 
 #define VE_EXCEPTION  20

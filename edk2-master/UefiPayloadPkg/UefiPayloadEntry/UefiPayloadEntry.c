@@ -5,7 +5,7 @@
 
 **/
 
-#include "edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Guid/MemoryTypeInformation.h"
 #include "UefiPayloadEntry.h"
 
 STATIC UINT32  mTopOfLowerUsableDram = 0;

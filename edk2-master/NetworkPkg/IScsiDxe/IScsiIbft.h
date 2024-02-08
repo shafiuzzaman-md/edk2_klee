@@ -9,10 +9,10 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ISCSI_IBFT_H_
 #define _ISCSI_IBFT_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/IScsiBootFirmwareTable.h"
-#include "edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
-#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/IScsiBootFirmwareTable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/AcpiTable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/PciIo.h"
 
 #define IBFT_TABLE_VAR_NAME  L"iBFT"
 #define IBFT_MAX_SIZE        4096

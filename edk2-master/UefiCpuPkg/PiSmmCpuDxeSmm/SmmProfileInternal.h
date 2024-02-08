@@ -10,11 +10,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SMM_PROFILE_INTERNAL_H_
 #define _SMM_PROFILE_INTERNAL_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/SmmReadyToLock.h"
-#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Library/CpuLib.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmReadyToLock.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DxeServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/CpuLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #include "SmmProfileArch.h"
 

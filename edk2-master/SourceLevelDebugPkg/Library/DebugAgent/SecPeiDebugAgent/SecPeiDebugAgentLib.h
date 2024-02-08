@@ -9,10 +9,10 @@
 #ifndef _SEC_CORE_DEBUG_AGENT_LIB_H_
 #define _SEC_CORE_DEBUG_AGENT_LIB_H_
 
-#include "edk2-master/MdePkg/Include/PiPei.h"
-#include "edk2-master/MdePkg/Include/Ppi/MemoryDiscovered.h"
-#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
-#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Ppi/MemoryDiscovered.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
 #include "DebugAgent.h"
 
 typedef struct {

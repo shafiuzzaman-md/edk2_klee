@@ -12,8 +12,8 @@
 #ifndef ARM_SCMI_CLOCK2_PROTOCOL_H_
 #define ARM_SCMI_CLOCK2_PROTOCOL_H_
 
-#include "edk2-master/ArmPkg/Include/Protocol/ArmScmi.h"
-#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiClockProtocol.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Protocol/ArmScmi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Protocol/ArmScmiClockProtocol.h"
 
 #define ARM_SCMI_CLOCK2_PROTOCOL_GUID  {\
   0xb8d8caf2, 0x9e94, 0x462c, { 0xa8, 0x34, 0x6c, 0x99, 0xfc, 0x05, 0xef, 0xcf } \

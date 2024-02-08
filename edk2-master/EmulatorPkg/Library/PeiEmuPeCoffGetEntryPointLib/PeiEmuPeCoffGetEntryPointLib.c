@@ -7,13 +7,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "PiPei.h"
-#include "edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
-#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeCoffGetEntryPointLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/PeImage.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include "edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
-#include "edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmulatorPkg/Include/Ppi/EmuThunk.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmulatorPkg/Include/Protocol/EmuThunk.h"
 
 /**
   Retrieves and returns a pointer to the entry point to a PE/COFF image that has been loaded

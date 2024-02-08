@@ -9,8 +9,8 @@
 #ifndef _VIRTIO_1_0_DXE_H_
 #define _VIRTIO_1_0_DXE_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/PciIo.h"
-#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/PciIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
 
 #define VIRTIO_1_0_SIGNATURE  SIGNATURE_32 ('V', 'I', 'O', '1')
 

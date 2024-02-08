@@ -6,8 +6,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiPei.h"
-#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 #include "CpuExceptionCommon.h"
 
 CONST UINTN  mDoFarReturnFlag = 0;

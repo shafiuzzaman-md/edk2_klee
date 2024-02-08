@@ -15,8 +15,8 @@
 
 #include <IndustryStandard/Xen/memory.h>
 
-#include "edk2-master/OvmfPkg/Include/Library/XenHypercallLib.h"
-#include "edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Library/XenHypercallLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SynchronizationLib.h"
 
 #include "GrantTable.h"
 

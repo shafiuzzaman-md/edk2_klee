@@ -6,9 +6,9 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiMm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiMm.h"
 
-#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
 
 /**
   Returns the first protocol instance that matches the given protocol.

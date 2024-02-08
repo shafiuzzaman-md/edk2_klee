@@ -9,9 +9,9 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TCG_CONFIG_NV_DATA_H__
 #define __TCG_CONFIG_NV_DATA_H__
 
-#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
-#include "edk2-master/SecurityPkg/Include/Guid/PhysicalPresenceData.h"
-#include "edk2-master/SecurityPkg/Include/Guid/TcgConfigHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/PhysicalPresenceData.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/TcgConfigHii.h"
 
 #define TCG_CONFIGURATION_VARSTORE_ID  0x0001
 #define TCG_CONFIGURATION_FORM_ID      0x0001

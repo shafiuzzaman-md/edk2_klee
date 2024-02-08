@@ -6,7 +6,7 @@
 
 **/
 
-#include "edk2-master/MdeModulePkg/Include/Library/SmmCorePlatformHookLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/SmmCorePlatformHookLib.h"
 
 /**
   Performs platform specific tasks before invoking registered SMI handlers.

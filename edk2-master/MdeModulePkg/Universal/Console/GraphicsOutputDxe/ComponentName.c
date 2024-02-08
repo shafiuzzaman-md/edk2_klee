@@ -7,8 +7,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiDxe.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 extern EFI_COMPONENT_NAME_PROTOCOL   mGraphicsOutputComponentName;
 extern EFI_COMPONENT_NAME2_PROTOCOL  mGraphicsOutputComponentName2;

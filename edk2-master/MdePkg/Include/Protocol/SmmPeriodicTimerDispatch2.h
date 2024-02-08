@@ -15,8 +15,8 @@
 #ifndef _SMM_PERIODIC_TIMER_DISPATCH2_H_
 #define _SMM_PERIODIC_TIMER_DISPATCH2_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
-#include "edk2-master/MdePkg/Include/Protocol/MmPeriodicTimerDispatch.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmPeriodicTimerDispatch.h"
 
 #define EFI_SMM_PERIODIC_TIMER_DISPATCH2_PROTOCOL_GUID  EFI_MM_PERIODIC_TIMER_DISPATCH_PROTOCOL_GUID
 

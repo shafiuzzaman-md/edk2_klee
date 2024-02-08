@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TCG_STORAGE_CORE_H_
 #define _TCG_STORAGE_CORE_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
 
 #pragma pack(1)
 

@@ -10,7 +10,7 @@
 #ifndef __QEMU_FLASH_H__
 #define __QEMU_FLASH_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/FirmwareVolumeBlock.h"
 
 extern UINT8  *mFlashBase;
 

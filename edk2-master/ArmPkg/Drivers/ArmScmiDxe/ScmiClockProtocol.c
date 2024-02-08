@@ -9,11 +9,11 @@
     DEN0056A_System_Control_and_Management_Interface.pdf
 **/
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiClockProtocol.h"
-#include "edk2-master/ArmPkg/Include/Protocol/ArmScmiClock2Protocol.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Protocol/ArmScmiClockProtocol.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Protocol/ArmScmiClock2Protocol.h"
 
 #include "ArmScmiClockProtocolPrivate.h"
 #include "ScmiPrivate.h"

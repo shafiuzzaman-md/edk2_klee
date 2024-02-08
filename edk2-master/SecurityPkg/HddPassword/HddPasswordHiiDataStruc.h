@@ -10,7 +10,7 @@
 #ifndef _HDD_PASSWORD_HII_DATASTRUC_H_
 #define _HDD_PASSWORD_HII_DATASTRUC_H_
 
-#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
 
 #define HDD_PASSWORD_CONFIG_GUID \
   { \

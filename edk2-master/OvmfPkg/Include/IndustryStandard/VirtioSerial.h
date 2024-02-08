@@ -10,8 +10,8 @@
 #ifndef _VIRTIO_SERIAL_H_
 #define _VIRTIO_SERIAL_H_
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio095.h"
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio10.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/Virtio095.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/Virtio10.h"
 
 //
 // Device Configuration

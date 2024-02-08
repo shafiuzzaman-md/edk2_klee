@@ -12,11 +12,11 @@
 #ifndef _VIRTIO_SCSI_DXE_H_
 #define _VIRTIO_SCSI_DXE_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
-#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
-#include "edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ScsiPassThruExt.h"
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 //
 // This driver supports 2-byte target identifiers and 4-byte LUN identifiers.

@@ -13,7 +13,7 @@
 #ifndef __FW_CFG_S3_LIB__
 #define __FW_CFG_S3_LIB__
 
-#include "edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
 
 /**
   Determine if S3 support is explicitly enabled.

@@ -9,8 +9,8 @@
 #include "BaseIoLibIntrinsicInternal.h"
 #include "IoLibSev.h"
 #include "IoLibTdx.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/MdePkg/Include/Library/TdxLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/TdxLib.h"
 
 /**
   Reads an 8-bit I/O port fifo into a block of memory.

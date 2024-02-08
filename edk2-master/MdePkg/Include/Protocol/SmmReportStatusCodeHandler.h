@@ -12,7 +12,7 @@
 #ifndef __SMM_REPORT_STATUS_CODE_HANDLER_PROTOCOL_H__
 #define __SMM_REPORT_STATUS_CODE_HANDLER_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/MmReportStatusCodeHandler.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmReportStatusCodeHandler.h"
 
 #define EFI_SMM_RSC_HANDLER_PROTOCOL_GUID  EFI_MM_RSC_HANDLER_PROTOCOL_GUID
 

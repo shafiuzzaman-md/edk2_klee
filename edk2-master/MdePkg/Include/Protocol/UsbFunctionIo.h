@@ -22,7 +22,7 @@
 #ifndef __USB_FUNCTION_IO_H__
 #define __USB_FUNCTION_IO_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/UsbIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/UsbIo.h"
 
 #define EFI_USBFN_IO_PROTOCOL_GUID \
     { \

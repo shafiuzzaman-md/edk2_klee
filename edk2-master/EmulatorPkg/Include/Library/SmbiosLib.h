@@ -12,8 +12,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SMBIOS_LIB_H__
 #define _SMBIOS_LIB_H__
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
-#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Smbios.h"
 
 ///
 /// Cache copy of the SMBIOS Protocol pointer

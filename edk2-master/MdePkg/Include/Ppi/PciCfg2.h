@@ -15,7 +15,7 @@
 #ifndef __PEI_PCI_CFG2_H__
 #define __PEI_PCI_CFG2_H__
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 #define EFI_PEI_PCI_CFG2_PPI_GUID \
   { 0x57a449a, 0x1fdc, 0x4c06, { 0xbf, 0xc9, 0xf5, 0x3f, 0x6a, 0x99, 0xbb, 0x92 } }

@@ -9,7 +9,7 @@
 #ifndef CONFIDENTIAL_COMPUTING_SEV_SNP_BLOB_H_
 #define CONFIDENTIAL_COMPUTING_SEV_SNP_BLOB_H_
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #define CONFIDENTIAL_COMPUTING_SNP_BLOB_GUID            \
   { 0x067b1f5f,                                         \

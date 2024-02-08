@@ -18,7 +18,7 @@
 #ifndef ARM_FW_TRNG_DEFS_H_
 #define ARM_FW_TRNG_DEFS_H_
 
-#include "edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/IndustryStandard/ArmStdSmc.h"
 
 // Firmware TRNG revision mask and shift
 #define TRNG_REV_MAJOR_MASK   0x7FFF

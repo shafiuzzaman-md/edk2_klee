@@ -21,19 +21,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __UEFI_LIB_H__
 #define __UEFI_LIB_H__
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
-#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
-#include "edk2-master/MdePkg/Include/Protocol/DriverConfiguration.h"
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
-#include "edk2-master/MdePkg/Include/Protocol/DriverDiagnostics.h"
-#include "edk2-master/MdePkg/Include/Protocol/DriverDiagnostics2.h"
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverConfiguration.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverDiagnostics.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverDiagnostics2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
 
 ///
 /// Unicode String Table

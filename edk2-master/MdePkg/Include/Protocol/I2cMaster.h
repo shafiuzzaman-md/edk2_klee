@@ -15,7 +15,7 @@
 #ifndef __I2C_MASTER_H__
 #define __I2C_MASTER_H__
 
-#include "edk2-master/MdePkg/Include/Pi/PiI2c.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiI2c.h"
 
 #define EFI_I2C_MASTER_PROTOCOL_GUID  { 0xcd72881f, 0x45b5, 0x4feb, { 0x98, 0xc8, 0x31, 0x3d, 0xa8, 0x11, 0x74, 0x62 }}
 

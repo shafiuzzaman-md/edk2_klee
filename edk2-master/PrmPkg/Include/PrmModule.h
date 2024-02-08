@@ -10,11 +10,11 @@
 #ifndef PRM_MODULE_H_
 #define PRM_MODULE_H_
 
-#include "edk2-master/PrmPkg/Include/Prm.h"
-#include "edk2-master/PrmPkg/Include/PrmContextBuffer.h"
-#include "edk2-master/PrmPkg/Include/PrmDataBuffer.h"
-#include "edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
-#include "edk2-master/PrmPkg/Include/PrmMmio.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/Prm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmContextBuffer.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmDataBuffer.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmExportDescriptor.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/PrmMmio.h"
 
 /**
   Macro that provides a condensed form of a PRM Handler.

@@ -11,7 +11,7 @@
 #ifndef __FW_CFG_LIB__
 #define __FW_CFG_LIB__
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/QemuFwCfg.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/QemuFwCfg.h"
 
 /**
   Returns a boolean indicating if the firmware configuration interface

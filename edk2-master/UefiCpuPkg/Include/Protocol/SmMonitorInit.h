@@ -9,7 +9,7 @@
 #ifndef _SM_MONITOR_INIT_PROTOCOL_H_
 #define _SM_MONITOR_INIT_PROTOCOL_H_
 
-#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiSmm.h"
 #include <Register/Intel/StmApi.h>
 
 #define EFI_SM_MONITOR_INIT_PROTOCOL_GUID \

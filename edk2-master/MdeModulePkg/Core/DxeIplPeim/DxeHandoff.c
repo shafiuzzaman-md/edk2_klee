@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "DxeIpl.h"
 
-#include "edk2-master/MdeModulePkg/Include/Ppi/MemoryAttribute.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Ppi/MemoryAttribute.h"
 
 /**
    Transfers control to DxeCore.

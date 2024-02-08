@@ -13,9 +13,9 @@
 #ifndef DYNAMIC_TABLE_FACTORY_PROTOCOL_H_
 #define DYNAMIC_TABLE_FACTORY_PROTOCOL_H_
 
-#include "edk2-master/DynamicTablesPkg/Include/AcpiTableGenerator.h"
-#include "edk2-master/DynamicTablesPkg/Include/SmbiosTableGenerator.h"
-#include "edk2-master/DynamicTablesPkg/Include/DeviceTreeTableGenerator.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/AcpiTableGenerator.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/SmbiosTableGenerator.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/DeviceTreeTableGenerator.h"
 
 /** This macro defines the Dynamic Table Factory Protocol GUID.
 

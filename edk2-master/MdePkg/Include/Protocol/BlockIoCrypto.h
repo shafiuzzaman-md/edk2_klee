@@ -13,7 +13,7 @@
 #ifndef __BLOCK_IO_CRYPTO_H__
 #define __BLOCK_IO_CRYPTO_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/BlockIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/BlockIo.h"
 
 #define EFI_BLOCK_IO_CRYPTO_PROTOCOL_GUID \
     { \

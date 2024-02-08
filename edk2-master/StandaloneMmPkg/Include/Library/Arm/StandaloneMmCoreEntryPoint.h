@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __STANDALONEMMCORE_ENTRY_POINT_H__
 #define __STANDALONEMMCORE_ENTRY_POINT_H__
 
-#include "edk2-master/MdePkg/Include/Library/PeCoffLib.h"
-#include "edk2-master/StandaloneMmPkg/Include/Library/FvLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeCoffLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/StandaloneMmPkg/Include/Library/FvLib.h"
 
 #define CPU_INFO_FLAG_PRIMARY_CPU  0x00000001
 

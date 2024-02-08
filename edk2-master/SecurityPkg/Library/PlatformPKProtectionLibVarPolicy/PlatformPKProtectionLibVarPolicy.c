@@ -5,11 +5,11 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/VariablePolicy.h"
 
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
 
 /**
   Disable any applicable protection against variable 'PK'. The implementation

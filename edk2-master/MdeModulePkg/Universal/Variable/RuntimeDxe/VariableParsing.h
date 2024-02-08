@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _VARIABLE_PARSING_H_
 #define _VARIABLE_PARSING_H_
 
-#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
 #include "Variable.h"
 
 /**

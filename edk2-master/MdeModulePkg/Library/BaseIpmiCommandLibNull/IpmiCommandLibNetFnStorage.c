@@ -6,8 +6,8 @@
 
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/Ipmi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Ipmi.h"
 
 /**
   This function gets FRU inventory area info.

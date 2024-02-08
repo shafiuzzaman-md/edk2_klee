@@ -9,9 +9,9 @@
 #ifndef CC_EXIT_VC_HANDLER_H_
 #define CC_EXIT_VC_HANDLER_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 
 /**
   Handle a #VC exception.

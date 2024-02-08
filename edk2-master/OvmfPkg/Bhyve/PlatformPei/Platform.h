@@ -10,7 +10,7 @@
 #ifndef _PLATFORM_PEI_H_INCLUDED_
 #define _PLATFORM_PEI_H_INCLUDED_
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/E820.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/E820.h"
 
 VOID
 AddIoMemoryBaseSizeHob (

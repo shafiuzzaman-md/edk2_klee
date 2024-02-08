@@ -7,10 +7,10 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include "edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
-#include "edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/OvmfPlatforms.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/ConfidentialComputingGuestAttr.h"
 
-#include "edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Library/AcpiPlatformLib.h"
 
 #include "AcpiPlatform.h"
 

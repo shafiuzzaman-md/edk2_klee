@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TPM12_COMMAND_LIB_H_
 #define _TPM12_COMMAND_LIB_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
 
 /**
   Send Startup command to TPM1.2.

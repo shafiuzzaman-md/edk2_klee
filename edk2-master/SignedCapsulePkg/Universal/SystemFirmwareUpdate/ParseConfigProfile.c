@@ -9,8 +9,8 @@
 **/
 
 #include "SystemFirmwareDxe.h"
-#include "edk2-master/SignedCapsulePkg/Include/Library/IniParsingLib.h"
-#include "edk2-master/MdePkg/Include/Library/PrintLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SignedCapsulePkg/Include/Library/IniParsingLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PrintLib.h"
 
 #define MAX_LINE_LENGTH  512
 

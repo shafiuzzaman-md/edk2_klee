@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TREE_H__
 #define __TREE_H__
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Tpm20.h"
 
 #define EFI_TREE_PROTOCOL_GUID \
   {0x607f766c, 0x7455, 0x42be, 0x93, 0x0b, 0xe4, 0xd7, 0x6d, 0xb2, 0x72, 0x0f}

@@ -12,8 +12,8 @@
 #ifndef _SMM_BASE2_H_
 #define _SMM_BASE2_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
-#include "edk2-master/MdePkg/Include/Protocol/MmBase.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiSmmCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmBase.h"
 
 #define EFI_SMM_BASE2_PROTOCOL_GUID  EFI_MM_BASE_PROTOCOL_GUID
 

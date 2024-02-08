@@ -21,7 +21,7 @@
 // To get EFI_GRAPHICS_OUTPUT_BLT_PIXEL,
 // is defined in MdePkg/Protocol/GraphicsOutput.h
 //
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 #define EFI_HII_PROTOCOL_GUID \
   { \

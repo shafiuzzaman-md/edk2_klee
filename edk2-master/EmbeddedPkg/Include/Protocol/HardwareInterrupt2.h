@@ -9,7 +9,7 @@
 #ifndef __HARDWARE_INTERRUPT2_H__
 #define __HARDWARE_INTERRUPT2_H__
 
-#include "edk2-master/EmbeddedPkg/Include/Protocol/HardwareInterrupt.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/Protocol/HardwareInterrupt.h"
 
 // 22838932-1a2d-4a47-aaba-f3f7cf569470
 

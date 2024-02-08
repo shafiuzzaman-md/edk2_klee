@@ -19,7 +19,7 @@
 ///
 /// EFI_PCI_OVERRIDE_PROTOCOL has the same structure with EFI_PCI_PLATFORM_PROTOCOL
 ///
-#include "edk2-master/MdePkg/Include/Protocol/PciPlatform.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/PciPlatform.h"
 
 ///
 /// Global ID for the EFI_PCI_OVERRIDE_PROTOCOL

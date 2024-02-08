@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PCI_EXPRESS_LIB_H__
 #define __PCI_EXPRESS_LIB_H__
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/PciExpress21.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/PciExpress21.h"
 
 /**
   Macro that converts PCI Bus, PCI Device, PCI Function and PCI Register to an

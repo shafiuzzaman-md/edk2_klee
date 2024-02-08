@@ -9,7 +9,7 @@
 #ifndef __EFI_DRIVER_CONFIGURATION_H__
 #define __EFI_DRIVER_CONFIGURATION_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/DriverConfiguration2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverConfiguration2.h"
 
 ///
 /// Global ID for the Driver Configuration Protocol defined in EFI 1.1

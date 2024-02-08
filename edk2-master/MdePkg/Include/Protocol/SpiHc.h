@@ -12,8 +12,8 @@
 #ifndef __SPI_HC_PROTOCOL_H__
 #define __SPI_HC_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
-#include "edk2-master/MdePkg/Include/Protocol/SpiIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SpiIo.h"
 
 ///
 /// Global ID for the SPI Host Controller Protocol

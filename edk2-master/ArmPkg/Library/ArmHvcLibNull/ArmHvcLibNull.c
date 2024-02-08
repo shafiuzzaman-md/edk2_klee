@@ -7,8 +7,8 @@
 
 **/
 
-#include "edk2-master/ArmPkg/Include/Library/ArmHvcLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Library/ArmHvcLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Trigger an HVC call

@@ -14,7 +14,7 @@
 #ifndef __PEI_MP_SERVICES_PPI_H__
 #define __PEI_MP_SERVICES_PPI_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MpService.h"
 
 #define EFI_PEI_MP_SERVICES_PPI_GUID \
   { \

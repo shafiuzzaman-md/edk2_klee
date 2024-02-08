@@ -17,7 +17,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef CC_MEASUREMENT_PROTOCOL_H_
 #define CC_MEASUREMENT_PROTOCOL_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/UefiTcgPlatform.h"
 
 #define EFI_CC_MEASUREMENT_PROTOCOL_GUID  \
   { 0x96751a3d, 0x72f4, 0x41a6, { 0xa7, 0x94, 0xed, 0x5d, 0x0e, 0x67, 0xae, 0x6b }}

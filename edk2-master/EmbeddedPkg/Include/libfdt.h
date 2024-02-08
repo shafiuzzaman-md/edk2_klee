@@ -52,8 +52,8 @@
  *     EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "edk2-master/EmbeddedPkg/Include/libfdt_env.h"
-#include "edk2-master/EmbeddedPkg/Include/fdt.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/libfdt_env.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/fdt.h"
 
 #define FDT_FIRST_SUPPORTED_VERSION  0x10
 #define FDT_LAST_SUPPORTED_VERSION   0x11

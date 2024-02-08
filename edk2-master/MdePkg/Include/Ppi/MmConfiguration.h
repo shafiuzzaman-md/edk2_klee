@@ -14,7 +14,7 @@
 #ifndef MM_CONFIGURATION_PPI_H_
 #define MM_CONFIGURATION_PPI_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiMultiPhase.h"
 
 #define EFI_PEI_MM_CONFIGURATION_PPI_GUID \
   { \

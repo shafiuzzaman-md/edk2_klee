@@ -11,7 +11,7 @@
 #ifndef _STANDALONE_MM_CORE_PRIVATE_DATA_H_
 #define _STANDALONE_MM_CORE_PRIVATE_DATA_H_
 
-#include "edk2-master/StandaloneMmPkg/Include/Guid/MmCoreData.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/StandaloneMmPkg/Include/Guid/MmCoreData.h"
 
 //
 // Page management

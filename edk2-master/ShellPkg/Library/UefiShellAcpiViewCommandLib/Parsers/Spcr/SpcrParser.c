@@ -9,9 +9,9 @@
       Specification - Version 1.03 - August 10, 2015.
 **/
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/SerialPortConsoleRedirectionTable.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/SerialPortConsoleRedirectionTable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
 #include "AcpiParser.h"
 #include "AcpiTableParser.h"
 

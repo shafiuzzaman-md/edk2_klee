@@ -9,7 +9,7 @@
 #ifndef TDX_HELPER_LIB_H
 #define TDX_HELPER_LIB_H
 
-#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
 
 /**
   In Tdx guest, some information need to be passed from host VMM to guest

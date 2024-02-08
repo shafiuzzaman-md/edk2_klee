@@ -11,11 +11,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef MP_SERVICES_INTERNAL_H_
 #define MP_SERVICES_INTERNAL_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
-#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MpService.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
 
 #define AP_STACK_SIZE  0x1000
 

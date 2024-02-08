@@ -12,7 +12,7 @@
 
 #ifndef __EFI_SUPER_IO_PROTOCOL_H__
 #define __EFI_SUPER_IO_PROTOCOL_H__
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #define EFI_SIO_PROTOCOL_GUID \
   { 0x215fdd18, 0xbd50, 0x4feb, { 0x89, 0xb, 0x58, 0xca, 0xb, 0x47, 0x39, 0xe9 } }

@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EDKII_UFS_HC_PLATFORM_PROTOCOL_H__
 #define __EDKII_UFS_HC_PLATFORM_PROTOCOL_H__
 
-#include "edk2-master/MdeModulePkg/Include/Protocol/UfsHostController.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/UfsHostController.h"
 
 #define EDKII_UFS_HC_PLATFORM_PROTOCOL_VERSION  2
 

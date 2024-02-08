@@ -15,7 +15,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __SMM_SWAP_ADDRESS_RANGE_H__
 #define __SMM_SWAP_ADDRESS_RANGE_H__
 
-#include "edk2-master/MdeModulePkg/Include/Protocol/SwapAddressRange.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/SwapAddressRange.h"
 
 #define EFI_SMM_SWAP_ADDRESS_RANGE_PROTOCOL_GUID \
   { \

@@ -11,7 +11,7 @@
 #ifndef __EFI_MTFTP6_DRIVER_H__
 #define __EFI_MTFTP6_DRIVER_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
 extern EFI_COMPONENT_NAME_PROTOCOL   gMtftp6ComponentName;
 extern EFI_COMPONENT_NAME2_PROTOCOL  gMtftp6ComponentName2;

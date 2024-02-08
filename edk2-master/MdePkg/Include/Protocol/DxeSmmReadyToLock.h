@@ -25,7 +25,7 @@
 #ifndef _DXE_SMM_READY_TO_LOCK_H_
 #define _DXE_SMM_READY_TO_LOCK_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/DxeMmReadyToLock.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DxeMmReadyToLock.h"
 
 #define EFI_DXE_SMM_READY_TO_LOCK_PROTOCOL_GUID  EFI_DXE_MM_READY_TO_LOCK_PROTOCOL_GUID
 

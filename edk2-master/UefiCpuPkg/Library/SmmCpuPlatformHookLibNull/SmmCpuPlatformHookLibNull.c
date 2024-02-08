@@ -5,8 +5,8 @@ Copyright (c) 2006 - 2015, Intel Corporation. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
-#include "edk2-master/MdePkg/Include/PiSmm.h"
-#include "edk2-master/UefiCpuPkg/Include/Library/SmmCpuPlatformHookLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiSmm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Library/SmmCpuPlatformHookLib.h"
 
 /**
   Checks if platform produces a valid SMI.

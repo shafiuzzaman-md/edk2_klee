@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_IP6CONFIG_PROTOCOL_H__
 #define __EFI_IP6CONFIG_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Ip6.h"
 
 #define EFI_IP6_CONFIG_PROTOCOL_GUID \
   { \

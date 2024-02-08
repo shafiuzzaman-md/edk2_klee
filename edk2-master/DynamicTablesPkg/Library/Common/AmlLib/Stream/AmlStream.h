@@ -9,7 +9,7 @@
 #ifndef AML_STREAM_H_
 #define AML_STREAM_H_
 
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlInclude.h"
 
 /** Stream direction.
 

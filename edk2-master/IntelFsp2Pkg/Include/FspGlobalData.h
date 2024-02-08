@@ -8,7 +8,7 @@
 #ifndef _FSP_GLOBAL_DATA_H_
 #define _FSP_GLOBAL_DATA_H_
 
-#include "edk2-master/IntelFsp2Pkg/Include/FspEas.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/IntelFsp2Pkg/Include/FspEas.h"
 
 #define FSP_IN_API_MODE          0
 #define FSP_IN_DISPATCH_MODE     1

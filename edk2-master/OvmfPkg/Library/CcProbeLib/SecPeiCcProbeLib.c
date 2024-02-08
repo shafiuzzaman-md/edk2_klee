@@ -7,8 +7,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
-#include "edk2-master/OvmfPkg/Include/WorkArea.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/CcProbeLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/WorkArea.h"
 
 /**
   Probe the ConfidentialComputing Guest type. See defition of

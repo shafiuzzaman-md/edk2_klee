@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _SMM_VARIABLE_COMMON_H_
 #define _SMM_VARIABLE_COMMON_H_
 
-#include "edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Guid/VariableFormat.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/VarCheck.h"
 
 #define EFI_SMM_VARIABLE_WRITE_GUID \
   { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 } }

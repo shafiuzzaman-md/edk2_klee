@@ -7,9 +7,9 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/MdePkg/Include/Library/CcProbeLib.h"
-#include "edk2-master/OvmfPkg/Include/WorkArea.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/CcProbeLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/WorkArea.h"
 
 STATIC UINT8    mCcProbeGuestType = 0;
 STATIC BOOLEAN  mCcProbed         = FALSE;

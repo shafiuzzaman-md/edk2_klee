@@ -9,7 +9,7 @@
 #ifndef __NOR_FLASH_ID_LIB_H__
 #define __NOR_FLASH_ID_LIB_H__
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
 
 #define NOR_FLASH_MAX_ID_LEN  6
 

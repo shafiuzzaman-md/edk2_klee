@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _EFI_PEI_XHCI_MEM_H_
 #define _EFI_PEI_XHCI_MEM_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 #define USBHC_MEM_DEFAULT_PAGES  16
 

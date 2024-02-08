@@ -13,9 +13,9 @@
 #ifndef __NESTED_INTERRUPT_TPL_LIB__
 #define __NESTED_INTERRUPT_TPL_LIB__
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
-#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
 ///
 /// State shared between all invocations of a nested interrupt handler.

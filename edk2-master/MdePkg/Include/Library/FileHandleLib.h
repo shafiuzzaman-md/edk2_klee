@@ -9,8 +9,8 @@
 #ifndef _FILE_HANDLE_LIBRARY_HEADER_
 #define _FILE_HANDLE_LIBRARY_HEADER_
 
-#include "edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
-#include "edk2-master/MdePkg/Include/Guid/FileInfo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleFileSystem.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/FileInfo.h"
 
 /// The tag for use in identifying UNICODE files.
 /// If the file is UNICODE, the first 16 bits of the file will equal this value.

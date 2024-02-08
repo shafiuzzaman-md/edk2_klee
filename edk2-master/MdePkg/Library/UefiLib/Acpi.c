@@ -7,8 +7,8 @@
 **/
 
 #include "UefiLibInternal.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
-#include "edk2-master/MdePkg/Include/Guid/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/Acpi.h"
 
 /**
   This function scans ACPI table in XSDT/RSDT.

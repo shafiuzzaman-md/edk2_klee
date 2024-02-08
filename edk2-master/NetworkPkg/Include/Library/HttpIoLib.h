@@ -9,11 +9,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef HTTP_IO_LIB_H_
 #define HTTP_IO_LIB_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Http11.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Http11.h"
 
-#include "edk2-master/NetworkPkg/Include/Library/DpcLib.h"
-#include "edk2-master/NetworkPkg/Include/Library/HttpLib.h"
-#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Library/DpcLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Library/HttpLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Library/NetLib.h"
 
 #define HTTP_IO_MAX_SEND_PAYLOAD                     1024
 #define HTTP_IO_CHUNK_SIZE_STRING_LEN                50

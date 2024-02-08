@@ -11,8 +11,8 @@
 #ifndef _MEM_ENCRYPT_SEV_LIB_H_
 #define _MEM_ENCRYPT_SEV_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/OvmfPkg/Include/WorkArea.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/WorkArea.h"
 
 //
 // Define the maximum number of #VCs allowed (e.g. the level of nesting

@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __TLS_AUTH_CONFIG_NV_DATA_H__
 #define __TLS_AUTH_CONFIG_NV_DATA_H__
 
-#include "edk2-master/NetworkPkg/Include/Guid/TlsAuthConfigHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Guid/TlsAuthConfigHii.h"
 
 #define TLS_AUTH_CONFIG_GUID_SIZE          36
 #define TLS_AUTH_CONFIG_GUID_STORAGE_SIZE  37

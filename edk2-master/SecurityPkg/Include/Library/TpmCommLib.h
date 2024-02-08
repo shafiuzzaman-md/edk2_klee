@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _TPM_COMM_LIB_H_
 #define _TPM_COMM_LIB_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Tpm12.h"
 
 typedef EFI_HANDLE TIS_TPM_HANDLE;
 

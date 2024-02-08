@@ -13,9 +13,9 @@
 #ifndef _MP_INFORMATION_H_
 #define _MP_INFORMATION_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
-#include "edk2-master/MdePkg/Include/PiPei.h"
-#include "edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Ppi/SecPlatformInformation.h"
 
 #define MP_INFORMATION_GUID \
   { \

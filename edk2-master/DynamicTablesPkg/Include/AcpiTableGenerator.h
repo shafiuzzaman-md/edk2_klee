@@ -13,10 +13,10 @@
 #ifndef ACPI_TABLE_GENERATOR_H_
 #define ACPI_TABLE_GENERATOR_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 // Module specific include files.
-#include "edk2-master/DynamicTablesPkg/Include/TableGenerator.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/TableGenerator.h"
 
 #pragma pack(1)
 

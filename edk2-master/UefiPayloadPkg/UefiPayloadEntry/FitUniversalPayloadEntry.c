@@ -4,8 +4,8 @@
 **/
 
 #include "UefiPayloadEntry.h"
-#include "edk2-master/MdePkg/Include/Library/FdtLib.h"
-#include "edk2-master/UefiPayloadPkg/Include/Guid/UniversalPayloadBase.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/FdtLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiPayloadPkg/Include/Guid/UniversalPayloadBase.h"
 
 #define MEMORY_ATTRIBUTE_MASK  (EFI_RESOURCE_ATTRIBUTE_PRESENT             |        \
                                        EFI_RESOURCE_ATTRIBUTE_INITIALIZED         | \

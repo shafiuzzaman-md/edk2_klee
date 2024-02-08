@@ -6,7 +6,7 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiSmm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiSmm.h"
 #include "CpuExceptionCommon.h"
 
 CONST UINTN  mDoFarReturnFlag = 1;

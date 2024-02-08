@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _USB_HUB_H_
 #define _USB_HUB_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Usb.h"
 
 #define USB_ENDPOINT_ADDR(EpAddr)  ((EpAddr) & 0x7F)
 #define USB_ENDPOINT_TYPE(Desc)    ((Desc)->Attributes & USB_ENDPOINT_TYPE_MASK)

@@ -12,7 +12,7 @@
 #ifndef __LEGACY_SPI_SMM_CONTROLLER_PROTOCOL_H__
 #define __LEGACY_SPI_SMM_CONTROLLER_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/LegacySpiController.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/LegacySpiController.h"
 
 ///
 /// Global ID for the Legacy SPI SMM Controller Protocol

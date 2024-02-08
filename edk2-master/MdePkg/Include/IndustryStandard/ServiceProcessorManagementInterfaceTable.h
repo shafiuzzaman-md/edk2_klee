@@ -14,7 +14,7 @@
 #ifndef _SERVICE_PROCESSOR_MANAGEMENT_INTERFACE_TABLE_H_
 #define _SERVICE_PROCESSOR_MANAGEMENT_INTERFACE_TABLE_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi.h"
 
 #pragma pack(1)
 

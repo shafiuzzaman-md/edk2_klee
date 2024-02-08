@@ -7,8 +7,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/OvmfPkg/Include/Library/TdxMailboxLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Library/TdxMailboxLib.h"
 
 /**
   This function will be called by BSP to get the CPU number.

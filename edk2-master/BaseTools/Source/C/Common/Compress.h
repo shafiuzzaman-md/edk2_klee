@@ -10,11 +10,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _COMPRESS_H_
 #define _COMPRESS_H_
 
-#include "edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
-#include "edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/RedfishPkg/PrivateInclude/Crt/string.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/RedfishPkg/PrivateInclude/Crt/stdlib.h"
 
 #include "CommonLib.h"
-#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
 
 /**
   Tiano compression routine.

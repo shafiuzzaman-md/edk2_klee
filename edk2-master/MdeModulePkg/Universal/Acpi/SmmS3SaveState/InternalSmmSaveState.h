@@ -9,18 +9,18 @@
 
 #ifndef _INTERNAL_SMM_S3_SAVE_STATE_H_
 #define _INTERNAL_SMM_S3_SAVE_STATE_H_
-#include "edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
 
-#include "edk2-master/MdePkg/Include/Protocol/S3SmmSaveState.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/S3SmmSaveState.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
-#include "edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
-#include "edk2-master/MdePkg/Include/Library/SmbusLib.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SmmServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/S3BootScriptLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SmbusLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/SmBus.h"
 
 /**
   Adds a record into S3 boot script table.

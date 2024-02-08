@@ -12,14 +12,14 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // for EFI_ALLOCATE_TYPE
 //
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Include protocol for common definition
 //   EDKII_IOMMU_ACCESS_xxx
 //   EDKII_IOMMU_OPERATION
 //
-#include "edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Protocol/IoMmu.h"
 
 //
 // IOMMU Ppi GUID value

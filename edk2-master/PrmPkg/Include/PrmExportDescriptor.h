@@ -10,7 +10,7 @@
 #ifndef PRM_EXPORT_DESCRIPTOR_H_
 #define PRM_EXPORT_DESCRIPTOR_H_
 
-#include "edk2-master/PrmPkg/Include/Prm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/PrmPkg/Include/Prm.h"
 
 #define PRM_MODULE_EXPORT_DESCRIPTOR_NAME       PrmModuleExportDescriptor
 #define PRM_MODULE_EXPORT_DESCRIPTOR_SIGNATURE  SIGNATURE_64 ('P', 'R', 'M', '_', 'M', 'E', 'D', 'T')

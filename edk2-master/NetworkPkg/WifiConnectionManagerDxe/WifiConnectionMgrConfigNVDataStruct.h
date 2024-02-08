@@ -10,7 +10,7 @@
 #ifndef _WIFI_NVDATASTRUC_H_
 #define _WIFI_NVDATASTRUC_H_
 
-#include "edk2-master/NetworkPkg/Include/Guid/WifiConnectionManagerConfigHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Guid/WifiConnectionManagerConfigHii.h"
 #include "WifiConnectionMgrConfigHii.h"
 
 #define MANAGER_VARSTORE_ID  0x0802

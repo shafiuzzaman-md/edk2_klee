@@ -12,6 +12,6 @@
 #ifndef _ACPI_H_
 #define _ACPI_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi65.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi65.h"
 
 #endif

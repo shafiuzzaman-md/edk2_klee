@@ -7,8 +7,8 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
-#include "edk2-master/MdePkg/Include/Library/PcdLib.h"
-#include "edk2-master/OvmfPkg/Include/Library/QemuFwCfgSimpleParserLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PcdLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Library/QemuFwCfgSimpleParserLib.h"
 
 RETURN_STATUS
 EFIAPI

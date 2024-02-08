@@ -9,7 +9,7 @@
 #ifndef __EFI_DRIVER_DIAGNOSTICS2_H__
 #define __EFI_DRIVER_DIAGNOSTICS2_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/DriverDiagnostics.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverDiagnostics.h"
 
 #define EFI_DRIVER_DIAGNOSTICS2_PROTOCOL_GUID \
   { \

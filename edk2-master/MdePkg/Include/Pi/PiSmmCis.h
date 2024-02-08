@@ -10,8 +10,8 @@
 #ifndef _PI_SMMCIS_H_
 #define _PI_SMMCIS_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiMmCis.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmCpuIo2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiMmCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmCpuIo2.h"
 
 typedef struct _EFI_SMM_SYSTEM_TABLE2 EFI_SMM_SYSTEM_TABLE2;
 //

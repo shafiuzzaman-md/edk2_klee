@@ -9,7 +9,7 @@
 #ifndef __EXTRACT_SECTION_GUID_H__
 #define __EXTRACT_SECTION_GUID_H__
 
-#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
 
 //
 // The GUID for this protocol mathes the Decompression scheme being used

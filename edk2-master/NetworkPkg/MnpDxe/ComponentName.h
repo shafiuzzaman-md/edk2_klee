@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _COMPONENT_NAME_H_
 #define _COMPONENT_NAME_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ComponentName.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
 
 extern EFI_COMPONENT_NAME2_PROTOCOL  gMnpComponentName2;
 extern EFI_COMPONENT_NAME_PROTOCOL   gMnpComponentName;

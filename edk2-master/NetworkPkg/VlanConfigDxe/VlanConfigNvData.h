@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __VLAN_CONFIG_NV_DATA_H__
 #define __VLAN_CONFIG_NV_DATA_H__
 
-#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
-#include "edk2-master/NetworkPkg/Include/Guid/VlanConfigHii.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Guid/VlanConfigHii.h"
 
 #define VLAN_CONFIGURATION_VARSTORE_ID  0x0001
 #define VLAN_CONFIGURATION_FORM_ID      0x0001

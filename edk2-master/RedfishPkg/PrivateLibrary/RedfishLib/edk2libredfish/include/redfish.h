@@ -18,8 +18,8 @@
 #ifndef LIBREDFISH_REDFISH_H_
 #define LIBREDFISH_REDFISH_H_
 
-#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishService.h"
-#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishPayload.h"
-#include "edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redpath.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishService.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redfishPayload.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish/include/redpath.h"
 
 #endif

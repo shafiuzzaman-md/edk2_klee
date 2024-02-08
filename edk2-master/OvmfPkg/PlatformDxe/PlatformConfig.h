@@ -12,7 +12,7 @@
 #ifndef _PLATFORM_CONFIG_H_
 #define _PLATFORM_CONFIG_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
 
 //
 // This structure participates in driver configuration. It does not

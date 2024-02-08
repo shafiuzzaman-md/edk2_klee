@@ -7,8 +7,8 @@
 **/
 
 #include "CpuExceptionHandlerTest.h"
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Protocol/Timer.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Timer.h"
 
 /**
   Initialize Bsp Idt with a new Idt table and return the IA32_DESCRIPTOR buffer.

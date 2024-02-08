@@ -6,8 +6,8 @@
 *
 **/
 
-#include "edk2-master/ArmPkg/Include/Library/ArmLib.h"
-#include "edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Library/ArmLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/ArmPkg/Include/Library/ArmGicLib.h"
 
 STATIC ARM_GIC_ARCH_REVISION  mGicArchRevision;
 

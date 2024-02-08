@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _BOOT_LOGO_H_
 #define _BOOT_LOGO_H_
 
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 #define EFI_BOOT_LOGO_PROTOCOL_GUID \
   { \

@@ -12,9 +12,9 @@
 #ifndef _VIRTIO_LIB_H_
 #define _VIRTIO_LIB_H_
 
-#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 /**
 

@@ -9,7 +9,7 @@
 **/
 
 #include "MpLib.h"
-#include "edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Library/CcExitLib.h"
 #include <Register/Amd/Fam17Msr.h>
 #include <Register/Amd/Ghcb.h>
 

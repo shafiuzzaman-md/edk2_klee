@@ -9,7 +9,7 @@
 #ifndef __EDKII_PEI_MP_SERVICES2_PPI_H__
 #define __EDKII_PEI_MP_SERVICES2_PPI_H__
 
-#include "edk2-master/MdePkg/Include/Ppi/MpServices.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Ppi/MpServices.h"
 
 #define EDKII_PEI_MP_SERVICES2_PPI_GUID \
   { \

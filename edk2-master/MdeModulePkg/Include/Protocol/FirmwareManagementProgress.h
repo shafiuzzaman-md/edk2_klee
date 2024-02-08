@@ -9,7 +9,7 @@
 #ifndef __EDKII_FIRMWARE_MANAGEMENT_PROGRESS_PROTOCOL_H__
 #define __EDKII_FIRMWARE_MANAGEMENT_PROGRESS_PROTOCOL_H__
 
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
 
 ///
 /// EDK II Firmware Management Progress Protocol GUID value

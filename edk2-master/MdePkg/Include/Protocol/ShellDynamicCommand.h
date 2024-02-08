@@ -10,8 +10,8 @@
 #ifndef __EFI_SHELL_DYNAMIC_COMMAND_PROTOCOL_H__
 #define __EFI_SHELL_DYNAMIC_COMMAND_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/Shell.h"
-#include "edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Shell.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ShellParameters.h"
 
 // {3C7200E9-005F-4EA4-87DE-A3DFAC8A27C3}
 #define EFI_SHELL_DYNAMIC_COMMAND_PROTOCOL_GUID \

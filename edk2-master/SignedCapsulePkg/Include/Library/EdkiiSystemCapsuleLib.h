@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EDKII_SYSTEM_CAPSULE_LIB_H__
 #define __EDKII_SYSTEM_CAPSULE_LIB_H__
 
-#include "edk2-master/SignedCapsulePkg/Include/Guid/EdkiiSystemFmpCapsule.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SignedCapsulePkg/Include/Guid/EdkiiSystemFmpCapsule.h"
 
 /**
   Extract ImageFmpInfo from system firmware.

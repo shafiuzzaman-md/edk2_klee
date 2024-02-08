@@ -12,7 +12,7 @@
 #ifndef __SPI_SMM_CONFIGURATION_PROTOCOL_H__
 #define __SPI_SMM_CONFIGURATION_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SpiConfiguration.h"
 
 ///
 /// Global ID for the SPI SMM Configuration Protocol

@@ -11,7 +11,7 @@
 #ifndef _ACPI_5_1_H_
 #define _ACPI_5_1_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Acpi50.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Acpi50.h"
 
 ///
 /// _PSD Revision for ACPI 5.1

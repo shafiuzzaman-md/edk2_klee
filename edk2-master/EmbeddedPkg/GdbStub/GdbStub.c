@@ -11,8 +11,8 @@
 
 **/
 
-#include "edk2-master/EmbeddedPkg/GdbStub/GdbStubInternal.h"
-#include "edk2-master/MdePkg/Include/Protocol/DebugPort.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/GdbStub/GdbStubInternal.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DebugPort.h"
 
 UINTN  gMaxProcessorIndex = 0;
 

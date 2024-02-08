@@ -8,7 +8,7 @@
 #ifndef HW_INFO_PARSER_LIB_H_
 #define HW_INFO_PARSER_LIB_H_
 
-#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
 
 /** A handle to the HwInfoParser instance.
 */

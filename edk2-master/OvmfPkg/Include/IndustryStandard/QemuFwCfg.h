@@ -12,7 +12,7 @@
 #ifndef __FW_CFG_H__
 #define __FW_CFG_H__
 
-#include "edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
 
 //
 // The size, in bytes, of names of firmware configuration files, including at

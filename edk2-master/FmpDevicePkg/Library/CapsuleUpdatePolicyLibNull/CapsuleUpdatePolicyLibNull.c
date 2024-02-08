@@ -8,8 +8,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiDxe.h"
-#include "edk2-master/FmpDevicePkg/Include/Library/CapsuleUpdatePolicyLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/FmpDevicePkg/Include/Library/CapsuleUpdatePolicyLib.h"
 
 /**
   Determine if the system power state supports a capsule update.

@@ -12,7 +12,7 @@
 #ifndef MEM_ENCRYPT_TDX_LIB_H_
 #define MEM_ENCRYPT_TDX_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
 
 /**
   Returns boolean to indicate whether to indicate which, if any, memory encryption is enabled

@@ -16,7 +16,7 @@
 #ifndef _MM_MP_H_
 #define _MM_MP_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiMmCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiMmCis.h"
 
 #define EFI_MM_MP_PROTOCOL_GUID \
   { \

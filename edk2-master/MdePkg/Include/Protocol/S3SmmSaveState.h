@@ -26,7 +26,7 @@
 #ifndef __S3_SMM_SAVE_STATE_H__
 #define __S3_SMM_SAVE_STATE_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/S3SaveState.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/S3SaveState.h"
 
 #define EFI_S3_SMM_SAVE_STATE_PROTOCOL_GUID \
     {0x320afe62, 0xe593, 0x49cb, { 0xa9, 0xf1, 0xd4, 0xc2, 0xf4, 0xaf, 0x1, 0x4c }}

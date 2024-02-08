@@ -10,7 +10,7 @@
 #ifndef __EDKII_DEBUG_PPI_H__
 #define __EDKII_DEBUG_PPI_H__
 
-#include "edk2-master/MdePkg/Include/Pi/PiPeiCis.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiPeiCis.h"
 
 //
 // Global ID for the EDKII_DEBUG_PPI

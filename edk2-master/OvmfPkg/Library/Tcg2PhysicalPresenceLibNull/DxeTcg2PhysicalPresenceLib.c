@@ -7,7 +7,7 @@
 
 **/
 
-#include "edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tcg2PhysicalPresenceLib.h"
 
 VOID
 EFIAPI

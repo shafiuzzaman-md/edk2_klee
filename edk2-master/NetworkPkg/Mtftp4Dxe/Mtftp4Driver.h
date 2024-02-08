@@ -9,13 +9,13 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __EFI_MTFTP4_DRIVER_H__
 #define __EFI_MTFTP4_DRIVER_H__
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
-#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
-#include "edk2-master/NetworkPkg/Include/Library/NetLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/NetworkPkg/Include/Library/NetLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiDriverEntryPoint.h"
 
 extern EFI_COMPONENT_NAME_PROTOCOL   gMtftp4ComponentName;
 extern EFI_COMPONENT_NAME2_PROTOCOL  gMtftp4ComponentName2;

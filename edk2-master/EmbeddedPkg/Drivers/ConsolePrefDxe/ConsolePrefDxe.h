@@ -9,8 +9,8 @@
 #ifndef __CONSOLE_PREF_DXE_H__
 #define __CONSOLE_PREF_DXE_H__
 
-#include "edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
-#include "edk2-master/EmbeddedPkg/Include/Guid/ConsolePrefFormSet.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/EmbeddedPkg/Include/Guid/ConsolePrefFormSet.h"
 
 #define CONSOLE_PREF_GRAPHICAL  0x0
 #define CONSOLE_PREF_SERIAL     0x1

@@ -12,7 +12,7 @@
 #ifndef CONFIGURATION_MANAGER_PROTOCOL_H_
 #define CONFIGURATION_MANAGER_PROTOCOL_H_
 
-#include "edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Include/ConfigurationManagerObject.h"
 
 /** This macro defines the Configuration Manager Protocol GUID.
 

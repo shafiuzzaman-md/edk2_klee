@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _ESRT_MANAGEMENT_H_
 #define _ESRT_MANAGEMENT_H_
 
-#include "edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/SystemResourceTable.h"
 
 ///
 /// Global ID for the ESRT_MANAGEMENT_PROTOCOL.

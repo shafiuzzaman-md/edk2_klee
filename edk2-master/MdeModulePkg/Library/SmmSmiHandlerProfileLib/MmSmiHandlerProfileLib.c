@@ -7,10 +7,10 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiMm.h"
-#include "edk2-master/MdePkg/Include/Library/SmiHandlerProfileLib.h"
-#include "edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
-#include "edk2-master/MdeModulePkg/Include/Guid/SmiHandlerProfile.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiMm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/SmiHandlerProfileLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MmServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Guid/SmiHandlerProfile.h"
 
 SMI_HANDLER_PROFILE_PROTOCOL  *mSmiHandlerProfile;
 

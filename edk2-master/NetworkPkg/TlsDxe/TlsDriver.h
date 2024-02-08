@@ -10,12 +10,12 @@
 #ifndef __EFI_TLS_DRIVER_H__
 #define __EFI_TLS_DRIVER_H__
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
 
 //
 // Driver Protocols
 //
-#include "edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ServiceBinding.h"
 
 //
 // Driver Version

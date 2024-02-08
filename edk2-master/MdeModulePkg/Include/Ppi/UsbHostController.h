@@ -14,7 +14,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PEI_USB_HOST_CONTROLLER_PPI_H_
 #define _PEI_USB_HOST_CONTROLLER_PPI_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/Usb2HostController.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Usb2HostController.h"
 
 ///
 /// Global ID for the PEI_USB_HOST_CONTROLLER_PPI.

@@ -16,12 +16,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __UEFI_SPEC_H__
 #define __UEFI_SPEC_H__
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
 
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
-#include "edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/DevicePath.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleTextIn.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleTextInEx.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SimpleTextOut.h"
 
 ///
 /// Enumeration of EFI memory allocation types.
@@ -2243,8 +2243,8 @@ typedef struct {
 //
 #define EFI_CAPSULE_FILE_DIRECTORY  L"\\EFI\\UpdateCapsule\\"
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiPxe.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiGpt.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiPxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiGpt.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 
 #endif

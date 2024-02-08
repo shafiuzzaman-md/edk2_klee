@@ -11,12 +11,12 @@
 #ifndef _VIRTIO_GPU_DXE_H_
 #define _VIRTIO_GPU_DXE_H_
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/VirtioGpu.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiLib.h"
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
-#include "edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/VirtioGpu.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Protocol/VirtioDevice.h"
 
 //
 // Forward declaration of VGPU_GOP.

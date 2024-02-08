@@ -16,7 +16,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include "Tcg2Smm.h"
-#include "edk2-master/StandaloneMmPkg/Include/Library/StandaloneMmMemLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/StandaloneMmPkg/Include/Library/StandaloneMmMemLib.h"
 
 /**
   Notify the system that the SMM variable driver is ready.

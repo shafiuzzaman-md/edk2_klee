@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _PCD_VALUE_COMMON_H
 #define _PCD_VALUE_COMMON_H
 
-#include "edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
-#include "edk2-master/BaseTools/Source/C/Include/Common/UefiInternalFormRepresentation.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Common/UefiBaseTypes.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Common/UefiInternalFormRepresentation.h"
 
 #define __FIELD_SIZE(TYPE, Field) (sizeof((TYPE *)0)->Field)
 #define __ARRAY_ELEMENT_SIZE(TYPE, Field) (sizeof((TYPE *)0)->Field[0])

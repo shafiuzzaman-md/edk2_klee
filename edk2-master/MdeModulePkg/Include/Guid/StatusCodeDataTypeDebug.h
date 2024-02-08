@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _STATUS_CODE_DATA_TYPE_DEBUG_H_
 #define _STATUS_CODE_DATA_TYPE_DEBUG_H_
 
-#include "edk2-master/MdePkg/Include/Pi/PiStatusCode.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Pi/PiStatusCode.h"
 
 ///
 /// The Global ID used to identify a structure of type EFI_DEBUG_INFO.

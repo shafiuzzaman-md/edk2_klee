@@ -15,8 +15,8 @@
 #ifndef __EFI_TCP6_PROTOCOL_H__
 #define __EFI_TCP6_PROTOCOL_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
-#include "edk2-master/MdePkg/Include/Protocol/Ip6.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ManagedNetwork.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Ip6.h"
 
 #define EFI_TCP6_SERVICE_BINDING_PROTOCOL_GUID \
   { \

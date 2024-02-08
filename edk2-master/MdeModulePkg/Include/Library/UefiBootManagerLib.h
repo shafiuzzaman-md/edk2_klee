@@ -10,8 +10,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _UEFI_BOOT_MANAGER_LIB_H_
 #define _UEFI_BOOT_MANAGER_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/DriverHealth.h"
-#include "edk2-master/MdeModulePkg/Include/Library/SortLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DriverHealth.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/SortLib.h"
 
 //
 // Boot Manager load option library functions.

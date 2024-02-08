@@ -12,8 +12,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 //
 // Share some definitions with MP Services and CPU Arch Protocol
 //
-#include "edk2-master/MdePkg/Include/Protocol/MpService.h"
-#include "edk2-master/MdePkg/Include/Protocol/Cpu.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MpService.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Cpu.h"
 
 #define EFI_SMM_CPU_SERVICE_PROTOCOL_GUID \
   { \

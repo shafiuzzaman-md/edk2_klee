@@ -13,8 +13,8 @@
 #ifndef __PI_STATUS_CODE_DATA_TYPE_ID_GUID_H__
 #define __PI_STATUS_CODE_DATA_TYPE_ID_GUID_H__
 
-#include "edk2-master/MdePkg/Include/PiDxe.h"
-#include "edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/DebugSupport.h"
 
 ///
 /// Global ID for the EFI_STATUS_CODE_STRING structure

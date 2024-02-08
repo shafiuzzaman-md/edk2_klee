@@ -9,11 +9,11 @@
 #ifndef MOCK_FDT_LIB_H_
 #define MOCK_FDT_LIB_H_
 
-#include "edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
-#include "edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UnitTestFrameworkPkg/Include/Library/GoogleTestLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UnitTestFrameworkPkg/Include/Library/FunctionMockLib.h"
 extern "C" {
-#include "edk2-master/MdePkg/Include/Base.h"
-#include "edk2-master/MdePkg/Include/Library/FdtLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Base.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/FdtLib.h"
 }
 
 struct MockFdtLib {

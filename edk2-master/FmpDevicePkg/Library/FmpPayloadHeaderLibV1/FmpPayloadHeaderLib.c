@@ -12,8 +12,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiDxe.h"
-#include "edk2-master/FmpDevicePkg/PrivateInclude/Library/FmpPayloadHeaderLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/FmpDevicePkg/PrivateInclude/Library/FmpPayloadHeaderLib.h"
 
 ///
 /// Define FMP Payload Header structure here so it is not public

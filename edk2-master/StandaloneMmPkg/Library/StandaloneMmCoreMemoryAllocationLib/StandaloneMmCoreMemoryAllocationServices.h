@@ -14,7 +14,7 @@
 #ifndef _PI_MM_CORE_MEMORY_ALLOCATION_SERVICES_H_
 #define _PI_MM_CORE_MEMORY_ALLOCATION_SERVICES_H_
 
-#include "edk2-master/StandaloneMmPkg/Include/Guid/MmCoreData.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/StandaloneMmPkg/Include/Guid/MmCoreData.h"
 
 /**
   Called to initialize the memory service.

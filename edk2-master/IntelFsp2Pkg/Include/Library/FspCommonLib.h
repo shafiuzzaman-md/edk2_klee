@@ -8,8 +8,8 @@
 #ifndef _FSP_COMMON_LIB_H_
 #define _FSP_COMMON_LIB_H_
 
-#include "edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
-#include "edk2-master/IntelFsp2Pkg/Include/FspMeasurePointId.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/IntelFsp2Pkg/Include/FspGlobalData.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/IntelFsp2Pkg/Include/FspMeasurePointId.h"
 
 /**
   This function sets the FSP global data pointer.

@@ -9,15 +9,15 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef  _SMI_HANDLER_PROFILE_H_
 #define  _SMI_HANDLER_PROFILE_H_
 
-#include "edk2-master/MdePkg/Include/PiSmm.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmGpiDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmIoTrapDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmPeriodicTimerDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmPowerButtonDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmStandbyButtonDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmSxDispatch2.h"
-#include "edk2-master/MdePkg/Include/Protocol/SmmUsbDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiSmm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmGpiDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmIoTrapDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmPeriodicTimerDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmPowerButtonDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmStandbyButtonDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmSwDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmSxDispatch2.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/SmmUsbDispatch2.h"
 
 typedef struct {
   UINT32    Signature;

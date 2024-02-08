@@ -11,11 +11,11 @@
 #ifndef REDFISH_HOST_INTERFACE_LIB_H_
 #define REDFISH_HOST_INTERFACE_LIB_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/RedfishPkg/Include/IndustryStandard/RedfishHostInterface.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/RedfishPkg/Include/IndustryStandard/RedfishHostInterface.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/SmBios.h"
 
-#include "edk2-master/MdePkg/Include/Protocol/Smbios.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/Smbios.h"
 
 /**
   Get platform Redfish host interface device descriptor.

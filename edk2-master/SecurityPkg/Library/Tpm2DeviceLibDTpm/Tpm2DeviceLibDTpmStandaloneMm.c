@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/
 
-#include "edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/Tpm2DeviceLib.h"
 
 #include "Tpm2DeviceLibDTpm.h"
 

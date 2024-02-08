@@ -11,8 +11,8 @@
 #ifndef __BROTLI_DECOMPRESS_INTERNAL_H__
 #define __BROTLI_DECOMPRESS_INTERNAL_H__
 
-#include "edk2-master/MdePkg/Include/PiPei.h"
-#include "edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/ExtractGuidedSectionLib.h"
 #include <brotli/c/include/brotli/types.h>
 #include <brotli/c/include/brotli/decode.h>
 

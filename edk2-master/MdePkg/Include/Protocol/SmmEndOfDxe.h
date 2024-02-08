@@ -17,7 +17,7 @@
 #ifndef _SMM_END_OF_DXE_H_
 #define _SMM_END_OF_DXE_H_
 
-#include "edk2-master/MdePkg/Include/Protocol/MmEndOfDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/MmEndOfDxe.h"
 
 #define EFI_SMM_END_OF_DXE_PROTOCOL_GUID  EFI_MM_END_OF_DXE_PROTOCOL_GUID
 

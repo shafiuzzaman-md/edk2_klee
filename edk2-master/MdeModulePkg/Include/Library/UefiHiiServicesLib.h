@@ -12,11 +12,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __UEFI_HII_SERVICES_LIB_H__
 #define __UEFI_HII_SERVICES_LIB_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/HiiFont.h"
-#include "edk2-master/MdePkg/Include/Protocol/HiiString.h"
-#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
-#include "edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
-#include "edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/HiiFont.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/HiiString.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/HiiImage.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/HiiDatabase.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/HiiConfigRouting.h"
 
 ///
 /// The pointer to the UEFI HII Font Protocol.

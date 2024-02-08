@@ -9,8 +9,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef UNIVERSAL_PAYLOAD_BOOT_MANAGER_MENU_H_
 #define UNIVERSAL_PAYLOAD_BOOT_MANAGER_MENU_H_
 
-#include "edk2-master/MdePkg/Include/Uefi.h"
-#include "edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/UniversalPayload/UniversalPayload.h"
 
 #pragma pack (1)
 

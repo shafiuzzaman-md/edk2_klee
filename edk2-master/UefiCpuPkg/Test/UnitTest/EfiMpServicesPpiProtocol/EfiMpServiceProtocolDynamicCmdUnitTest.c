@@ -7,8 +7,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
-#include "edk2-master/MdePkg/Include/Protocol/ShellDynamicCommand.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiBootServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/ShellDynamicCommand.h"
 #include "EfiMpServicesUnitTestCommom.h"
 
 CHAR16  *mMpProtocolUnitTestCommandHelp = L".TH MpProtocolUnitTest 0\r\n.SH NAME\r\nDisplay unit test results of EFI MP services protocol.\r\n";

@@ -14,9 +14,9 @@
 #ifndef AML_RESOURCE_DATA_PARSER_H_
 #define AML_RESOURCE_DATA_PARSER_H_
 
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Stream/AmlStream.h"
-#include "edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/AmlNodeDefines.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/Stream/AmlStream.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/DynamicTablesPkg/Library/Common/AmlLib/ResourceData/AmlResourceData.h"
 
 /** Check whether the input stream is pointing to a valid list
     of resource data elements.

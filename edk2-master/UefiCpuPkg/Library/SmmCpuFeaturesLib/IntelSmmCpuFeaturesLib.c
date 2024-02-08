@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "CpuFeaturesLib.h"
 
-#include "edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/UefiCpuPkg/Include/Library/MtrrLib.h"
 #include <Register/Intel/Cpuid.h>
 #include <Register/Intel/SmramSaveStateMap.h>
 

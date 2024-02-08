@@ -16,7 +16,7 @@
 #ifndef PLDM_SMBIOS_TRANSFER_H_
 #define PLDM_SMBIOS_TRANSFER_H_
 
-#include "edk2-master/MdePkg/Include/IndustryStandard/Pldm.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/IndustryStandard/Pldm.h"
 
 #pragma pack(1)
 

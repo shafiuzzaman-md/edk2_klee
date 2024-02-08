@@ -6,8 +6,8 @@
 
 **/
 
-#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
 
 /**
   Initialize new opaque EcGroup object. This object represents an EC curve and

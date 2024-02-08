@@ -7,8 +7,8 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
-#include "edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeimEntryPoint.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/PeiServicesLib.h"
 #include "EfiMpServicesUnitTestCommom.h"
 
 #define UNIT_TEST_NAME     "EdkiiPeiMpServices2Ppi Unit Test"

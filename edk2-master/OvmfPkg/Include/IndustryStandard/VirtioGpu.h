@@ -21,7 +21,7 @@
 #ifndef _VIRTIO_GPU_H_
 #define _VIRTIO_GPU_H_
 
-#include "edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/IndustryStandard/Virtio.h"
 
 //
 // Queue number for sending control commands.

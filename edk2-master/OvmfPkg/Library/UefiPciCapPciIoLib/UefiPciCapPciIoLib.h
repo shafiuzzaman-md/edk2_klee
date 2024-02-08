@@ -10,9 +10,9 @@
 #ifndef __UEFI_PCI_CAP_PCI_IO_LIB_H__
 #define __UEFI_PCI_CAP_PCI_IO_LIB_H__
 
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
 
-#include "edk2-master/OvmfPkg/Include/Library/PciCapPciIoLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/OvmfPkg/Include/Library/PciCapPciIoLib.h"
 
 #define PROTO_DEV_SIG  SIGNATURE_64 ('P', 'C', 'P', 'I', 'O', 'P', 'R', 'T')
 

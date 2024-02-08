@@ -11,8 +11,8 @@
 
 #include "VariablePolicy.h"
 
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/HiiLib.h"
 
 extern EFI_HII_HANDLE  mVarPolicyShellCommandHiiHandle;
 

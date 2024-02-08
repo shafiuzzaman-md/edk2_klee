@@ -10,9 +10,9 @@
 #ifndef _FSP_EAS_H_
 #define _FSP_EAS_H_
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/IntelFsp2Pkg/Include/Guid/GuidHobFspEas.h"
-#include "edk2-master/IntelFsp2Pkg/Include/Guid/FspHeaderFile.h"
-#include "edk2-master/IntelFsp2Pkg/Include/FspEas/FspApi.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/IntelFsp2Pkg/Include/Guid/GuidHobFspEas.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/IntelFsp2Pkg/Include/Guid/FspHeaderFile.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/IntelFsp2Pkg/Include/FspEas/FspApi.h"
 
 #endif

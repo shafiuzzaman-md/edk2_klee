@@ -19,7 +19,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 // This file must be included because EFI_PCI_HOST_BRIDGE_RESOURCE_ALLOCATION_PROTOCOL
 // uses EFI_PCI_ROOT_BRIDGE_IO_PROTOCOL_PCI_ADDRESS
 //
-#include "edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/PciRootBridgeIo.h"
 
 ///
 /// Global ID for the EFI_PCI_HOST_BRIDGE_RESOURCE_ALLOCATION_PROTOCOL.

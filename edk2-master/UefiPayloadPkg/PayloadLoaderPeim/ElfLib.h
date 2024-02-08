@@ -9,7 +9,7 @@
 #ifndef ELF_LIB_H_
 #define ELF_LIB_H_
 
-#include "edk2-master/MdePkg/Include/PiPei.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiPei.h"
 
 #define  ELF_CLASS32  1
 #define  ELF_CLASS64  2

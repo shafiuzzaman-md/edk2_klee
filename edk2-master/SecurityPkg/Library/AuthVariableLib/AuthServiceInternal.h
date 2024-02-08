@@ -20,16 +20,16 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef _AUTHSERVICE_INTERNAL_H_
 #define _AUTHSERVICE_INTERNAL_H_
 
-#include "edk2-master/MdeModulePkg/Include/Library/AuthVariableLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseLib.h"
-#include "edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
-#include "edk2-master/MdePkg/Include/Library/DebugLib.h"
-#include "edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
-#include "edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
-#include "edk2-master/SecurityPkg/Include/Library/PlatformSecureLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/AuthVariableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/BaseMemoryLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/DebugLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/MemoryAllocationLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/CryptoPkg/Include/Library/BaseCryptLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Library/PlatformSecureLib.h"
 
-#include "edk2-master/SecurityPkg/Include/Guid/AuthenticatedVariableFormat.h"
-#include "edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/SecurityPkg/Include/Guid/AuthenticatedVariableFormat.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Guid/ImageAuthentication.h"
 
 #define TWO_BYTE_ENCODE  0x82
 

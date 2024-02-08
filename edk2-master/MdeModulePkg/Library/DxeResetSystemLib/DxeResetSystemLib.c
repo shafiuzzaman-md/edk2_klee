@@ -6,9 +6,9 @@
 
 **/
 
-#include "edk2-master/MdePkg/Include/PiDxe.h"
-#include "edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
-#include "edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/PiDxe.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/ResetSystemLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Library/UefiRuntimeServicesTableLib.h"
 
 /**
   This function causes a system-wide reset (cold reset), in which

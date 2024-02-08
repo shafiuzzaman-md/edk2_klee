@@ -10,9 +10,9 @@
 #ifndef __HARDWARE_INFO_PCI_HOST_BRIDGE_LIB_H__
 #define __HARDWARE_INFO_PCI_HOST_BRIDGE_LIB_H__
 
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
-#include "edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdeModulePkg/Include/Library/PciHostBridgeLib.h"
 
 //
 // Host Bridge resources information

@@ -10,7 +10,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #ifndef __PLATFORM_LOGO_H__
 #define __PLATFORM_LOGO_H__
 
-#include "edk2-master/MdePkg/Include/Protocol/HiiImage.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/MdePkg/Include/Protocol/HiiImage.h"
 
 //
 // GUID for EDKII Platform Logo Protocol

@@ -10,7 +10,7 @@
 #ifndef __UEFI_BASETYPE_H__
 #define __UEFI_BASETYPE_H__
 
-#include "edk2-master/BaseTools/Source/C/Include/Common/BaseTypes.h"
+#include "/home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/edk2-master/BaseTools/Source/C/Include/Common/BaseTypes.h"
 
 //
 // Basical data type definitions introduced in UEFI.
