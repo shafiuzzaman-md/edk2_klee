@@ -483,10 +483,10 @@ SmmVariableHandler(
   TempCommBufferSize = *CommBufferSize;
 
   // Injection
-  // if (TempCommBufferSize < SMM_VARIABLE_COMMUNICATE_HEADER_SIZE) {
-  //   DEBUG ((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer size invalid!\n"));
-  //   return EFI_SUCCESS;
-  // }
+  if (TempCommBufferSize < SMM_VARIABLE_COMMUNICATE_HEADER_SIZE) {
+    DEBUG ((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer size invalid!\n"));
+    return EFI_SUCCESS;
+  }
   
   klee_assert(TempCommBufferSize >= SMM_VARIABLE_COMMUNICATE_HEADER_SIZE);
   CommBufferPayloadSize = TempCommBufferSize - SMM_VARIABLE_COMMUNICATE_HEADER_SIZE;
