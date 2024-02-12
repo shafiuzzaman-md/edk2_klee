@@ -16,8 +16,8 @@
 #define _PCD_GET_MODE_BOOL_PcdReclaimVariableSpaceAtEndOfDxe TRUE
 #define _PCD_GET_MODE_BOOL_PcdEmuVariableNvModeEnable TRUE
 #define PcdGetBool(TokenName) _PCD_GET_MODE_BOOL_ ## TokenName
+#include "vul1_harness.c"
 
-#include "edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c"
 
 //STUBS for configuration settings
 
@@ -37,34 +37,16 @@ EFI_GUID  gEfiSmmVariableProtocolGuid = { 0xed32d533, 0x99e6, 0x4209, { 0x9c, 0x
 
 EFI_GUID gEdkiiSmmVarCheckProtocolGuid  = { 0xb0d8f3c1, 0xb7de, 0x4c11, { 0xbc, 0x89, 0x2f, 0xb5, 0x62, 0xc8, 0xc4, 0x11 } };
 EFI_GUID  gEfiMmEndOfDxeProtocolGuid;
-
 ///
 /// The memory entry used for variable statistics data.
 ///
 VARIABLE_INFO_ENTRY  *gVariableInfo = NULL;
 
-//
-// SMM IPL global variables
-//
-BOOLEAN                    mEndOfDxe  = FALSE;
-VARIABLE_MODULE_GLOBAL  *mVariableModuleGlobal;
-VARIABLE_STORE_HEADER  *mNvVariableCache = NULL;
-EFI_FIRMWARE_VOLUME_HEADER  *mNvFvHeaderCache = NULL;
 
 
-DSE_to_SmmVariableHandler()
-{
-  EFI_HANDLE  DispatchHandle;
-  CONST VOID  *RegisterContext;
-  VOID        *CommBuffer;
-  UINTN *CommBufferSize = malloc(sizeof(UINTN)); // Allocate memory for one UINTN.
-  if (CommBufferSize == NULL) {
-      // Handle memory allocation failure if needed
-  }
-  klee_make_symbolic(CommBufferSize, sizeof(UINTN), "CommBufferSize"); // Make the allocated memory symbolic.
 
-  SmmVariableHandler ( DispatchHandle, RegisterContext, CommBuffer, CommBufferSize);
-}
+
+
 
 int main()
 {
