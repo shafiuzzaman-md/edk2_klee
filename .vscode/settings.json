@@ -8,6 +8,7 @@
         "componentname.h": "c",
         "pci22.h": "c",
         "graphicsoutput.h": "c",
-        "pcibus.h": "c"
+        "pcibus.h": "c",
+        "stdint.h": "c"
     }
 }

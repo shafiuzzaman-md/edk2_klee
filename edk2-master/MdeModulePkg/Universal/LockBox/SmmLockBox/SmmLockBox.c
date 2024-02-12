@@ -267,6 +267,9 @@ SmmLockBoxRestoreAllInPlace (
   @retval EFI_SUCCESS Command is handled successfully.
 
 **/
+#define SMRAM_BASE 0x1F000000 // Hypothetical SMRAM base address
+#define SMRAM_SIZE 0x00100000 // Hypothetical SMRAM size (1MB)
+
 EFI_STATUS
 EFIAPI
 SmmLockBoxHandler (
@@ -297,11 +300,17 @@ SmmLockBoxHandler (
     DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer Size invalid!\n"));
     return EFI_SUCCESS;
   }
+  //Injection
+  // if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
+  //   DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer in SMRAM or overflow!\n"));
+  //   return EFI_SUCCESS;
+  // }
+  klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
 
-  if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
-    DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer in SMRAM or overflow!\n"));
-    return EFI_SUCCESS;
-  }
+  // Ensure the buffer does not overlap with the hypothetical SMRAM region
+  int result = isBufferOutsideHypotheticalSMRAM(CommBuffer, CommBufferSize);
+  // Use KLEE assertion to enforce that the result must always be true
+  klee_assert(result != 0);
 
   LockBoxParameterHeader = (EFI_SMM_LOCK_BOX_PARAMETER_HEADER *)((UINTN)CommBuffer);
 
