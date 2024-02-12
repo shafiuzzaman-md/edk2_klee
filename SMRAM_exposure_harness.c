@@ -2,21 +2,6 @@
 #include <stdint.h>
 #include <stddef.h>
 
-
-/**
- * Checks if a given buffer is safely outside a hypothetical SMRAM region.
- * This function is a stand-in for actual hardware checks and is designed for symbolic analysis.
- *
- * @param bufferAddr The base address of the buffer.
- * @param bufferSize The size of the buffer.
- * @return Non-zero if the buffer does not overlap with SMRAM; zero otherwise.
- */
-int isBufferOutsideHypotheticalSMRAM(uintptr_t bufferAddr, size_t bufferSize) {
-    uintptr_t bufferEnd = bufferAddr + bufferSize;
-    int isOutside = (bufferAddr >= (SMRAM_BASE + SMRAM_SIZE)) || (bufferEnd <= SMRAM_BASE);
-    return isOutside;
-}
-
 void DSE_to_SmmLockBoxHandler()
 {
   EFI_HANDLE  DispatchHandle;

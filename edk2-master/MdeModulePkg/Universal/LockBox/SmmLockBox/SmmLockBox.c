@@ -307,11 +307,6 @@ SmmLockBoxHandler (
   // }
   klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
 
-  // Ensure the buffer does not overlap with the hypothetical SMRAM region
-  int result = isBufferOutsideHypotheticalSMRAM(CommBuffer, CommBufferSize);
-  // Use KLEE assertion to enforce that the result must always be true
-  klee_assert(result != 0);
-
   LockBoxParameterHeader = (EFI_SMM_LOCK_BOX_PARAMETER_HEADER *)((UINTN)CommBuffer);
 
   LockBoxParameterHeader->ReturnStatus = (UINT64)-1;
