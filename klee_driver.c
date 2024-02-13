@@ -17,8 +17,9 @@
 #define _PCD_GET_MODE_BOOL_PcdReclaimVariableSpaceAtEndOfDxe TRUE
 #define _PCD_GET_MODE_BOOL_PcdEmuVariableNvModeEnable TRUE
 #define PcdGetBool(TokenName) _PCD_GET_MODE_BOOL_ ## TokenName
-#include "vul1_harness.c"
-#include "SMRAM_exposure_harness.c"
+//#include "vul1_harness.c"
+//#include "SMRAM_exposure_harness.c"
+#include "Harness_SmmFaultTolerantWriteHandler.c"
 
 //STUBS for configuration settings
 
@@ -29,8 +30,7 @@ EFI_BOOT_SERVICES  *gBS         = NULL; //EFI Boot Services Table
 EFI_DXE_SERVICES  *gDS = NULL; //DXE Services Table
 
 
-/*Configuration settings are added as enum in edk2*/
-VAR_CHECK_REQUEST_SOURCE  mRequestSource = VarCheckFromUntrusted; //categorizing variable check requests as coming from either trusted or untrusted sources
+
 /*gMmst is a global variable that points to the SMM System Table (EFI_SMM_SYSTEM_TABLE2 or Smst).*/
 
 
@@ -56,11 +56,10 @@ EFI_GUID  gEfiSmmAccess2ProtocolGuid      = { 0xc2702b74, 0x800c, 0x4131, { 0x87
 
 // ## Include/Protocol/SmmEndOfDxe.h
 EFI_GUID  gEfiSmmEndOfDxeProtocolGuid = { 0x24e70042, 0xd5c5, 0x4260, { 0x8c, 0x39, 0xa, 0xd3, 0xaa, 0x32, 0xe9, 0x3d }};
-///
-/// The memory entry used for variable statistics data.
-///
-VARIABLE_INFO_ENTRY  *gVariableInfo = NULL;
 
+//## This protocol is used to abstract the swap operation of boot block and backup block of boot FV in SMM environment.
+//  #  Include/Protocol/SmmSwapAddressRange.h
+EFI_GUID  gEfiSmmSwapAddressRangeProtocolGuid = { 0x67c4f112, 0x3385, 0x4e55, { 0x9c, 0x5b, 0xc0, 0x5b, 0x71, 0x7c, 0x42, 0x28 }};
 
 // PLACEHOLDER FUNCTIONS
 BOOLEAN
@@ -76,6 +75,7 @@ DebugPrintEnabled (
 
 int main()
 {
-  DSE_to_SmmLockBoxHandler();
+  //DSE_to_SmmLockBoxHandler();
   //DSE_to_SmmVariableHandler();
+  DSE_to_SmmFaultTolerantWriteHandler();
 }

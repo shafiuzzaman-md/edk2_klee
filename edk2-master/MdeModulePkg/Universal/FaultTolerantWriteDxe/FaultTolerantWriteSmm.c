@@ -325,13 +325,13 @@ SmmFaultTolerantWriteHandler (
 
   TempCommBufferSize = *CommBufferSize;
 
-  if (TempCommBufferSize < SMM_FTW_COMMUNICATE_HEADER_SIZE) {
-    DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer size invalid!\n"));
-    return EFI_SUCCESS;
-  }
-
+  // if (TempCommBufferSize < SMM_FTW_COMMUNICATE_HEADER_SIZE) {
+  //   DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer size invalid!\n"));
+  //   return EFI_SUCCESS;
+  // }
+  klee_assert(TempCommBufferSize >= SMM_FTW_COMMUNICATE_HEADER_SIZE);
   CommBufferPayloadSize = TempCommBufferSize - SMM_FTW_COMMUNICATE_HEADER_SIZE;
-
+ 
   if (!FtwSmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
     DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer in SMRAM or overflow!\n"));
     return EFI_SUCCESS;
