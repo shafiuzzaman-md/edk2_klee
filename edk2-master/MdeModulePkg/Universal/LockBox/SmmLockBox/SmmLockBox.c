@@ -301,10 +301,10 @@ SmmLockBoxHandler (
     return EFI_SUCCESS;
   }
   //Injection
-  // if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
-  //   DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer in SMRAM or overflow!\n"));
-  //   return EFI_SUCCESS;
-  // }
+  if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
+    DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer in SMRAM or overflow!\n"));
+    return EFI_SUCCESS;
+  }
   klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
 
   LockBoxParameterHeader = (EFI_SMM_LOCK_BOX_PARAMETER_HEADER *)((UINTN)CommBuffer);
