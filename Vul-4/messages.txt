@@ -1,0 +1,5 @@
+KLEE: Using Z3 solver backend
+KLEE: Logging queries that reach solver in .smt2 format to /home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/klee-out-16/solver-queries.smt2
+
+KLEE: ERROR: ./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2338: ASSERTION FAIL: TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER)
+KLEE: NOTE: now ignoring this error at this location

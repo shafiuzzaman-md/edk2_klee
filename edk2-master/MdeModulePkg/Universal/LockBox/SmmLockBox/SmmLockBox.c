@@ -267,8 +267,7 @@ SmmLockBoxRestoreAllInPlace (
   @retval EFI_SUCCESS Command is handled successfully.
 
 **/
-#define SMRAM_BASE 0x1F000000 // Hypothetical SMRAM base address
-#define SMRAM_SIZE 0x00100000 // Hypothetical SMRAM size (1MB)
+
 
 EFI_STATUS
 EFIAPI

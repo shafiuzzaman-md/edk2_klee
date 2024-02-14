@@ -8,8 +8,10 @@
 
 #include "PiSmmCore.h"
 
-#define IS_SMRAM_PROFILE_ENABLED        ((PcdGet8 (PcdMemoryProfilePropertyMask) & BIT1) != 0)
-#define IS_UEFI_MEMORY_PROFILE_ENABLED  ((PcdGet8 (PcdMemoryProfilePropertyMask) & BIT0) != 0)
+// #define IS_SMRAM_PROFILE_ENABLED        ((PcdGet8 (PcdMemoryProfilePropertyMask) & BIT1) != 0)
+// #define IS_UEFI_MEMORY_PROFILE_ENABLED  ((PcdGet8 (PcdMemoryProfilePropertyMask) & BIT0) != 0)
+#define IS_SMRAM_PROFILE_ENABLED        FALSE
+#define IS_UEFI_MEMORY_PROFILE_ENABLED  FALSE
 
 #define GET_OCCUPIED_SIZE(ActualSize, Alignment) \
   ((ActualSize) + (((Alignment) - ((ActualSize) & ((Alignment) - 1))) & ((Alignment) - 1)))
@@ -604,6 +606,7 @@ NeedRecordThisDriver (
   @retval FALSE         Register fail.
 
 **/
+EFI_GUID gEfiCallerIdGuid;
 BOOLEAN
 RegisterSmmCore (
   IN MEMORY_PROFILE_CONTEXT_DATA  *ContextData
@@ -2310,7 +2313,6 @@ SmramProfileHandler (
   SMRAM_PROFILE_PARAMETER_RECORDING_STATE  *ParameterRecordingState;
 
   DEBUG ((DEBUG_ERROR, "SmramProfileHandler Enter\n"));
-
   //
   // If input is invalid, stop processing this SMI
   //
@@ -2320,20 +2322,22 @@ SmramProfileHandler (
 
   TempCommBufferSize = *CommBufferSize;
 
-  if (TempCommBufferSize < sizeof (SMRAM_PROFILE_PARAMETER_HEADER)) {
-    DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer size invalid!\n"));
-    return EFI_SUCCESS;
-  }
-
+  //Injection
+  // if (TempCommBufferSize < sizeof (SMRAM_PROFILE_PARAMETER_HEADER)) {
+  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer size invalid!\n"));
+  //   return EFI_SUCCESS;
+  // }
+  
   if (mSmramReadyToLock && !SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
     DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer in SMRAM or overflow!\n"));
     return EFI_SUCCESS;
   }
 
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
-
+  
+  klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));
   SmramProfileParameterHeader->ReturnStatus = (UINT64)-1;
-
+   
   if (GetSmramProfileContext () == NULL) {
     SmramProfileParameterHeader->ReturnStatus = (UINT64)(INT64)(INTN)EFI_UNSUPPORTED;
     return EFI_SUCCESS;
