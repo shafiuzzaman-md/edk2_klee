@@ -14,6 +14,9 @@
 #include "edk2-master/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.h"
 #include "edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c"
 
+#include "edk2-master/MdePkg/Library/BaseMemoryLib/CopyMemWrapper.c"
+#include "edk2-master/MdePkg/Library/BaseMemoryLib/CopyMem.c"
+
 // Define SMRAM_BASE and SMRAM_SIZE as global variables
 uint32_t SMRAM_BASE = 0x1F000000; // Hypothetical SMRAM base address
 uint32_t SMRAM_SIZE = 0x00100000; // Hypothetical SMRAM size (1MB)
@@ -87,6 +90,15 @@ EFI_SMRAM_DESCRIPTOR  *mFullSmramRanges;
 BOOLEAN
 EFIAPI
 DebugPrintEnabled (
+  VOID
+  )
+{
+  return 0;
+}
+
+BOOLEAN
+EFIAPI
+DebugAssertEnabled (
   VOID
   )
 {

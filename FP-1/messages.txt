@@ -1,0 +1,11 @@
+KLEE: Using Z3 solver backend
+KLEE: Logging queries that reach solver in .smt2 format to /home/mdshafiuzzaman/Research/ISSTA24/Experiments/edk2_klee/klee-out-40/solver-queries.smt2
+
+KLEE: ERROR: ./edk2-master/MdePkg/Library/BaseMemoryLib/CopyMem.c:85: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./edk2-master/MdePkg/Library/BaseMemoryLib/CopyMem.c:85: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./edk2-master/MdePkg/Library/BaseMemoryLib/CopyMem.c:142: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./edk2-master/MdePkg/Library/BaseMemoryLib/CopyMem.c:127: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location

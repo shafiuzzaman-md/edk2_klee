@@ -2210,21 +2210,22 @@ SmramProfileHandlerGetData (
 
   SmramProfileGettingStatus  = mSmramProfileGettingStatus;
   mSmramProfileGettingStatus = TRUE;
-
+  klee_assert(sizeof(SmramProfileParameterGetData) <=  sizeof (SmramProfileGetData));
   CopyMem (&SmramProfileGetData, SmramProfileParameterGetData, sizeof (SmramProfileGetData));
 
-  ProfileSize = SmramProfileGetDataSize ();
+  //ProfileSize = SmramProfileGetDataSize ();
 
   //
   // Sanity check
   //
-  if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetData.ProfileBuffer, (UINTN)ProfileSize)) {
-    DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetData: SMM ProfileBuffer in SMRAM or overflow!\n"));
-    SmramProfileParameterGetData->ProfileSize         = ProfileSize;
-    SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
-    goto Done;
-  }
-
+  //Vlab: Injection
+  // if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetData.ProfileBuffer, (UINTN)ProfileSize)) {
+  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetData: SMM ProfileBuffer in SMRAM or overflow!\n"));
+  //   SmramProfileParameterGetData->ProfileSize         = ProfileSize;
+  //   SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
+  //   goto Done;
+  // }
+  klee_assert(SmramProfileParameterGetData >= SMRAM_BASE + SMRAM_SIZE);       // Buffer is entirely after SMRAM
   if (SmramProfileGetData.ProfileSize < ProfileSize) {
     SmramProfileParameterGetData->ProfileSize         = ProfileSize;
     SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_BUFFER_TOO_SMALL;
@@ -2337,8 +2338,9 @@ SmramProfileHandler (
   //   DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer in SMRAM or overflow!\n"));
   //   return EFI_SUCCESS;
   // }
+  
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
-  klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
+  //klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
   //klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));
   SmramProfileParameterHeader->ReturnStatus = (UINT64)-1;
    
@@ -2355,7 +2357,7 @@ SmramProfileHandler (
         return EFI_SUCCESS;
       }
 
-      SmramProfileHandlerGetInfo ((SMRAM_PROFILE_PARAMETER_GET_PROFILE_INFO *)(UINTN)CommBuffer);
+      //SmramProfileHandlerGetInfo ((SMRAM_PROFILE_PARAMETER_GET_PROFILE_INFO *)(UINTN)CommBuffer);
       break;
     case SMRAM_PROFILE_COMMAND_GET_PROFILE_DATA:
       DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetData\n"));

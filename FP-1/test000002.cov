@@ -1,0 +1,11 @@
+./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2332
+./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2333
+./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2334
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:114
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:115
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:116
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:119
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:125
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:132
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:139
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:238
