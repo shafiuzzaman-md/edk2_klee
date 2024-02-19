@@ -7,7 +7,6 @@
 **/
 
 #include "PiSmmCore.h"
-
 // #define IS_SMRAM_PROFILE_ENABLED        ((PcdGet8 (PcdMemoryProfilePropertyMask) & BIT1) != 0)
 // #define IS_UEFI_MEMORY_PROFILE_ENABLED  ((PcdGet8 (PcdMemoryProfilePropertyMask) & BIT0) != 0)
 #define IS_SMRAM_PROFILE_ENABLED        FALSE
@@ -2322,20 +2321,25 @@ SmramProfileHandler (
 
   TempCommBufferSize = *CommBufferSize;
 
-  //Injection
-  // if (TempCommBufferSize < sizeof (SMRAM_PROFILE_PARAMETER_HEADER)) {
-  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer size invalid!\n"));
-  //   return EFI_SUCCESS;
-  // }
-  
+  //Vlab: Injection
+  if (TempCommBufferSize < sizeof (SMRAM_PROFILE_PARAMETER_HEADER)) {
+    DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer size invalid!\n"));
+    return EFI_SUCCESS;
+  }
+  //Vlab: If mSmramReadyToLock is unexpectedly changed to false 
+  // it could indeed lead to overlaps in the communication buffer (CommBuffer) and the SMRAM
   if (mSmramReadyToLock && !SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
     DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer in SMRAM or overflow!\n"));
     return EFI_SUCCESS;
   }
-
+  //Vlab: Mitigation
+  // if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
+  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer in SMRAM or overflow!\n"));
+  //   return EFI_SUCCESS;
+  // }
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
-  
-  klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));
+  klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
+  //klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));
   SmramProfileParameterHeader->ReturnStatus = (UINT64)-1;
    
   if (GetSmramProfileContext () == NULL) {

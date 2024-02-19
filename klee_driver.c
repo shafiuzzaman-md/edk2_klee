@@ -14,8 +14,9 @@
 #include "edk2-master/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.h"
 #include "edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c"
 
-#define SMRAM_BASE 0x1F000000 // Hypothetical SMRAM base address
-#define SMRAM_SIZE 0x00100000 // Hypothetical SMRAM size (1MB)
+// Define SMRAM_BASE and SMRAM_SIZE as global variables
+uint32_t SMRAM_BASE = 0x1F000000; // Hypothetical SMRAM base address
+uint32_t SMRAM_SIZE = 0x00100000; // Hypothetical SMRAM size (1MB)
 
 //
 //Constant value assigned for variables depend on PCD (Platform Configuration Database)
@@ -76,10 +77,7 @@ EFI_GUID  gEfiSmmSwapAddressRangeProtocolGuid = { 0x67c4f112, 0x3385, 0x4e55, { 
 //Global variables
 //
 LIST_ENTRY  mSmmMemoryMap;
-LIST_ENTRY  mSmmPoolLists[SmmPoolTypeMax][MAX_POOL_INDEX];
 UINTN                 mFullSmramRangeCount;
-//Global pointer used to access mSmmCorePrivateData from outside and inside SMM
-SMM_CORE_PRIVATE_DATA  *gSmmCorePrivate;
 EFI_SMRAM_DESCRIPTOR  *mFullSmramRanges;
 
 
