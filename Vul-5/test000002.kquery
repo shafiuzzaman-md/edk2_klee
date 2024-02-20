@@ -1,4 +1,12 @@
-array CommBufferSize[8] : w32 -> w8 = symbolic
-(query [(Ult (ReadLSB w64 0 CommBufferSize)
+array *CommBufferSize[8] : w32 -> w8 = symbolic
+array ProfileBuffer[8] : w32 -> w8 = symbolic
+array ProfileSize[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 (ReadLSB w64 0 ProfileBuffer)))
+         (Eq false
+             (Eq 0
+                 (ReadLSB w64 0 ProfileSize)))
+         (Ult (ReadLSB w64 0 *CommBufferSize)
               16)]
         false)

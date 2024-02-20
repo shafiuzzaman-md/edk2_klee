@@ -2210,7 +2210,7 @@ SmramProfileHandlerGetData (
 
   SmramProfileGettingStatus  = mSmramProfileGettingStatus;
   mSmramProfileGettingStatus = TRUE;
-  klee_assert(sizeof(SmramProfileParameterGetData) <=  sizeof (SmramProfileGetData));
+  //klee_assert(sizeof(SmramProfileParameterGetData) <=  sizeof (SmramProfileGetData));
   CopyMem (&SmramProfileGetData, SmramProfileParameterGetData, sizeof (SmramProfileGetData));
 
   //ProfileSize = SmramProfileGetDataSize ();
@@ -2225,7 +2225,7 @@ SmramProfileHandlerGetData (
   //   SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
   //   goto Done;
   // }
-  klee_assert(SmramProfileParameterGetData >= SMRAM_BASE + SMRAM_SIZE);       // Buffer is entirely after SMRAM
+ // klee_assert(SmramProfileParameterGetData >= SMRAM_BASE + SMRAM_SIZE);       // Buffer is entirely after SMRAM
   if (SmramProfileGetData.ProfileSize < ProfileSize) {
     SmramProfileParameterGetData->ProfileSize         = ProfileSize;
     SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_BUFFER_TOO_SMALL;
@@ -2338,10 +2338,18 @@ SmramProfileHandler (
   //   DEBUG ((DEBUG_ERROR, "SmramProfileHandler: SMM communication buffer in SMRAM or overflow!\n"));
   //   return EFI_SUCCESS;
   // }
+
+  //The length of the buffer is greater than the maximum supported address.
+  //The start address of the buffer is greater than the maximum supported address.
+  //The end address of the buffer (calculated as Buffer + Length - 1) is greater than the maximum supported address.
+  //If any of these conditions are true, it means there is an overflow, and the buffer is not valid. 
+  klee_assert(*CommBufferSize < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)CommBuffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  ((*CommBufferSize != 0) && ((UINTN)CommBuffer > ((SMRAM_BASE + SMRAM_SIZE) - (*CommBufferSize - 1)))));
   
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
-  //klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
+  
   //klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));
+
   SmramProfileParameterHeader->ReturnStatus = (UINT64)-1;
    
   if (GetSmramProfileContext () == NULL) {

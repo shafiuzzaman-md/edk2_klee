@@ -5,9 +5,7 @@ KLEE: WARNING: undefined reference to function: AsciiStrSize
 KLEE: WARNING: undefined reference to function: AsmCpuid
 KLEE: WARNING: undefined reference to function: CompareGuid
 KLEE: WARNING: undefined reference to function: CompareMem
-KLEE: WARNING: undefined reference to function: CopyMem
 KLEE: WARNING: undefined reference to function: DebugAssert
-KLEE: WARNING: undefined reference to function: DebugAssertEnabled
 KLEE: WARNING: undefined reference to function: DebugCodeEnabled
 KLEE: WARNING: undefined reference to function: DebugPrint
 KLEE: WARNING: undefined reference to function: DebugPrintLevelEnabled
@@ -33,6 +31,6 @@ KLEE: WARNING: undefined reference to function: SetMem
 KLEE: WARNING: undefined reference to function: SmmInternalAllocatePool
 KLEE: WARNING: undefined reference to function: SmmInternalFreePool
 KLEE: WARNING: undefined reference to function: ZeroMem
-KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 94080872611568) at klee/runtime/POSIX/fd.c:997 10
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 93888962975312) at klee/runtime/POSIX/fd.c:997 10
 KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
 KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
