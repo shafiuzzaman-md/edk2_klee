@@ -36,9 +36,9 @@ DSE_to_SmramProfileHandler()
   SMRAM_PROFILE_PARAMETER_HEADER    sym_Header;
   UINT64                            sym_ProfileSize;
   PHYSICAL_ADDRESS                  sym_ProfileBuffer;
-  klee_make_symbolic(&sym_Header, sizeof(sym_Header), "Header");
-  klee_make_symbolic(&sym_ProfileSize, sizeof(sym_ProfileSize), "ProfileSize");
-  klee_make_symbolic(&sym_ProfileBuffer, sizeof(sym_ProfileBuffer), "ProfileBuffer");
+  klee_make_symbolic(&sym_Header, sizeof(sym_Header), "CommBuffer->Header");
+  klee_make_symbolic(&sym_ProfileSize, sizeof(sym_ProfileSize), "CommBuffer->ProfileSize");
+  klee_make_symbolic(&sym_ProfileBuffer, sizeof(sym_ProfileBuffer), "CommBuffer->ProfileBuffer");
 
   klee_assume(sym_ProfileBuffer != NULL);
   klee_assume(sym_ProfileSize != NULL);

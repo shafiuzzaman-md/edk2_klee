@@ -2225,7 +2225,9 @@ SmramProfileHandlerGetData (
   //   SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
   //   goto Done;
   // }
-  klee_assert((UINTN)SmramProfileParameterGetData >= SMRAM_BASE + SMRAM_SIZE);       // Buffer is entirely after SMRAM
+  klee_assert((UINTN)ProfileSize < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)SmramProfileGetData.ProfileBuffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  (((UINTN)ProfileSize!= 0) && ((UINTN)SmramProfileGetData.ProfileBuffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)ProfileSize - 1)))));    
+ 
   if (SmramProfileGetData.ProfileSize < ProfileSize) {
     SmramProfileParameterGetData->ProfileSize         = ProfileSize;
     SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_BUFFER_TOO_SMALL;
@@ -2343,9 +2345,9 @@ SmramProfileHandler (
   //The buffer size is within the SMRAM region.
   //The start address of the buffer is within the SMRAM region.
   //If the buffer size is not zero, the end address of the buffer does not exceed the SMRAM region.
-  klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
-            ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
-            ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
+  // klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
+  //           ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
+  //           ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
 
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
   

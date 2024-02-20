@@ -1,0 +1,17 @@
+array  CommBuffer->ProfileSize[8] : w32 -> w8 = symbolic
+array *CommBufferSize[8] : w32 -> w8 = symbolic
+array CommBuffer->Header[16] : w32 -> w8 = symbolic
+array CommBuffer->ProfileBuffer[8] : w32 -> w8 = symbolic
+array mSmramReadyToLock[1] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 (ReadLSB w64 0 CommBuffer->ProfileBuffer)))
+         (Eq false
+             (Eq 0
+                 (ReadLSB w64 0  CommBuffer->ProfileSize)))
+         (Eq 0 (Read w8 0 mSmramReadyToLock))
+         (Eq 1
+             (ReadLSB w32 0 CommBuffer->Header))
+         (Eq 24
+             (ReadLSB w64 0 *CommBufferSize))]
+        false)
