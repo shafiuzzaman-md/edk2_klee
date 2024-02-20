@@ -77,7 +77,7 @@
  (let ((?x63 (concat ?x62 ?x61)))
  (let ((?x64 (select *CommBufferSize2 (_ bv7 32))))
  (let ((?x65 (concat ?x64 ?x63)))
- (let (($x74 (bvult ?x65 (_ bv521142272 64))))
+ (let (($x74 (bvule ?x65 (_ bv521142272 64))))
  (not $x74))))))))))))))))))
 (assert
  (not false))

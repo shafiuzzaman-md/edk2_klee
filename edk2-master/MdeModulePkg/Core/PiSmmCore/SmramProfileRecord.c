@@ -2269,11 +2269,11 @@ SmramProfileHandlerGetDataByOffset (
   //
   // Sanity check
   //
-  if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetDataByOffset.ProfileBuffer, (UINTN)SmramProfileGetDataByOffset.ProfileSize)) {
-    DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetDataByOffset: SMM ProfileBuffer in SMRAM or overflow!\n"));
-    SmramProfileParameterGetDataByOffset->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
-    goto Done;
-  }
+  // if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetDataByOffset.ProfileBuffer, (UINTN)SmramProfileGetDataByOffset.ProfileSize)) {
+  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetDataByOffset: SMM ProfileBuffer in SMRAM or overflow!\n"));
+  //   SmramProfileParameterGetDataByOffset->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
+  //   goto Done;
+  // }
 
   SmramProfileCopyData ((VOID *)(UINTN)SmramProfileGetDataByOffset.ProfileBuffer, &SmramProfileGetDataByOffset.ProfileSize, &SmramProfileGetDataByOffset.ProfileOffset);
   CopyMem (SmramProfileParameterGetDataByOffset, &SmramProfileGetDataByOffset, sizeof (SmramProfileGetDataByOffset));
@@ -2339,13 +2339,14 @@ SmramProfileHandler (
   //   return EFI_SUCCESS;
   // }
 
-  //The length of the buffer is greater than the maximum supported address.
-  //The start address of the buffer is greater than the maximum supported address.
-  //The end address of the buffer (calculated as Buffer + Length - 1) is greater than the maximum supported address.
-  //If any of these conditions are true, it means there is an overflow, and the buffer is not valid. 
-  // klee_assert(*CommBufferSize < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)CommBuffer < (SMRAM_BASE + SMRAM_SIZE) &&
-  // ((*CommBufferSize != 0) && ((UINTN)CommBuffer > ((SMRAM_BASE + SMRAM_SIZE) - (*CommBufferSize - 1)))));
-  
+  //This assertion checks that:
+  //The buffer size is within the SMRAM region.
+  //The start address of the buffer is within the SMRAM region.
+  //If the buffer size is not zero, the end address of the buffer does not exceed the SMRAM region.
+  klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
+            ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
+            ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
+
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
   
   //klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));

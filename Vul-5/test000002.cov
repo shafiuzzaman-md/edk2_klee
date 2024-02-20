@@ -319,7 +319,7 @@ libc/string/strrchr.c:28
 ./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2326
 ./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2327
 ./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2328
-./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2427
+./edk2-master/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2428
 klee_driver.c:96
 klee_driver.c:118
 klee_driver.c:119
@@ -344,7 +344,6 @@ klee_driver.c:119
 ./SmramProfileHandlerHarness.c:45
 ./SmramProfileHandlerHarness.c:46
 ./SmramProfileHandlerHarness.c:47
-./SmramProfileHandlerHarness.c:48
 ./SmramProfileHandlerHarness.c:50
 ./SmramProfileHandlerHarness.c:51
 ./SmramProfileHandlerHarness.c:54

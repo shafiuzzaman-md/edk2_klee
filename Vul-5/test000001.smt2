@@ -186,7 +186,7 @@
                  )
                  (= 
                     false
-                    (bvult 
+                    (bvule 
                            ?B1
                            (_ bv521142272 64)
                     )
