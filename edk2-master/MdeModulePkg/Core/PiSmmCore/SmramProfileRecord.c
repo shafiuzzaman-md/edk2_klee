@@ -2219,14 +2219,14 @@ SmramProfileHandlerGetData (
   // Sanity check
   //
   //Vlab: Injection
-  // if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetData.ProfileBuffer, (UINTN)ProfileSize)) {
-  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetData: SMM ProfileBuffer in SMRAM or overflow!\n"));
-  //   SmramProfileParameterGetData->ProfileSize         = ProfileSize;
-  //   SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
-  //   goto Done;
-  // }
-  klee_assert((UINTN)ProfileSize < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)SmramProfileGetData.ProfileBuffer < (SMRAM_BASE + SMRAM_SIZE) &&
-  (((UINTN)ProfileSize!= 0) && ((UINTN)SmramProfileGetData.ProfileBuffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)ProfileSize - 1)))));    
+  if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetData.ProfileBuffer, (UINTN)ProfileSize)) {
+    DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetData: SMM ProfileBuffer in SMRAM or overflow!\n"));
+    SmramProfileParameterGetData->ProfileSize         = ProfileSize;
+    SmramProfileParameterGetData->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
+    goto Done;
+  }
+  // klee_assert((UINTN)ProfileSize < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)SmramProfileGetData.ProfileBuffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  // (((UINTN)ProfileSize!= 0) && ((UINTN)SmramProfileGetData.ProfileBuffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)ProfileSize - 1)))));    
  
   if (SmramProfileGetData.ProfileSize < ProfileSize) {
     SmramProfileParameterGetData->ProfileSize         = ProfileSize;
@@ -2262,20 +2262,23 @@ SmramProfileHandlerGetDataByOffset (
   if (ContextData == NULL) {
     return;
   }
-
+ 
   SmramProfileGettingStatus  = mSmramProfileGettingStatus;
   mSmramProfileGettingStatus = TRUE;
 
   CopyMem (&SmramProfileGetDataByOffset, SmramProfileParameterGetDataByOffset, sizeof (SmramProfileGetDataByOffset));
-
+ 
   //
   // Sanity check
   //
-  // if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetDataByOffset.ProfileBuffer, (UINTN)SmramProfileGetDataByOffset.ProfileSize)) {
-  //   DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetDataByOffset: SMM ProfileBuffer in SMRAM or overflow!\n"));
-  //   SmramProfileParameterGetDataByOffset->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
-  //   goto Done;
-  // }
+  //Vlab:Injection
+  if (!SmmIsBufferOutsideSmmValid ((UINTN)SmramProfileGetDataByOffset.ProfileBuffer, (UINTN)SmramProfileGetDataByOffset.ProfileSize)) {
+    DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetDataByOffset: SMM ProfileBuffer in SMRAM or overflow!\n"));
+    SmramProfileParameterGetDataByOffset->Header.ReturnStatus = (UINT64)(INT64)(INTN)EFI_ACCESS_DENIED;
+    goto Done;
+  }
+  klee_assert((UINTN)SmramProfileGetDataByOffset.ProfileSize < (SMRAM_BASE + SMRAM_SIZE) && SmramProfileGetDataByOffset.ProfileBuffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  (((UINTN)SmramProfileGetDataByOffset.ProfileSize!= 0) && ((UINTN)SmramProfileGetDataByOffset.ProfileBuffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)SmramProfileGetDataByOffset.ProfileSize - 1)))));
 
   SmramProfileCopyData ((VOID *)(UINTN)SmramProfileGetDataByOffset.ProfileBuffer, &SmramProfileGetDataByOffset.ProfileSize, &SmramProfileGetDataByOffset.ProfileOffset);
   CopyMem (SmramProfileParameterGetDataByOffset, &SmramProfileGetDataByOffset, sizeof (SmramProfileGetDataByOffset));
@@ -2350,16 +2353,16 @@ SmramProfileHandler (
   //           ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
 
   SmramProfileParameterHeader = (SMRAM_PROFILE_PARAMETER_HEADER *)((UINTN)CommBuffer);
-  
+
   //klee_assert(TempCommBufferSize >= sizeof (SMRAM_PROFILE_PARAMETER_HEADER));
 
   SmramProfileParameterHeader->ReturnStatus = (UINT64)-1;
-   
+      
   if (GetSmramProfileContext () == NULL) {
     SmramProfileParameterHeader->ReturnStatus = (UINT64)(INT64)(INTN)EFI_UNSUPPORTED;
     return EFI_SUCCESS;
   }
-
+ 
   switch (SmramProfileParameterHeader->Command) {
     case SMRAM_PROFILE_COMMAND_GET_PROFILE_INFO:
       DEBUG ((DEBUG_ERROR, "SmramProfileHandlerGetInfo\n"));

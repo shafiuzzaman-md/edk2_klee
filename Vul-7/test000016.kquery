@@ -1,0 +1,30 @@
+array *CommBufferSize[8] : w32 -> w8 = symbolic
+array CommBuffer->Header[16] : w32 -> w8 = symbolic
+array CommBuffer->ProfileBuffer[8] : w32 -> w8 = symbolic
+array CommBuffer->ProfileOffset[8] : w32 -> w8 = symbolic
+array CommBuffer->ProfileSize[8] : w32 -> w8 = symbolic
+array mSmramReadyToLock[1] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 N0:(ReadLSB w64 0 CommBuffer->ProfileOffset)))
+         (Eq false
+             (Eq 0
+                 N1:(ReadLSB w64 0 CommBuffer->ProfileBuffer)))
+         (Eq false
+             (Eq 0
+                 N2:(ReadLSB w64 0 CommBuffer->ProfileSize)))
+         (Eq 0 (Read w8 0 mSmramReadyToLock))
+         (Eq 5
+             (ReadLSB w32 0 CommBuffer->Header))
+         (Eq 40
+             (ReadLSB w64 0 *CommBufferSize))
+         (Ult N2 521142272)
+         (Ult N1 521142272)
+         (Ult (Sub w64 521142273 N2) N1)
+         (Ult N0 328)
+         (Ule 328 N2)
+         (Eq false
+             (Eq 0 (And w64 N1 7)))
+         (Eq false
+             (Eq 0 (And w64 N1 3)))]
+        false)

@@ -29,21 +29,23 @@ DSE_to_SmramProfileHandler()
   EFI_HANDLE  DispatchHandle;
   CONST VOID  *RegisterContext;
 
-  SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA *CommBuffer = malloc(sizeof(SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA)); // Allocate memory
+  SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA_BY_OFFSET *CommBuffer = malloc(sizeof(SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA_BY_OFFSET)); // Allocate memory
   // klee_make_symbolic(CommBuffer, sizeof(SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA), "*CommBuffer");  // Make the allocated memory symbolic.
   // CommBuffer->Header != NULL);
-  
-  SMRAM_PROFILE_PARAMETER_HEADER    sym_Header;
+   SMRAM_PROFILE_PARAMETER_HEADER    sym_Header;
+  UINT64    sym_ProfileOffset;
   UINT64                            sym_ProfileSize;
   PHYSICAL_ADDRESS                  sym_ProfileBuffer;
   klee_make_symbolic(&sym_Header, sizeof(sym_Header), "CommBuffer->Header");
+  klee_make_symbolic(&sym_ProfileOffset, sizeof(sym_ProfileOffset), "CommBuffer->ProfileOffset");
   klee_make_symbolic(&sym_ProfileSize, sizeof(sym_ProfileSize), "CommBuffer->ProfileSize");
   klee_make_symbolic(&sym_ProfileBuffer, sizeof(sym_ProfileBuffer), "CommBuffer->ProfileBuffer");
-
+  klee_assume(sym_ProfileOffset != NULL);
   klee_assume(sym_ProfileBuffer != NULL);
   klee_assume(sym_ProfileSize != NULL);
   CommBuffer->Header = sym_Header;
-  CommBuffer->ProfileBuffer = sym_ProfileSize;
+  CommBuffer->ProfileOffset = sym_ProfileOffset;
+  CommBuffer->ProfileBuffer = sym_ProfileBuffer;
   CommBuffer->ProfileSize = sym_ProfileSize;
   klee_assume(CommBuffer != NULL);
   
