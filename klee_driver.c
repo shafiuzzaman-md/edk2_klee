@@ -74,8 +74,11 @@ EFI_GUID  gEfiSmmEndOfDxeProtocolGuid = { 0x24e70042, 0xd5c5, 0x4260, { 0x8c, 0x
 //## This protocol is used to abstract the swap operation of boot block and backup block of boot FV in SMM environment.
 //  #  Include/Protocol/SmmSwapAddressRange.h
 EFI_GUID  gEfiSmmSwapAddressRangeProtocolGuid = { 0x67c4f112, 0x3385, 0x4e55, { 0x9c, 0x5b, 0xc0, 0x5b, 0x71, 0x7c, 0x42, 0x28 }};
-
-
+//## Include/Protocol/Tcg2Protocol.h
+EFI_GUID  gEfiTcg2ProtocolGuid           = {0x607f766c, 0x7455, 0x42be, { 0x93, 0x0b, 0xe4, 0xd7, 0x6d, 0xb2, 0x72, 0x0f }};
+EFI_GUID  gEfiTcgProtocolGuid           = {0x607f766c, 0x7455, 0x42be, { 0x93, 0x0b, 0xe4, 0xd7, 0x6d, 0xb2, 0x72, 0x0f }};
+// #  Include/Guid/SmmVariableCommon.h
+EFI_GUID  gSmmVariableWriteGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 }};
 //
 //Global variables
 //
@@ -105,15 +108,14 @@ DebugAssertEnabled (
   return 0;
 }
 
-//#include "vul1_harness.c"
 //#include "SMRAM_exposure_harness.c"
 //#include "Harness_SmmFaultTolerantWriteHandler.c"
 #include "SmramProfileHandlerHarness.c"
-
+#include "SmmVariableHandlerHarness.c"
 int main()
 {
-  // DSE_to_SmmVariableHandler();
+   DSE_to_SmmVariableHandler();
   // DSE_to_SmmLockBoxHandler();
   // DSE_to_SmmFaultTolerantWriteHandler();
-  DSE_to_SmramProfileHandler();
+  // DSE_to_SmramProfileHandler();
 }

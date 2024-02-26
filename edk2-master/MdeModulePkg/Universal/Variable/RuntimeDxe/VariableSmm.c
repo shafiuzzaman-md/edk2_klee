@@ -488,7 +488,8 @@ SmmVariableHandler(
     return EFI_SUCCESS;
   }
   
-  klee_assert(TempCommBufferSize >= SMM_VARIABLE_COMMUNICATE_HEADER_SIZE);
+  //VLab: Assertion to detect buffer underflow
+  //klee_assert(TempCommBufferSize >= SMM_VARIABLE_COMMUNICATE_HEADER_SIZE);
   CommBufferPayloadSize = TempCommBufferSize - SMM_VARIABLE_COMMUNICATE_HEADER_SIZE;
   if (CommBufferPayloadSize > mVariableBufferPayloadSize)
   {
@@ -501,6 +502,14 @@ SmmVariableHandler(
     DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer in SMRAM or overflow!\n"));
     return EFI_SUCCESS;
   }
+
+  //This assertion checks that:
+  //The buffer size is within the SMRAM region.
+  //The start address of the buffer is within the SMRAM region.
+  //If the buffer size is not zero, the end address of the buffer does not exceed the SMRAM region.
+  klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
+            ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
+            ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
 
   SmmVariableFunctionHeader = (SMM_VARIABLE_COMMUNICATE_HEADER *)CommBuffer;
   switch (SmmVariableFunctionHeader->Function)

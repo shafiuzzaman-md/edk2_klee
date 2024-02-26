@@ -1,0 +1,15 @@
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c:500
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c:502
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c:503
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:114
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:115
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:116
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:119
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:125
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:132
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:139
+./edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c:238
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c:28
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c:29
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c:30
+./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c:33
