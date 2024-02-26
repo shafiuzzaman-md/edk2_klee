@@ -479,7 +479,7 @@ SmmVariableHandler(
   {
     return EFI_SUCCESS;
   }
-
+ 
   TempCommBufferSize = *CommBufferSize;
 
   // Injection
@@ -487,43 +487,49 @@ SmmVariableHandler(
     DEBUG ((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer size invalid!\n"));
     return EFI_SUCCESS;
   }
-  
+ 
   //VLab: Assertion to detect buffer underflow
   //klee_assert(TempCommBufferSize >= SMM_VARIABLE_COMMUNICATE_HEADER_SIZE);
   CommBufferPayloadSize = TempCommBufferSize - SMM_VARIABLE_COMMUNICATE_HEADER_SIZE;
+  //Injection: Bufferoverflow
   if (CommBufferPayloadSize > mVariableBufferPayloadSize)
   {
     DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer payload size invalid!\n"));
     return EFI_SUCCESS;
   }
-
-  if (!VariableSmmIsBufferOutsideSmmValid((UINTN)CommBuffer, TempCommBufferSize))
-  {
-    DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer in SMRAM or overflow!\n"));
-    return EFI_SUCCESS;
-  }
-
+ 
+  // if (!VariableSmmIsBufferOutsideSmmValid((UINTN)CommBuffer, TempCommBufferSize))
+  // {
+  //   DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer in SMRAM or overflow!\n"));
+  //   return EFI_SUCCESS;
+  // }
+    
   //This assertion checks that:
   //The buffer size is within the SMRAM region.
   //The start address of the buffer is within the SMRAM region.
   //If the buffer size is not zero, the end address of the buffer does not exceed the SMRAM region.
-  klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
-            ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
-            ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
-
+  // klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
+  //           ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
+  //           ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
+        
   SmmVariableFunctionHeader = (SMM_VARIABLE_COMMUNICATE_HEADER *)CommBuffer;
+ 
   switch (SmmVariableFunctionHeader->Function)
   {
+   
   case SMM_VARIABLE_FUNCTION_GET_VARIABLE:
-    if (CommBufferPayloadSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name))
-    {
-      DEBUG((DEBUG_ERROR, "GetVariable: SMM communication buffer size invalid!\n"));
-      return EFI_SUCCESS;
-    }
+    //klee_assert(0);
+    // if (CommBufferPayloadSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name))
+    // {
+    //   DEBUG((DEBUG_ERROR, "GetVariable: SMM communication buffer size invalid!\n"));
+    //   return EFI_SUCCESS;
+    // }
 
     //
     // Copy the input communicate buffer payload to pre-allocated SMM variable buffer payload.
     //
+    //Buffer overflow check
+    klee_assert(CommBufferPayloadSize <= mVariableBufferPayload);
     CopyMem(mVariableBufferPayload, SmmVariableFunctionHeader->Data, CommBufferPayloadSize);
     SmmVariableHeader = (SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE *)mVariableBufferPayload;
     if (((UINTN)(~0) - SmmVariableHeader->DataSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name)) ||
