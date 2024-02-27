@@ -325,18 +325,24 @@ SmmFaultTolerantWriteHandler (
 
   TempCommBufferSize = *CommBufferSize;
 
-  // if (TempCommBufferSize < SMM_FTW_COMMUNICATE_HEADER_SIZE) {
-  //   DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer size invalid!\n"));
-  //   return EFI_SUCCESS;
-  // }
-  klee_assert(TempCommBufferSize >= SMM_FTW_COMMUNICATE_HEADER_SIZE);
-  CommBufferPayloadSize = TempCommBufferSize - SMM_FTW_COMMUNICATE_HEADER_SIZE;
- 
-  if (!FtwSmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
-    DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer in SMRAM or overflow!\n"));
+  if (TempCommBufferSize < SMM_FTW_COMMUNICATE_HEADER_SIZE) {
+    DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer size invalid!\n"));
     return EFI_SUCCESS;
   }
-
+  // klee_assert(TempCommBufferSize >= SMM_FTW_COMMUNICATE_HEADER_SIZE);
+  // CommBufferPayloadSize = TempCommBufferSize - SMM_FTW_COMMUNICATE_HEADER_SIZE;
+ 
+  // if (!FtwSmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
+  //   DEBUG ((DEBUG_ERROR, "SmmFtwHandler: SMM communication buffer in SMRAM or overflow!\n"));
+  //   return EFI_SUCCESS;
+  // }
+    //This assertion checks that:
+  //The buffer size is within the SMRAM region.
+  //The start address of the buffer is within the SMRAM region.
+  //If the buffer size is not zero, the end address of the buffer does not exceed the SMRAM region.
+  klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
+            ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
+            ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
   SmmFtwFunctionHeader = (SMM_FTW_COMMUNICATE_FUNCTION_HEADER *)CommBuffer;
 
   if (mEndOfDxe) {
