@@ -49,7 +49,7 @@ SmmLockBoxSave (
 {
   EFI_STATUS                       Status;
   EFI_SMM_LOCK_BOX_PARAMETER_SAVE  TempLockBoxParameterSave;
-
+  //klee_assert(0);   
   //
   // Sanity check
   //
@@ -59,7 +59,7 @@ SmmLockBoxSave (
     return;
   }
 
-  CopyMem (&TempLockBoxParameterSave, LockBoxParameterSave, sizeof (EFI_SMM_LOCK_BOX_PARAMETER_SAVE));
+ // CopyMem (&TempLockBoxParameterSave, LockBoxParameterSave, sizeof (EFI_SMM_LOCK_BOX_PARAMETER_SAVE));
 
   //
   // Sanity check
@@ -69,6 +69,9 @@ SmmLockBoxSave (
     LockBoxParameterSave->Header.ReturnStatus = (UINT64)EFI_ACCESS_DENIED;
     return;
   }
+
+klee_assert((UINTN)TempLockBoxParameterSave.Length < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)TempLockBoxParameterSave.Buffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  (((UINTN)TempLockBoxParameterSave.Length!= 0) && ((UINTN)TempLockBoxParameterSave.Buffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)TempLockBoxParameterSave.Length - 1)))));    
 
   //
   // The SpeculationBarrier() call here is to ensure the above range check for
@@ -291,7 +294,7 @@ SmmLockBoxHandler (
   }
 
   TempCommBufferSize = *CommBufferSize;
-
+    
   //
   // Sanity check
   //
@@ -299,15 +302,17 @@ SmmLockBoxHandler (
     DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer Size invalid!\n"));
     return EFI_SUCCESS;
   }
+
   //Injection
-  if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
-    DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer in SMRAM or overflow!\n"));
-    return EFI_SUCCESS;
-  }
-  klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
+  // if (!SmmIsBufferOutsideSmmValid ((UINTN)CommBuffer, TempCommBufferSize)) {
+  //   DEBUG ((DEBUG_ERROR, "SmmLockBox Command Buffer in SMRAM or overflow!\n"));
+  //   return EFI_SUCCESS;
+  // }
+
+  //klee_assert(CommBufferSize < (SMRAM_BASE + SMRAM_SIZE));
 
   LockBoxParameterHeader = (EFI_SMM_LOCK_BOX_PARAMETER_HEADER *)((UINTN)CommBuffer);
-
+     
   LockBoxParameterHeader->ReturnStatus = (UINT64)-1;
 
   DEBUG ((DEBUG_INFO, "SmmLockBox LockBoxParameterHeader - %x\n", (UINTN)LockBoxParameterHeader));

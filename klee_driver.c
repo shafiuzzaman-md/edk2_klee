@@ -112,10 +112,11 @@ DebugAssertEnabled (
 //#include "Harness_SmmFaultTolerantWriteHandler.c"
 #include "SmramProfileHandlerHarness.c"
 #include "SmmVariableHandlerHarness.c"
+#include "SmmLockBoxHandlerHarness.c"
 int main()
 {
-   DSE_to_SmmVariableHandler();
-  // DSE_to_SmmLockBoxHandler();
+   //DSE_to_SmmVariableHandler();
+  DSE_to_SmmLockBoxHandler();
   // DSE_to_SmmFaultTolerantWriteHandler();
   // DSE_to_SmramProfileHandler();
 }
