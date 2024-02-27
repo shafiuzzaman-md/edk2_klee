@@ -162,7 +162,8 @@ SmmLockBoxUpdate (
     LockBoxParameterUpdate->Header.ReturnStatus = (UINT64)EFI_ACCESS_DENIED;
     return;
   }
-
+  klee_assert((UINTN)TempLockBoxParameterUpdate.Length < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)TempLockBoxParameterUpdate.Buffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  (((UINTN)TempLockBoxParameterUpdate.Length!= 0) && ((UINTN)TempLockBoxParameterUpdate.Buffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)TempLockBoxParameterUpdate.Length - 1)))));    
   //
   // The SpeculationBarrier() call here is to ensure the above range check for
   // the CommBuffer have been completed before calling into UpdateLockBox().
@@ -210,6 +211,8 @@ SmmLockBoxRestore (
     return;
   }
 
+  klee_assert((UINTN)TempLockBoxParameterRestore.Length < (SMRAM_BASE + SMRAM_SIZE) && (UINTN)TempLockBoxParameterRestore.Buffer < (SMRAM_BASE + SMRAM_SIZE) &&
+  (((UINTN)TempLockBoxParameterRestore.Length!= 0) && ((UINTN)TempLockBoxParameterRestore.Buffer > ((SMRAM_BASE + SMRAM_SIZE) - ((UINTN)TempLockBoxParameterRestore.Length - 1)))));    
   //
   // Restore data
   //
