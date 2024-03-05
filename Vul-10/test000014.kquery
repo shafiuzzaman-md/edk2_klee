@@ -1,10 +1,11 @@
 array *CommBufferSize[8] : w32 -> w8 = symbolic
 array CommBuffer->Function[8] : w32 -> w8 = symbolic
-(query [(Eq false
-             (Ult N0:(ReadLSB w64 0 *CommBufferSize)
-                  16))
-         (Eq 4
-             (ReadLSB w64 0 CommBuffer->Function))
+array mVariableBufferPayloadSize[8] : w32 -> w8 = symbolic
+(query [(Eq 0
+             (ReadLSB w64 0 mVariableBufferPayloadSize))
          (Eq false
-             (Ult (Add w64 18446744073709551600 N0) 32))]
+             (Ult (ReadLSB w64 0 *CommBufferSize)
+                  16))
+         (Eq 7
+             (ReadLSB w64 0 CommBuffer->Function))]
         false)

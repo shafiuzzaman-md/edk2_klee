@@ -58,133 +58,126 @@
                  )
              )
             )
-            (let
-                (
-                 (?B2
-                     (bvadd 
-                            (_ bv18446744073709551600 64)
-                            ?B1
-                     )
+            (and 
+                 (and 
+                      (and 
+                           (= 
+                              (_ bv0 64)
+                              (concat 
+                                      (select 
+                                              mVariableBufferPayloadSize
+                                              (_ bv7 32)
+                                      )
+                                      (concat 
+                                              (select 
+                                                      mVariableBufferPayloadSize
+                                                      (_ bv6 32)
+                                              )
+                                              (concat 
+                                                      (select 
+                                                              mVariableBufferPayloadSize
+                                                              (_ bv5 32)
+                                                      )
+                                                      (concat 
+                                                              (select 
+                                                                      mVariableBufferPayloadSize
+                                                                      (_ bv4 32)
+                                                              )
+                                                              (concat 
+                                                                      (select 
+                                                                              mVariableBufferPayloadSize
+                                                                              (_ bv3 32)
+                                                                      )
+                                                                      (concat 
+                                                                              (select 
+                                                                                      mVariableBufferPayloadSize
+                                                                                      (_ bv2 32)
+                                                                              )
+                                                                              (concat 
+                                                                                      (select 
+                                                                                              mVariableBufferPayloadSize
+                                                                                              (_ bv1 32)
+                                                                                      )
+                                                                                      (select 
+                                                                                              mVariableBufferPayloadSize
+                                                                                              (_ bv0 32)
+                                                                                      )
+                                                                              )
+                                                                      )
+                                                              )
+                                                      )
+                                              )
+                                      )
+                              )
+                           )
+                           (= 
+                              false
+                              (bvult 
+                                     ?B1
+                                     (_ bv16 64)
+                              )
+                           )
+                      )
+                      (= 
+                         (_ bv1 64)
+                         (concat 
+                                 (select 
+                                         CommBuffer->Function
+                                         (_ bv7 32)
+                                 )
+                                 (concat 
+                                         (select 
+                                                 CommBuffer->Function
+                                                 (_ bv6 32)
+                                         )
+                                         (concat 
+                                                 (select 
+                                                         CommBuffer->Function
+                                                         (_ bv5 32)
+                                                 )
+                                                 (concat 
+                                                         (select 
+                                                                 CommBuffer->Function
+                                                                 (_ bv4 32)
+                                                         )
+                                                         (concat 
+                                                                 (select 
+                                                                         CommBuffer->Function
+                                                                         (_ bv3 32)
+                                                                 )
+                                                                 (concat 
+                                                                         (select 
+                                                                                 CommBuffer->Function
+                                                                                 (_ bv2 32)
+                                                                         )
+                                                                         (concat 
+                                                                                 (select 
+                                                                                         CommBuffer->Function
+                                                                                         (_ bv1 32)
+                                                                                 )
+                                                                                 (select 
+                                                                                         CommBuffer->Function
+                                                                                         (_ bv0 32)
+                                                                                 )
+                                                                         )
+                                                                 )
+                                                         )
+                                                 )
+                                         )
+                                 )
+                         )
+                      )
                  )
-                )
-                (and 
-                     (and 
-                          (and 
-                               (= 
-                                  false
-                                  (bvult 
-                                         ?B1
-                                         (_ bv16 64)
-                                  )
-                               )
-                               (= 
-                                  (_ bv1 64)
-                                  (concat 
-                                          (select 
-                                                  CommBuffer->Function
-                                                  (_ bv7 32)
-                                          )
-                                          (concat 
-                                                  (select 
-                                                          CommBuffer->Function
-                                                          (_ bv6 32)
-                                                  )
-                                                  (concat 
-                                                          (select 
-                                                                  CommBuffer->Function
-                                                                  (_ bv5 32)
-                                                          )
-                                                          (concat 
-                                                                  (select 
-                                                                          CommBuffer->Function
-                                                                          (_ bv4 32)
-                                                                  )
-                                                                  (concat 
-                                                                          (select 
-                                                                                  CommBuffer->Function
-                                                                                  (_ bv3 32)
-                                                                          )
-                                                                          (concat 
-                                                                                  (select 
-                                                                                          CommBuffer->Function
-                                                                                          (_ bv2 32)
-                                                                                  )
-                                                                                  (concat 
-                                                                                          (select 
-                                                                                                  CommBuffer->Function
-                                                                                                  (_ bv1 32)
-                                                                                          )
-                                                                                          (select 
-                                                                                                  CommBuffer->Function
-                                                                                                  (_ bv0 32)
-                                                                                          )
-                                                                                  )
-                                                                          )
-                                                                  )
-                                                          )
-                                                  )
-                                          )
-                                  )
-                               )
-                          )
-                          (= 
-                             false
-                             (bvult 
-                                    ?B2
-                                    (_ bv36 64)
-                             )
-                          )
-                     )
-                     (bvule 
-                            ?B2
-                            (concat 
-                                    (select 
-                                            mVariableBufferPayloadSize
-                                            (_ bv7 32)
-                                    )
-                                    (concat 
-                                            (select 
-                                                    mVariableBufferPayloadSize
-                                                    (_ bv6 32)
-                                            )
-                                            (concat 
-                                                    (select 
-                                                            mVariableBufferPayloadSize
-                                                            (_ bv5 32)
-                                                    )
-                                                    (concat 
-                                                            (select 
-                                                                    mVariableBufferPayloadSize
-                                                                    (_ bv4 32)
-                                                            )
-                                                            (concat 
-                                                                    (select 
-                                                                            mVariableBufferPayloadSize
-                                                                            (_ bv3 32)
-                                                                    )
-                                                                    (concat 
-                                                                            (select 
-                                                                                    mVariableBufferPayloadSize
-                                                                                    (_ bv2 32)
-                                                                            )
-                                                                            (concat 
-                                                                                    (select 
-                                                                                            mVariableBufferPayloadSize
-                                                                                            (_ bv1 32)
-                                                                                    )
-                                                                                    (select 
-                                                                                            mVariableBufferPayloadSize
-                                                                                            (_ bv0 32)
-                                                                                    )
-                                                                            )
-                                                                    )
-                                                            )
-                                                    )
-                                            )
-                                    )
-                            )
-                     )
-                )
+                 (= 
+                    false
+                    (bvult 
+                           (bvadd 
+                                  (_ bv18446744073709551600 64)
+                                  ?B1
+                           )
+                           (_ bv36 64)
+                    )
+                 )
             )
         )
 )

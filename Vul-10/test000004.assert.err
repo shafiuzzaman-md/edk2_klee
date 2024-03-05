@@ -1,0 +1,12 @@
+Error: ASSERTION FAIL: CommBufferPayloadSize <= mVariableBufferPayloadSize
+File: ./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c
+Line: 530
+assembly.ll line: 11645
+State: 23
+Stack: 
+	#000011645 in SmmVariableHandler(12370169555311111083, 12370169555311111083, 94704265661184, 94704264734088) at ./edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c:530
+	#100013534 in DSE_to_SmmVariableHandler() at ./SmmVariableHandlerHarness.c:38
+	#200013541 in __klee_posix_wrapped_main() at klee_driver.c:145
+	#300007276 in __user_main(1, 94704226254336, 94704226254352) at klee/runtime/POSIX/klee_init_env.c:245
+	#400000689 in __uClibc_main(94704264459768, 1, 94704226254336, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#500000854 in main(1, 94704226254336)

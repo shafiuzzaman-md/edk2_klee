@@ -20,7 +20,7 @@
 // Define SMRAM_BASE and SMRAM_SIZE as global variables
 uint32_t SMRAM_BASE = 0x1F000000; // Hypothetical SMRAM base address
 uint32_t SMRAM_SIZE = 0x00100000; // Hypothetical SMRAM size (1MB)
-
+UINT8 mVariableBufferPayloadSize1;
 //
 //Constant value assigned for variables depend on PCD (Platform Configuration Database)
 //

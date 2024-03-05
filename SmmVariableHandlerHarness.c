@@ -30,10 +30,10 @@ DSE_to_SmmVariableHandler()
   UINTN *CommBufferSize = malloc(sizeof(UINTN)); // Allocate memory for one UINTN.
   klee_make_symbolic(CommBufferSize, sizeof(UINTN), "*CommBufferSize"); // Make the allocated memory symbolic.
 
-  mVariableBufferPayload = malloc(sizeof(UINT8));
-  klee_make_symbolic(mVariableBufferPayload, sizeof(UINT8), "*mVariableBufferPayload");
+ 
   klee_make_symbolic(&mVariableBufferPayloadSize, sizeof(mVariableBufferPayloadSize), "mVariableBufferPayloadSize");
-
+  mVariableBufferPayload = malloc(mVariableBufferPayloadSize);
+  klee_make_symbolic(mVariableBufferPayload, mVariableBufferPayloadSize, "*mVariableBufferPayload");
 
   SmmVariableHandler ( DispatchHandle, RegisterContext, CommBuffer, CommBufferSize);
 }
