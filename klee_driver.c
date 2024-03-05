@@ -46,7 +46,7 @@ EFI_MM_SYSTEM_TABLE  *gMmst = NULL; //MM System Table
 EFI_SMM_SYSTEM_TABLE2  *gSmst = NULL; //System Management System Table
 EFI_BOOT_SERVICES  *gBS         = NULL; //EFI Boot Services Table
 EFI_DXE_SERVICES  *gDS = NULL; //DXE Services Table
-
+EFI_RUNTIME_SERVICES  *gRT = NULL;
 //
 //Default value assigned for protocol GUID
 //
@@ -79,6 +79,10 @@ EFI_GUID  gEfiTcg2ProtocolGuid           = {0x607f766c, 0x7455, 0x42be, { 0x93, 
 EFI_GUID  gEfiTcgProtocolGuid           = {0x607f766c, 0x7455, 0x42be, { 0x93, 0x0b, 0xe4, 0xd7, 0x6d, 0xb2, 0x72, 0x0f }};
 // #  Include/Guid/SmmVariableCommon.h
 EFI_GUID  gSmmVariableWriteGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 }};
+
+EFI_GUID gEfiQueryVariableInfoCommGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 }};
+
+EFI_GUID gEfiQueryVariableInfoProtocolGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 }};
 //
 //Global variables
 //
@@ -108,14 +112,38 @@ DebugAssertEnabled (
   return 0;
 }
 
+#define MAX_STR_LEN 1024  // Define a reasonable maximum length for your strings
+
+size_t my_strlen(const char *str) {
+    size_t length = 0;
+    for (length = 0; length < MAX_STR_LEN; length++) {
+        // Check for invalid character
+        if (str[length] < 32 || str[length] > 126) {
+            // Handle the invalid character case (e.g., return an error code or set length to 0)
+            return 0; // Example: return 0 to indicate an error
+        }
+
+        // Check for null terminator
+        if (str[length] == '\0') {
+            break;
+        }
+    }
+    return length;
+}
+
+
+
 //#include "SmramProfileHandlerHarness.c"
-//#include "SmmVariableHandlerHarness.c"
+#include "SmmVariableHandlerHarness.c"
 //#include "SmmLockBoxHandlerHarness.c"
-#include "SmmFaultTolerantWriteHandlerHarness.c"
+//#include "SmmFaultTolerantWriteHandlerHarness.c"
+//#include "QueryVariableInfoHandlerHarness.c"
+
 int main()
 {
-   //DSE_to_SmmVariableHandler();
+  //DSE_to_QueryVariableInfoHandler();
+  DSE_to_SmmVariableHandler();
   //DSE_to_SmmLockBoxHandler();
-  DSE_to_SmmFaultTolerantWriteHandler();
+  //DSE_to_SmmFaultTolerantWriteHandler();
   // DSE_to_SmramProfileHandler();
 }

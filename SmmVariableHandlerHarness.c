@@ -20,11 +20,20 @@ DSE_to_SmmVariableHandler()
   EFI_HANDLE  DispatchHandle;
   CONST VOID  *RegisterContext;
   UINTN   sym_Function;
+  UINT8         sym_Data;
   SMM_VARIABLE_COMMUNICATE_HEADER        *CommBuffer = malloc(sizeof(SMM_VARIABLE_COMMUNICATE_HEADER));
   klee_make_symbolic(&sym_Function, sizeof(sym_Function), "CommBuffer->Function");
+  klee_make_symbolic(&sym_Data, sizeof(sym_Data), "CommBuffer->Data");
   CommBuffer->Function = sym_Function;
+  CommBuffer->Data[1] = sym_Data;
   
   UINTN *CommBufferSize = malloc(sizeof(UINTN)); // Allocate memory for one UINTN.
-  klee_make_symbolic(CommBufferSize, sizeof(UINTN), "CommBufferSize"); // Make the allocated memory symbolic.
+  klee_make_symbolic(CommBufferSize, sizeof(UINTN), "*CommBufferSize"); // Make the allocated memory symbolic.
+
+  mVariableBufferPayload = malloc(sizeof(UINT8));
+  klee_make_symbolic(mVariableBufferPayload, sizeof(UINT8), "*mVariableBufferPayload");
+  klee_make_symbolic(&mVariableBufferPayloadSize, sizeof(mVariableBufferPayloadSize), "mVariableBufferPayloadSize");
+
+
   SmmVariableHandler ( DispatchHandle, RegisterContext, CommBuffer, CommBufferSize);
 }

@@ -1,0 +1,938 @@
+#include "/home/cclyzerpp/cclyzerpp/datalog/subset.project"
+#include "/home/testrules/utils/utils.dl"
+#include "/home/testrules/utils/exports/utils-outputs.dl"
+
+.init utils = Utils
+
+.type Taintpath = [
+    head : Operand,
+    tail : Taintpath
+]
+
+.type Edge = [
+	from : Operand,
+	to : Operand
+]
+
+.decl edk2_smi_handlers(?func: Function)
+edk2_smi_handlers(?func) :-
+	func_name(?func, "@SmmVariableHandler");
+	func_name(?func, "@PhysicalPresenceCallback");
+	func_name(?func, "@MemoryClearCallback");
+	func_name(?func, "@TpmNvsCommunciate");
+	func_name(?func, "@SmmLockBoxHandler");
+	func_name(?func, "@SmmFaultTolerantWriteHandler");
+	func_name(?func, "@SmmLegacyBootHandler");
+	func_name(?func, "@SmmExitBootServicesHandler");
+	func_name(?func, "@SmmS3EntryCallBack");
+	func_name(?func, "@SmmReadyToBootHandler");
+	func_name(?func, "@SmmReadyToLockHandler");
+	func_name(?func, "@SmmEndOfDxeHandler");
+	func_name(?func, "@SmmS3SmmInitDoneHandler");
+	func_name(?func, "@SmmEndOfS3ResumeHandler");
+	func_name(?func, "@SmmDriverDispatchHandler");
+	func_name(?func, "@SmiHandlerProfileHandler");
+	func_name(?func, "@SmramProfileHandler");
+	func_name(?func, "@PiSmmCommunicationHandler");
+	func_name(?func, "@BlSwSmiHandler");
+	func_name(?func, "@SmmSwDispatcher");
+	func_name(?func, "@QueryVariableInfoHandler");
+    
+
+//To simplify backward taint for bitcast
+.decl bitcasts_relation(?fromop: Operand, ?toop: Operand)
+.output bitcasts_relation
+
+bitcasts_relation(?fromop, ?toop) :-
+	bitcast_instr_from_operand(?instr, ?fromop),
+	instr_assigns_to(?instr, ?toop).
+	
+
+/*
+Entry Points
+*/
+
+// Entry point functions for EDK2.
+// It is based on background knowledge about EDK2.
+.decl edk2_taint_entry_points(?commbuffer: Operand)
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmVariableHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+//PhysicalPresenceCallback and MemoryClearCallback appear twice
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@PhysicalPresenceCallback"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@MemoryClearCallback"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@TpmNvsCommunciate"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmLockBoxHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmFaultTolerantWriteHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmLegacyBootHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmExitBootServicesHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmS3EntryCallBack"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmReadyToBootHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmReadyToLockHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmEndOfDxeHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmS3SmmInitDoneHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmEndOfS3ResumeHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmDriverDispatchHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmiHandlerProfileHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmramProfileHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@PiSmmCommunicationHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@SmmSwDispatcher"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+//Does not have a commbuffer field
+//edk2_taint_entry_points(?commbuffer) :- 
+//	func_name(?func, "@CpuMemoryServiceWrite"),
+//	utils.function_argument(?func, ?commbuffer, 4).
+
+edk2_taint_entry_points(?commbuffer) :- 
+	func_name(?func, "@BlSwSmiHandler"),
+	utils.function_argument(?func, ?commbuffer, 2).
+
+//Creating Taint sources
+.decl commbuffer_taints(?commbufferops: Operand)
+commbuffer_taints(?commbufferops) :-
+	edk2_taint_entry_points(?commbufferog),
+	(
+		add_instr_first_operand(?instr, ?commbufferog);
+		add_instr_second_operand(?instr, ?commbufferog);
+		sub_instr_first_operand(?instr, ?commbufferog);
+		sub_instr_second_operand(?instr, ?commbufferog);
+		xor_instr_first_operand(?instr, ?commbufferog);
+		xor_instr_second_operand(?instr, ?commbufferog);
+		or_instr_first_operand(?instr, ?commbufferog);
+		or_instr_second_operand(?instr, ?commbufferog);
+		and_instr_first_operand(?instr, ?commbufferog);
+		and_instr_second_operand(?instr, ?commbufferog);
+		mul_instr_first_operand(?instr, ?commbufferog);
+		mul_instr_second_operand(?instr, ?commbufferog);
+		udiv_instr_first_operand(?instr, ?commbufferog);
+		udiv_instr_second_operand(?instr, ?commbufferog);
+		sdiv_instr_first_operand(?instr, ?commbufferog);
+		sdiv_instr_second_operand(?instr, ?commbufferog);
+		ashr_instr_first_operand(?instr, ?commbufferog);
+		ashr_instr_second_operand(?instr, ?commbufferog);
+		lshr_instr_first_operand(?instr, ?commbufferog);
+		lshr_instr_second_operand(?instr, ?commbufferog);
+		shl_instr_first_operand(?instr, ?commbufferog);
+		shl_instr_second_operand(?instr, ?commbufferog);
+		select_instr_condition(?instr, ?commbufferog);
+		select_instr_first_operand(?instr, ?commbufferog);
+		select_instr_second_operand(?instr, ?commbufferog);
+		alloca_instr_size(?instr, ?commbufferog);
+		bitcast_instr_from_operand(?instr, ?commbufferog);
+		call_instr_func_operand(?instr, ?commbufferog);
+		call_instr_arg(?instr, _, ?commbufferog);
+		extractelement_instr_base(?instr, ?commbufferog);
+		extractelement_instr_index(?instr, ?commbufferog);
+		extractvalue_instr_base(?instr, ?commbufferog);
+		fadd_instr_first_operand(?instr, ?commbufferog);
+		fadd_instr_second_operand(?instr, ?commbufferog);
+		fcmp_instr_first_operand(?instr, ?commbufferog);
+		fcmp_instr_second_operand(?instr, ?commbufferog);
+		fdiv_instr_first_operand(?instr, ?commbufferog);
+		fdiv_instr_second_operand(?instr, ?commbufferog);
+		fmul_instr_first_operand(?instr, ?commbufferog);
+		fmul_instr_second_operand(?instr, ?commbufferog);
+		fneg_instr_operand(?instr, ?commbufferog);
+		fpext_instr_from_operand(?instr, ?commbufferog);
+		fptosi_instr_from_operand(?instr, ?commbufferog);
+		fptoui_instr_from_operand(?instr, ?commbufferog);
+		fptrunc_instr_from_operand(?instr, ?commbufferog);
+		frem_instr_first_operand(?instr, ?commbufferog);
+		frem_instr_second_operand(?instr, ?commbufferog);
+		fsub_instr_first_operand(?instr, ?commbufferog);
+		fsub_instr_second_operand(?instr, ?commbufferog);
+		getelementptr_instr_base(?instr, ?commbufferog);
+		getelementptr_instr_index(?instr, _, ?commbufferog);
+		icmp_instr_first_operand(?instr, ?commbufferog);
+		icmp_instr_second_operand(?instr, ?commbufferog);
+		insertelement_instr_base(?instr, ?commbufferog);
+		insertelement_instr_index(?instr, ?commbufferog);
+		insertelement_instr_value(?instr, ?commbufferog);
+		insertvalue_instr_base(?instr, ?commbufferog);
+		insertvalue_instr_value(?instr, ?commbufferog);
+		inttoptr_instr_from_operand(?instr, ?commbufferog);
+		invoke_instr_func_operand(?instr, ?commbufferog);
+		load_instr_address(?instr, ?commbufferog);
+		phi_instr_pair(?instr, _,?commbufferog,_);
+		ptrtoint_instr_from_operand(?instr, ?commbufferog);
+		sext_instr_from_operand(?instr, ?commbufferog);
+		shufflevector_instr_first_vector(?instr, ?commbufferog);
+		shufflevector_instr_second_vector(?instr, ?commbufferog);
+		sitofp_instr_from_operand(?instr, ?commbufferog);
+		srem_instr_first_operand(?instr, ?commbufferog);
+		srem_instr_second_operand(?instr, ?commbufferog);
+		store_instr_value(?instr, ?commbufferog);
+		store_instr_address(?instr, ?commbufferog);
+		trunc_instr_from_operand(?instr, ?commbufferog);
+		uitofp_instr_from_operand(?instr, ?commbufferog);
+		urem_instr_first_operand(?instr, ?commbufferog);
+		urem_instr_second_operand(?instr, ?commbufferog);
+		va_arg_instr_va_list(?instr, ?commbufferog);
+		zext_instr_from_operand(?instr, ?commbufferog)
+	),
+	instr_assigns_to(?instr, ?commbufferops).
+
+
+//taint propagating special instructions when the instruction is not in point-to relation
+commbuffer_taints(?commbufferops) :-
+	edk2_taint_entry_points(?commbufferog),
+	atomicrmw_instr_value(?instr, ?commbufferog),
+	atomicrmw_instr_address(?instr, ?commbufferops).
+
+
+//taint propagating special instructions when the instruction is not in point-to relation
+commbuffer_taints(?commbufferops) :-
+	edk2_taint_entry_points(?commbufferog),
+	(
+	cmpxchg_instr_cmp_value(?instr, ?commbufferog);
+	cmpxchg_instr_new_value(?instr, ?commbufferog)
+	),
+	cmpxchg_instr_address(?instr, ?commbufferops).
+
+//taint propagating special instructions when the instruction is not in point-to relation
+commbuffer_taints(?commbufferops) :-
+	edk2_taint_entry_points(?commbufferog),
+	store_instr_value(?instr, ?commbufferog),
+	store_instr_address(?instr, ?commbufferops).
+
+
+/*
+Attacker Controlled Taint Analysis
+*/
+
+// Whether an operand is potentially controlled by the attacker.
+.decl tainted_source(?opd: Operand, ?ogsrc: Operand, ?edge: Edge, ?cyc:number) choice-domain ?opd
+.output tainted_source
+
+//opd is tainted if listed entrypoint functions have ogsrc as one of the parameter
+tainted_source(?ogsrc, ?ogsrc, ?edge, ?cyc) :-
+	commbuffer_taints(?ogsrc),
+	?cyc = 0,
+	?edge = [?ogsrc, ?ogsrc].
+
+//if a opd is a destination/sink for a tained src
+//tainted_source(?opd, ?ogsrc, ?tpath) :-
+//	tainted_source(?src, ?ogsrc, ?oldpath),
+//	utils.tainted_variable(?opd, ?src),
+//	?tpath = [?opd, ?oldpath].
+
+//Tainting by calling a function with actual argument ?src being tainted to ?opd which receives this argument
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	utils.called_function_argument(_, ?func, ?src, ?idx),
+	utils.function_argument(?func, ?opd, ?idx),
+	!?oldedge = [?opd, ?src],
+	?cyc = 0,
+	?edge = [?src, ?opd].
+
+// Hack for RestoreLockBox
+//tainted_source(?opd, ?opd) :-
+//	utils.instr_calls_func_with_name(_, ?func, "RestoreLockBox"),
+//	utils.called_function_argument(_, ?func, ?src, 0),
+//	contains("@gFirmwarePerformanceS3PointerGuid", ?src),
+//	utils.called_function_argument(_, ?func, ?opd, 1).
+
+// truncation propagates taint
+//tainted_source(?opd, ?ogsrc) :-
+//	tainted_source(?src, ?ogsrc),
+//	trunc_instr_from_operand(?instr, ?src),
+//	instr_assigns_to(?instr, ?opd).
+
+// int to pointer instruction propagates taint
+//tainted_source(?opd, ?ogsrc) :-
+//	tainted_source(?src, ?ogsrc),
+//	inttoptr_instr_from_operand(?instr, ?src),
+//	instr_assigns_to(?instr, ?opd).
+
+// getelementptr instruction propagates taint
+//tainted_source(?opd, ?ogsrc) :-
+//	tainted_source(?src, ?ogsrc),
+//	getelementptr_instr_base(?instr, ?src),
+//	instr_assigns_to(?instr, ?opd).
+
+
+//taint propagating special instructions when the instruction is not in point-to relation
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	store_instr_value(?instr, ?src),
+	store_instr_address(?instr, ?opd),
+	!?oldedge = [?opd, ?src],
+	?cyc = 0,
+	?edge = [?src, ?opd].
+
+
+//taint propagation among the function call parameters. Major assumption: taintsource index > taintdestination index for performance. Solution: Refresh the taintpath since the function changes
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	call_instr_arg(?instr, ?srcidx, ?src),
+	call_instr_arg(?instr, ?opdidx, ?opd),
+	(
+		subset.callgraph.callgraph_edge(_, ?callee, _, ?instr);
+		call_instr_fn_target(?instr, ?callee)
+	),
+	func_name(?callee, ?name),
+    (
+	"@DebugPrint"!=substr(?name,0,11)
+    ),
+	?srcidx != ?opdidx,
+	operand_is_pointer(?opd),
+	?oldedge != [?opd, ?src],
+	?oldcyc != 1,
+	?cyc = 1,
+	?edge = [?src, ?opd].
+	//operand_has_type(?opd, PointerType),
+	//?srcidx > ?opdidx,
+	//?tpath = [?opd, nil].
+
+//subsume the cycles
+tainted_source(?opd, ?ogsrc, [?src, ?opd], ?cyc) <= tainted_source(?src, ?ogsrc, [?opd, ?src], ?cyc):-
+	tainted_source(?opd, _, _, _),
+	tainted_source(?src, _, _, _).
+
+
+
+//tainted_source(?opd, ?ogsrc, ?edge) :-
+	//tainted_source(?src, ?ogsrc, _),
+	//utils.instr_calls_func_with_name(_, ?func, "CopyMem"),
+	//utils.called_function_argument(_, ?func, ?src, 1),
+	//utils.called_function_argument(_, ?func, ?opd, 0),
+	//?edge = [?src, ?opd].
+
+
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	(
+		call_instr_func_operand(?instr, ?src);
+		call_instr_arg(?instr, _, ?src)
+	),
+	!?oldedge = [?opd, ?src],
+	instr_assigns_to(?instr, ?opd),
+	?oldcyc != 1,
+	?cyc = 1,
+	?edge = [?src, ?opd].
+
+
+
+//regular taint propagating instructions from ?src to ?opd
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	(
+		add_instr_first_operand(?instr, ?src);
+		add_instr_second_operand(?instr, ?src);
+		sub_instr_first_operand(?instr, ?src);
+		sub_instr_second_operand(?instr, ?src);
+		xor_instr_first_operand(?instr, ?src);
+		xor_instr_second_operand(?instr, ?src);
+		or_instr_first_operand(?instr, ?src);
+		or_instr_second_operand(?instr, ?src);
+		and_instr_first_operand(?instr, ?src);
+		and_instr_second_operand(?instr, ?src);
+		mul_instr_first_operand(?instr, ?src);
+		mul_instr_second_operand(?instr, ?src);
+		udiv_instr_first_operand(?instr, ?src);
+		udiv_instr_second_operand(?instr, ?src);
+		sdiv_instr_first_operand(?instr, ?src);
+		sdiv_instr_second_operand(?instr, ?src);
+		ashr_instr_first_operand(?instr, ?src);
+		ashr_instr_second_operand(?instr, ?src);
+		lshr_instr_first_operand(?instr, ?src);
+		lshr_instr_second_operand(?instr, ?src);
+		shl_instr_first_operand(?instr, ?src);
+		shl_instr_second_operand(?instr, ?src);
+		select_instr_condition(?instr, ?src);
+		select_instr_first_operand(?instr, ?src);
+		select_instr_second_operand(?instr, ?src);
+		alloca_instr_size(?instr, ?src);
+		bitcast_instr_from_operand(?instr, ?src);
+		//call_instr_func_operand(?instr, ?src);
+		//call_instr_arg(?instr, _, ?src);
+		extractelement_instr_base(?instr, ?src);
+		extractelement_instr_index(?instr, ?src);
+		extractvalue_instr_base(?instr, ?src);
+		fadd_instr_first_operand(?instr, ?src);
+		fadd_instr_second_operand(?instr, ?src);
+		fcmp_instr_first_operand(?instr, ?src);
+		fcmp_instr_second_operand(?instr, ?src);
+		fdiv_instr_first_operand(?instr, ?src);
+		fdiv_instr_second_operand(?instr, ?src);
+		fmul_instr_first_operand(?instr, ?src);
+		fmul_instr_second_operand(?instr, ?src);
+		fneg_instr_operand(?instr, ?src);
+		fpext_instr_from_operand(?instr, ?src);
+		fptosi_instr_from_operand(?instr, ?src);
+		fptoui_instr_from_operand(?instr, ?src);
+		fptrunc_instr_from_operand(?instr, ?src);
+		frem_instr_first_operand(?instr, ?src);
+		frem_instr_second_operand(?instr, ?src);
+		fsub_instr_first_operand(?instr, ?src);
+		fsub_instr_second_operand(?instr, ?src);
+		getelementptr_instr_base(?instr, ?src);
+		getelementptr_instr_index(?instr, _, ?src);
+		icmp_instr_first_operand(?instr, ?src);
+		icmp_instr_second_operand(?instr, ?src);
+		insertelement_instr_base(?instr, ?src);
+		insertelement_instr_index(?instr, ?src);
+		insertelement_instr_value(?instr, ?src);
+		insertvalue_instr_base(?instr, ?src);
+		insertvalue_instr_value(?instr, ?src);
+		inttoptr_instr_from_operand(?instr, ?src);
+		invoke_instr_func_operand(?instr, ?src);
+		load_instr_address(?instr, ?src);
+		phi_instr_pair(?instr, _,?src,_);
+		ptrtoint_instr_from_operand(?instr, ?src);
+		sext_instr_from_operand(?instr, ?src);
+		shufflevector_instr_first_vector(?instr, ?src);
+		shufflevector_instr_second_vector(?instr, ?src);
+		sitofp_instr_from_operand(?instr, ?src);
+		srem_instr_first_operand(?instr, ?src);
+		srem_instr_second_operand(?instr, ?src);
+		trunc_instr_from_operand(?instr, ?src);
+		uitofp_instr_from_operand(?instr, ?src);
+		urem_instr_first_operand(?instr, ?src);
+		urem_instr_second_operand(?instr, ?src);
+		va_arg_instr_va_list(?instr, ?src);
+		zext_instr_from_operand(?instr, ?src)
+	),
+	!?oldedge = [?opd, ?src],
+	instr_assigns_to(?instr, ?opd),
+	?cyc = 0,
+	?edge = [?src, ?opd].
+
+
+//taint propagating special instructions when the instruction is not in point-to relation
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	atomicrmw_instr_value(?instr, ?src),
+	atomicrmw_instr_address(?instr, ?opd),
+	!?oldedge = [?opd, ?src],
+	?cyc = 0,
+	?edge = [?src, ?opd].
+
+
+//taint propagating special instructions when the instruction is not in point-to relation
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	(
+	cmpxchg_instr_cmp_value(?instr, ?src);
+	cmpxchg_instr_new_value(?instr, ?src)
+	),
+	cmpxchg_instr_address(?instr, ?opd),
+	!?oldedge = [?opd, ?src],
+	?cyc = 0,
+	?edge = [?src, ?opd].
+
+
+//backward taint propagation to the source of bitcast. This might remove the DAG property. Be cautious
+tainted_source(?opd, ?ogsrc, ?edge, ?cyc) :-
+	tainted_source(?src, ?ogsrc, ?oldedge, ?oldcyc),
+	bitcasts_relation(?opd, ?src),
+	!?oldedge = [?opd, ?src],
+	?cyc = 0,
+	?edge = [?src, ?opd].
+
+/*
+Division By Zero Vulnerability
+*/
+
+
+.decl divisioninstructions(?divd: Operand, ?divis: Operand, ?instr: Instruction)
+.output divisioninstructions
+
+divisioninstructions(?divid, ?divis, ?instr) :-
+    func_name(?callee, ?name),
+    (
+    "@DivU64x32"=substr(?name,0,10);
+    "@DivU64x32Remainder"=substr(?name,0,19);
+	"@DivU64x64Remainder"=substr(?name,0,19);
+	"@DivS64x64Remainder"=substr(?name,0,19)
+    ),
+	(
+		subset.callgraph.callgraph_edge(_, ?callee, _, ?instr);
+		call_instr_fn_target(?instr, ?callee)
+	),
+	actual_arg(?instr, 0, ?divid),
+    actual_arg(?instr, 1, ?divis).
+
+divisioninstructions(?divid, ?divis, ?instr) :-
+	udiv_instr(?instr),
+	udiv_instr_first_operand(?instr,?divid),
+	udiv_instr_second_operand(?instr,?divis).
+
+divisioninstructions(?divid, ?divis, ?instr) :-
+	sdiv_instr(?instr),
+	sdiv_instr_first_operand(?instr,?divid),
+	sdiv_instr_second_operand(?instr,?divis).
+
+divisioninstructions(?divid, ?divis, ?instr) :-
+	fdiv_instr(?instr),
+	fdiv_instr_first_operand(?instr,?divid),
+	fdiv_instr_second_operand(?instr,?divis).
+
+
+
+
+.decl divisor_tainted_division_primitive(?func: Function, ?divid: Operand, ?divis: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output divisor_tainted_division_primitive
+
+divisor_tainted_division_primitive(?func, ?divid, ?divis, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?divis, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	divisioninstructions(?divid, ?divis, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+
+
+/*
+Integer Overflow Vulnerability
+*/
+
+
+.decl integeropinstructions(?op1: Operand, ?op2: Operand, ?instr: Instruction)
+.output integeropinstructions
+
+integeropinstructions(?op1, ?op2, ?instr) :-
+	add_instr(?instr),
+	add_instr_first_operand(?instr,?op1),
+	add_instr_second_operand(?instr,?op2).
+
+
+.decl operand_tainted_integer_overflow_primitive(?func: Function, ?op1: Operand, ?op2: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output operand_tainted_integer_overflow_primitive
+
+operand_tainted_integer_overflow_primitive(?func, ?op1, ?op2, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?op1, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	integeropinstructions(?op1, ?op2, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+operand_tainted_integer_overflow_primitive(?func, ?op1, ?op2, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?op2, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	integeropinstructions(?op1, ?op2, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+
+
+/*
+Integer Underflow Vulnerability
+*/
+
+
+.decl integerupinstructions(?op1: Operand, ?op2: Operand, ?instr: Instruction)
+.output integerupinstructions
+
+integerupinstructions(?op1, ?op2, ?instr) :-
+	sub_instr(?instr),
+	sub_instr_first_operand(?instr,?op1),
+	sub_instr_second_operand(?instr,?op2).
+
+
+.decl operand_tainted_integer_underflow_primitive(?func: Function, ?op1: Operand, ?op2: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output operand_tainted_integer_underflow_primitive
+
+operand_tainted_integer_underflow_primitive(?func, ?op1, ?op2, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?op1, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	integerupinstructions(?op1, ?op2, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+operand_tainted_integer_underflow_primitive(?func, ?op1, ?op2, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?op2, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	integerupinstructions(?op1, ?op2, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+
+/*
+Buffer Overflow Vulnerability
+*/
+
+
+.decl buffercopypredeffunctions(?destn: Operand, ?sourc: Operand, ?instr: Instruction)
+.output buffercopypredeffunctions
+
+buffercopypredeffunctions(?destn, ?sourc, ?instr) :-
+    func_name(?callee, ?name),
+    (
+	"@memcpy"=substr(?name,0,7);
+    "@strcpy"=substr(?name,0,7);
+    "@t_strcpy"=substr(?name,0,9);
+	"@InternalMemCopyMem"=substr(?name,0,19);
+	"@CopyMem"=substr(?name,0,8);
+	"@SmmCopyMemToSmram"=substr(?name,0,18);
+	"@SmmCopyMem"=substr(?name,0,11);
+	"@CopyMemByWidth"=substr(?name,0,15);
+	"@MmioWrite8"=substr(?name,0,11);
+	"@MmioWrite16"=substr(?name,0,12);
+	"@MmioWrite32"=substr(?name,0,12);
+	"@MmioWrite64"=substr(?name,0,12)
+    ),
+	(
+		subset.callgraph.callgraph_edge(_, ?callee, _, ?instr);
+		call_instr_fn_target(?instr, ?callee)
+	),
+	actual_arg(?instr, 0, ?destn),
+    actual_arg(?instr, 1, ?sourc).
+
+.decl source_tainted_buffer_overflow_primitive(?func: Function, ?destn: Operand, ?sourc: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output source_tainted_buffer_overflow_primitive
+
+source_tainted_buffer_overflow_primitive(?func, ?destn, ?sourc, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?sourc, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	buffercopypredeffunctions(?destn, ?sourc, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+
+
+
+
+/*
+Use After Free Vulnerability
+*/
+
+.decl freefunctions(?fvar: Operand, ?instr: Instruction)
+.output freefunctions
+
+freefunctions(?fvar, ?instr) :-
+    func_name(?callee, ?name),
+    (
+    "@free"=substr(?name,0,5);
+    "@SmmFreePages"=substr(?name,0,13);
+	"@FreePool"=substr(?name,0,9)
+    ),
+	(
+		subset.callgraph.callgraph_edge(_, ?callee, _, ?instr);
+		call_instr_fn_target(?instr, ?callee)
+	),
+	actual_arg(?instr, 0, ?fvar).
+
+
+.decl freeinstructions(?instr: Instruction)
+freeinstructions(?instr) :- freefunctions(_,?instr).
+
+.decl instr_reachability(?instrfrom: Instruction, ?instrto: Instruction)
+.output instr_reachability
+
+//Assuming base case always happens within the same block
+instr_reachability(?instrfrom, ?instrto) :-
+	freeinstructions(?instrfrom),
+	instr_successor(?instrfrom, ?instrto).
+
+//Case when the destination is in same block
+instr_reachability(?instrfrom, ?instrto) :-
+	instr_reachability(?instrfrom, ?instrmid),
+	instr_successor(?instrmid, ?instrto),
+	instr_block(?instrmid, ?BB1),
+	instr_block(?instrto, ?BB1).
+
+//Case when the destination is in different block
+instr_reachability(?instrfrom, ?instrto) :-
+	instr_reachability(?instrfrom, ?instrmid),
+	instr_block(?instrmid, ?BB1),
+	block_predecessors(?BB2, ?BB1),
+	block_first_instr(?BB2, ?instrto),
+	?BB2 < ?BB1.
+
+.decl uafvuln(?fvar: Operand, ?instrfrom: Instruction, ?instrto: Instruction)
+.output uafvuln
+
+uafvuln(?fvar, ?instrfrom, ?instrto) :-
+	freefunctions(?fvar, ?instrfrom),
+	instr_reachability(?instrfrom, ?instrto),
+	(
+		add_instr_first_operand(?instrto, ?fvar);
+		add_instr_second_operand(?instrto, ?fvar);
+		sub_instr_first_operand(?instrto, ?fvar);
+		sub_instr_second_operand(?instrto, ?fvar);
+		xor_instr_first_operand(?instrto, ?fvar);
+		xor_instr_second_operand(?instrto, ?fvar);
+		or_instr_first_operand(?instrto, ?fvar);
+		or_instr_second_operand(?instrto, ?fvar);
+		and_instr_first_operand(?instrto, ?fvar);
+		and_instr_second_operand(?instrto, ?fvar);
+		mul_instr_first_operand(?instrto, ?fvar);
+		mul_instr_second_operand(?instrto, ?fvar);
+		udiv_instr_first_operand(?instrto, ?fvar);
+		udiv_instr_second_operand(?instrto, ?fvar);
+		sdiv_instr_first_operand(?instrto, ?fvar);
+		sdiv_instr_second_operand(?instrto, ?fvar);
+		ashr_instr_first_operand(?instrto, ?fvar);
+		ashr_instr_second_operand(?instrto, ?fvar);
+		lshr_instr_first_operand(?instrto, ?fvar);
+		lshr_instr_second_operand(?instrto, ?fvar);
+		shl_instr_first_operand(?instrto, ?fvar);
+		shl_instr_second_operand(?instrto, ?fvar);
+		select_instr_condition(?instrto, ?fvar);
+		select_instr_first_operand(?instrto, ?fvar);
+		select_instr_second_operand(?instrto, ?fvar);
+		alloca_instr_size(?instrto, ?fvar);
+		atomicrmw_instr_address(?instrto, ?fvar);
+		atomicrmw_instr_value(?instrto, ?fvar);
+		bitcast_instr_from_operand(?instrto, ?fvar);
+		br_instr_condition(?instrto, ?fvar);
+		call_instr_func_operand(?instrto, ?fvar);
+		call_instr_arg(?instrto, _, ?fvar);
+		cmpxchg_instr_address(?instrto, ?fvar);
+		cmpxchg_instr_cmp_value(?instrto, ?fvar);
+		cmpxchg_instr_new_value(?instrto, ?fvar);
+		extractelement_instr_base(?instrto, ?fvar);
+		extractelement_instr_index(?instrto, ?fvar);
+		extractvalue_instr_base(?instrto, ?fvar);
+		fadd_instr_first_operand(?instrto, ?fvar);
+		fadd_instr_second_operand(?instrto, ?fvar);
+		fcmp_instr_first_operand(?instrto, ?fvar);
+		fcmp_instr_second_operand(?instrto, ?fvar);
+		fdiv_instr_first_operand(?instrto, ?fvar);
+		fdiv_instr_second_operand(?instrto, ?fvar);
+		fmul_instr_first_operand(?instrto, ?fvar);
+		fmul_instr_second_operand(?instrto, ?fvar);
+		fneg_instr_operand(?instrto, ?fvar);
+		fpext_instr_from_operand(?instrto, ?fvar);
+		fptosi_instr_from_operand(?instrto, ?fvar);
+		fptoui_instr_from_operand(?instrto, ?fvar);
+		fptrunc_instr_from_operand(?instrto, ?fvar);
+		freeze_instr_operand(?instrto, ?fvar);
+		frem_instr_first_operand(?instrto, ?fvar);
+		frem_instr_second_operand(?instrto, ?fvar);
+		fsub_instr_first_operand(?instrto, ?fvar);
+		fsub_instr_second_operand(?instrto, ?fvar);
+		getelementptr_instr_base(?instrto, ?fvar);
+		getelementptr_instr_index(?instrto, _, ?fvar);
+		icmp_instr_first_operand(?instrto, ?fvar);
+		icmp_instr_second_operand(?instrto, ?fvar);
+		indirectbr_instr_address(?instrto, ?fvar);
+		insertelement_instr_base(?instrto, ?fvar);
+		insertelement_instr_index(?instrto, ?fvar);
+		insertelement_instr_value(?instrto, ?fvar);
+		insertvalue_instr_base(?instrto, ?fvar);
+		insertvalue_instr_value(?instrto, ?fvar);
+		inttoptr_instr_from_operand(?instrto, ?fvar);
+		invoke_instr_func_operand(?instrto, ?fvar);
+		load_instr_address(?instrto, ?fvar);
+		phi_instr_pair(?instrto, _,?fvar,_);
+		ptrtoint_instr_from_operand(?instrto, ?fvar);
+		resume_instr_operand(?instrto, ?fvar);
+		ret_instr_operand(?instrto, ?fvar);
+		sext_instr_from_operand(?instrto, ?fvar);
+		shufflevector_instr_first_vector(?instrto, ?fvar);
+		shufflevector_instr_second_vector(?instrto, ?fvar);
+		sitofp_instr_from_operand(?instrto, ?fvar);
+		srem_instr_first_operand(?instrto, ?fvar);
+		srem_instr_second_operand(?instrto, ?fvar);
+		store_instr_value(?instrto, ?fvar);
+		store_instr_address(?instrto, ?fvar);
+		switch_instr_operand(?instrto, ?fvar);
+		trunc_instr_from_operand(?instrto, ?fvar);
+		uitofp_instr_from_operand(?instrto, ?fvar);
+		urem_instr_first_operand(?instrto, ?fvar);
+		urem_instr_second_operand(?instrto, ?fvar);
+		va_arg_instr_va_list(?instrto, ?fvar);
+		zext_instr_from_operand(?instrto, ?fvar)
+	).
+
+
+.decl source_tainted_uaf_primitive(?func: Function, ?destn: Operand, ?instrfrom: Instruction, ?ogsrc: Operand, ?instrto: Instruction, ?edge: Edge, ?line:LineNumber)
+.output source_tainted_uaf_primitive
+
+source_tainted_uaf_primitive(?func, ?destn, ?instrfrom, ?ogsrc, ?instrto, ?edge, ?line) :-
+	tainted_source(?sourc, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	uafvuln(?destn, ?instrfrom, ?instrto),
+	instr_pos(?instr, ?line, ?col).
+
+//.output instr_successor (compress=true)
+//.output instr_successor_index (compress=true)
+
+//main_func(MainFn) :-
+//   func_name(MainFn, "@GenerateHiiDatabaseRecord"),
+//   func(MainFn).
+
+
+
+.decl dangerousfunctions(?opd: Operand, ?instr: Instruction)
+.output dangerousfunctions
+
+dangerousfunctions(?opd, ?instr) :-
+    func_name(?callee, ?name),
+    (
+    "@SmmLockBoxSave"=substr(?name,0,15);
+    "@SmmLockBoxUpdate"=substr(?name,0,17);
+	"@SmmLockBoxRestore"=substr(?name,0,18);
+	"@SmmLockBoxSetAttributes"=substr(?name,0,24);
+	"@SmmLockBoxRestoreAllInPlace"=substr(?name,0,27)
+    ),
+	(
+		subset.callgraph.callgraph_edge(_, ?callee, _, ?instr);
+		call_instr_fn_target(?instr, ?callee)
+	),
+	actual_arg(?instr, 0, ?opd).
+    
+
+
+.decl operand_tainted_dangerous_function_primitive(?func: Function, ?opd: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output operand_tainted_dangerous_function_primitive
+
+operand_tainted_dangerous_function_primitive(?func, ?opd, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?opd, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	dangerousfunctions(?opd, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+/*
+Null pointer dereferencing Vulnerability
+*/
+
+
+
+
+/*
+SMRAM Read Vulnerability. Attacker controlled source of copymem
+*/
+
+.decl smramcopyfunctions(?destn: Operand, ?sourc: Operand, ?instr: Instruction)
+.output smramcopyfunctions
+
+smramcopyfunctions(?destn, ?sourc, ?instr) :-
+    func_name(?callee, ?name),
+    (
+	"@memcpy"=substr(?name,0,7);
+    "@strcpy"=substr(?name,0,7);
+    "@t_strcpy"=substr(?name,0,9);
+	"@InternalMemCopyMem"=substr(?name,0,19);
+	"@CopyMem"=substr(?name,0,8);
+	"@SmmCopyMemToSmram"=substr(?name,0,18);
+	"@SmmCopyMem"=substr(?name,0,11);
+	"@CopyMemByWidth"=substr(?name,0,15);
+	"@MmioWrite8"=substr(?name,0,11);
+	"@MmioWrite16"=substr(?name,0,12);
+	"@MmioWrite32"=substr(?name,0,12);
+	"@MmioWrite64"=substr(?name,0,12);
+	"@SaveLockBox"=substr(?name,0,12);
+	"@SetLockBoxAttributes"=substr(?name,0,21);
+	"@UpdateLockBox"=substr(?name,0,14);
+	"@RestoreLockBox"=substr(?name,0,15)
+    ),
+	(
+		subset.callgraph.callgraph_edge(_, ?callee, _, ?instr);
+		call_instr_fn_target(?instr, ?callee)
+	),
+	actual_arg(?instr, 0, ?destn),
+    actual_arg(?instr, 1, ?sourc).
+
+.decl smram_read_primitive(?func: Function, ?destn: Operand, ?sourc: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output smram_read_primitive
+
+smram_read_primitive(?func, ?destn, ?sourc, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?sourc, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	smramcopyfunctions(?destn, ?sourc, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+
+/*
+SMRAM Write Vulnerability. Attacker controlled destination of copymem
+*/
+
+.decl smram_write_primitive(?func: Function, ?destn: Operand, ?sourc: Operand, ?ogsrc: Operand, ?instr: Instruction, ?edge: Edge, ?line:LineNumber)
+.output smram_write_primitive
+
+smram_write_primitive(?func, ?destn, ?sourc, ?ogsrc, ?instr, ?edge, ?line) :-
+	tainted_source(?destn, ?ogsrc, ?edge, _),
+	instr_func(?instr, ?func),
+	smramcopyfunctions(?destn, ?sourc, ?instr),
+	instr_pos(?instr, ?line, ?col).
+
+.output variable_has_debug_source_name
+
+/*
+gBS Vulnerability
+*/
+
+.decl efi_boot_service_primitive(?instr: Instruction, ?line:LineNumber, ?sometype:Type)
+.output efi_boot_service_primitive
+
+efi_boot_service_primitive(?instr, ?line, ?sometype) :-
+	//func_name(?func, "@SmmDriverDispatchHandler"),
+	//instr_func(?instr, ?func),
+	load_instr(?instr),
+	load_instr_address_ptr_type(?instr,?sometype),
+	substr(?sometype, 0, 27) = "%struct.EFI_BOOT_SERVICES**",
+	instr_pos(?instr, ?line, ?col).
+
+// The pointer to QueryVariableInfo
+.decl query_variable_info_ptr(?instr: LoadInstruction, ?var: Variable)
+
+query_variable_info_ptr(?instr, ?var) :-
+	efi_runtime_proto(_, ?ptr),
+	getelementptr_instr_base(?gep, ?ptr),
+	getelementptr_instr_index(?gep, 1, ?indexOp),
+	constant_to_int(?indexOp, 14),
+	instr_assigns_to(?gep, ?gep_var),
+	load_instr_address(?instr, ?gep_var),
+	instr_assigns_to(?instr, ?var).
+
+// The pointer to QueryVariableInfo
+.decl query_variable_info(?instr: CallInstruction, ?attrs: Operand, ?dst0: Operand, ?dst1: Operand, ?dst2: Operand)
+
+query_variable_info(?instr, ?attrs, ?dst0, ?dst1, ?dst2) :-
+	query_variable_info_ptr(_, ?opd),
+	call_instr_func_operand(?instr, ?opd),
+	call_instr_arg(?instr, 0, ?attrs),
+	call_instr_arg(?instr, 1, ?dst0),
+	call_instr_arg(?instr, 2, ?dst1),
+	call_instr_arg(?instr, 3, ?dst2).

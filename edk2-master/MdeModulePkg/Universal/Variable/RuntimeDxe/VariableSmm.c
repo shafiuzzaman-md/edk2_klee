@@ -482,28 +482,27 @@ SmmVariableHandler(
  
   TempCommBufferSize = *CommBufferSize;
 
-  // Injection
   if (TempCommBufferSize < SMM_VARIABLE_COMMUNICATE_HEADER_SIZE) {
     DEBUG ((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer size invalid!\n"));
     return EFI_SUCCESS;
   }
- 
+
   //VLab: Assertion to detect buffer underflow
   //klee_assert(TempCommBufferSize >= SMM_VARIABLE_COMMUNICATE_HEADER_SIZE);
   CommBufferPayloadSize = TempCommBufferSize - SMM_VARIABLE_COMMUNICATE_HEADER_SIZE;
+
   //Injection: Bufferoverflow
-  if (CommBufferPayloadSize > mVariableBufferPayloadSize)
-  {
-    DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer payload size invalid!\n"));
-    return EFI_SUCCESS;
-  }
- 
+  // if (CommBufferPayloadSize > mVariableBufferPayloadSize)
+  // {
+  //   DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer payload size invalid!\n"));
+  //   return EFI_SUCCESS;
+  // }
+  // Injection: SMM Memory Corruption
   // if (!VariableSmmIsBufferOutsideSmmValid((UINTN)CommBuffer, TempCommBufferSize))
   // {
   //   DEBUG((DEBUG_ERROR, "SmmVariableHandler: SMM communication buffer in SMRAM or overflow!\n"));
   //   return EFI_SUCCESS;
   // }
-    
   //This assertion checks that:
   //The buffer size is within the SMRAM region.
   //The start address of the buffer is within the SMRAM region.
@@ -511,38 +510,38 @@ SmmVariableHandler(
   // klee_assert((*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) &&
   //           ((UINTN)CommBuffer <= (SMRAM_BASE + SMRAM_SIZE)) &&
   //           ((*CommBufferSize == 0) || ((UINTN)CommBuffer <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize))));
-        
+  
   SmmVariableFunctionHeader = (SMM_VARIABLE_COMMUNICATE_HEADER *)CommBuffer;
  
   switch (SmmVariableFunctionHeader->Function)
-  {
-   
+  { 
   case SMM_VARIABLE_FUNCTION_GET_VARIABLE:
-    //klee_assert(0);
-    // if (CommBufferPayloadSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name))
-    // {
-    //   DEBUG((DEBUG_ERROR, "GetVariable: SMM communication buffer size invalid!\n"));
-    //   return EFI_SUCCESS;
-    // }
-
+  
+    if (CommBufferPayloadSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name))
+    {
+      DEBUG((DEBUG_ERROR, "GetVariable: SMM communication buffer size invalid!\n"));
+      return EFI_SUCCESS;
+    }
+     
     //
     // Copy the input communicate buffer payload to pre-allocated SMM variable buffer payload.
     //
     //Buffer overflow check
-    klee_assert(CommBufferPayloadSize <= mVariableBufferPayload);
+    klee_assert(CommBufferPayloadSize <= mVariableBufferPayloadSize);
     CopyMem(mVariableBufferPayload, SmmVariableFunctionHeader->Data, CommBufferPayloadSize);
-    SmmVariableHeader = (SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE *)mVariableBufferPayload;
-    if (((UINTN)(~0) - SmmVariableHeader->DataSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name)) ||
-        ((UINTN)(~0) - SmmVariableHeader->NameSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name) + SmmVariableHeader->DataSize))
-    {
-      //
-      // Prevent InfoSize overflow happen
-      //
-      Status = EFI_ACCESS_DENIED;
-      goto EXIT;
-    }
 
-    InfoSize = OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name) + SmmVariableHeader->DataSize + SmmVariableHeader->NameSize;
+    SmmVariableHeader = (SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE *)mVariableBufferPayload;
+    // if (((UINTN)(~0) - SmmVariableHeader->DataSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name)) ||
+    //     ((UINTN)(~0) - SmmVariableHeader->NameSize < OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name) + SmmVariableHeader->DataSize))
+    // {
+    //   //
+    //   // Prevent InfoSize overflow happen
+    //   //
+    //   Status = EFI_ACCESS_DENIED;
+    //   goto EXIT;
+    // }
+
+   // InfoSize = OFFSET_OF(SMM_VARIABLE_COMMUNICATE_ACCESS_VARIABLE, Name) + SmmVariableHeader->DataSize + SmmVariableHeader->NameSize;
 
     //
     // SMRAM range check already covered before
@@ -695,11 +694,11 @@ SmmVariableHandler(
 
     QueryVariableInfo = (SMM_VARIABLE_COMMUNICATE_QUERY_VARIABLE_INFO *)SmmVariableFunctionHeader->Data;
 
-    Status = VariableServiceQueryVariableInfo(
-        QueryVariableInfo->Attributes,
-        &QueryVariableInfo->MaximumVariableStorageSize,
-        &QueryVariableInfo->RemainingVariableStorageSize,
-        &QueryVariableInfo->MaximumVariableSize);
+    // Status = VariableServiceQueryVariableInfo(
+    //     QueryVariableInfo->Attributes,
+    //     &QueryVariableInfo->MaximumVariableStorageSize,
+    //     &QueryVariableInfo->RemainingVariableStorageSize,
+    //     &QueryVariableInfo->MaximumVariableSize);
     break;
 
   case SMM_VARIABLE_FUNCTION_GET_PAYLOAD_SIZE:
@@ -723,18 +722,18 @@ SmmVariableHandler(
 
     if (!mEndOfDxe)
     {
-      MorLockInitAtEndOfDxe();
-      Status = LockVariablePolicy();
+      //MorLockInitAtEndOfDxe();
+     // Status = LockVariablePolicy();
       ASSERT_EFI_ERROR(Status);
       mEndOfDxe = TRUE;
-      VarCheckLibInitializeAtEndOfDxe(NULL);
+      //VarCheckLibInitializeAtEndOfDxe(NULL);
       //
       // The initialization for variable quota.
       //
-      InitializeVariableQuota();
+      //InitializeVariableQuota();
     }
 
-    ReclaimForOS();
+    //ReclaimForOS();
     Status = EFI_SUCCESS;
     break;
 
@@ -762,33 +761,33 @@ SmmVariableHandler(
     break;
 
   case SMM_VARIABLE_FUNCTION_LOCK_VARIABLE:
-    if (mEndOfDxe)
-    {
-      Status = EFI_ACCESS_DENIED;
-    }
-    else
-    {
-      VariableToLock = (SMM_VARIABLE_COMMUNICATE_LOCK_VARIABLE *)SmmVariableFunctionHeader->Data;
-      Status = VariableLockRequestToLock(
-          NULL,
-          VariableToLock->Name,
-          &VariableToLock->Guid);
-    }
+    // if (mEndOfDxe)
+    // {
+    //   Status = EFI_ACCESS_DENIED;
+    // }
+    // else
+    // {
+    //   VariableToLock = (SMM_VARIABLE_COMMUNICATE_LOCK_VARIABLE *)SmmVariableFunctionHeader->Data;
+    //   Status = VariableLockRequestToLock(
+    //       NULL,
+    //       VariableToLock->Name,
+    //       &VariableToLock->Guid);
+    // }
 
     break;
   case SMM_VARIABLE_FUNCTION_VAR_CHECK_VARIABLE_PROPERTY_SET:
-    if (mEndOfDxe)
-    {
-      Status = EFI_ACCESS_DENIED;
-    }
-    else
-    {
-      CommVariableProperty = (SMM_VARIABLE_COMMUNICATE_VAR_CHECK_VARIABLE_PROPERTY *)SmmVariableFunctionHeader->Data;
-      Status = VarCheckVariablePropertySet(
-          CommVariableProperty->Name,
-          &CommVariableProperty->Guid,
-          &CommVariableProperty->VariableProperty);
-    }
+    // if (mEndOfDxe)
+    // {
+    //   Status = EFI_ACCESS_DENIED;
+    // }
+    // else
+    // {
+    //   CommVariableProperty = (SMM_VARIABLE_COMMUNICATE_VAR_CHECK_VARIABLE_PROPERTY *)SmmVariableFunctionHeader->Data;
+    //   Status = VarCheckVariablePropertySet(
+    //       CommVariableProperty->Name,
+    //       &CommVariableProperty->Guid,
+    //       &CommVariableProperty->VariableProperty);
+    // }
 
     break;
   case SMM_VARIABLE_FUNCTION_VAR_CHECK_VARIABLE_PROPERTY_GET:
@@ -987,7 +986,7 @@ SmmVariableHandler(
     Status = EFI_SUCCESS;
     break;
   case SMM_VARIABLE_FUNCTION_SYNC_RUNTIME_CACHE:
-    Status = FlushPendingRuntimeVariableCacheUpdates();
+    //Status = FlushPendingRuntimeVariableCacheUpdates();
     break;
   case SMM_VARIABLE_FUNCTION_GET_RUNTIME_CACHE_INFO:
     if (CommBufferPayloadSize < sizeof(SMM_VARIABLE_COMMUNICATE_GET_RUNTIME_CACHE_INFO))
@@ -998,21 +997,21 @@ SmmVariableHandler(
 
     GetRuntimeCacheInfo = (SMM_VARIABLE_COMMUNICATE_GET_RUNTIME_CACHE_INFO *)SmmVariableFunctionHeader->Data;
 
-    if (mVariableModuleGlobal->VariableGlobal.HobVariableBase > 0)
-    {
-      VariableCache = (VARIABLE_STORE_HEADER *)(UINTN)mVariableModuleGlobal->VariableGlobal.HobVariableBase;
-      GetRuntimeCacheInfo->TotalHobStorageSize = VariableCache->Size;
-    }
-    else
-    {
-      GetRuntimeCacheInfo->TotalHobStorageSize = 0;
-    }
+    // if (mVariableModuleGlobal->VariableGlobal.HobVariableBase > 0)
+    // {
+    //   VariableCache = (VARIABLE_STORE_HEADER *)(UINTN)mVariableModuleGlobal->VariableGlobal.HobVariableBase;
+    //   GetRuntimeCacheInfo->TotalHobStorageSize = VariableCache->Size;
+    // }
+    // else
+    // {
+    //   GetRuntimeCacheInfo->TotalHobStorageSize = 0;
+    // }
 
-    VariableCache = (VARIABLE_STORE_HEADER *)(UINTN)mVariableModuleGlobal->VariableGlobal.VolatileVariableBase;
-    GetRuntimeCacheInfo->TotalVolatileStorageSize = VariableCache->Size;
-    VariableCache = (VARIABLE_STORE_HEADER *)(UINTN)mNvVariableCache;
-    GetRuntimeCacheInfo->TotalNvStorageSize = (UINTN)VariableCache->Size;
-    GetRuntimeCacheInfo->AuthenticatedVariableUsage = mVariableModuleGlobal->VariableGlobal.AuthFormat;
+    // VariableCache = (VARIABLE_STORE_HEADER *)(UINTN)mVariableModuleGlobal->VariableGlobal.VolatileVariableBase;
+    // GetRuntimeCacheInfo->TotalVolatileStorageSize = VariableCache->Size;
+    // VariableCache = (VARIABLE_STORE_HEADER *)(UINTN)mNvVariableCache;
+    // GetRuntimeCacheInfo->TotalNvStorageSize = (UINTN)VariableCache->Size;
+    // GetRuntimeCacheInfo->AuthenticatedVariableUsage = mVariableModuleGlobal->VariableGlobal.AuthFormat;
 
     Status = EFI_SUCCESS;
     break;

@@ -11,6 +11,7 @@
         "pcibus.h": "c",
         "stdint.h": "c",
         "cstdlib": "c",
-        "componentname2.h": "c"
+        "componentname2.h": "c",
+        "uefiruntimeservicestablelib.h": "c"
     }
 }
