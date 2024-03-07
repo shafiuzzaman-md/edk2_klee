@@ -1,0 +1,9 @@
+; Emited by klee::Z3SolverImpl::getConstraintLog()
+(set-info :status unknown)
+(declare-fun inDxe0 () (Array (_ BitVec 32) (_ BitVec 8)))
+(assert
+ (let ((?x8 (select inDxe0 (_ bv0 32))))
+ (= (_ bv0 8) ?x8)))
+(assert
+ (not false))
+(check-sat)

@@ -134,15 +134,15 @@ size_t my_strlen(const char *str) {
 
 
 //#include "SmramProfileHandlerHarness.c"
-#include "SmmVariableHandlerHarness.c"
+//#include "SmmVariableHandlerHarness.c"
 //#include "SmmLockBoxHandlerHarness.c"
 //#include "SmmFaultTolerantWriteHandlerHarness.c"
-//#include "QueryVariableInfoHandlerHarness.c"
+#include "QueryVariableInfoHandlerHarness.c"
 
 int main()
 {
-  //DSE_to_QueryVariableInfoHandler();
-  DSE_to_SmmVariableHandler();
+  DSE_to_QueryVariableInfoHandler();
+ // DSE_to_SmmVariableHandler();
   //DSE_to_SmmLockBoxHandler();
   //DSE_to_SmmFaultTolerantWriteHandler();
   // DSE_to_SmramProfileHandler();

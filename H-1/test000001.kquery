@@ -1,0 +1,8 @@
+array CommBufferSize[8] : w32 -> w8 = symbolic
+array inDxe[1] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0 (Read w8 0 inDxe)))
+         (Eq false
+             (Ule (ReadLSB w64 0 CommBufferSize)
+                  521142272))]
+        false)
