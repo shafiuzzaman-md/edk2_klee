@@ -12,6 +12,8 @@
         "stdint.h": "c",
         "cstdlib": "c",
         "componentname2.h": "c",
-        "uefiruntimeservicestablelib.h": "c"
+        "uefiruntimeservicestablelib.h": "c",
+        "pifirmwarevolume.h": "c",
+        "faulttolerantwrite.h": "c"
     }
 }

@@ -19,7 +19,7 @@ def comment_out_static_assert(file_path):
         print(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
-    file_path = "edk2-master/MdePkg/Include/Base.h"
+    file_path = "edk2/MdePkg/Include/Base.h"
 
     comment_out_static_assert(file_path)
 

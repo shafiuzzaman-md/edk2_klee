@@ -1,21 +1,21 @@
 #include "klee/klee.h"
 
-#include "edk2-master/MdePkg/Include/X64/ProcessorBind.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiBaseType.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiMultiPhase.h"
-#include "edk2-master/BaseTools/Source/C/Include/Common/PiFirmwareVolume.h"
-#include "edk2-master/MdeModulePkg/Include/Protocol/FaultTolerantWrite.h"
-#include "edk2-master/MdePkg/Include/Uefi/UefiSpec.h"
-#include "edk2-master/MdePkg/Include/Protocol/DriverBinding.h"
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName.h"
-#include "edk2-master/MdePkg/Include/Protocol/ComponentName2.h"
-#include "edk2-master/MdePkg/Include/IndustryStandard/Pci22.h"
-#include "edk2-master/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
-#include "edk2-master/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.h"
-#include "edk2-master/MdePkg/Library/SmmMemLib/SmmMemLib.c"
+//#include "edk2/MdePkg/Include/X64/ProcessorBind.h"
+#include "edk2/MdePkg/Include/Uefi/UefiBaseType.h"
+#include "edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+#include "edk2/BaseTools/Source/C/Include/Common/PiFirmwareVolume.h"
+#include "edk2/MdeModulePkg/Include/Protocol/FaultTolerantWrite.h"
+#include "edk2/MdePkg/Include/Uefi/UefiSpec.h"
+#include "edk2/MdePkg/Include/Protocol/DriverBinding.h"
+#include "edk2/MdePkg/Include/Protocol/ComponentName.h"
+#include "edk2/MdePkg/Include/Protocol/ComponentName2.h"
+#include "edk2/MdePkg/Include/IndustryStandard/Pci22.h"
+#include "edk2/BaseTools/Source/C/Include/Protocol/GraphicsOutput.h"
+#include "edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.h"
+#include "edk2/MdePkg/Library/SmmMemLib/SmmMemLib.c"
 
-#include "edk2-master/MdePkg/Library/BaseMemoryLib/CopyMemWrapper.c"
-#include "edk2-master/MdePkg/Library/BaseMemoryLib/CopyMem.c"
+#include "edk2/MdePkg/Library/BaseMemoryLib/CopyMemWrapper.c"
+#include "edk2/MdePkg/Library/BaseMemoryLib/CopyMem.c"
 
 // Define SMRAM_BASE and SMRAM_SIZE as global variables
 uint32_t SMRAM_BASE = 0x1F000000; // Hypothetical SMRAM base address
@@ -83,6 +83,10 @@ EFI_GUID  gSmmVariableWriteGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0
 EFI_GUID gEfiQueryVariableInfoCommGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 }};
 
 EFI_GUID gEfiQueryVariableInfoProtocolGuid  = { 0x93ba1826, 0xdffb, 0x45dd, { 0x82, 0xa7, 0xe7, 0xdc, 0xaa, 0x3b, 0xbd, 0xf3 }};
+
+EFI_GUID gEfiCallerIdGuid;
+
+EFI_GUID  gEdkiiMemoryProfileGuid              = { 0x821c9a09, 0x541a, 0x40f6, { 0x9f, 0x43, 0xa, 0xd1, 0x93, 0xa1, 0x2c, 0xfe }};
 //
 //Global variables
 //
@@ -133,17 +137,17 @@ size_t my_strlen(const char *str) {
 
 
 
-//#include "SmramProfileHandlerHarness.c"
+#include "SmramProfileHandlerHarness.c"
 //#include "SmmVariableHandlerHarness.c"
 //#include "SmmLockBoxHandlerHarness.c"
 //#include "SmmFaultTolerantWriteHandlerHarness.c"
-#include "QueryVariableInfoHandlerHarness.c"
+//#include "QueryVariableInfoHandlerHarness.c"
 
 int main()
 {
-  DSE_to_QueryVariableInfoHandler();
+  // DSE_to_QueryVariableInfoHandler();
  // DSE_to_SmmVariableHandler();
   //DSE_to_SmmLockBoxHandler();
   //DSE_to_SmmFaultTolerantWriteHandler();
-  // DSE_to_SmramProfileHandler();
+   DSE_to_SmramProfileHandler();
 }
