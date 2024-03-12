@@ -1,18 +1,24 @@
 # edk2_klee
 
+## Clone edk2 source code
+
+```
+cd edk2_klee
+
+git clone https://github.com/tianocore/edk2.git
+
+```
+
 ## Preprocessing
-This updates headerfiles of edk2 source to prepare it for running klee on it. 
+Process header files for local communication
 ```
-python3 process_headers.py <path_to_edk2>
-```
-
-This comments out assert statements(such as STATIC_ASSERT) to prepare the source for running klee on it. 
-```
-python3 remove_asserts.py
+python3 process_headers.py edk2
 ```
 
-The edk2 source (edk2-master) in this repo has already been updated using the scripts
-
+Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic execution.
+```
+python3 remove_macros.py
+```
 
 ## Build and Run
 ```
