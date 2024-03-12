@@ -12,7 +12,7 @@ git clone https://github.com/tianocore/edk2.git
 ## Preprocessing
 Process header files for local communication
 ```
-python3 process_headers.py edk2
+python3 process_headers.py <physical_path_of_edk2>
 ```
 
 Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic execution.
