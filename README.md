@@ -1,12 +1,13 @@
-# edk2_klee
+# Guided Symbolic Execution
 
 ## Clone edk2 source code
 
 ```
-cd edk2_klee
-
+cd STASE-EDK2
 git clone https://github.com/tianocore/edk2.git
-
+cd edk2
+git checkout tags/edk2-stable202311
+cd ..
 ```
 
 ## Preprocessing
