@@ -1,4 +1,4 @@
-# Guided Symbolic Execution
+# Guided Symbolic Execution on edk2 using STASE technqiue 
 
 ## Clone edk2 source code
 
