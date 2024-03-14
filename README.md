@@ -3,7 +3,7 @@
 ## Clone edk2 source code
 
 ```
-cd STASE-EDK2
+cd stase-edk2
 git clone https://github.com/tianocore/edk2.git
 cd edk2
 git checkout tags/edk2-stable202311
