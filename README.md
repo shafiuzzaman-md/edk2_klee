@@ -46,6 +46,16 @@ cd klee_build
 cmake -DENABLE_SOLVER_Z3=ON -DENABLE_POSIX_RUNTIME=ON -DKLEE_UCLIBC_PATH=../klee-uclibc -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-13 ../klee
 make
 ```
+### Link the executables [Optional]
+If you have to execute the generated programs repeatedly, it is helpful to have smaller shortcuts for them.
+```
+nano ~/.bashrc
+```
+Put these lines at the end of your ~/.bashrc. Replace the paths corresponding to your directory structure.
+```
+alias       klee="~/klee_build/bin/klee"
+alias       ktest-tool="~/klee_build/bin/ktest-tool"
+```
 
 ## Clone edk2 source code
 
