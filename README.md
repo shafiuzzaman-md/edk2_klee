@@ -46,8 +46,8 @@ cd klee_build
 cmake -DENABLE_SOLVER_Z3=ON -DENABLE_POSIX_RUNTIME=ON -DKLEE_UCLIBC_PATH=../klee-uclibc -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-13 ../klee
 make
 ```
-### Link the executables [Optional]
-If you have to execute the generated programs repeatedly, it is helpful to have smaller shortcuts for them.
+### 6. Link the executables [Optional]
+If you have to execute the generated programs repeatedly, it is helpful to have shortcuts for them.
 ```
 nano ~/.bashrc
 ```
