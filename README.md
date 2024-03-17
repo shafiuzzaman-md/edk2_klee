@@ -34,6 +34,18 @@ cd klee-uclibc
 make -j2
 cd ..
 ```
+### 5. Build KLEE
+Get KLEE source:
+```
+git clone https://github.com/klee/klee.git
+```
+KLEE must be built “out of source”:
+```
+mkdir klee_build
+cd klee_build
+cmake -DENABLE_SOLVER_Z3=ON -DENABLE_POSIX_RUNTIME=ON -DKLEE_UCLIBC_PATH=../klee-uclibc -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-13 ../klee
+make
+```
 
 ## Clone edk2 source code
 
