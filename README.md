@@ -45,7 +45,7 @@ git checkout tags/edk2-stable202311
 cd ..
 ```
 
-## Preprocessing
+## Harness for Environment Initialization
 Process header files for local communication
 ```
 python3 process_headers.py <physical_path_of_edk2>
