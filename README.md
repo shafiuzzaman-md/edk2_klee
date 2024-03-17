@@ -23,7 +23,7 @@ python3 scripts/mk_make.py
 cd build
 make
 sudo make install
-cd ..
+cd ../..
 ```
 ### 4. Build uClibc and the POSIX environment model: 
 By default, KLEE works on closed programs (programs without external code, such as C library functions). However, if you want to use KLEE to run real programs, you will want to enable the KLEE POSIX runtime, which is built on top of the uClibc C library.
