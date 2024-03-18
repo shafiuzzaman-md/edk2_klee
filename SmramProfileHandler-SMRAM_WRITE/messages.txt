@@ -1,0 +1,16 @@
+KLEE: Using Z3 solver backend
+KLEE: Logging queries that reach solver in .smt2 format to /home/mdshafiuzzaman/Research/ISSTA24/Experiments/stase-edk2/klee-out-60/solver-queries.smt2
+
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7be91cc00000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7be69cc00000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7ae69cc00000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7ac69cc00000 size=128 GiB)
+KLEE: ERROR: ./edk2/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2412: ASSERTION FAIL: (*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) && ((UINTN)ParameterRecordingState <= (SMRAM_BASE + SMRAM_SIZE)) && ((*CommBufferSize == 0) || ((UINTN)ParameterRecordingState <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize )))
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./edk2/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2180: ASSERTION FAIL: (*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) && ((UINTN)SmramProfileParameterGetInfo <= (SMRAM_BASE + SMRAM_SIZE)) && ((*CommBufferSize == 0) || ((UINTN)SmramProfileParameterGetInfo <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize )))
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./edk2/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c:2397: ASSERTION FAIL: (*CommBufferSize <= (SMRAM_BASE + SMRAM_SIZE)) && ((UINTN)ParameterRecordingState <= (SMRAM_BASE + SMRAM_SIZE)) && ((*CommBufferSize == 0) || ((UINTN)ParameterRecordingState <= ((SMRAM_BASE + SMRAM_SIZE) - *CommBufferSize )))
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: ./edk2/MdePkg/Library/BaseMemoryLib/CopyMem.c:52: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location

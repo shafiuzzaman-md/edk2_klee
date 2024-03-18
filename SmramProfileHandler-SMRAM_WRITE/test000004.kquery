@@ -1,0 +1,9 @@
+array *CommBufferSize[4] : w32 -> w8 = symbolic
+array CommBuffer->Header.Command[4] : w32 -> w8 = symbolic
+array mSmramReadyToLock[1] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 0 mSmramReadyToLock))
+         (Eq 1
+             (ReadLSB w32 0 CommBuffer->Header.Command))
+         (Eq 24
+             (ReadLSB w32 0 *CommBufferSize))]
+        false)

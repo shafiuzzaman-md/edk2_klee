@@ -1,5 +1,5 @@
-#include "edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c"
-#include "edk2-master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c"
+#include "edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c"
+#include "edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c"
 
 /*Configuration settings are added as enum in edk2*/
 VAR_CHECK_REQUEST_SOURCE  mRequestSource = VarCheckFromUntrusted; //categorizing variable check requests as coming from either trusted or untrusted sources

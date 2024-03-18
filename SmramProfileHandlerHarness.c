@@ -30,30 +30,22 @@ DSE_to_SmramProfileHandler()
   EFI_HANDLE  DispatchHandle;
   CONST VOID  *RegisterContext;
 
-  SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA_BY_OFFSET *CommBuffer = malloc(sizeof(SMRAM_PROFILE_PARAMETER_GET_PROFILE_DATA_BY_OFFSET)); // Allocate memory
+  typedef struct {
+  SMRAM_PROFILE_PARAMETER_HEADER    Header;
+  BOOLEAN                           RecordingState;
+} COMMBUFFER_STRUCT;
 
-  SMRAM_PROFILE_PARAMETER_HEADER    sym_Header;
-  UINT64    sym_ProfileOffset;
-  UINT64                            sym_ProfileSize;
-  PHYSICAL_ADDRESS                  sym_ProfileBuffer;
-  UINT32    sys_Command;
 
-  klee_make_symbolic(&sym_Header, sizeof(sym_Header), "CommBuffer->Header");
-  klee_make_symbolic(&sym_ProfileOffset, sizeof(sym_ProfileOffset), "CommBuffer->ProfileOffset");
-  klee_make_symbolic(&sym_ProfileSize, sizeof(sym_ProfileSize), "CommBuffer->ProfileSize");
-  klee_make_symbolic(&sym_ProfileBuffer, sizeof(sym_ProfileBuffer), "CommBuffer->ProfileBuffer");
-  klee_make_symbolic(&sys_Command, sizeof(sys_Command), "CommBuffer->Header.Command");
-  klee_assume(sym_ProfileOffset != NULL);
-  klee_assume(sym_ProfileBuffer != NULL);
-  klee_assume(sym_ProfileSize != NULL);
-  CommBuffer->Header = sym_Header;
-  CommBuffer->ProfileOffset = sym_ProfileOffset;
-  CommBuffer->ProfileBuffer = sym_ProfileBuffer;
-  CommBuffer->ProfileSize = sym_ProfileSize;
-  CommBuffer->Header.Command = sys_Command;
-  klee_assume(CommBuffer != NULL);
-  
-  UINTN *CommBufferSize = malloc(sizeof(UINTN)); // Allocate memory.
+  COMMBUFFER_STRUCT *CommBuffer = malloc(sizeof(COMMBUFFER_STRUCT)); // Allocate memory
+
+  UINTN s_Command;
+  UINTN s_ReturnStatus;
+  klee_make_symbolic(&s_Command, sizeof(s_Command), "CommBuffer->Header.Command");
+  CommBuffer->Header.Command = s_Command;
+  klee_make_symbolic(&s_ReturnStatus, sizeof(s_ReturnStatus), "CommBuffer->Header.ReturnStatus");
+  CommBuffer->Header.ReturnStatus = s_ReturnStatus;
+ 
+  CommBufferSize = malloc(sizeof(UINTN)); // Allocate memory.
   klee_make_symbolic(CommBufferSize, sizeof(UINTN), "*CommBufferSize"); // Make the allocated memory symbolic.
 
 
