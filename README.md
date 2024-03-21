@@ -70,7 +70,8 @@ cd ..
 ## Harness for Environment Initialization
 Process header files for local communication
 ```
-python3 process_headers.py <physical_path_of_edk2>
+cd edk2
+python3 ../process_headers.py $(pwd)
 ```
 
 Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic execution.
