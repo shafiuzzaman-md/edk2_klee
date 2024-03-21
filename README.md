@@ -1,8 +1,8 @@
 # Guided Symbolic Execution on edk2 using STASE technique 
 
-## Install KLEE Symbolic Execution Engine
+## Step-1: Install KLEE Symbolic Execution Engine
 The following steps are tested on Ubuntu.
-### 1. Install dependencies:
+### Install dependencies:
 ```
 sudo apt-get install build-essential cmake curl file g++-multilib gcc-multilib git libcap-dev libgoogle-perftools-dev libncurses5-dev libsqlite3-dev libtcmalloc-minimal4 python3-pip unzip graphviz doxygen
 ```
@@ -11,11 +11,11 @@ You should also install lit to enable testing, tabulate to support additional fe
 sudo apt-get install python3-tabulate
 sudo pip3 install lit wllvm --break-system-packages
 ```
-### 2. Install LLVM 13:
+### Install LLVM 13:
 ```
 sudo apt-get install clang-13 llvm-13 llvm-13-dev llvm-13-tools
 ```
-### 3. Install constraint solver Z3:
+### Install constraint solver Z3:
 ```
 git clone https://github.com/Z3Prover/z3.git
 cd z3
@@ -25,7 +25,7 @@ make
 sudo make install
 cd ../..
 ```
-### 4. Build uClibc and the POSIX environment model: 
+### Build uClibc and the POSIX environment model: 
 By default, KLEE works on closed programs (programs without external code, such as C library functions). However, if you want to use KLEE to run real programs, you will want to enable the KLEE POSIX runtime, which is built on top of the uClibc C library.
 ```
 git clone https://github.com/klee/klee-uclibc.git
@@ -34,7 +34,7 @@ cd klee-uclibc
 make -j2
 cd ..
 ```
-### 5. Build KLEE
+### Build KLEE
 Get KLEE source:
 ```
 git clone https://github.com/klee/klee.git
@@ -46,7 +46,7 @@ cd klee_build
 cmake -DENABLE_SOLVER_Z3=ON -DENABLE_POSIX_RUNTIME=ON -DKLEE_UCLIBC_PATH=../klee-uclibc -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-13 ../klee
 make
 ```
-### 6. Link the executables [Optional]
+### Link the executables [Optional]
 If you have to execute the generated programs repeatedly, it is helpful to have shortcuts for them.
 ```
 nano ~/.bashrc
@@ -57,7 +57,7 @@ alias       klee="~/klee_build/bin/klee"
 alias       ktest-tool="~/klee_build/bin/ktest-tool"
 ```
 
-## Clone edk2 source code
+## Step-2: Clone edk2 source code
 
 ```
 cd stase-edk2
@@ -67,7 +67,7 @@ git checkout tags/edk2-stable202311
 cd ..
 ```
 
-## Harness for Environment Initialization
+## Step-3: Generate harness for symbolic execution environment
 Process header files for local communication
 ```
 cd edk2
@@ -79,12 +79,13 @@ Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic executio
 ```
 python3 remove_macros.py
 ```
+##
 
 ## Build
 ```
 clang-13 -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone klee_driver.c
 ```
-# Run
+## Run
 ```
 klee --external-calls=all -libc=uclibc --posix-runtime --smtlib-human-readable  --write-test-info --write-paths --write-smt2s   --write-cov  --write-cvcs --write-kqueries   --write-sym-paths --only-output-states-covering-new --use-query-log=solver:smt2  --simplify-sym-indices klee_driver.bc
 ```
