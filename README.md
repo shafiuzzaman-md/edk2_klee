@@ -80,14 +80,18 @@ Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic executio
 python3 remove_macros.py
 ```
 ## Step-4: Generate harness for execution control (Guided symbolic execution)
-STUB generation:
 
-```
-python3 generate_stubs.py
-```
+This steps depend on guidance from static analysis:
+- Allocate symbolic values to the variables detected as taint source and sink 
+- Allocate symbolic values to global variables
+- Substitute non-critical functions with stubs 
+    Example scrpt to generate stubs:
+    ```
+    python3 generate_stubs.py
+    ```
+- Add assertions for validation
 
-Assertion addintion:
-Add assertions on the line numbers detected as target locations by static analysis
+    Add assertions on the line numbers detected as target locations by static analysis
 
 ## Step-5: Build
 ```
