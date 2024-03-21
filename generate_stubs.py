@@ -16,6 +16,16 @@ def rename_original_function(file_content, function_name, return_type):
     renamed_content = re.sub(pattern, rf"\1 {new_function_name}", file_content)
     return renamed_content
 
+def insert_stub_function(file_content, stub_function):
+    # Insert the stub function after the last #include directive
+    lines = file_content.split('\n')
+    insert_index = 0
+    for i, line in enumerate(lines):
+        if line.startswith('#include'):
+            insert_index = i + 1
+    lines.insert(insert_index + 1, stub_function)
+    return '\n'.join(lines)
+
 def main():
     # Hardcoded arguments
     file_location = "edk2/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c"
@@ -29,9 +39,11 @@ def main():
     # Rename the original function
     file_content = rename_original_function(file_content, function_name, return_type)
 
-    # Generate and append the stub function
+     # Generate the stub function
     stub = generate_stub_function(return_type, function_name)
-    file_content += stub
+
+    # Insert the stub function after the last #include directive
+    file_content = insert_stub_function(file_content, stub)
 
     # Write the modified content back to the file
     with open(file_location, 'w') as f:
