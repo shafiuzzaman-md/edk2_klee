@@ -1,3 +1,5 @@
+import re
+
 def generate_stub_function(return_type, function_name):
     # Generate the stub function with the body commented out
     stub = f"{return_type} {function_name}(void) {{\n"
@@ -7,10 +9,11 @@ def generate_stub_function(return_type, function_name):
     stub += "}\n\n"
     return stub
 
-def rename_original_function(file_content, function_name):
-    # Replace the original function name with a new name
+def rename_original_function(file_content, function_name, return_type):
+    # Replace the original function name in the definition with a new name
     new_function_name = function_name + "_original"
-    renamed_content = file_content.replace(function_name, new_function_name)
+    pattern = rf"\b({return_type})\s+({function_name})\b(?=\s*\()"
+    renamed_content = re.sub(pattern, rf"\1 {new_function_name}", file_content)
     return renamed_content
 
 def main():
@@ -18,13 +21,13 @@ def main():
     file_location = "edk2/MdeModulePkg/Core/PiSmmCore/SmramProfileRecord.c"
     return_type = "UINTN"
     function_name = "SmramProfileGetDataSize"
-
-      # Read the file content
+   
+     # Read the file content
     with open(file_location, 'r') as f:
         file_content = f.read()
 
     # Rename the original function
-    file_content = rename_original_function(file_content, function_name)
+    file_content = rename_original_function(file_content, function_name, return_type)
 
     # Generate and append the stub function
     stub = generate_stub_function(return_type, function_name)
