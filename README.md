@@ -79,13 +79,16 @@ Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic executio
 ```
 python3 remove_macros.py
 ```
-##
+## Step-4: Generate harness for execution control (Guided symbolic execution)
+```
+python3 generate_stubs.py
+```
 
-## Build
+## Step-5: Build
 ```
 clang-13 -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone klee_driver.c
 ```
-## Run
+## Step-6: Run Symbolic Execution
 ```
 klee --external-calls=all -libc=uclibc --posix-runtime --smtlib-human-readable  --write-test-info --write-paths --write-smt2s   --write-cov  --write-cvcs --write-kqueries   --write-sym-paths --only-output-states-covering-new --use-query-log=solver:smt2  --simplify-sym-indices klee_driver.bc
 ```
