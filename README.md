@@ -72,6 +72,7 @@ Process header files for local communication
 ```
 cd edk2
 python3 ../process_headers.py $(pwd)
+cd ..
 ```
 
 Remove macros (e.g., STATIC_ASSERT) that are incompatible with symbolic execution.
