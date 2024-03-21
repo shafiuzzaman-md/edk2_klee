@@ -5,26 +5,6 @@
 SMM_CORE_PRIVATE_DATA  *gSmmCorePrivate;
 LIST_ENTRY  mSmmPoolLists[SmmPoolTypeMax][MAX_POOL_INDEX];
 
-//
-// STUB Functions
-//
-
-/**
-  Initialize SMRAM profile context.
-  
-  This function ensures that mSmramProfileContextPtr is never NULL.
-**/
-void InitializeSmramProfileContext(void) {
-  if (mSmramProfileContextPtr == NULL) {
-    mSmramProfileContextPtr = (MEMORY_PROFILE_CONTEXT_DATA *)malloc(sizeof(MEMORY_PROFILE_CONTEXT_DATA));
-    if (mSmramProfileContextPtr == NULL) {
-    }
-    // Initialize fields of mSmramProfileContextPtr if necessary
-    mSmramProfileContextPtr->Signature = 0;
-  }
-}
-
-
 DSE_to_SmramProfileHandler()
 {
   EFI_HANDLE  DispatchHandle;
@@ -53,7 +33,6 @@ DSE_to_SmramProfileHandler()
 
   mSmramProfileContextPtr = malloc(sizeof(MEMORY_PROFILE_CONTEXT_DATA));
    klee_make_symbolic(mSmramProfileContextPtr, sizeof(MEMORY_PROFILE_CONTEXT_DATA), "*mSmramProfileContextPtr");
-  //Call STUB function
-  InitializeSmramProfileContext();
+
   SmramProfileHandler ( DispatchHandle, RegisterContext, CommBuffer, CommBufferSize);
 }
