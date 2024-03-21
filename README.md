@@ -84,8 +84,8 @@ python3 remove_macros.py
 This steps depend on guidance from static analysis:
 - Allocate symbolic values to the variables detected as taint source and sink 
 - Allocate symbolic values to global variables
-- Substitute non-critical functions with stubs 
-    Example scrpt to generate stubs:
+- Substitute non-critical functions with stubs: 
+    Example script to generate stubs:
     ```
     python3 generate_stubs.py
     ```
